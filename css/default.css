@@ -1,0 +1,35 @@
+@CHARSET "utf8";
+
+
+table, td, tr {
+	width: 80%;
+}
+
+.navbar-inverse {
+	margin: auto;
+	text-align: center;
+	color: white;
+
+}
+
+.btn-info {
+	width: 20%;
+	margin-bottom: 0.5%;
+	font-size: 16;
+	display:inline-table;
+}
+
+.line {
+	display: inline-block;
+
+
+}
+
+.inline div {
+	width: 20%;
+	height: 50px;
+	background-color: green;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 16px;
+}

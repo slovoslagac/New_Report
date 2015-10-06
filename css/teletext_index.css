@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+
+div.but
+{
+    text-align: center;
+    padding: 1px;
+    margin: 1px;
+    color: black;
+    background-color:lightgrey;
+    height: 50px;
+    vertical-align: middle;
+    color: white;
+    
+    
+}
+
+

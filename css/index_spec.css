@@ -1,0 +1,24 @@
+@CHARSET "ISO-8859-1";
+
+.buttons {
+	width:  70%;
+	margin-left: 15%;
+}
+
+.small_buttons {
+	height: 50px;
+	width:30%;
+	background-color: #31B404;
+	margin: 10px 21px 10px 21px;
+	float:left;
+	text-align: center;
+	color: white;
+	padding-top: 12px;
+	font-size: 1.3em;
+	font-weight: bold;
+	border-radius: 25px;;
+}
+
+.small_buttons a {
+	color: white;
+}

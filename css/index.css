@@ -1,0 +1,86 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	width:98%;
+	margin-left: 1%;
+	margin-right: 1%;
+	font-size: 16px
+}
+
+div.but_dir
+{
+    text-align: center;
+	padding-top: 15px;
+    margin: 2px;
+    color: black;
+    background-color:#FF0000;
+    height: 60px;
+	border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    
+
+}
+.row {
+	display: block;
+}
+
+.potpis {
+	    display: block;
+	    font-size: 11px;
+	    font-style: italic;
+}
+
+div.but_sef
+{
+    text-align: center;
+	padding-top: 15px;
+    margin: 2px;
+    color: black;
+    background-color:#0A9A41;
+    height: 60px;
+	border-radius: 4px;
+    color: white;
+    font-weight: bold;
+
+}
+
+div.but
+{
+    text-align: center;
+	padding-top: 15px;
+    margin: 2px;
+    color: black;
+    background-color:#5bc0de;
+    height: 50px;
+	border-radius: 4px;
+    color: white;
+    font-weight: bold;
+
+}
+
+div.but1
+{
+    text-align: center;
+    padding-top: 15px;
+    margin: 2px;
+    color: black;
+    background-color:#5bc0de;
+    height: 50px;
+	border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+
+.col-sm-6 {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+footer {
+	text-align: center;
+	margin-bottom: 0px;
+}

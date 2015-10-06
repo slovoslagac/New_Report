@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+
+
+div.but
+{
+    text-align: center;
+	padding-top: 15px;
+    margin: 2px;
+    color: black;
+    background-color:#5bc0de;
+    height: 50px;
+	border-radius: 4px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.btn-info1 {
+	width: 100%;
+	margin-bottom: 0.5%;
+	font-size: 16;
+	display:inline-table;
+}

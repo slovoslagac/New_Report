@@ -1,0 +1,15 @@
+@CHARSET "ISO-8859-1";
+
+#naslov select, input {
+	padding: 0;
+	margin :0;
+	padding: 0 10px 0 10px;
+	margin: 0 10px 0 10px;
+	border: 1px solid black;
+	height: 25px;
+	font-size: 0.9em;
+}
+
+#naslov {
+	font-size: 1.05em;
+}

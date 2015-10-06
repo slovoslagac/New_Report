@@ -1,0 +1,73 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color: #000000;
+	color: white;
+	margin:0;
+}
+
+#helpmenu {
+	height: 80px;
+	background-color: #0E1C42;
+	border-bottom: 1px solid #fdb813;
+}
+
+#helpmenu img {
+	padding: 17px 0 0 15px;
+}
+
+#header {
+	margin: auto;
+	padding: 0;
+	text-align: center;
+}
+
+#menu {
+	background-color: #1E2128;
+	color: #CCD8DC;
+	height:50px;
+	width:100%;
+	margin: auto;
+}
+
+.selectdata {
+	margin: auto;
+	
+}
+
+.selectdata ul {
+	float:left;
+	margin: 10px 0 10px 0;
+}
+
+.selectdata span {
+	font-size: 1.2em;
+	font-weight: bold;
+	
+}
+
+.selectdata li {
+	float:left;
+	list-style: none;
+	padding: 0 10px 0 10px;
+
+}
+
+.selectdata option, select {
+	background-color: #040C19;
+	color: white;
+	height: 30px;
+	max-width: 270px;
+}
+
+.selectdata img {
+	height: 30px;
+}
+
+.selectdata input {
+	height: 30px;
+	background-color: #1E2128;
+	color: #CCD8DC;
+	border: 1px solid #fdb813;
+}
+
