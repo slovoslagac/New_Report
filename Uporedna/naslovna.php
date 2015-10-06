@@ -8,7 +8,7 @@ $percent=73;
 $j=1;
 $Data1= array();
 
-include(join(DIRECTORY_SEPARATOR, array('included', 'naslovna_header.php')));
+include(join(DIRECTORY_SEPARATOR, array('included', 'nas_header.php')));
 include(join(DIRECTORY_SEPARATOR, array('query', 'basic_ponuda.php')));
 
 $Data1 = $ShowMatches;
