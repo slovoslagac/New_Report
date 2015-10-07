@@ -6,12 +6,14 @@ $naslov="Naslovna strana uporedne liste";
 $numBookmakers=2;
 $percent=73;
 $j=1;
-$Data1= array();
+$Data= array();
+$league="";
 
 include(join(DIRECTORY_SEPARATOR, array('included', 'nas_header.php')));
 include(join(DIRECTORY_SEPARATOR, array('query', 'basic_ponuda.php')));
 
-$Data1 = $ShowMatches;
+$Data = $ShowMatches;
+
 
 
 ?>
@@ -28,20 +30,22 @@ $Data1 = $ShowMatches;
 			</div>
 			<div id="match_data">
 				<table id="exportTable">
-					<?php	include(join(DIRECTORY_SEPARATOR, array('included', 'nas_colgroup_table.php'))); ?>
-				
-					
+					<?php include(join(DIRECTORY_SEPARATOR, array('included', 'nas_colgroup_table.php'))); 
+					foreach ($Data as $d) {
+						if ($d['takm']!=$league) { 
+							$league=$d['takm']; $league_id=$d['ligaid'];
+							include('included/nas_naslov_tabele.php');
+							include('included/nas_podnaslov_tabele.php');
 
-					<!-- <?php include('included/nas_podnaslov_tabele.php') ?> -->
-					
-					<div id="games">
-						<?php {?>
+							?>
 
-						<!-- <tr class="row<?php echo($j++ & 1 )?>"> -->
 
-						</tr>
-						<?php }?>
-					</div>
+
+
+						<?php	}
+						
+					} ?>
+
 				</table>
 			</div>
 		</div>

@@ -1,13 +1,10 @@
-<tr class="naslov">
-	<td class="liga" colspan="5" value="<?php echo $liga_id?>"><<?php echo $liga?></td>
-	
-	<?php for($i=0; $i<=$numBookmakers; $i++) {?>
-	<td class="rightb" colspan="3"><?php echo $mat['klad_1'.$i]?></td>
+<tr class="table_header">
+	<th colspan="5" value="<?php echo $league_id?>"><?php echo $league?></th>
+	<?php for($i=1; $i <= $numBookmakers; $i++) { ?>
+	<th colspan="3"><?php ?><?php echo $d['klad4'.$i]?></th>
 	<?php }?>
-	<?php for($i=0; $i<=$numBookmakers; $i++) {?>
-	<td colspan="1"><?php echo substr($mat['klad_1'.$i], 0,3)?></td>
-	<?php }
-		
-	?>
-	<td class="leftrightb">VT</td>
+	<?php for($i=1; $i <= $numBookmakers; $i++) { ?>
+	<th><?php ?></th>
+	<?php }?>
+	<th>VT</th>
 </tr>
