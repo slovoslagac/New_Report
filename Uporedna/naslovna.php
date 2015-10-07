@@ -17,11 +17,10 @@ $Data = $ShowMatches;
 include(join(DIRECTORY_SEPARATOR, array('functions', 'fun_naslovna.php')));
 
 
-if (isset ( $_GET ["trziste"] ) != "") {
-		$region=$_GET ["trziste"] ;
+if (isset ( $_GET["trziste"] ) != "") {
+		$region=$_GET["trziste"] ;
 	}
 
-echo $region;
 
 ?>
 	<body>

@@ -42,14 +42,18 @@ table {
 }
 
 #trziste {
-	width: 60%;
-	margin: auto;
+	width: 100%;
+	margin: 0 30% 0 30%;
 }
 
 #trziste button {
-	width: 200px;
+	width: 16%;
 	height: 30px;
-	margin: 10px;
+	margin: 10px 2% 10px 2%;
+	background-color: #0E1C42;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ccc;
 
 }
 

@@ -9,7 +9,6 @@
 		<div id="trziste" name="trziste">
 			<button value="1">Srbija</button>
 			<button value="2">Rumunija</button>
-			<input type="Submit" value="Osveži">
 		</div>
 	</form>
 </div>
