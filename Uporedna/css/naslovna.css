@@ -5,6 +5,7 @@ body {
 	color: white;
 	margin:0;
 	padding: 0;
+	margin-bottom: 10px;
 }
 
 table {
@@ -27,6 +28,11 @@ table {
 	text-align: center;
 }
 
+#footer {
+	text-align:  center;
+	color: red;
+}
+
 #menu {
 	background-color: #1E2128;
 	color: #CCD8DC;
@@ -35,10 +41,22 @@ table {
 	margin: auto;
 }
 
+#trziste {
+	width: 60%;
+	margin: auto;
+}
+
+#trziste button {
+	width: 200px;
+	height: 30px;
+	margin: 10px;
+
+}
 
 #match_data {
-	width: 95%;
+	width: 99%;
 	margin : auto;
+	margin-top: 15px;
 }
 
 #match_data table {
@@ -65,12 +83,63 @@ table {
 
 .table_under_header {
 	background-color: #050C19;
+	font-size: 0.8em;
+	color: #95969c;
+
 }
 
 .table_under_header th {
-	border-left: 1px solid #003d79;
-	padding: 0;
 	border-spacing: 0;
+	border-bottom: 1px solid #003d79;
+	padding: 8px 0 3px 0;
+}
+
+.leftborder {
+	border-left: 1px solid #003d79;
+}
+
+.rightborder {
+	border-right: 1px solid #003d79;
+}
+
+.table_matches {
+	background-color: #050C19;
+	font-size: 11px;
+	color: #89becf;
+
+
+}
+
+.table_matches th {
+	border-spacing: 0;
+	border-bottom: 1px solid #003d79;
+	padding: 4px 0 4px 0;
+}
+
+.team {
+	color: #cbbb94;
+	font-weight: bold;
+	font-size: 1.2em;
+
+}
+
+.winner {
+	background-color: #606060;
+	color: #ccc;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.winnerug {
+
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.loserug {
+	color: #606060;
+
+	font-size: 12px;
 }
 
 .row0 {

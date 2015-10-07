@@ -1,16 +1,16 @@
 <tr class="table_under_header">
-	<th>Dan</th>
-	<th>Čas</th>
-	<th>Šifra</th>
-	<th>Domaćin</th>
-	<th>Gost</th>
+	<th class="leftborder">Dan</th>
+	<th class="leftborder">Čas</th>
+	<th class="leftborder">Šifra</th>
+	<th class="leftborder">Domaćin</th>
+	<th class="leftborder">Gost</th>
 	<?php for($i=1; $i<=$numBookmakers; $i++) {?>
-	<th>1</th>
+	<th class="leftborder">1</th>
 	<th>X</th>
-	<th>2</th>
+	<th class="rightborder">2</th>
 	<?php }
 	for($i=1; $i<=$numBookmakers; $i++) {?>
-	<th>3+</th>
+	<th class="rightborder">3+</th>
 	<?php }?>
-	<th>€</th>
+	<th class="rightborder">€</th>
 </tr>

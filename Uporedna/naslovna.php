@@ -3,51 +3,49 @@
 <?php 
 $naslov_short="Uporedna lista";
 $naslov="Naslovna strana uporedne liste";
-$numBookmakers=2;
-$percent=73;
-$j=1;
+$numBookmakers=9;
+$percent=90;
 $Data= array();
 $league="";
+$region="sr";
 
 include(join(DIRECTORY_SEPARATOR, array('included', 'nas_header.php')));
 include(join(DIRECTORY_SEPARATOR, array('query', 'basic_ponuda.php')));
 
 $Data = $ShowMatches;
 
+include(join(DIRECTORY_SEPARATOR, array('functions', 'fun_naslovna.php')));
 
+
+if (isset ( $_GET ["trziste"] ) != "") {
+		$region=$_GET ["trziste"] ;
+	}
+
+echo $region;
 
 ?>
 	<body>
 		<div id="container">
-			<div id="helpmenu"><a href="../index.php">
-				<img alt="" src="../img/MozzartLogo.png"></a>
-			</div>
-			<div id="header">
-				<h1><?php echo $naslov?></h1>
-			</div>
-			<div id="menu">
-				
-			</div>
+			<?php include(join(DIRECTORY_SEPARATOR, array('included', 'nas_menu.php')));?>
 			<div id="match_data">
 				<table id="exportTable">
 					<?php include(join(DIRECTORY_SEPARATOR, array('included', 'nas_colgroup_table.php'))); 
 					foreach ($Data as $d) {
 						if ($d['takm']!=$league) { 
-							$league=$d['takm']; $league_id=$d['ligaid'];
-							include('included/nas_naslov_tabele.php');
-							include('included/nas_podnaslov_tabele.php');
+							$league=$d['takm']; $league_id=$d['ligaid'];$j=1;
+							include(join(DIRECTORY_SEPARATOR, array('included', 'nas_naslov_tabele.php')));
+							include(join(DIRECTORY_SEPARATOR, array('included', 'nas_podnaslov_tabele.php')));
 
-							?>
-
-
-
-
-						<?php	}
+						}
+						$date= new DateTime($d['vreme']);$day=$date->format('m.d') ;$time=$date->format('H:i');
+						$code=$d['sifra'];$home_team=$d['dom'];$visitor_team=$d['gost'];$fav=$d['fav'];
+						include(join(DIRECTORY_SEPARATOR, array('included', 'nas_mecevi_tabele.php')));
 						
 					} ?>
 
 				</table>
 			</div>
 		</div>
+		<?php include(join(DIRECTORY_SEPARATOR, array('included', 'nas_footer.php'))); ?>
 	</body>
 </html>
