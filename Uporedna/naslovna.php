@@ -3,23 +3,35 @@
 <?php 
 $naslov_short="Uporedna lista";
 $naslov="Naslovna strana uporedne liste";
-$numBookmakers=9;
+$numBookmakers='9';
 $percent=90;
 $Data= array();
 $league="";
-$region="sr";
+$region="Srbija";
+$prikaz="da";
+
+if (isset ( $_GET["trziste"] ) != "") {
+		$region=$_GET["trziste"];
+	};
+
+
+if (isset ( $_GET["prikaz"])) {
+		$prikaz="ne";
+} else {
+		$prikaz="da";
+}
+
+// echo $prikaz,$region;
 
 include(join(DIRECTORY_SEPARATOR, array('included', 'nas_header.php')));
 include(join(DIRECTORY_SEPARATOR, array('query', 'basic_ponuda.php')));
+
 
 $Data = $ShowMatches;
 
 include(join(DIRECTORY_SEPARATOR, array('functions', 'fun_naslovna.php')));
 
 
-if (isset ( $_GET["trziste"] ) != "") {
-		$region=$_GET["trziste"] ;
-	}
 
 
 ?>
