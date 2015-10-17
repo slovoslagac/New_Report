@@ -1,1 +1,1 @@
-<footer id="footer">Bookmaking @ 2015</footer>
+<footer id="footer">2015 @ Bookmaking</footer>

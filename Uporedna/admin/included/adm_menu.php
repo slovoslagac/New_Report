@@ -1,13 +1,13 @@
 <div id="helpmenu">
-	<a href="../../index.php"><img alt="" src="../../img/MozzartLogo.png"></a>
+	<a href="<?php echo $home?>"><img alt="" src="<?php echo $logo?>"></a>
 	<h1><?php echo $naslov?></h1>
 </div>
 <div id="menu">
-	<form action="<?php $_SERVER['PHP_SELF']?>" method="GET">
-		<div id="part">
-			<input type="submit" name="part" value="Redosled takmičenja" />
-			<input type="submit" name="part" value="Spajanje takmičenja" />
-			<input type="submit" name="part" value="Spajanje mečeva" />
-		</div>
-	</form>
+	<div id="part">
+		<a href="<?php echo $btn1?>"><button>Home</button></a>
+		<a href="<?php echo $btn2?>"><button>Redosled takmičenja</button></a>
+		<a href="<?php echo $btn3?>"><button>Spajanje takmičenja</button></a>
+		<a href="<?php echo $btn4?>"><button>Spajanje mečeva</button></a>
+
+	</div>
 </div>

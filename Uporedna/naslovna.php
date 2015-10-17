@@ -48,7 +48,7 @@ include(join(DIRECTORY_SEPARATOR, array('functions', 'fun_naslovna.php')));
 							include(join(DIRECTORY_SEPARATOR, array('included', 'nas_podnaslov_tabele.php')));
 
 						}
-						$date= new DateTime($d['vreme']);$day=$date->format('m.d') ;$time=$date->format('H:i');
+						$date= new DateTime($d['vreme']);$day=$date->format('d.m') ;$time=$date->format('H:i');
 						$code=$d['sifra'];$home_team=$d['dom'];$visitor_team=$d['gost'];$fav=$d['fav'];
 						include(join(DIRECTORY_SEPARATOR, array('included', 'nas_mecevi_tabele.php')));
 						

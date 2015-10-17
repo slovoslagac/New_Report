@@ -1,3 +1,3 @@
 <div id="footer">
-	<footer>Bookmaking @ 2015</footer>
+	<footer>2015 @ Bookmaking</footer>
 </div>

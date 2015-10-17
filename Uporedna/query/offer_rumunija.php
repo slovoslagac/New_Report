@@ -5,10 +5,10 @@
 		a.ligaid, 
 		a.dom, 
 		a.gost, 
-		a.ki11, 
-		a.ki21, 
-		a.ki31,
-		a.ug11, 
+		truncate(k.vrednost,2) as ki11, 
+		truncate(k1.vrednost,2) as ki21, 
+		truncate(k2.vrednost,2) as ki31,
+		truncate(k3.vrednost,2) as ug11,  
 		st.ki_1 as ki12, 
 		st.ki_x as ki22, 
 		st.ki_2 as ki32,
@@ -29,29 +29,32 @@
 		s1.ki_x as ki26, 
 		s1.ki_2 as ki36,
 		s1.ug3p as ug16,
-		case when a.ki11 <= a.ki31 then 1 else 3 end fav,
+		case when k.vrednost <= k2.vrednost then 1 else 3 end fav,
 		'Mozzart' as klad1,
 		'Stenlybet' as klad2,
 		'Superbet' as klad3,
-		'Pyblicbet' as klad4,
+		'Publicbet' as klad4,
 		'Germanija' as klad5,
 		'Supersport' as klad6
 	from
 	(
-	select u.vreme vreme, u.sifra sifra, l.ime_lepo takm, d.ime_lepo dom, g.ime_lepo gost, m.ki_1 ki11, m.ki_x ki21, m.ki_2 ki31, m.ug3p ug11, u.id, u.liga_id ligaid
-	from utakmica u, tim d, tim g, liga l , mozzart3 m
+	select u.vreme vreme, u.sifra sifra, l.ime_lepo takm, d.ime_lepo dom, g.ime_lepo gost, u.id, u.liga_id ligaid, l.position pos
+	from utakmica u, tim d, tim g, liga l 
 	where u.kolo = (select max(kolo) from utakmica)
 	and u.liga_id=l.id
 	and u.domacin_id=d.id
 	and u.gost_id=g.id
-	and m.utakmica_id=u.id
 	and u.vreme > sysdate()
 	 ) a
+	left join kvota k on k.utakmica_id=a.id and k.podigra_id = 1
+	left join kvota k1 on k1.utakmica_id=a.id and k1.podigra_id = 2
+	left join kvota k2 on k2.utakmica_id=a.id and k2.podigra_id = 3
+	left join kvota k3 on k3.utakmica_id=a.id and k3.podigra_id = 4
 	left join stenlybetro3 st on st.utakmica_id=a.id
 	left join superbetro3 su on su.utakmica_id=a.id
 	left join publicbetro3 p on p.utakmica_id=a.id
 	left join germanija1 g on g.utakmica_id=a.id
 	left join Supersport1 s1 on s1.utakmica_id=a.id
-	order by a.takm, a.sifra";
+	order by a.pos desc, a.takm, a.sifra";
 	$numBookmakers=6;
 ?>
