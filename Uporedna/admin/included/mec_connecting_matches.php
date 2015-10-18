@@ -11,13 +11,15 @@
 		</select>
 	</td>
 	<td><input type="hidden" />
-		<select >
+		<select  name="mozz_match[]"  >
 			<option></option>
 			<?php foreach ($ShowMozzMatch as $d) { ?>
-				<option name="mozz_match[]"  value="<?php echo $d['utk']?>"><?php echo $d['dime']." - ".$d['gime']?></option>
+
+				<option value="<?php echo $d['utk']?>"><?php echo $d['dime']." - ".$d['gime']?></option>
+
 
 			<?php	} ?>
 		</select>
 	</td>
-	<td><input type="hidden" name="mozz_match[]" value="" /></td>
+	<td><input type="hidden" name="" value="" /></td>
 </tr>

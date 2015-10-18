@@ -15,13 +15,14 @@ $j=1;
 $_post = $_POST;
 if(!empty($_post['league_name'])) {
 	foreach($_post['league_name'] as $index => $inv) {
-		if ($_post['cmp_new_position'][$index] != $_post['cmp_position'][$index]) {
-			if($_post['cmp_new_position'][$index] == 0 ) {
+		if($_post['mozz_match'][$index] == 0 ) {
 			continue;
 			}
 
-			$indexes[] = $index;
-		}
+		$indexes[] = $index;
+		// echo $_post['di'][$index];
+
+		
 	}
 }
 
@@ -29,9 +30,15 @@ if(!empty($_post['league_name'])) {
 
 
 
-$conn = null;
+// $conn = null;
 
 // print_r($data);
+
+
+
+
+
+
 
 ?>
 

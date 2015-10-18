@@ -15,6 +15,7 @@ $i=0;
 $data = array();
 
 include(join(DIRECTORY_SEPARATOR, array('db', 'connectingMatches.php')));
+// include(join(DIRECTORY_SEPARATOR, array('db','MozzartMatchest.php')));
 $j=1;
 
 ?>
@@ -23,7 +24,7 @@ $j=1;
 	 		<?php $btn1='admin.php';$btn2='adminRedosled.php';$btn3='adminSpajanjeTakmicenja.php';$btn4='adminSpajanjeMeceva.php';
 	 		include(join(DIRECTORY_SEPARATOR, array('included', 'adm_menu.php')));?> 
 			<div id="match_data" class="size80">
-				<form method="post" action="db/saveMatches.php">
+				<form method="post" action="db/saveMatches.php"> 
 					<table id="exportTable">
 						<input type="submit" value="Sačuvaj" accesskey="x" />	
 						<?php 
