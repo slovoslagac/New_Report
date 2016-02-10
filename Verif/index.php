@@ -22,6 +22,7 @@
 			<div class="small_buttons"><a target="blank" href="dule.php">Klikni Duleta</a></div>
 			<div class="small_buttons"><a target="blank" href="LiveBet.php">LiveBet</a></div>
 			<div class="small_buttons"><a target="blank" href="KS.php">TEST Izveštaj o KS-u</a></div>
+			<div class="small_buttons"><a target="blank" href="promeneKvota.php">Promene kvota</a></div>
   		
 		</div>
 	</body>

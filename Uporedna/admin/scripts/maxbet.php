@@ -6,7 +6,7 @@ if ($json !== false ){
 $json_data = json_decode($json);
 
 
-	$leagues_skip=array(116811,132141,131939,133808,133806,133807,133809,132140);
+	$leagues_skip=array(116811,132141,131939,133808,133806,133807,133809,132140,134111);
 	$leagues=array();
 	$data=array();
 	foreach ($json_data as $dat){

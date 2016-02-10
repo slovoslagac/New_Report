@@ -15,7 +15,7 @@ $i=0;
 
 $data = array();
 
-include(join(DIRECTORY_SEPARATOR, array('db', 'leaguesPosition.php')));
+include(join(DIRECTORY_SEPARATOR, array('db', 'leaguePositionRound.php')));
 $j=1;
 $data=$ShowCmp;
 
