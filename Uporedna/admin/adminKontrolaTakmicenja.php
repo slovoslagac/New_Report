@@ -10,23 +10,10 @@ $kladionica_name = '';
 include(join(DIRECTORY_SEPARATOR, array('included', 'adm_header.php')));
 
 
-$i = 1;
-$Data1 = array();
-$Data2 = array();
-$source_id = 2;
-$bookie = 'Soccer';
-$bookies = array('Soccer', 'Balkanbet');
-
-if (isset ($_GET ["bookie_id"]) != "") {
-    $source_id = $_GET ["bookie_id"];
-    $bookie = $bookies[$source_id - 2];
-
-}
 // echo $bookie;
 
 include(join(DIRECTORY_SEPARATOR, array('db', 'connectingCompetitions.php')));
-include(join(DIRECTORY_SEPARATOR, array('db', 'mozzartCompetitions.php')));
-$Data1 = $resultNMCMP;
+
 $Data2 = $resultMZCMP;
 
 

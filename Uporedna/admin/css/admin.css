@@ -236,5 +236,17 @@ select {
 
 }
 
+sleect::selection {
+	background-color: #1E2128;
+
+
+}
+
+select:hover{
+	background-color: #1E2128;
+	color: white;
+
+}
+
 
 
