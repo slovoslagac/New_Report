@@ -15,19 +15,22 @@ $Data1 = array();
 $Data2 = array();
 $source_id = 2;
 $bookie = 'Soccer';
-$bookies = array('Soccer', 'Balkanbet');
+$bookies = array('Soccer', 'Balkanbet', 'Pinbet');
 
 if (isset ($_GET ["bookie_id"]) != "") {
     $source_id = $_GET ["bookie_id"];
     $bookie = $bookies[$source_id - 2];
-
+//    $bookie = $_GET ["source1"];
 }
 // echo $bookie;
 
 include(join(DIRECTORY_SEPARATOR, array('db', 'connectingCompetitions.php')));
 include(join(DIRECTORY_SEPARATOR, array('db', 'mozzartCompetitions.php')));
+include(join(DIRECTORY_SEPARATOR, array('db', 'availableSources.php')));
+
 $Data1 = $resultNMCMP;
 $Data2 = $resultMZCMP;
+$Data3 = $resultSources;
 
 
 ?>
@@ -49,23 +52,24 @@ $Data2 = $resultMZCMP;
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
                     <td>
                         <select name="bookie_id">
-                            <option value="2" <?php if (2 == $source_id) {
-                                echo 'selected="selected"';
-                            } ?>>Soccer
-                            </option>
-                            <option value="3" <?php if (3 == $source_id) {
-                                echo 'selected="selected"';
-                            } ?>>Balkanbet
-                            </option>
+
+                            <?php foreach ($Data3 as $D3) { ?>
+                                <option value="<?php echo $D3['id'] ?>" <?php if ($D3['id'] == $source_id) {
+                                    echo 'selected="selected"';
+                                } ?>><?php echo $D3['name'] ?>
+                                </option>
+
+                            <?php } ?>
+
                         </select>
                     </td>
                     <td>
-                        <input type="Submit" accesskey="w"  value="Osveži"/>
+                        <input type="Submit" accesskey="w" value="Osveži"/>
                     </td>
                 </form>
             </tr>
 
-            <form method="post" action="<?php echo (join(DIRECTORY_SEPARATOR, array('saveCompetition.php')))?>">
+            <form method="post" action="<?php echo(join(DIRECTORY_SEPARATOR, array('saveCompetition.php'))) ?>">
 
                 <input type="hidden" name="source" value="<?php echo $bookie ?>">
 
