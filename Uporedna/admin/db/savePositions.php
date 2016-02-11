@@ -51,7 +51,7 @@ foreach ($data as $d) {
 
 
 
-	$query = ' update liga set position = (:position)
+	$query = ' update init_competition set position = (:position)
 	where id = (:id)';
 
 	$params = array(

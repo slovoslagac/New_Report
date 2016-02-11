@@ -2,7 +2,7 @@
 include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlAdminPDO.php')));
 // $kladionica_name='balkanbet';
 
-$sql = 'select id, ime_lepo, position from liga where ime_lepo <> "" order by position desc, ime_lepo';
+$sql = 'select id, name, position from init_competition order by position desc, name';
 
 // echo $sql;
 

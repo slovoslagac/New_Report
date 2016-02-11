@@ -65,6 +65,12 @@ if(isset($_GET['delete'])){
     include(join(DIRECTORY_SEPARATOR, array('included', 'adm_menu.php'))); ?>
     <div id="function_data">
         <table id="exportTable">
+            <colgroup>
+                <col width="20%">
+                <col width="30%">
+                <col width="50%">
+                <col width="10%">
+            </colgroup>
             <thead>
             <tr class="naslov">
                 <td>Kladionica</td>
