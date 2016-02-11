@@ -1,3 +1,3 @@
-<div id="footer">
-	<footer>2015 @ Bookmaking</footer>
-</div>
+<!--<div id="footer">-->
+<!--	<footer>2015 @ Bookmaking</footer>-->
+<!--</div>-->

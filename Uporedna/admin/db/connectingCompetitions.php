@@ -16,7 +16,7 @@ on
 where c.id not in (select src_competition_id from conn_competition)
 and s.id = '.$source_id.'
 order by src_name, cmp_name asc
-limit 10
+
 ');
 
 $NonMatchCmp -> execute();

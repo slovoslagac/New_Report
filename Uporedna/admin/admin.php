@@ -21,7 +21,7 @@ if (isset ( $_GET["parser"] ) != "") {
 ?>
 	<body>
 		<div id="container">
-			<?php $btn1='admin.php';$btn2='adminRedosled.php';$btn3='adminSpajanjeTakmicenja.php';$btn4='adminSpajanjeMeceva.php';
+			<?php $btn1='admin.php';$btn2='adminRedosled.php';$btn3='adminSpajanjeTakmicenja.php';$btn4='adminSpajanjeMeceva.php';    $btn5 = 'adminKontrolaTakmicenja.php';
 	 		include(join(DIRECTORY_SEPARATOR, array('included', 'adm_menu.php')));?> 
 			<div id="function_data">
 				<form action="<?php $_SERVER['PHP_SELF']?>" method="GET">	

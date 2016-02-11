@@ -37,6 +37,7 @@ $Data2 = $resultMZCMP;
     $btn2 = 'adminRedosled.php';
     $btn3 = 'adminSpajanjeTakmicenja.php';
     $btn4 = 'adminSpajanjeMeceva.php';
+    $btn5 = 'adminKontrolaTakmicenja.php';
     include(join(DIRECTORY_SEPARATOR, array('included', 'adm_menu.php'))); ?>
     <div id="function_data">
         <table id="exportTable">

@@ -48,7 +48,7 @@ table {
 	width: 92%;
 	padding-bottom:25px;
 	float:left;
-	margin: 10px 4% 10px 4% ; 
+	margin: 10px 4% 10px 4% ;
 }
 
 .region {
@@ -74,15 +74,18 @@ table {
 
 }
 
+
+
 #footer {
 	text-align:  center;
 	color: red;
 	width:100%;
 	height:20px;
-	position:absolute;
+	position: absolute;
 	bottom:0;
 	left:0;
 	margin-bottom: 10px;
+
 }
 
 #menu {
@@ -94,19 +97,34 @@ table {
 }
 
 #part {
-	width: 1000px;
-	margin: 0 auto 0 auto;
+	width: 80%;
+	margin: auto;
 }
 
 #part button {
-	width: 200px;
+	width: 100%;
 	height: 30px;
-	margin: 10px 23px 10px 23px;
 	background-color: #0E1C42;
 	font-size: 16px;
 	font-weight: bold;
 	color: #ccc;
 
+
+}
+
+#part ul {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+#part li {
+	width: 20%;
+	height: 30px;
+	float: left;
+	margin: 10px auto 10px auto;
 }
 
 /* deo redosled admin */
@@ -213,6 +231,7 @@ table,tr, td{
 #exportTable input[type="submit"]{
 	width: 200px;
 	min-width: 25%;
+
 	height: 30px;
 	margin: 10px auto 10px auto;
 	background-color: #0E1C42;
@@ -249,4 +268,9 @@ select:hover{
 }
 
 
+/*Deo kontrola takmicenja*/
 
+input[type="checkbox"]{
+	width: 15px;
+	height: 15px;
+}
