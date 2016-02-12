@@ -170,13 +170,6 @@ table {
 }
 
 
-.table_header {
-	background-color: #003d79;
-	color: #fff;
-	font-size: 16px;
-	font-weight: bold;
-	margin : auto;
-}
 
 
 .table_matches td {
@@ -219,10 +212,14 @@ table,tr, td{
 }
 
 .naslov {
-	font-size: 22px;
-	background-color: #1E2128;
-}
+	 font-size: 22px;
+	 background-color: #1E2128;
+ }
 
+.podnaslov {
+	font-size: 18px;
+	background-color: #000000;
+}
 
 .naslov td {
 	height: 30px;

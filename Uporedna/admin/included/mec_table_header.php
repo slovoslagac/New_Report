@@ -1,7 +1,4 @@
-<tr class="table_header">
-	<th>Liga</th>
-	<th>Domaćin</th>
-	<th>Gost</th>
-	<th>Mozzart takmičenje</th>
+<tr class="podnaslov">
+	<th>Meč za spajanje</th>
 	<th>Mozzart meč</th>
 </tr>

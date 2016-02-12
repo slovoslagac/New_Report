@@ -15,11 +15,13 @@ $Data1 = array();
 $Data2 = array();
 $source_id = 2;
 $bookie = 'Soccer';
-$bookies = array('Soccer', 'Balkanbet', 'Pinbet');
+
 
 if (isset ($_GET ["bookie_id"]) != "") {
-    $source_id = $_GET ["bookie_id"];
-    $bookie = $bookies[$source_id - 2];
+    $source_all = explode("__", $_GET['bookie_id']);
+
+    $source_id = $source_all[0];
+    $bookie = $source_all[1];
 //    $bookie = $_GET ["source1"];
 }
 // echo $bookie;
@@ -54,7 +56,7 @@ $Data3 = $resultSources;
                         <select name="bookie_id">
 
                             <?php foreach ($Data3 as $D3) { ?>
-                                <option value="<?php echo $D3['id'] ?>" <?php if ($D3['id'] == $source_id) {
+                                <option value="<?php echo $D3['id']. "__" .$D3['name'] ?>" <?php if ($D3['id'] == $source_id) {
                                     echo 'selected="selected"';
                                 } ?>><?php echo $D3['name'] ?>
                                 </option>

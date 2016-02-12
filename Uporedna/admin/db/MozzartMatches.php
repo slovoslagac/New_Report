@@ -1,34 +1,40 @@
 <?php
-include(join(DIRECTORY_SEPARATOR, array('..','conn', 'mysqlAdminPDO.php')));
+include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlAdminPDO.php')));
 
-class match {
-	public $utk;
-	public $dime;
 
-	public function homeid($utk) {
-		return $dime;
-	}
-}
+$sql = 'select distinct
+  im.event_id as mozz_match_id,
+  im.competition_id as mozz_cmp_id,
+  ith.name as mozz_home_team_name,
+  ith.id as mozz_home_team_id,
+  itv.name as mozz_visitor_team_name,
+  itv.id as mozz_visitor_team_id
+from
+  init_match as im
+inner join
+  init_team as ith
+on
+  (im.home_team_id = ith.id)
+inner join
+  init_team as itv
+on
+  (im.visitor_team_id = itv.id)
+where im.start_time > now() - interval "10" day
+and im.start_time < now() + interval "10" day
+and im.competition_id in (select init_competition_id from conn_competition c)
+order by 2,3
+';
 
-$sql = 'select u.id utk, u.liga_id ligaid, d.id did, d.ime_lepo dime, g.id gid, g.ime_lepo gime
-from utakmica u, tim d, tim g
-where u.kolo = (select max(kolo) from utakmica)
-and u.domacin_id=d.id
-and u.gost_id=g.id
-and u.liga_id in (1,36)
-order by 2,4';
+// echo $sql;
 
-$FindMozzMatch = $conn ->prepare($sql);
-$FindMozzMatch -> execute();
-$ShowMozzMatch = $FindMozzMatch -> fetchAll(PDO::FETCH_CLASS,"match");
+
+$MozzMatch = $conn->prepare($sql);
+$MozzMatch->execute();
+$ShowMozzMatch = $MozzMatch->fetchAll(PDO::FETCH_ASSOC);
+
 
 $conn = null;
 
 
-var_dump($ShowMozzMatch);
-
-echo "<br>";
-
-echo homeid('328765');
-
+// print_r($ShowMatch);
 ?>
