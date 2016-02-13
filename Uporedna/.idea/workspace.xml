@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php" line="31" />
+    <bookmark url="file://$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php" line="33" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be601e26-0991-4c96-82a8-f7b0c1b2b1bc" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/db/saveMatches.php" afterPath="$PROJECT_DIR$/admin/saveMatches.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/included/save_mec_colgroup_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminSpajanjeMeceva.php" afterPath="$PROJECT_DIR$/admin/adminSpajanjeMeceva.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php" afterPath="$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/admin.css" afterPath="$PROJECT_DIR$/admin/css/admin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/db/connectingMatches.php" afterPath="$PROJECT_DIR$/admin/db/connectingMatches.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/included/mec_colgroup_table.php" afterPath="$PROJECT_DIR$/admin/included/mec_colgroup_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/included/mec_connecting_matches.php" afterPath="$PROJECT_DIR$/admin/included/mec_connecting_matches.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/included/mec_table_header.php" afterPath="$PROJECT_DIR$/admin/included/mec_table_header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/included/red_Table_Header.php" afterPath="$PROJECT_DIR$/admin/included/red_Table_Header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/saveMatches.php" afterPath="$PROJECT_DIR$/admin/saveMatches.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/scripts/maxbet.php" afterPath="$PROJECT_DIR$/admin/scripts/maxbet.php" />
     </list>
     <ignored path="Uporedna.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,63 +33,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="connectingMatches.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="connectingMatches.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/db/connectingMatches.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4293915">
-              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state vertical-scroll-proportion="-9.153846">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
               <folding>
-                <marker date="1455289595183" expanded="true" signature="88:545" placeholder="select liga,... maxbet3" />
-                <marker date="1455289595183" expanded="true" signature="88:553" placeholder="select selec... " />
-                <marker date="1455289595183" expanded="true" signature="88:672" placeholder="select ic.na... src_match" />
-                <marker date="1455289595183" expanded="true" signature="88:712" placeholder="SELECT disti... src_match" />
-                <marker date="1455289595183" expanded="true" signature="435:475" placeholder="select sm.sr... conn_matches" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connectingCompetitions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/db/connectingCompetitions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="25" />
-              <folding>
-                <marker date="1455204949889" expanded="true" signature="145:438" placeholder="select c.id src_competition" />
-                <marker date="1455204949889" expanded="true" signature="332:379" placeholder="select src_c... conn_competition" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="saveMatches.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/saveMatches.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminSpajanjeMeceva.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeMeceva.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.692308">
-              <caret line="94" column="119" selection-start-line="94" selection-start-column="119" selection-end-line="94" selection-end-column="119" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mozzartMatches.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/db/mozzartMatches.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.730769">
-              <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-              <folding>
-                <marker date="1455289543877" expanded="true" signature="88:644" placeholder="SELECT ic.na... src_match" />
-                <marker date="1455289543877" expanded="true" signature="580:630" placeholder="select init_... conn_competition" />
+                <marker date="1455313903660" expanded="true" signature="88:729" placeholder="SELECT disti... src_match" />
+                <marker date="1455313903660" expanded="true" signature="435:475" placeholder="SELECT sm.sr... conn_matches" />
               </folding>
             </state>
           </provider>
@@ -101,8 +49,61 @@
       <file leaf-file-name="admin.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/css/admin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.1509433">
-              <caret line="220" column="29" selection-start-line="220" selection-start-column="29" selection-end-line="220" selection-end-column="29" />
+            <state vertical-scroll-proportion="-0.65384614">
+              <caret line="218" column="9" selection-start-line="218" selection-start-column="9" selection-end-line="218" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="saveMatches.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/saveMatches.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38554215">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding>
+                <marker date="1455324657458" expanded="true" signature="1877:1914" placeholder="..." />
+                <marker date="1455324657458" expanded="true" signature="1898:1914" placeholder="..." />
+                <marker date="1455324657458" expanded="true" signature="2173:2939" placeholder="..." />
+                <marker date="1455324657458" expanded="true" signature="2200:2931" placeholder="..." />
+                <marker date="1455324657458" expanded="true" signature="2211:2345" placeholder="..." />
+                <marker date="1455324657458" expanded="true" signature="2235:2333" placeholder="..." />
+                <marker date="1455324657458" expanded="true" signature="2452:2920" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminSpajanjeMeceva.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeMeceva.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.5">
+              <caret line="101" column="230" selection-start-line="101" selection-start-column="230" selection-end-line="101" selection-end-column="230" />
+              <folding>
+                <marker date="1455323446233" expanded="true" signature="857:866" placeholder="..." />
+                <marker date="1455323446233" expanded="true" signature="1239:1262" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminKontrolaTakmicenja.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/adminKontrolaTakmicenja.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.230769">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+              <folding>
+                <marker date="1455299245954" expanded="true" signature="540:568" placeholder="Delete from " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mec_colgroup_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/included/mec_colgroup_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.9622642">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -111,9 +112,32 @@
       <file leaf-file-name="adminSpajanjeTakmicenja.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.884615">
-              <caret line="97" column="54" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="54" />
+            <state vertical-scroll-proportion="-7.7090907">
+              <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="81" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="saveCompetition.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/saveCompetition.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.961538">
+              <caret line="107" column="22" selection-start-line="101" selection-start-column="12" selection-end-line="107" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MozzartMatches.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/db/MozzartMatches.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2692308">
+              <caret line="5" column="30" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="30" />
+              <folding>
+                <marker date="1455299246012" expanded="true" signature="88:644" placeholder="select disti... init_match" />
+                <marker date="1455299246012" expanded="true" signature="580:630" placeholder="select init_... conn_competition" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,13 +173,15 @@
         <option value="$PROJECT_DIR$/admin/included/red_Table_Header.php" />
         <option value="$PROJECT_DIR$/admin/included/mec_connecting_matches.php" />
         <option value="$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php" />
-        <option value="$PROJECT_DIR$/admin/included/mec_colgroup_table.php" />
         <option value="$PROJECT_DIR$/admin/css/admin.css" />
         <option value="$PROJECT_DIR$/admin/included/mec_table_header.php" />
         <option value="$PROJECT_DIR$/admin/db/MozzartMatches.php" />
-        <option value="$PROJECT_DIR$/admin/adminSpajanjeMeceva.php" />
         <option value="$PROJECT_DIR$/admin/db/mozzartMatches.php" />
+        <option value="$PROJECT_DIR$/admin/included/mec_colgroup_table.php" />
         <option value="$PROJECT_DIR$/admin/db/connectingMatches.php" />
+        <option value="$PROJECT_DIR$/admin/scripts/maxbet.php" />
+        <option value="$PROJECT_DIR$/admin/adminSpajanjeMeceva.php" />
+        <option value="$PROJECT_DIR$/admin/saveMatches.php" />
       </list>
     </option>
   </component>
@@ -171,8 +197,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1034" />
+    <option name="width" value="1456" />
+    <option name="height" value="854" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -362,11 +388,12 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\AppServ\www\New_Report\Uporedna\admin\db" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\AppServ\www\New_Report\Uporedna\admin" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\XAMPP\htdocs\New_Report\Uporedna\admin\included" />
+      <recent name="C:\AppServ\www\New_Report\Uporedna\admin\db" />
       <recent name="C:\AppServ\www\New_Report\Uporedna\admin" />
     </key>
   </component>
@@ -433,21 +460,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1034" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="854" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21805556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -480,6 +507,79 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/admin/db/connectingMatches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1455313903660" expanded="true" signature="88:729" placeholder="SELECT disti... src_match" />
+            <marker date="1455313903660" expanded="true" signature="435:475" placeholder="SELECT sm.sr... conn_matches" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/db/connectingCompetitions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/saveMatches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1455324657458" expanded="true" signature="1877:1914" placeholder="..." />
+            <marker date="1455324657458" expanded="true" signature="1898:1914" placeholder="..." />
+            <marker date="1455324657458" expanded="true" signature="2173:2939" placeholder="..." />
+            <marker date="1455324657458" expanded="true" signature="2200:2931" placeholder="..." />
+            <marker date="1455324657458" expanded="true" signature="2211:2345" placeholder="..." />
+            <marker date="1455324657458" expanded="true" signature="2235:2333" placeholder="..." />
+            <marker date="1455324657458" expanded="true" signature="2452:2920" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeMeceva.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <marker date="1455323446233" expanded="true" signature="857:866" placeholder="..." />
+            <marker date="1455323446233" expanded="true" signature="1239:1262" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/db/MozzartMatches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <marker date="1455299246012" expanded="true" signature="88:644" placeholder="select disti... init_match" />
+            <marker date="1455299246012" expanded="true" signature="580:630" placeholder="select init_... conn_competition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="220" column="9" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="37" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/css/admin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -515,11 +615,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11710677">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <marker date="1455230724600" expanded="true" signature="107:534" placeholder="select disti... init_competition" />
-            <marker date="1455230724600" expanded="true" signature="224:362" placeholder="SELECT DISTI... init_match" />
-            <marker date="1455230724600" expanded="true" signature="382:522" placeholder="SELECT DISTI... conn_competition" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -527,10 +623,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19517796">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <marker date="1455206005507" expanded="true" signature="144:440" placeholder="select c.id src_competition" />
-            <marker date="1455206005507" expanded="true" signature="144:441" placeholder="select s.nam... init_competition" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -558,16 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/adminKontrolaTakmicenja.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17566016">
-          <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
-          <folding>
-            <marker date="1455230724597" expanded="true" signature="540:568" placeholder="Delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/included/red_Table_Header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.078071184">
@@ -584,32 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/saveCompetition.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3662457">
-          <caret line="39" column="65" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="65" />
-          <folding>
-            <marker date="1455204137027" expanded="true" signature="1327:1448" placeholder="INSERT INTO conn_competition... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.1509433">
-          <caret line="220" column="29" selection-start-line="220" selection-start-column="29" selection-end-line="220" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/included/mec_colgroup_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/included/mec_table_header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -622,14 +679,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538">
           <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="218" column="9" selection-start-line="218" selection-start-column="9" selection-end-line="218" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/db/MozzartMatches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="30" />
           <folding>
-            <marker date="1455204949889" expanded="true" signature="145:438" placeholder="select c.id src_competition" />
-            <marker date="1455204949889" expanded="true" signature="332:379" placeholder="select src_c... conn_competition" />
+            <marker date="1455299246012" expanded="true" signature="88:644" placeholder="select disti... init_match" />
+            <marker date="1455299246012" expanded="true" signature="580:630" placeholder="select init_... conn_competition" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/saveMatches.php">
+    <entry file="file://$PROJECT_DIR$/admin/db/connectingMatches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <marker date="1455313903660" expanded="true" signature="88:729" placeholder="SELECT disti... src_match" />
+            <marker date="1455313903660" expanded="true" signature="435:475" placeholder="SELECT sm.sr... conn_matches" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/scripts/maxbet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39797395">
+          <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+          <folding>
+            <marker date="1455315542249" expanded="true" signature="3834:3853" placeholder="DELETE FROM " />
+            <marker date="1455315542249" expanded="true" signature="4180:4342" placeholder="INSERT INTO maxbet3" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7090907">
+          <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/included/save_mec_colgroup_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -637,43 +740,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php">
+    <entry file="file://$PROJECT_DIR$/admin/included/mec_colgroup_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.884615">
-          <caret line="97" column="54" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="54" />
+        <state vertical-scroll-proportion="-0.9622642">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/saveCompetition.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.961538">
+          <caret line="107" column="22" selection-start-line="101" selection-start-column="12" selection-end-line="107" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeMeceva.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.692308">
-          <caret line="94" column="119" selection-start-line="94" selection-start-column="119" selection-end-line="94" selection-end-column="119" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/db/mozzartMatches.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        <state vertical-scroll-proportion="-14.5">
+          <caret line="101" column="230" selection-start-line="101" selection-start-column="230" selection-end-line="101" selection-end-column="230" />
           <folding>
-            <marker date="1455289543877" expanded="true" signature="88:644" placeholder="SELECT ic.na... src_match" />
-            <marker date="1455289543877" expanded="true" signature="580:630" placeholder="select init_... conn_competition" />
+            <marker date="1455323446233" expanded="true" signature="857:866" placeholder="..." />
+            <marker date="1455323446233" expanded="true" signature="1239:1262" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/db/connectingMatches.php">
+    <entry file="file://$PROJECT_DIR$/admin/adminKontrolaTakmicenja.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4293915">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state vertical-scroll-proportion="-10.230769">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
           <folding>
-            <marker date="1455289595183" expanded="true" signature="88:545" placeholder="select liga,... maxbet3" />
-            <marker date="1455289595183" expanded="true" signature="88:553" placeholder="select selec... " />
-            <marker date="1455289595183" expanded="true" signature="88:672" placeholder="select ic.na... src_match" />
-            <marker date="1455289595183" expanded="true" signature="88:712" placeholder="SELECT disti... src_match" />
-            <marker date="1455289595183" expanded="true" signature="435:475" placeholder="select sm.sr... conn_matches" />
+            <marker date="1455299245954" expanded="true" signature="540:568" placeholder="Delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/saveMatches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38554215">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <marker date="1455324657458" expanded="true" signature="1877:1914" placeholder="..." />
+            <marker date="1455324657458" expanded="true" signature="1898:1914" placeholder="..." />
+            <marker date="1455324657458" expanded="true" signature="2173:2939" placeholder="..." />
+            <marker date="1455324657458" expanded="true" signature="2200:2931" placeholder="..." />
+            <marker date="1455324657458" expanded="true" signature="2211:2345" placeholder="..." />
+            <marker date="1455324657458" expanded="true" signature="2235:2333" placeholder="..." />
+            <marker date="1455324657458" expanded="true" signature="2452:2920" placeholder="..." />
           </folding>
         </state>
       </provider>
