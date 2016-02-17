@@ -6,15 +6,16 @@ $sql = 'SELECT distinct ic.name competition_name, st.name home_name, st1.name vi
 FROM src_match sm, conn_competition cc, init_competition ic, src_team st, src_team st1
 WHERE sm.src_competition_id = cc.src_competition_id
 AND cc.init_competition_id = ic.id
-AND sm.id NOT IN (SELECT sm.src_match_id FROM conn_matches)
+AND sm.id NOT IN (SELECT src_match_id FROM conn_match)
 AND sm.src_home_team_id = st.id
 AND sm.src_visitor_team_id = st1.id
 AND sm.source_id= ' . $source_id . '
 AND sm.start_time > now() - INTERVAL "10" DAY
 AND sm.start_time < now() + INTERVAL "7" DAY
-and ic.id = 1333
 order by sm.source_id, ic.name, st.name
 ';
+
+
 
 // echo $sql;
 

@@ -63,14 +63,6 @@ foreach ($indexes as $index) {
 	$tmp['mozzart_home_team_name'] = $mozzart_data[3];
 	$tmp['mozzart_visitor_team_name'] = $mozzart_data[4];
 
-//	if($_post['change_visitor'] != "" ){
-//		$tmp['home_visitor'] = 1;
-//	} else {
-//		$tmp['home_visitor'] = 0;
-//	}
-//	$tmp['home_visitor'] = (isset($_post['change_visitor'][$index]) == "on") ? 1 : 0;
-
-//	echo $_post['change_visitor'][$index]."<br>";
 
 	if(in_array($tmp['src_match'],$changes)){
 		$tmp['home_visitor'] = 1;
@@ -81,7 +73,49 @@ foreach ($indexes as $index) {
 	$data[] = $tmp;
 }
 
- $conn = null;
+include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlAdminPDO.php')));
+
+foreach ($data as $d) {
+
+	$homeVisitor = $d['home_visitor'];
+    $mozzartMatchId = $d['mozzart_match'];
+    $mozzartHomeTeamID = $d['mozzart_home_team_id'];
+    $mozzartVisitorTeamID = $d['mozzart_visitor_team_id'];
+	$srcMatchId = $d['src_match'];
+    $srcHomeTeamID = $d['src_home_team_id'];
+    $srcVisitorTeamID = $d['src_visitor_team_id'];
+
+
+	$query = '
+INSERT INTO
+conn_match (init_match_id, src_match_id, home_visitor)
+VALUES
+(:init_match_id, :src_match_id,:home_visitor)
+ON DUPLICATE KEY UPDATE init_match_id=:init_match_id;
+';
+
+	$params = array(
+		'init_match_id' => $mozzartMatchId,
+		'src_match_id' => $srcMatchId,
+        'home_visitor' => $homeVisitor
+	);
+
+	$prepare = $conn->prepare($query);
+	$prepare->execute($params);
+
+    $sql = "insert into conn_team ( init_team_id, src_team_id ) values ";
+
+    if ($homeVisitor == 0) {
+        $sql .= "(". $mozzartHomeTeamID . ",". $srcHomeTeamID . "),(". $mozzartVisitorTeamID . ",". $srcVisitorTeamID . ") ON DUPLICATE KEY UPDATE init_team_id=init_team_id";
+    } else {
+        $sql .= "(". $mozzartHomeTeamID . ",". $srcVisitorTeamID . "),(". $mozzartVisitorTeamID . ",". $srcHomeTeamID . ") ON DUPLICATE KEY UPDATE init_team_id=init_team_id";
+    }
+
+    $prepare = $conn->prepare($sql);
+    $prepare->execute();
+
+}
+$conn = null;
 
 
 
@@ -104,8 +138,8 @@ foreach ($indexes as $index) {
 			<thead>
 
 			<tr class="naslov">
-				<td><?php echo $bookie ?></td>
 				<td>Mozzart</td>
+				<td><?php echo $bookie ?></td>
 				<td>Obrnuto domaćinstvo</td>
 			</tr>
 			</thead>
@@ -115,8 +149,8 @@ foreach ($indexes as $index) {
 			<?php
 			foreach ($data as $d1) { ?>
 				<tr class="row<?php echo($i++ & 1) ?>">
-					<td><?php echo ($d1['home_visitor'] == 0 ) ? $d1['src_home_team_name']." - ".$d1['src_visitor_team_name'] : $d1['src_visitor_team_name']." - ". $d1['src_home_team_name']?></td>
 					<td><?php echo $d1['mozzart_home_team_name']." - ".$d1['mozzart_visitor_team_name'] ?></td>
+					<td><?php echo ($d1['home_visitor'] == 0 ) ? $d1['src_home_team_name']." - ".$d1['src_visitor_team_name'] : $d1['src_visitor_team_name']." - ". $d1['src_home_team_name']?></td>
 					<td><?php echo ($d1['home_visitor'] == 1 ) ? "da" : "" ?></td>
 				</tr>
 			<?php } ?>

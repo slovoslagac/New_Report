@@ -27,7 +27,17 @@
             </li>
             <li>
                 <a href="<?php echo $btn5 ?>" accesskey="5">
-                    <button>Kontrola takmičenja</button>
+                    <button>Kontrola spojenih takmičenja</button>
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $btn6 ?>" accesskey="5">
+                    <button>Kontrola spojenih mečeva</button>
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $btn7 ?>" accesskey="5">
+                    <button>Kontrola spojenih timova</button>
                 </a>
             </li>
         </ul>
