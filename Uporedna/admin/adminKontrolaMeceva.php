@@ -26,10 +26,10 @@ if (isset ($_GET ["bookie_id"]) != "") {
     }
 }
 
-include(join(DIRECTORY_SEPARATOR, array('db', 'controlCompetitions.php')));
+include(join(DIRECTORY_SEPARATOR, array('db', 'controlMatches.php')));
 include(join(DIRECTORY_SEPARATOR, array('db', 'availableSources.php')));
 
-$Data1 = $resultACC;
+$Data1 = $resultMac;
 $Data3 = $resultSources;
 
 
@@ -41,7 +41,7 @@ if (isset($_GET['delete'])) {
 
     $j = 0;
 
-    $sql = "DELETE FROM conn_competition ";
+    $sql = "DELETE FROM conn_match ";
 
     foreach ($multiple as $item_id) {
         $j++;
@@ -62,7 +62,7 @@ if (isset($_GET['delete'])) {
 
     $conn = null;
 
-    header("Location: adminKontrolaTakmicenja.php");
+    header("Location: adminKontrolaMeceva.php");
 
 }
 
@@ -99,16 +99,18 @@ if (isset($_GET['delete'])) {
         <table id="exportTable">
 
             <colgroup>
+                <col width="10%">
                 <col width="20%">
                 <col width="30%">
-                <col width="50%">
+                <col width="30%">
                 <col width="10%">
             </colgroup>
             <thead>
             <tr class="naslov">
                 <td>Kladionica</td>
-                <td>Mozzart takmičenje</td>
                 <td>Takmičenje</td>
+                <td>Mozzart meč</td>
+                <td>Meč</td>
                 <td>Obriši</td>
             </tr>
 
@@ -121,17 +123,18 @@ if (isset($_GET['delete'])) {
 
                     <tr class="row<?php echo($i++ & 1) ?>">
                         <td><?php echo $srSource['source_name'] ?></td>
-                        <td><?php echo $srSource['mozzart_competition'] ?></td>
-                        <td><?php echo $srSource['competition'] ?></td>
+                        <td><?php echo $srSource['competition_name'] ?></td>
+                        <td><?php echo $srSource['mozzart_home_team_name']." - ".$srSource['mozzart_visitor_team_name'] ?></td>
+                        <td><?php echo $srSource['src_home_team_name']." - ".$srSource['src_visitor_team_name'] ?></td>
                         <td>
-                            <input type="checkbox" name="delete_selection[]" value="<?php echo $srSource['conn_id'] ?>">
+                            <input type="checkbox" name="delete_selection[]" value="<?php echo $srSource['cmp_id'] ?>">
                         </td>
                     </tr>
 
                 <?php } ?>
 
                 <tr class="naslov">
-                    <td colspan="4"><input accesskey="x" type="submit" name="delete" value="Obriši"/></td>
+                    <td colspan="5"><input accesskey="x" type="submit" name="delete" value="Obriši"/></td>
                 </tr>
 
             </form>

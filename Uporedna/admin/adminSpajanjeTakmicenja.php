@@ -47,9 +47,6 @@ $Data3 = $resultSources;
     <div id="function_data">
         <table id="exportTable">
             <thead>
-
-            </thead>
-            <tbody>
             <tr class="naslov">
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
                     <td>
@@ -70,6 +67,9 @@ $Data3 = $resultSources;
                     </td>
                 </form>
             </tr>
+            </thead>
+            <tbody>
+
 
             <form method="post" action="<?php echo(join(DIRECTORY_SEPARATOR, array('saveCompetition.php'))) ?>">
 

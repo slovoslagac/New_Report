@@ -1,3 +1,14 @@
+<?php
+
+$btn1 = 'admin.php';
+$btn2 = 'adminRedosled.php';
+$btn3 = 'adminSpajanjeTakmicenja.php';
+$btn4 = 'adminSpajanjeMeceva.php';
+$btn5 = 'adminKontrolaTakmicenja.php';
+$btn6 = 'adminKontrolaMeceva.php';
+$btn7 = 'adminKontrolaTimova.php';
+
+?>
 <div id="helpmenu">
     <a href="<?php echo $home ?>"><img alt="" src="<?php echo $logo ?>"></a>
     <h1><?php echo $naslov ?></h1>

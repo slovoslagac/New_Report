@@ -26,10 +26,10 @@ if (isset ($_GET ["bookie_id"]) != "") {
     }
 }
 
-include(join(DIRECTORY_SEPARATOR, array('db', 'controlCompetitions.php')));
+include(join(DIRECTORY_SEPARATOR, array('db', 'controlTeams.php')));
 include(join(DIRECTORY_SEPARATOR, array('db', 'availableSources.php')));
 
-$Data1 = $resultACC;
+$Data1 = $resultACT;
 $Data3 = $resultSources;
 
 
@@ -41,7 +41,7 @@ if (isset($_GET['delete'])) {
 
     $j = 0;
 
-    $sql = "DELETE FROM conn_competition ";
+    $sql = "DELETE FROM conn_team ";
 
     foreach ($multiple as $item_id) {
         $j++;
@@ -62,7 +62,7 @@ if (isset($_GET['delete'])) {
 
     $conn = null;
 
-    header("Location: adminKontrolaTakmicenja.php");
+    header("Location: adminKontrolaTimova.php");
 
 }
 
@@ -107,8 +107,8 @@ if (isset($_GET['delete'])) {
             <thead>
             <tr class="naslov">
                 <td>Kladionica</td>
-                <td>Mozzart takmičenje</td>
-                <td>Takmičenje</td>
+                <td>Mozzart tim</td>
+                <td>Tim</td>
                 <td>Obriši</td>
             </tr>
 
@@ -121,8 +121,8 @@ if (isset($_GET['delete'])) {
 
                     <tr class="row<?php echo($i++ & 1) ?>">
                         <td><?php echo $srSource['source_name'] ?></td>
-                        <td><?php echo $srSource['mozzart_competition'] ?></td>
-                        <td><?php echo $srSource['competition'] ?></td>
+                        <td><?php echo $srSource['mozzart_team_name'] ?></td>
+                        <td><?php echo $srSource['src_team_name'] ?></td>
                         <td>
                             <input type="checkbox" name="delete_selection[]" value="<?php echo $srSource['conn_id'] ?>">
                         </td>
