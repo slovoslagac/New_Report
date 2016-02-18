@@ -1,0 +1,860 @@
+1,1,"KonaÄan ishod","1",105
+2,2,"KonaÄan ishod","X",105
+3,3,"KonaÄan ishod","2",105
+4,44,"45 - 90","1-1",105
+5,45,"45 - 90","1-X",105
+6,46,"45 - 90","1-2",105
+7,47,"45 - 90","X-1",105
+8,48,"45 - 90","X-X",105
+9,49,"45 - 90","X-2",105
+10,50,"45 - 90","2-1",105
+11,51,"45 - 90","2-X",105
+12,52,"45 - 90","2-2",105
+13,53,"45 - 90","ne 1-1",105
+14,57,"45 - 90","ne 2-2",105
+15,4,"Dupla Å¡ansa","1X",105
+16,5,"Dupla Å¡ansa","12",105
+17,6,"Dupla Å¡ansa","X2",105
+18,401,"Dupla pobeda","11",105
+19,402,"Dupla pobeda","22",105
+20,294,"Gol - ne gol","1&GG",105
+21,295,"Gol - ne gol","2&GG",105
+22,70,"Golovi I poluvreme","1p1+",105
+23,71,"Golovi I poluvreme","1p2+",105
+24,72,"Golovi I poluvreme","1p3+",105
+25,73,"Golovi I poluvreme","1p0-1",105
+26,74,"Golovi I poluvreme","1p2-3",105
+27,75,"Golovi I poluvreme","1p0",105
+28,77,"Golovi I poluvreme","1p1-2",105
+29,82,"Golovi II poluvreme","2p 1+",105
+30,83,"Golovi II poluvreme","2p 2+",105
+31,84,"Golovi II poluvreme","2p 3+",105
+32,85,"Golovi II poluvreme","2p 0-1",105
+33,86,"Golovi II poluvreme","2p 2-3",105
+34,87,"Golovi II poluvreme","2p 0",105
+35,89,"Golovi II poluvreme","2p 1-2",105
+36,41,"I poluvreme","1",105
+37,42,"I poluvreme","X",105
+38,43,"I poluvreme","2",105
+39,100,"II poluvreme","1",105
+40,101,"II poluvreme","X",105
+41,102,"II poluvreme","2",105
+42,278,"Kombinacije","1&3+",105
+43,279,"Kombinacije","2&3+",105
+44,280,"Kombinacije","1&2+I",105
+45,281,"Kombinacije","2&2+I",105
+46,284,"Kombinacije","1&2-3",105
+47,285,"Kombinacije","2&2-3",105
+48,288,"Kombinacije","1&4+",105
+49,289,"Kombinacije","2&4+",105
+50,322,"Kombinacije dupla Å¡ansa","1X&2+",105
+51,323,"Kombinacije dupla Å¡ansa","1X&3+",105
+52,324,"Kombinacije dupla Å¡ansa","1X&4+",105
+53,326,"Kombinacije dupla Å¡ansa","1X&0-2",105
+54,327,"Kombinacije dupla Å¡ansa","1X&0-3",105
+55,328,"Kombinacije dupla Å¡ansa","1X&GG",105
+56,359,"Kombinacije dupla Å¡ansa","X2&2+",105
+57,360,"Kombinacije dupla Å¡ansa","X2&3+",105
+58,361,"Kombinacije dupla Å¡ansa","X2&4+",105
+59,363,"Kombinacije dupla Å¡ansa","X2&0-2",105
+60,364,"Kombinacije dupla Å¡ansa","X2&0-3",105
+61,365,"Kombinacije dupla Å¡ansa","X2&GG",105
+62,58,"Kombinacije dupla Å¡ansa poluvreme kraj","1X-1X",105
+63,59,"Kombinacije dupla Å¡ansa poluvreme kraj","1X-12",105
+64,60,"Kombinacije dupla Å¡ansa poluvreme kraj","1X-X2",105
+65,61,"Kombinacije dupla Å¡ansa poluvreme kraj","12-1X",105
+66,62,"Kombinacije dupla Å¡ansa poluvreme kraj","12-12",105
+67,63,"Kombinacije dupla Å¡ansa poluvreme kraj","12-X2",105
+68,64,"Kombinacije dupla Å¡ansa poluvreme kraj","X2-1X",105
+69,65,"Kombinacije dupla Å¡ansa poluvreme kraj","X2-12",105
+70,66,"Kombinacije dupla Å¡ansa poluvreme kraj","X2-X2",105
+71,282,"Kombinacije poluvreme kraj","1-1&3+",105
+72,283,"Kombinacije poluvreme kraj","1-1&2+I",105
+73,292,"Kombinacije poluvreme kraj","2-2&3+",105
+74,296,"Kombinacije poluvreme kraj","2-2&2+I",105
+75,316,"Kombinacije poluvreme kraj","1-1&2+",105
+76,317,"Kombinacije poluvreme kraj","1-1&2-3",105
+77,320,"Kombinacije poluvreme kraj","1-1&GG",105
+78,353,"Kombinacije poluvreme kraj","2-2&2+",105
+79,354,"Kombinacije poluvreme kraj","2-2&2-3",105
+80,357,"Kombinacije poluvreme kraj","2-2&GG",105
+81,385,"Kombinacije poluvreme kraj","1-1&4+",105
+82,386,"Kombinacije poluvreme kraj","2-2&4+",105
+83,95,"Pada viÅ¡e golova","2>",105
+84,96,"Pada viÅ¡e golova","1=2",105
+85,68,"Prvi daje gol","1",105
+86,69,"Prvi daje gol","2",105
+87,403,"Sansa","1 v pp1",105
+88,404,"Sansa","x v ppx",105
+89,405,"Sansa","2 v pp2",105
+90,406,"Sansa","1 v 3+",105
+91,408,"Sansa","2+pp V 2+dp",105
+92,409,"Sansa","3+pp V 3+dp",105
+93,410,"Sigurna pobeda","sp1",105
+94,411,"Sigurna pobeda","sp2",105
+95,103,"Tacan rezultat","0:0",105
+96,104,"Tacan rezultat","0:1",105
+97,105,"Tacan rezultat","0:2",105
+98,106,"Tacan rezultat","0:3",105
+99,108,"Tacan rezultat","1:0",105
+100,109,"Tacan rezultat","1:1",105
+101,110,"Tacan rezultat","1:2",105
+102,111,"Tacan rezultat","1:3",105
+103,113,"Tacan rezultat","2:0",105
+104,114,"Tacan rezultat","2:1",105
+105,115,"Tacan rezultat","2:2",105
+106,116,"Tacan rezultat","2:3",105
+107,118,"Tacan rezultat","3:0",105
+108,119,"Tacan rezultat","3:1",105
+109,120,"Tacan rezultat","3:2",105
+110,121,"Tacan rezultat","3:3",105
+111,387,"Tim 1 golovi drugo poluvreme","1+",105
+112,388,"Tim 1 golovi drugo poluvreme","2+",105
+113,389,"Tim 1 golovi drugo poluvreme","0",105
+114,390,"Tim 1 golovi drugo poluvreme","0-1",105
+115,392,"Tim 1 golovi drugo poluvreme","1-2",105
+116,393,"Tim 1 golovi drugo poluvreme","3+",105
+117,290,"Tim 1 golovi kombinacije","2+I&1+II",105
+118,291,"Ukupno golova kombinacije","1+I&2+II",105
+119,384,"Tim 1 golovi kombinacije","2+I&2+II",105
+120,211,"Tim 1 golovi prvo poluvreme","1+",105
+121,212,"Tim 1 golovi prvo poluvreme","2+",105
+122,213,"Tim 1 golovi prvo poluvreme","0",105
+123,214,"Tim 1 golovi prvo poluvreme","0-1",105
+124,216,"Tim 1 golovi prvo poluvreme","1-2",105
+125,217,"Tim 1 golovi prvo poluvreme","3+",105
+126,394,"Tim 2 golovi drugo poluvreme","1+",105
+127,395,"Tim 2 golovi drugo poluvreme","2+",105
+129,399,"Tim 2 golovi drugo poluvreme","1-2",105
+130,400,"Tim 2 golovi drugo poluvreme","3+",105
+131,218,"Tim 2 golovi prvo poluvreme","1+",105
+132,219,"Tim 2 golovi prvo poluvreme","2+",105
+133,220,"Tim 2 golovi prvo poluvreme","0",105
+134,221,"Tim 2 golovi prvo poluvreme","0-1",105
+135,223,"Tim 2 golovi prvo poluvreme","1-2",105
+136,224,"Tim 2 golovi prvo poluvreme","3+",105
+138,7,"Ukupno golova","0-1",105
+139,8,"Ukupno golova","0-2",105
+140,9,"Ukupno golova","2-3",105
+141,10,"Ukupno golova","3+",105
+142,11,"Ukupno golova","4+",105
+143,12,"Ukupno golova","4-6",105
+144,13,"Ukupno golova","5+",105
+145,14,"Ukupno golova","7+",105
+146,15,"Ukupno golova","2+",105
+147,16,"Ukupno golova","0-3",105
+148,17,"Ukupno golova","2-6",105
+149,20,"Ukupno golova","6+",105
+150,21,"Ukupno golova","2-4",105
+151,22,"Ukupno golova","3-4",105
+152,23,"Ukupno golova","1-3",105
+153,24,"Ukupno golova","2-5",105
+154,25,"Ukupno golova","3-5",105
+155,26,"Ukupno golova","1-2",105
+156,27,"Ukupno golova","4-5",105
+157,28,"Ukupno golova","0-4",105
+158,29,"Ukupno golova","1-4",105
+159,30,"Ukupno golova","3-6",105
+160,36,"Ukupno golova","1-5",105
+161,293,"Ukupno golova kombinacije","1+I&1+II",105
+162,305,"Ukupno golova kombinacije","2+I&4+",105
+163,127,"Winner","1",105
+164,128,"Winner","2",105
+165,1,"KonaÄan ishod","1",44
+166,2,"KonaÄan ishod","X",44
+167,3,"KonaÄan ishod","2",44
+168,4,"Dupla Å¡ansa","1",44
+169,5,"Dupla Å¡ansa","X",44
+170,6,"Dupla Å¡ansa","2",44
+171,7,"Ukupno golova","0-1",44
+172,8,"Ukupno golova","0-2",44
+173,9,"Ukupno golova","2-3",44
+174,10,"Ukupno golova","3+",44
+175,11,"Ukupno golova","4+",44
+176,12,"Ukupno golova","4-6",44
+177,13,"Ukupno golova","5+",44
+178,14,"Ukupno golova","7+",44
+179,15,"Ukupno golova","2+",44
+180,16,"Ukupno golova","0-3",44
+181,18,"Ukupno golova","2 gol",44
+182,19,"Ukupno golova","3 gol",44
+183,20,"Ukupno golova","6+",44
+184,21,"Ukupno golova","2-4",44
+185,22,"Ukupno golova","3-4",44
+186,23,"Ukupno golova","1-3",44
+187,24,"Ukupno golova","2-5",44
+188,25,"Ukupno golova","3-5",44
+189,41,"Prvo poluvreme","P1",44
+190,42,"Prvo poluvreme","PX",44
+191,43,"Prvo poluvreme","P2",44
+192,44,"45â€™ - 90â€™","1-1",44
+193,45,"45â€™ - 90â€™","1-X",44
+194,46,"45â€™ - 90â€™","1-2",44
+195,47,"45â€™ - 90â€™","X-1",44
+196,48,"45â€™ - 90â€™","X-X",44
+197,49,"45â€™ - 90â€™","X-2",44
+198,50,"45â€™ - 90â€™","2-1",44
+199,51,"45â€™ - 90â€™","2-X",44
+200,52,"45â€™ - 90â€™","2-2",44
+201,58,"Kombinacija dva tipa","P1X&amp;1X",44
+202,59,"Kombinacija dva tipa","P1X&amp;12",44
+203,60,"Kombinacija dva tipa","P1X&amp;X2",44
+204,61,"Kombinacija dva tipa","P12&amp;1X",44
+205,62,"Kombinacija dva tipa","P12&amp;12",44
+206,63,"Kombinacija dva tipa","P12&amp;X2",44
+207,64,"Kombinacija dva tipa","PX2&amp;1X",44
+208,65,"Kombinacija dva tipa","PX2&amp;12",44
+209,66,"Kombinacija dva tipa","PX2&amp;X2",44
+210,70,"Golovi prvo poluvreme","1+",44
+211,71,"Golovi prvo poluvreme","2+",44
+212,72,"Golovi prvo poluvreme","3+",44
+213,77,"Golovi prvo poluvreme","1-2",44
+214,78,"Golovi prvo poluvreme","1 gol",44
+215,79,"Golovi prvo poluvreme","2 gol",44
+216,82,"Golovi drugo poluvreme","1+",44
+217,83,"Golovi drugo poluvreme","2+",44
+218,84,"Golovi drugo poluvreme","3+",44
+219,89,"Golovi drugo poluvreme","1-2",44
+220,90,"Golovi drugo poluvreme","1 gol",44
+221,91,"Golovi drugo poluvreme","2 gol",44
+222,94,"Pada viÅ¡e golova","I>II",44
+223,96,"Pada viÅ¡e golova","I=II",44
+224,95,"Pada viÅ¡e golova","I<II",44
+225,103,"TaÄan rezultat","0:0",44
+226,104,"TaÄan rezultat","0:1",44
+227,105,"TaÄan rezultat","0:2",44
+228,106,"TaÄan rezultat","0:3",44
+229,107,"TaÄan rezultat","0:4",44
+230,108,"TaÄan rezultat","1:0",44
+231,109,"TaÄan rezultat","1:1",44
+232,110,"TaÄan rezultat","1:2",44
+233,111,"TaÄan rezultat","1:3",44
+234,112,"TaÄan rezultat","1:4",44
+235,113,"TaÄan rezultat","2:0",44
+236,114,"TaÄan rezultat","2:1",44
+237,115,"TaÄan rezultat","2:2",44
+238,116,"TaÄan rezultat","2:3",44
+239,117,"TaÄan rezultat","2:4",44
+240,118,"TaÄan rezultat","3:0",44
+241,119,"TaÄan rezultat","3:1",44
+242,120,"TaÄan rezultat","3:2",44
+243,121,"TaÄan rezultat","3:3",44
+244,123,"TaÄan rezultat","4:0",44
+245,124,"TaÄan rezultat","4:1",44
+246,125,"TaÄan rezultat","4:2",44
+247,211,"DomaÄ‡in gol. pp","DI 1+",44
+248,212,"DomaÄ‡in gol. pp","DI 2+",44
+249,218,"Gost golovi pp","GI 1+",44
+250,219,"Gost golovi pp","GI 2+",44
+251,225,"Oba tima daju gol","GG",44
+252,226,"Oba tima daju gol","NG",44
+253,227,"Kombinacija dva tipa","GG&3+",44
+254,228,"Oba tima daju gol","PPGG",44
+255,229,"Oba tima daju gol","DPGG",44
+256,231,"Kombinacija dva tipa","D2+&G2+",44
+257,236,"DomaÄ‡in uk.golova","D 1+",44
+258,237,"DomaÄ‡in uk.golova","D 2+",44
+259,240,"Gol. u oba pol.","D1/1",44
+260,243,"DomaÄ‡in uk.golova","D 3+",44
+261,253,"Gost uk. golova","G 1+",44
+262,254,"Gost uk. golova","G 2+",44
+263,257,"Gol. u oba pol.","G1/1",44
+264,260,"Gost uk. golova","G3+",44
+265,278,"Kombinacija dva tipa","1&3+",44
+266,279,"Kombinacija dva tipa","2&3+",44
+267,280,"Kombinacija dva tipa","1&2+PP",44
+268,281,"Kombinacija dva tipa","2&2+PP",44
+269,282,"Kombinacija dva tipa","1-1&3+",44
+270,284,"Kombinacija dva tipa","1&2-3",44
+271,285,"Kombinacija dva tipa","2&2-3",44
+272,288,"Kombinacija dva tipa","1&4+",44
+273,289,"Kombinacija dva tipa","2&4+",44
+274,291,"Golovi u oba poluvremena","1/2",44
+275,292,"Kombinacija dva tipa","2-2&3+",44
+276,293,"Golovi u oba poluvremena","1/1",44
+277,305,"Kombinacija dva tipa","I2+&4+",44
+278,322,"Kombinacija dva tipa","1X&2+",44
+279,323,"Kombinacija dva tipa","1X&3+",44
+280,359,"Kombinacija dva tipa","X2&2+",44
+281,360,"Kombinacija dva tipa","X2&3+",44
+282,387,"DomaÄ‡in gol. dp","DII 1+",44
+283,388,"DomaÄ‡in gol. dp","DII 2+",44
+284,394,"Gost golovi dp","GII 1+",44
+285,395,"Gost golovi dp","GII 2+",44
+286,401,"Dupla pobeda","DW1",44
+287,402,"Dupla pobeda","DW2",44
+288,403,"Prvo poluvreme ili kraj","1",44
+289,404,"Prvo poluvreme ili kraj","X",44
+290,405,"Prvo poluvreme ili kraj","2",44
+291,406,"Kombinacija dva tipa","1V3+",44
+292,407,"Kombinacija dva tipa","GG1VGG2",44
+293,408,"Kombinacija dva tipa","I2+VII2+",44
+294,104,"","0:1",106
+295,105,"","0:2",106
+296,106,"","0:3",106
+297,107,"","0:4",106
+298,108,"","1:0",106
+299,109,"","1:1",106
+300,110,"","1:2",106
+301,111,"","1:3",106
+302,112,"","1:4",106
+303,113,"","2:0",106
+304,114,"","2:1",106
+305,115,"","2:2",106
+306,116,"","2:3",106
+307,117,"","2:4",106
+308,118,"","3:0",106
+309,119,"","3:1",106
+310,120,"","3:2",106
+311,121,"","3:3",106
+312,122,"","3:4",106
+313,123,"","4:0",106
+314,124,"","4:1",106
+315,125,"","4:2",106
+316,126,"","4:3",106
+317,1,"","1",106
+318,3,"","2",106
+319,44,"","1/1",106
+320,50,"","2/1",106
+321,46,"","1/2",106
+322,52,"","2/2",106
+323,62,"","12/12",106
+324,127,"","1 DNB",106
+325,265,"","1 Gl AN",106
+326,263,"","1 Gl AY",106
+327,248,"","1 Gl HN",106
+328,246,"","1 Gl HY",106
+329,37,"","1 Gl N",106
+330,33,"","1 Gl Y",106
+331,45,"","1/X",106
+332,293,"","1+1+",106
+333,291,"","1+2+",106
+334,133,"","1-1st Card",106
+335,313,"","12-",106
+336,415,"","12 DC 2H",106
+337,61,"","12/1X",106
+338,63,"","12/X2",106
+339,5,"","12DC",106
+340,418,"","12DC 1H",106
+341,26,"","1-2Gls",106
+342,77,"","1-2Gls 1H",106
+343,89,"","1-2Gls 2H",106
+344,267,"","1-2Gls A",106
+345,250,"","1-2Gls H",106
+346,100,"","1-2nd Half",106
+347,278,"","13+",106
+348,23,"","1-3Gls",106
+349,268,"","1-3Gls A",106
+350,251,"","1-3Gls H",106
+351,29,"","1-4Gls",106
+352,36,"","1-5Gls",106
+353,80,"","1G 1H N",106
+354,78,"","1G 1H Y",106
+355,92,"","1G 2H N",106
+356,90,"","1G 2H Y",106
+357,294,"","1GG",106
+358,412,"","1H (0:1)",106
+359,94,"","1Ht +Goals",106
+360,406,"","1or3+",106
+361,41,"","1-Prvo Poluvreme",106
+362,414,"","1X DC 2H",106
+363,59,"","1X/12",106
+364,58,"","1X/1X",106
+365,60,"","1X/X2",106
+366,326,"","1X2-",106
+367,322,"","1X2+",106
+368,327,"","1X3-",106
+369,323,"","1X3+",106
+370,324,"","1X4+",106
+371,4,"","1XDC",106
+372,417,"","1XDC 1H",106
+373,328,"","1XGG",106
+374,128,"","2 DNB",106
+375,266,"","2 Gls AN",106
+376,264,"","2 Gls AY",106
+377,249,"","2 Gls HN",106
+378,247,"","2 Gls HY",106
+379,38,"","2 Gls N",106
+380,18,"","2 Gls Y",106
+381,51,"","2/X",106
+382,290,"","2+1+",106
+383,384,"","2+2+",106
+384,134,"","2-1st Card",106
+385,350,"","22-",106
+386,102,"","2-2nd Half",106
+387,279,"","23+",106
+388,9,"","2-3Gls",106
+389,74,"","2-3Gls 1H",106
+390,86,"","2-3Gls 2H",106
+391,269,"","2-3Gls A",106
+392,252,"","2-3Gls H",106
+393,21,"","2-4Gls",106
+394,24,"","2-5Gls",106
+395,17,"","2-6Gls",106
+396,81,"","2G 1H N",106
+397,79,"","2G 1H Y",106
+398,93,"","2G 2H N",106
+399,91,"","2G 2H Y",106
+400,295,"","2GG",106
+401,413,"","2H (1:0)",106
+402,95,"","2Ht +Goals",106
+403,43,"","2-Prvo Poluvreme",106
+404,39,"","3 Gls N",106
+405,19,"","3 Gls Y",106
+406,22,"","3-4Gls",106
+407,25,"","3-5Gls",106
+408,30,"","3-6Gls",106
+409,40,"","4 Gls N",106
+410,34,"","4 Gls Y",106
+411,27,"","4-5Gls",106
+412,12,"","4-6Gls",106
+413,35,"","5 Gls Y",106
+414,14,"","7+Gls",106
+415,218,"","A O 0.5 1H",106
+416,394,"","A O 0.5 2H",106
+417,219,"","A O 1.5 1H",106
+418,395,"","A O 1.5 2H",106
+419,253,"","A Ov 0.5",106
+420,254,"","A Ov 1.5",106
+421,260,"","A Ov 2.5",106
+422,220,"","A U 0.5 1H",106
+423,396,"","A U 0.5 2H",106
+424,397,"","A U 1.5 2H",106
+425,255,"","A Un 0.5",106
+426,261,"","A Un 1.5",106
+427,225,"","GG",106
+428,228,"","GG 1HT",106
+429,229,"","GG 2HT",106
+430,230,"","GGGG Yes",106
+431,211,"","H O 0.5 1H",106
+432,387,"","H O 0.5 2H",106
+433,212,"","H O 1.5 1H",106
+434,388,"","H O 1.5 2H",106
+435,236,"","H Ov 0.5",106
+436,237,"","H Ov 1.5",106
+437,243,"","H Ov 2.5",106
+438,213,"","H U 0.5 1H",106
+439,389,"","H U 0.5 2H",106
+440,214,"","H U 1.5 1H",106
+441,390,"","H U 1.5 2H",106
+442,238,"","H Un 0.5",106
+443,244,"","H Un 1.5",106
+444,245,"","H Un 2.5",106
+445,403,"","HT1orFT1",106
+446,405,"","HT2orFT2",106
+447,404,"","HTXorFTX",106
+448,32,"","Nepar",106
+449,226,"","NG",106
+450,70,"","Ov. 0.5 1H",106
+451,82,"","Ov. 0.5 2H",106
+452,15,"","Ov. 1.5",106
+453,71,"","Ov. 1.5 1H",106
+454,83,"","Ov. 1.5 2H",106
+455,10,"","Ov. 2.5",106
+456,72,"","Ov. 2.5 1H",106
+457,84,"","Ov. 2.5 2H",106
+458,11,"","Ov. 3.5",106
+459,13,"","Ov. 4.5",106
+460,20,"","Ov. 5.5",106
+461,31,"","Par",106
+462,75,"","Un. 0.5 1H",106
+463,87,"","Un. 0.5 2H",106
+464,7,"","Un. 1.5",106
+465,73,"","Un. 1.5 1H",106
+466,85,"","Un. 1.5 2H",106
+467,8,"","Un. 2.5",106
+468,76,"","Un. 2.5 1H",106
+469,88,"","Un. 2.5 2H",106
+470,16,"","Un. 3.5",106
+471,28,"","Un. 4.5",106
+472,2,"","X",106
+473,47,"","X/1",106
+474,49,"","X/2",106
+475,48,"","X/X",106
+476,382,"","X2-",106
+477,416,"","X2 DC 2H",106
+478,65,"","X2/12",106
+479,64,"","X2/1X",106
+480,66,"","X2/X2",106
+481,363,"","X22-",106
+482,359,"","X22+",106
+483,364,"","X23-",106
+484,360,"","X23+",106
+485,361,"","X24+",106
+486,6,"","X2DC",106
+487,419,"","X2DC 1H",106
+488,365,"","X2GG",106
+489,101,"","X-2nd Half",106
+490,96,"","XHt +Goals",106
+491,42,"","X-Prvo Poluvreme",106
+492,1,"","K1 kv pr",101
+493,2,"","KX kv",101
+494,3,"","K2 kv po",101
+495,4,"","D1X kv pr",101
+496,5,"","D12 kv",101
+497,6,"","DX2 kv po",101
+498,7,"","G0-1 kv pr",101
+499,8,"","G0-2 kv",101
+500,9,"","G2-3 kv",101
+501,10,"","G3pls kv",101
+502,11,"","G4pls kv",101
+503,12,"","G4-6 kv pr",101
+504,13,"","G5pls kv",101
+505,14,"","G7pls kv po",101
+506,15,"","G2pls kv",101
+507,16,"","G0-3 kv",101
+508,17,"","G2-6 kv",101
+509,18,"","G2 kv",101
+510,19,"","G3 kv",101
+511,20,"","G6pls kv",101
+512,21,"","G2-4 kv",101
+513,22,"","G3-4 kv",101
+514,23,"","G1-3 kv",101
+515,24,"","G2-5 kv",101
+516,25,"","G3-5 kv",101
+517,26,"","G1-2 kv",101
+518,27,"","G4-5 kv po",101
+519,28,"","G0-4 kv",101
+520,29,"","G1-4 kv",101
+521,30,"","G3-6 kv",101
+522,33,"","G1 kv",101
+523,34,"","G4 kv",101
+524,35,"","G5 kv",101
+525,36,"","G1-5 kv",101
+526,41,"","P1 kv pr",101
+527,42,"","PX kv",101
+528,43,"","P2 kv po",101
+529,44,"","1-1 kv pr",101
+530,45,"","1-X kv",101
+531,46,"","1-2 kv",101
+532,47,"","X-1 kv",101
+533,48,"","X-X kv",101
+534,49,"","X-2 kv",101
+535,50,"","2-1 kv",101
+536,51,"","2-X kv",101
+537,52,"","2-2 kv po",101
+538,58,"","P1XzniznD1X kv pr",101
+539,59,"","P1XzniznD12 kv",101
+540,60,"","P1XzniznDX2 kv",101
+541,61,"","PX2zniznD1X kv",101
+542,62,"","P12zniznD12 kv",101
+543,63,"","P12zniznDX2 kv",101
+544,64,"","PX2zniznD1X kv",101
+545,65,"","PX2zniznD12 kv",101
+546,66,"","PX2zniznDX2 kv po",101
+547,68,"","FG1 kv pr",101
+548,69,"","FG2 kv po",101
+549,70,"","I1pls kv",101
+550,71,"","I2pls kv",101
+551,72,"","I3pls kv",101
+552,73,"","I01 kv",101
+553,74,"","I23 kv",101
+554,75,"","I0 kv pr",101
+555,76,"","I02 kv",101
+556,77,"","I12 kv",101
+557,78,"","I1 kv",101
+558,79,"","I2 kv",101
+559,82,"","II1pls kv",101
+560,83,"","II2pls kv",101
+561,84,"","II3pls kv",101
+562,85,"","II01 kv",101
+563,86,"","II23 kv",101
+564,87,"","II0 kv pr",101
+565,88,"","II02 kv",101
+566,89,"","II12 kv",101
+567,90,"","II1 kv",101
+568,91,"","II2 kv pr",101
+569,94,"","IvcvII kv pr",101
+570,95,"","ImnjII kv po",101
+571,96,"","IjdjII kv",101
+572,100,"","DP1 kv pr",101
+573,101,"","DPX kv",101
+574,102,"","DP2 kv po",101
+575,103,"","T0dvt0 kv",101
+576,104,"","T0dvt1 kv",101
+577,105,"","T0dvt2 kv",101
+578,106,"","T0dvt3 kv",101
+579,107,"","T0dvt4 kv",101
+580,108,"","T1dvt0 kv pr",101
+581,109,"","T1dvt1 kv",101
+582,110,"","T1dvt2 kv",101
+583,111,"","T1dvt3 kv",101
+584,112,"","T1dvt4 kv",101
+585,113,"","T2dvt0 kv",101
+586,114,"","T2dvt1 kv",101
+587,115,"","T2dvt2 kv",101
+588,116,"","T2dvt3 kv",101
+589,117,"","T2dvt4 kv",101
+590,118,"","T3dvt0 kv",101
+591,119,"","T3dvt1 kv",101
+592,120,"","T3dvt2 kv",101
+593,121,"","T3dvt3 kv",101
+594,122,"","T3dvt4 kv po",101
+595,123,"","T4dvt0 kv po",101
+596,124,"","T4dvt1 kv pr",101
+597,125,"","T4dvt2 kv",101
+598,126,"","T4dvt3 kv",101
+599,211,"","GHP1pls kv",101
+600,212,"","GHP2pls kv",101
+601,213,"","GHP0 kv pr",101
+602,214,"","GHP01 kv",101
+603,216,"","GHP12 kv",101
+604,217,"","GHP3pls kv po",101
+605,218,"","GAP1pls kv po",101
+606,219,"","GAP2pls kv",101
+607,220,"","GAP0 kv pr",101
+608,221,"","GAP01 kv",101
+609,223,"","GAP12 kv pr",101
+610,224,"","GAP3pls kv po",101
+611,225,"","GG kv pr",101
+612,226,"","GN kv",101
+613,227,"","GGznizn3pls kv pr",101
+614,228,"","GG1 kv",101
+615,229,"","GG2 kv",101
+616,230,"","GG1zniznGG2 kv po",101
+618,233,"","GGznizn4pls kv",101
+619,234,"","GN1 kv",101
+620,235,"","GN2 kv",101
+621,236,"","HS1 kv",101
+622,237,"","GH2pls kv",101
+623,238,"","HS2 kv pr",101
+624,242,"","GGznizn1T2pls kv",101
+625,243,"","GH3pls kv",101
+626,244,"","GH01 kv",101
+627,245,"","1TM02 kv",101
+628,250,"","1TM12 kv",101
+629,251,"","1TM13 kv",101
+630,252,"","GH23 kv",101
+631,253,"","AS1 kv",101
+632,254,"","GA2pls kv",101
+633,255,"","AS2 kv pr",101
+634,259,"","GGznizn2T2pls kv po",101
+635,260,"","GA3pls kv",101
+636,261,"","GA01 kv",101
+637,262,"","2TM02 kv",101
+638,267,"","2TM12 kv",101
+639,268,"","2TM13 kv",101
+640,269,"","GA23 kv",101
+641,278,"","1znizn3pls kv",101
+642,279,"","2znizn3pls kv",101
+643,284,"","1znizn2-3 kv",101
+644,285,"","2znizn2-3 kv",101
+645,286,"","1znizn1T2pls kv",101
+646,287,"","2znizn2T2pls kv",101
+647,288,"","1znizn4pls kv po",101
+648,289,"","2znizn4pls kv",101
+649,292,"","2-2znizn3pls kv",101
+650,295,"","2zniznGG kv",101
+651,296,"","2-2zniznI2pls kv",101
+652,313,"","1zniznG0-2 kv pr",101
+653,314,"","1zniznG2-4 kv",101
+654,315,"","1zniznG3-5 kv",101
+655,316,"","1-1znizn2pls kv",101
+656,317,"","1-1znizn2-3 kv",101
+657,318,"","1-1zniznG24 kv",101
+658,319,"","1-1zniznG35 kv",101
+659,320,"","1-1zniznGG kv",101
+660,322,"","D1Xznizn2pls kv",101
+661,323,"","D1Xznizn3pls kv",101
+662,324,"","D1Xznizn4pls kv",101
+663,326,"","D1XzniznG0-2 kv pr",101
+664,327,"","D1XzniznG0-3 kv",101
+665,328,"","D1XzniznGG kv",101
+666,335,"","X-1zniznG2pls kv",101
+667,336,"","X-1zniznG3pls kv",101
+668,337,"","X-1zniznG4pls kv",101
+669,338,"","X-1zniznG02 kv",101
+670,339,"","X-1zniznG23 kv po",101
+671,340,"","X-1zniznG24 kv pr",101
+672,341,"","X-1zniznG35 kv",101
+673,342,"","X-1zniznGG kv",101
+674,353,"","2-2znizn2pls kv",101
+675,354,"","2-2znizn2-3 kv",101
+676,355,"","2-2zniznG24 kv",101
+677,356,"","2-2zniznG35 kv",101
+678,357,"","2-2zniznGG kv po",101
+679,359,"","DX2znizn2pls kv",101
+680,360,"","DX2znizn3pls kv",101
+681,361,"","DX2znizn4pls kv",101
+682,363,"","DX2zniznG0-2 kv",101
+683,364,"","DX2zniznG0-3 kv",101
+684,365,"","DX2zniznGG kv po",101
+687,372,"","X-2zniznG2pls kv",101
+688,373,"","X-2zniznG3pls kv",101
+689,374,"","X-2zniznG4pls kv",101
+690,375,"","X-2zniznG02 kv",101
+691,376,"","X-2zniznG23 kv",101
+692,377,"","X-2zniznG24 kv",101
+693,378,"","X-2zniznG35 kv",101
+694,379,"","X-2zniznGG kv",101
+695,387,"","GHD1pls kv",101
+696,388,"","GHD2pls kv",101
+697,389,"","GHD0 kv pr",101
+698,390,"","GHD01 kv",101
+699,392,"","GHD12 kv",101
+700,393,"","GHD3pls kv po",101
+701,394,"","GAD1pls kv",101
+702,395,"","GAD2pls kv",101
+703,396,"","GAD0 kv pr",101
+704,397,"","GAD01 kv",101
+705,399,"","GAD12 kv",101
+706,400,"","GAD3pls kv po",101
+707,403,"","AT1 kv pr",101
+708,404,"","ATX kv",101
+709,405,"","AT2 kv",101
+710,406,"","1v3pls kv",101
+711,407,"","GG1vGG2 kv",101
+712,408,"","I2plsvII2pls kv",101
+713,414,"","DP1 kv pr",101
+714,415,"","DPX kv",101
+715,416,"","DP2 kv po",101
+756,240,"","DS1 kv",101
+757,257,"","DS2 kv",101
+758,272,"","1zniznFG1 kv",101
+759,273,"","XzniznFG1 kv",101
+760,274,"","2zniznFG1 kv po",101
+761,275,"","1zniznFG2 kv",101
+762,276,"","XzniznFG2 kv",101
+763,277,"","2zniznFG2 kv",101
+764,280,"","1zniznI2pls kv",101
+765,281,"","2zniznI2pls kv",101
+766,282,"","1-1znizn3pls kv",101
+767,283,"","1-1zniznI2pls kv",101
+768,290,"","I2plszniznII1pls kv",101
+769,291,"","I1plszniznII2pls kv",101
+770,293,"","G-G kv",101
+771,294,"","1zniznGG kv",101
+773,306,"","I2plszniznII3pls kv",101
+774,307,"","GG1zniznGN2 kv",101
+775,308,"","GN1zniznGG2 kv",101
+776,309,"","GN1zniznGN2 kv",101
+777,312,"","1zniznI1pls kv pr",101
+778,325,"","D1XzniznI2pls kv",101
+779,346,"","X-XzniznG2pls kv",101
+780,349,"","2zniznI1pls kv",101
+781,351,"","2zniznG2-4 kv",101
+782,352,"","2zniznG3-5 kv",101
+783,381,"","Xznizn2pls kv",101
+784,384,"","2pls2pls kv",101
+785,385,"","1-1znizn4pls kv",101
+786,386,"","2-2znizn4pls kv",101
+787,412,"","2HW1 kv pr",101
+788,413,"","2HW2 kv po",101
+790,305,"","I2plszniznG4pls kv po",101
+791,401,"","DW1 kv pr",101
+792,402,"","DW2 kv po",101
+793,410,"","SW1 kv pr",101
+794,411,"","SW2 kv po",101
+795,67,"","T0dvt0 kv",101
+796,362,"","DX2zniznI2pls kv",101
+797,401,"","Home W2H-Y",106
+798,402,"","Away W2H-Y",106
+799,410,"","HW0 - Yes",106
+800,411,"","AW0 - Yes",106
+801,225,"Gol - ne gol","GG",105
+802,226,"Gol - ne gol","NG",105
+803,227,"Gol - ne gol","GG&3+",105
+804,228,"Gol - ne gol","1GG",105
+805,229,"Gol - ne gol","2GG",105
+806,230,"Gol - ne gol","1GG&2GG",105
+807,231,"Gol - ne gol","GG2+",105
+808,232,"Gol - ne gol","NE GG3+",105
+809,233,"Gol - ne gol","GG&4+",105
+810,234,"Gol - ne gol","NE 1GG",105
+811,235,"Gol - ne gol","NE 2GG",105
+812,310,"Kombinacije","NE 1 & 2+",105
+813,311,"Kombinacije","NE 1 & 3+",105
+814,312,"Kombinacije","1 & 1+pp",105
+815,313,"Kombinacije","1 & 0-2",105
+816,314,"Kombinacije","1 & 2-4",105
+817,315,"Kombinacije","1 & 3-5",105
+818,329,"Kombinacije","1 & VG1",105
+819,330,"Kombinacije","1 & VGX",105
+820,331,"Kombinacije","1 & VG2",105
+821,347,"Kombinacije","NE 2 & 2+",105
+822,348,"Kombinacije","NE 2 & 3+",105
+823,349,"Kombinacije","2 & 1+pp",105
+824,350,"Kombinacije","2 & 0-2",105
+825,351,"Kombinacije","2 & 2-4",105
+826,352,"Kombinacije","2 & 3-5",105
+827,366,"Kombinacije","2 & VG1",105
+828,367,"Kombinacije","2 & VGX",105
+829,368,"Kombinacije","2 & VG2",105
+830,318,"Kombinacije poluvreme kraj","1-1 & 2-4",105
+831,319,"Kombinacije poluvreme kraj","1-1 & 3-5",105
+832,335,"Kombinacije poluvreme kraj","X-1 & 2+",105
+833,336,"Kombinacije poluvreme kraj","X-1 & 3+",105
+834,337,"Kombinacije poluvreme kraj","X-1 & 4+",105
+835,338,"Kombinacije poluvreme kraj","X-1 & 0-2",105
+836,340,"Kombinacije poluvreme kraj","X-1 & 2-4",105
+837,341,"Kombinacije poluvreme kraj","X-1 & 3-5",105
+838,342,"Kombinacije poluvreme kraj","X-1 & GG",105
+839,355,"Kombinacije poluvreme kraj","2-2 & 2-4",105
+840,356,"Kombinacije poluvreme kraj","2-2 & 3-5",105
+841,372,"Kombinacije poluvreme kraj","X-2 & 2+",105
+842,373,"Kombinacije poluvreme kraj","X-2 & 3+",105
+843,374,"Kombinacije poluvreme kraj","X-2 & 4+",105
+844,375,"Kombinacije poluvreme kraj","X-2 & 0-2",105
+845,377,"Kombinacije poluvreme kraj","X-2 & 2-4",105
+846,378,"Kombinacije poluvreme kraj","X-2 & 3-5",105
+847,379,"Kombinacije poluvreme kraj","X-2 & GG",105
+848,94,"Pada viÅ¡e golova","1>",105
+849,240,"Tim 1 golovi kombinacije","12gg",105
+850,241,"Tim 1 golovi kombinacije","12ng",105
+851,242,"Tim 1 golovi kombinacije","2+&gg",105
+852,236,"Tim 1 ukupno golova","1+",105
+853,237,"Tim 1 ukupno golova","2+",105
+854,238,"Tim 1 ukupno golova","0",105
+855,243,"Tim 1 ukupno golova","3+",105
+856,244,"Tim 1 ukupno golova","0-1",105
+857,250,"Tim 1 ukupno golova","1-2",105
+858,251,"Tim 1 ukupno golova","1-3",105
+859,252,"Tim 1 ukupno golova","2-3",105
+860,257,"Tim 2 golovi kombinacije","12gg",105
+861,258,"Tim 2 golovi kombinacije","12ng",105
+862,259,"Tim 2 golovi kombinacije","2+&gg",105
+863,253,"Tim 2 ukupno golova","1+",105
+864,254,"Tim 2 ukupno golova","2+",105
+865,255,"Tim 2 ukupno golova","0",105
+866,260,"Tim 2 ukupno golova","3+",105
+867,261,"Tim 2 ukupno golova","0-1",105
+868,267,"Tim 2 ukupno golova","1-2",105
+869,268,"Tim 2 ukupno golova","1-3",105
+870,269,"Tim 2 ukupno golova","2-3",105
+871,396,"Tim 2 golovi drugo poluvreme","0",105
+872,397,"Tim 2 golovi drugo poluvreme","0-1",105
+873,412,"Hendikep kraj (-1.5)&nbsp;(-1.50)","1",105
+874,239,"Prvi daje gol","1",105
+875,256,"Prvi daje gol","2",105
+876,239,,"FG1 kv pr",101
+877,256,,"FG2 kv po",101
+878,239,,"1-1G",106
+879,256,,"2-1G",106
+880,221,,"A U 1.5 1H",106
+881,227,,"GG3+",106
+882,283,,"1Ht1Ft 2+Ht",106
+883,286,,"12+",106
+884,287,,"22+",106
+885,292,,"2Ht2Ft 3+",106
+886,281,,"22+ 1H",106
+887,285,,"22-3Gls",106
+888,289,,"24+",106
+889,296,,"2Ht2Ft 2+Ht",106
+890,286,"Kombinacije","1&t12+",105
+891,287,"Kombinacije","2&t22+",105
+892,307,,"GGNG Yes",106
+893,308,,"NGGG Yes",106
+894,309,,"NGNG Yes",106
+895,322,,"1X2+",106
+896,286,"Kombinacija dva tipa","1&D2+",44
+897,287,"Kombinacija dva tipa","2&G2+",44
+898,381,,"XGG",106
+899,385,,"1ht1ft 4+",106
+900,386,,"2ht2ft 4+",106
+901,68,,"1-1G",106
+902,67,,"X-1G",106
+903,69,,"2-1G",106
+904,420,,"1 1G-1H",106
+905,421,,"X 1G-1H",106
+906,422,,"2 1G-1H",106
+907,103,,"0:0",106

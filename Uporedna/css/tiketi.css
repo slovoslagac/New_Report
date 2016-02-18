@@ -163,10 +163,10 @@ table {
 	height: 20px;
 	margin: 10px 30% 10px 30%;
 	background-color: #0E1C42;
-	font-size: 14px;
+	font-size: 15px;
 
 	padding-left: 5px;
-	color: #ccc;
+	color: white;
 	font-style: italic;
 
 }
@@ -181,9 +181,6 @@ table {
 	color: #ccc;
 
 }
-
-
-
 
 .table_matches td {
 	border-spacing: 0;

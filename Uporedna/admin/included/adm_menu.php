@@ -42,12 +42,12 @@ $btn7 = 'adminKontrolaTimova.php';
                 </a>
             </li>
             <li>
-                <a href="<?php echo $btn6 ?>" accesskey="5">
+                <a href="<?php echo $btn6 ?>" accesskey="6">
                     <button>Kontrola spojenih mečeva</button>
                 </a>
             </li>
             <li>
-                <a href="<?php echo $btn7 ?>" accesskey="5">
+                <a href="<?php echo $btn7 ?>" accesskey="7">
                     <button>Kontrola spojenih timova</button>
                 </a>
             </li>
