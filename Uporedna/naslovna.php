@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
-<?php 
+<?php
+$css = 'css/naslovna.css';
 $naslov_short="Uporedna lista";
 $naslov="Naslovna strana uporedne liste";
 $numBookmakers='9';
