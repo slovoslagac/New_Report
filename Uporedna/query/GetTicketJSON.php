@@ -11,6 +11,7 @@ if ($sifraTiketa != "") {
     $url = "https://api.mozzartbet.com/MozzartWS/external.json/ticket-status?ticketId=$sifraTiketa&languageId=1";
     $json = file_get_contents($url);
     $json_data = json_decode($json);
+
     $ticket_data = array();
     $ticket_data = $json_data[0];
     $tmp_games = array ();

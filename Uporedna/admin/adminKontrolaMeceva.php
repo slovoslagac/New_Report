@@ -73,7 +73,7 @@ if (isset($_GET['delete'])) {
     <?php
     include(join(DIRECTORY_SEPARATOR, array('included', 'adm_menu.php'))); ?>
     <div id="function_data">
-        <table id="exportTable">
+        <table id="exportTable"  class="size80">
             <tr class="naslov">
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
                     <td>
@@ -96,14 +96,14 @@ if (isset($_GET['delete'])) {
                 </form>
             </tr>
         </table>
-        <table id="exportTable">
+        <table id="exportTable"  class="size80">
 
             <colgroup>
                 <col width="10%">
-                <col width="20%">
+                <col width="25%">
                 <col width="30%">
                 <col width="30%">
-                <col width="10%">
+                <col width="5%">
             </colgroup>
             <thead>
             <tr class="naslov">

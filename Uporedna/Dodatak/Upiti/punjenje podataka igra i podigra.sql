@@ -1,5 +1,5 @@
-DROP PROCEDURE IF EXISTS Uporedna_new.import_data;
-CREATE PROCEDURE Uporedna_new.`import_data`()
+DROP PROCEDURE IF EXISTS Uporedna_new.import_data_game;
+CREATE PROCEDURE Uporedna_new.`import_data_game`()
 begin
 insert into src_competition (competition_id, name, source_id)
 select distinct liga_id, liga, source
@@ -36,6 +36,7 @@ insert into src_odds ( src_match_id, src_subgame_id, value, handicap, import_id)
 select distinct sm.id, sg.id, uo.odd_value, uo.handicap, (select max(id) from import where source_id=(select max(source) from ulaz_odds))
 from ulaz_odds uo, src_match sm, src_subgames sg
 where uo.utk_id = sm.match_id
+and uo.game= sg.game
 and uo.subgame = sg.subgame
 and uo.source = sg.source_id
 ON DUPLICATE KEY UPDATE src_match_id=src_match_id;

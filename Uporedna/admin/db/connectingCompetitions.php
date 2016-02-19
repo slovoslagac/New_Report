@@ -13,8 +13,8 @@ inner join
   import_source as s
 on
   c.source_id=s.id
-where c.id not in (select src_competition_id from conn_competition)
-and s.id = '.$source_id.'
+where s.id = '.$source_id.'
+and c.id not in (select src_competition_id from conn_competition)
 order by src_name, cmp_name asc
 
 ');
@@ -23,7 +23,7 @@ $NonMatchCmp -> execute();
 $resultNMCMP = $NonMatchCmp -> fetchAll ( PDO::FETCH_ASSOC);
 
 
-
+//and c.id not in (select src_competition_id from conn_competition)
 $conn = null;
 
 

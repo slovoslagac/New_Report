@@ -45,7 +45,7 @@ $Data3 = $resultSources;
     $btn5 = 'adminKontrolaTakmicenja.php';
     include(join(DIRECTORY_SEPARATOR, array('included', 'adm_menu.php'))); ?>
     <div id="function_data">
-        <table id="exportTable">
+        <table id="exportTable" class="size60">
             <thead>
             <tr class="naslov">
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
