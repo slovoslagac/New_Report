@@ -65,6 +65,7 @@ $SourceOdds;
 FROM src_odds so, conn_match cm, init_current_offer co, import i, conn_subgame cs, init_subgame ins
 WHERE so.src_match_id = cm.src_match_id
 AND cm.init_match_id = co.event_id
+and so.offer = 1
 AND so.src_subgame_id = cs.src_subgame_id
 AND cs.subgame_id = ins.id
 AND so.import_id = i.id
@@ -108,7 +109,7 @@ AND co.telebet_current_id IN ';
             $mozzart_sum_odds = 1;
             $soccer_sum_odds = 1;
             $pwin_sum_odds = 1;
-
+            $pinn_sum_odds = 1;
             foreach ($match_data as $md) {
 
                 $tmp = $md->odds;
@@ -137,7 +138,7 @@ AND co.telebet_current_id IN ';
                         <?php
                         foreach ($SourceOdds as $so) {
                             if ($so['id'] == $code && $so['game_id'] == $game_id && $so['subgame_id'] == $subgame_id && $so['source'] == 4) {
-                                echo $so['odd'];
+                                echo $so['odd']; ($so['odd'] > 0)? $pinn_sum_odds *= $so['odd'] : "";
                             }
                         } ?>
                     </td>
@@ -160,14 +161,14 @@ AND co.telebet_current_id IN ';
                 <td colspan="5">Kvota</td>
                 <td><?php echo number_format($mozzart_sum_odds,2,',','.') ?></td>
                 <td><?php echo number_format($soccer_sum_odds,2,',','.') ?></td>
-                <td></td>
+                <td><?php echo number_format($pinn_sum_odds,2,',','.') ?></td>
                 <td><?php echo number_format($pwin_sum_odds,2,',','.') ?></td>
             </tr>
             <tr>
                 <td colspan="5">Ulog (<?php echo $currency ?>)</td>
                 <td><?php echo $realAmountValue ?></td>
                 <td><?php echo $realAmountValue ?></td>
-                <td></td>
+                <td><?php echo $realAmountValue ?></td>
                 <td><?php echo $realAmountValue ?></td>
             </tr>
             <tr>
@@ -181,7 +182,7 @@ AND co.telebet_current_id IN ';
                 <td colspan="5">Dobitak (<?php echo $currency ?>)</td>
                 <td><?php echo $realPaymentValue ?></td>
                 <td><?php echo ($realPaymentValue > 0) ? number_format($realAmountValue*$soccer_sum_odds,2,',','.') : $realPaymentValue ?></td>
-                <td></td>
+                <td><?php echo ($realPaymentValue > 0) ? number_format($realAmountValue*$pinn_sum_odds,2,',','.') : $realPaymentValue ?></td>
                 <td><?php echo ($realPaymentValue > 0) ? number_format($realAmountValue*$pwin_sum_odds,2,',','.') : $realPaymentValue ?></td>
             </tr>
 
