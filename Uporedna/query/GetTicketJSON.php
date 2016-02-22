@@ -14,8 +14,8 @@ if ($sifraTiketa != "") {
 
     $ticket_data = array();
     $ticket_data = $json_data[0];
-    $tmp_games = array ();
-    $tmp_subgames = array ();
+    $tmp_games = array (1,3);
+    $tmp_subgames = array (1,3,4);
     $tmp_matches = array();
 //foreach ($ticket_data as $td){
 //    foreach ($js as $j){
@@ -66,3 +66,5 @@ if ($sifraTiketa != "") {
         $brutoBonus = 0;
     }
 } else {}
+
+

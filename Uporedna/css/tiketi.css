@@ -290,3 +290,23 @@ input[type="checkbox"]{
 #placeholder {
 	font-style: italic  ;
 }
+
+
+.row0 div {
+	margin: auto;
+	font-size: 14px;
+	display:inline;
+	margin: auto;
+}
+.row1 div {
+	margin: auto;
+	font-size: 14px;
+	display:inline;
+	margin: auto;
+}
+
+p {
+	margin-left: 10%;
+	font-size: 14px;
+}
+
