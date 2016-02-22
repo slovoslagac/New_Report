@@ -16,7 +16,7 @@ $tmp_games = array();
 $tmp_subgames = array();
 $tmp_matches = array();
 $SourceOdds = array();
-
+$SourcesArray = array(2,4,5);
 //echo $sifraTiketa . "prva \n";
 
 
@@ -58,6 +58,18 @@ $SourceOdds;
             </tr>
         </table>
         <table id="exportTable">
+            <colgroup>
+                <col width="5%">
+                <col width="10%">
+                <col width="10%">
+                <col width="20%">
+                <col width="5%">
+                <col width="10%">
+                <col width="10%">
+                <col width="10%">
+                <col width="10%">
+                <col width="10%">
+            </colgroup>
 
             <?php
             if ($sifraTiketa != '') {
@@ -71,7 +83,8 @@ $SourceOdds;
                 <td>Gost</td>
                 <td>Rezultat</td>
                 <td>Podigra</td>
-                <td>Kvota</td>
+                <td>Kvota na tiketu</td>
+                <td>Početak kola</td>
                 <td>Soccer</td>
                 <td>Pinnbet</td>
                 <td>Pwin</td>
@@ -98,10 +111,28 @@ $SourceOdds;
                     <td><?php echo $tmpOdds->subGame->name;
                         $game_id = $tmpOdds->subGame->gameId;
                         $subgame_id = $tmpOdds->subGame->id; ?></td>
-                    <td><?php echo number_format($tmpOdds->odd, 2, ',', '.') . (empty($tmpOdds->specialOddValue) ? "" : "  ($tmpOdds->specialOddValue)");
+                    <td><?php $mozz_odd_value = number_format($tmpOdds->odd, 2, ',', '.'); echo $mozz_odd_value ."&nbsp;&nbsp;" ;
+                        $oddki1 = '';  $oddki2 = '';  $oddki3 = '';
+                        foreach ($FavoriteOdds as $fo) {
+                            ($fo['id'] == $code && $fo['game_id'] == 1 && $fo['subgame_id'] == 1 ) ? $oddki1 = $fo['value'] : '';
+                            ($fo['id'] == $code && $fo['game_id'] == 1 && $fo['subgame_id'] == 3 ) ? $oddki2 = $fo['value'] : '';
+                            ($fo['id'] == $code && $fo['game_id'] == 3 && $fo['subgame_id'] == 4 ) ? $oddki3 = $fo['value'] : '';
+
+                        }
                         if ($tmpOdds->odd > 0) {
                             $mozzart_sum_odds *= $tmpOdds->odd;
-                        } ?></td>
+                            ($game_id == 1 && $subgame_id == 1 ) ? $oddki1 = $mozz_odd_value : '';
+                            ($game_id == 1 && $subgame_id == 3 ) ? $oddki2 = $mozz_odd_value : '';
+                            ($game_id == 3 && $subgame_id == 4 ) ? $oddki3 = $mozz_odd_value : '';
+
+                        }
+
+
+
+                        ?><div><?php
+                        echo ($oddki1 > $oddki2) ? "(" . $oddki2 . "," . $oddki3 . ")" : "(" . $oddki1 . "," . $oddki3 . ")"; ?> </div>
+                        </td>
+                    <td></td>
                     <td>
                         <?php }
                         $oddki1 = '';
@@ -121,12 +152,13 @@ $SourceOdds;
 
                                 }
                                 ?>
-                                <div id="small"><?php
+                                <div><?php
                                 echo ($oddki1 > $oddki2) ? "(" . $oddki2 . "," . $oddki3 . ")" : "(" . $oddki1 . "," . $oddki3 . ")"; ?>
                                 </div><?php
                             }
                         } ?>
                     </td>
+
                     <td>
                         <?php
                         $oddki1 = '';
@@ -171,6 +203,8 @@ $SourceOdds;
 
                         ?>
                     </td>
+
+
                 </tr>
 
                 <?php
@@ -181,6 +215,7 @@ $SourceOdds;
             <tr>
                 <td colspan="5">Kvota</td>
                 <td><?php echo number_format($mozzart_sum_odds, 2, ',', '.') ?></td>
+                <td></td>
                 <td><?php echo number_format($soccer_sum_odds, 2, ',', '.') ?></td>
                 <td><?php echo number_format($pinn_sum_odds, 2, ',', '.') ?></td>
                 <td><?php echo number_format($pwin_sum_odds, 2, ',', '.') ?></td>
@@ -188,6 +223,7 @@ $SourceOdds;
             <tr>
                 <td colspan="5">Ulog (<?php echo $currency ?>)</td>
                 <td><?php echo $realAmountValue ?></td>
+                <td></td>
                 <td><?php echo $realAmountValue ?></td>
                 <td><?php echo $realAmountValue ?></td>
                 <td><?php echo $realAmountValue ?></td>
@@ -198,10 +234,12 @@ $SourceOdds;
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td colspan="5">Dobitak (<?php echo $currency ?>)</td>
-                <td><?php echo $realPaymentValue ?></td>
+                <td><?php echo number_format($realPaymentValue, 2, ',', '.') ?></td>
+                <td></td>
                 <td><?php echo ($realPaymentValue > 0) ? number_format($realAmountValue * $soccer_sum_odds, 2, ',', '.') : $realPaymentValue ?></td>
                 <td><?php echo ($realPaymentValue > 0) ? number_format($realAmountValue * $pinn_sum_odds, 2, ',', '.') : $realPaymentValue ?></td>
                 <td><?php echo ($realPaymentValue > 0) ? number_format($realAmountValue * $pwin_sum_odds, 2, ',', '.') : $realPaymentValue ?></td>
