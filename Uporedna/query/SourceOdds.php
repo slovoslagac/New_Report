@@ -16,21 +16,33 @@ $sql1 = 'select *from init_current_odds
 where level = 1
 and id IN';
 
+$sql2 = 'select *from init_current_odds
+where level = 0
+and id IN';
+
 $tm = join(',', $tmp_matches);
 $tg = join(',', $tmp_games);
 $tsg = join(',', $tmp_subgames);
 
 $sql .= '(' . $tm . ') ';
-$sql1 .= '(' . $tm . ') ';
 $sql .= ' and ins.mozzart_game_id in (' . $tg . ')';
 $sql .= ' and ins.mozzart_subgame_id in (' . $tsg . ')';
 $sql .= ' order by 1,4, 5,6';
 
+$sql2 .= '(' . $tm . ') ';
+$sql2 .= ' and game_id in (' . $tg . ')';
+$sql2 .= ' and subgame_id in (' . $tsg . ')';
+$sql2 .= ' order by 1,2, 3';
+
+
+
+$sql1 .= '(' . $tm . ') ';
 //echo $sql;
 
 
 $Odds = $conn->prepare($sql);
 $FavOdds = $conn->prepare($sql1);
+$StartOdds = $conn->prepare($sql2);
 
 $Odds->execute();
 $SourceOdds = $Odds->fetchAll(PDO::FETCH_ASSOC);
@@ -38,6 +50,9 @@ $SourceOdds = $Odds->fetchAll(PDO::FETCH_ASSOC);
 
 $FavOdds->execute();
 $FavoriteOdds = $FavOdds->fetchAll(PDO::FETCH_ASSOC);
+
+$StartOdds->execute();
+$StartingOdds = $StartOdds->fetchAll(PDO::FETCH_ASSOC);
 $conn = null;
 // print_r($SourceOdds);
 

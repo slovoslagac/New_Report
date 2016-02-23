@@ -97,7 +97,7 @@ if ($json !== false) {
 
 
 //Upis u bazu
-include 'conn/mysqlAdminPDO.php';
+include 'conn/mysqlAdminPDOold.php';
 
 $del = 'DELETE FROM maxbet3';
 
