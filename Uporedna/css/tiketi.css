@@ -16,9 +16,11 @@ table {
 #container {
 	min-height:100%;
 	position:relative;
+
 }
 
 #helpmenu {
+	display: block;
 	height: 80px;
 	background-color: #0E1C42;
 	border-bottom: 1px solid #fdb813;
@@ -45,6 +47,7 @@ table {
 }
 
 #function_data {
+	display: block;
 	width: 92%;
 	padding-bottom:25px;
 	float:left;
@@ -143,6 +146,9 @@ table {
 	width: 80%;
 }
 
+.size90 {
+	width: 90%;
+}
 #match_data table {
 	width: 100%;
 }
@@ -206,12 +212,35 @@ table {
 	background-color: #0E1A2F;
 }
 
+.row {
+	background-color: white;
+	color: black;
+}
 
+.row0 div {
+	margin: auto;
+	font-size: 14px;
+	display:inline;
+	margin: auto;
+}
+.row1 div {
+	margin: auto;
+	font-size: 14px;
+	display:inline;
+	margin: auto;
+}
+
+.row div {
+	margin: auto;
+	font-size: 14px;
+	display:inline;
+	margin: auto;
+}
 /*deo spajanje takmicenja i meceva */
 
 
 table,tr, td{
-	width : 80%;
+	width : 90%;
 	text-align: center;
 	table-layout: auto;
 	margin-left:auto;
@@ -292,21 +321,29 @@ input[type="checkbox"]{
 }
 
 
-.row0 div {
-	margin: auto;
-	font-size: 14px;
-	display:inline;
-	margin: auto;
-}
-.row1 div {
-	margin: auto;
-	font-size: 14px;
-	display:inline;
-	margin: auto;
-}
+
 
 p {
 	margin-left: 10%;
 	font-size: 14px;
 }
 
+#comment {
+	display: block;
+	background-color:#1E2128 ;
+	width: 40% ;
+	min-width: 200px;
+	height: 100px;
+	margin: 10px auto 10px auto;
+	padding: 10px;
+}
+
+
+
+
+#comment input[type="text"] {
+
+}
+#comment input[type="submit"] {
+
+}

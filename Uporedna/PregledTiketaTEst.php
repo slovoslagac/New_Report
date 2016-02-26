@@ -62,8 +62,8 @@ $SourceOdds;
                 <col width="5%">
                 <col width="10%">
                 <col width="10%">
-                <col width="20%">
-                <col width="5%">
+                <col width="17%">
+                <col width="8%">
                 <col width="10%">
                 <col width="10%">
                 <col width="10%">
@@ -85,9 +85,9 @@ $SourceOdds;
                 <td>Podigra</td>
                 <td>Kvota na tiketu</td>
                 <td>Početak kola</td>
+                <td>Pwin</td>
                 <td>Soccer</td>
                 <td>Pinnbet</td>
-                <td>Pwin</td>
             </tr>
             </thead>
             <tbody>
@@ -229,8 +229,8 @@ $SourceOdds;
                 <col width="5%">
                 <col width="10%">
                 <col width="10%">
-                <col width="20%">
-                <col width="5%">
+                <col width="17%">
+                <col width="8%">
                 <col width="10%">
                 <col width="10%">
                 <col width="10%">
@@ -252,9 +252,9 @@ $SourceOdds;
                 <td>Podigra</td>
                 <td>Kvota na tiketu</td>
                 <td>Početak kola</td>
+                <td>Pwin</td>
                 <td>Soccer</td>
                 <td>Pinnbet</td>
-                <td>Pwin</td>
             </tr>
             </thead>
             <tbody>
@@ -280,7 +280,7 @@ $SourceOdds;
                     $game_id = $tmpOdds->subGame->gameId;
                     $subgame_id = $tmpOdds->subGame->id; ?></td>
                 <td><?php $mozz_odd_value = number_format($tmpOdds->odd, 2, ',', '.');
-                    echo $mozz_odd_value . "&nbsp;&nbsp;";
+                    echo $mozz_odd_value;
                     $oddki1 = '';
                     $oddki2 = '';
                     $oddki3 = '';
