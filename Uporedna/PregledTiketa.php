@@ -11,6 +11,7 @@ $css = 'css/tiketi.css';
 $naslov = "Uporedni pregled tiketa po šifri";
 $naslov_short = "Pregled tiketa";
 $sifraTiketa = '';
+$conn;
 $i = 1;
 $tmp_games = array();
 $tmp_subgames = array();
@@ -33,8 +34,8 @@ if (isset($_GET["sifra"]) != "") {
 include(join(DIRECTORY_SEPARATOR, array('included', 'nas_header.php')));
 include(join(DIRECTORY_SEPARATOR, array('query', 'GetTicketJSON.php')));
 
-$conn;
-$SourceOdds;
+
+
 
 
 //print_r($SourceOdds);
@@ -46,7 +47,7 @@ $SourceOdds;
     <div id="function_data">
         <table id="exportTable">
 
-            <tr class="naslov">
+            <tr class="title">
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
                     <td class="placeholder">
                         <input type="text" placeholder="šifra tiketa (1155-7502829-1371)" name="sifra">
@@ -82,7 +83,7 @@ $SourceOdds;
 
             ?>
             <thead>
-            <tr class="naslov">
+            <tr class="title">
                 <td>Šifra</td>
                 <td>Domaćin</td>
                 <td>Gost</td>
@@ -118,7 +119,7 @@ $SourceOdds;
                     <td><?php echo $md->match->visitor ?></td>
                     <td><?php echo $md->match->result ?></td>
                     <?php foreach ($md->odds as $tmpOdds) { ?>
-                    <td><?php echo $tmpOdds->subGame->name;
+                    <td><?php echo $tmpOdds->game->shortName." ".$tmpOdds->subGame->name;
                         $game_id = $tmpOdds->subGame->gameId;
                         $subgame_id = $tmpOdds->subGame->id; ?></td>
                     <td><?php $mozz_odd_value = number_format($tmpOdds->odd, 2, ',', '.');

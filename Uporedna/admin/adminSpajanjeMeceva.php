@@ -49,7 +49,7 @@ $j = 1;
     <div id="match_data" class="size60">
         <table id="exportTable">
             <thead>
-            <tr class="naslov">
+            <tr class="title">
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
                     <td>
                         <select name="bookie_id">
@@ -113,7 +113,7 @@ $j = 1;
                     <?php
                 } ?>
 
-                <tr class="naslov">
+                <tr class="title">
                     <td colspan="3"><input type="submit" value="Sačuvaj" accesskey="x"/></td>
                 </tr>
 

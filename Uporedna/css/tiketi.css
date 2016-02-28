@@ -253,7 +253,7 @@ table,tr, td{
 
 }
 
-.naslov {
+.title {
 	 font-size: 22px;
 	 background-color: #1E2128;
  }
@@ -263,7 +263,7 @@ table,tr, td{
 	background-color: #000000;
 }
 
-.naslov td {
+.title td {
 	height: 30px;
 }
 

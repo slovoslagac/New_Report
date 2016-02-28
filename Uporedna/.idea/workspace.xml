@@ -8,16 +8,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be601e26-0991-4c96-82a8-f7b0c1b2b1bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PregledTiketaNovo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Osnova.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/osnova.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/included/Match.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb" afterPath="$PROJECT_DIR$/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb.bak" afterPath="$PROJECT_DIR$/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb.bak" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dodatak/Upiti/Peglanje prikaza kvota.sql" afterPath="$PROJECT_DIR$/Dodatak/Upiti/Peglanje prikaza kvota.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dodatak/Upiti/Spajanje meceva na osnovu timova..sql" afterPath="$PROJECT_DIR$/Dodatak/Upiti/Spajanje meceva na osnovu timova..sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dodatak/Upiti/razno.sql" afterPath="$PROJECT_DIR$/Dodatak/Upiti/razno.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PregledTiketa.php" afterPath="$PROJECT_DIR$/PregledTiketa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PregledTiketa1.php" afterPath="$PROJECT_DIR$/PregledTiketa1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PregledTiketaNovo.php" afterPath="$PROJECT_DIR$/PregledTiketaNovo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PregledTiketaOLD.php" afterPath="$PROJECT_DIR$/PregledTiketaOLD.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PregledTiketaStaro.php" afterPath="$PROJECT_DIR$/PregledTiketaStaro.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PregledTiketaTEst.php" afterPath="$PROJECT_DIR$/PregledTiketaTEst.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminKontrolaMeceva.php" afterPath="$PROJECT_DIR$/admin/adminKontrolaMeceva.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminKontrolaTakmicenja.php" afterPath="$PROJECT_DIR$/admin/adminKontrolaTakmicenja.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminKontrolaTimova.php" afterPath="$PROJECT_DIR$/admin/adminKontrolaTimova.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminSpajanjeMeceva.php" afterPath="$PROJECT_DIR$/admin/adminSpajanjeMeceva.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php" afterPath="$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/admin.css" afterPath="$PROJECT_DIR$/admin/css/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/included/red_Table_Header.php" afterPath="$PROJECT_DIR$/admin/included/red_Table_Header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/saveCompetition.php" afterPath="$PROJECT_DIR$/admin/saveCompetition.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/saveMatches.php" afterPath="$PROJECT_DIR$/admin/saveMatches.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/tiketi.css" afterPath="$PROJECT_DIR$/css/tiketi.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query/SourceOdds.php" afterPath="$PROJECT_DIR$/query/SourceOdds.php" />
     </list>
     <ignored path="Uporedna.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,8 +113,10 @@
         <option value="$PROJECT_DIR$/query/SourceOdds.php" />
         <option value="$PROJECT_DIR$/PregledTiketaTEst.php" />
         <option value="$PROJECT_DIR$/PregledTiketaNovo.php" />
-        <option value="$PROJECT_DIR$/css/tiketi.css" />
         <option value="$PROJECT_DIR$/PregledTiketa.php" />
+        <option value="$PROJECT_DIR$/css/tiketi.css" />
+        <option value="$PROJECT_DIR$/css/osnova.css" />
+        <option value="$PROJECT_DIR$/Osnova.php" />
       </list>
     </option>
   </component>
@@ -114,10 +130,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1432" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1034" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -144,8 +160,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,6 +202,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="included" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uporedna" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uporedna" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -206,22 +234,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Uporedna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Uporedna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,10 +346,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1034" extended-state="6" />
+    <frame x="1432" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22291666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1671875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -378,28 +394,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="220" column="9" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="37" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4489093">
@@ -498,13 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/included/nas_helpmenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13662457">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/included/adm_header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.078071184">
@@ -523,13 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.73077">
           <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/included/nas_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -681,37 +661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PregledTiketa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37428242">
-          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/tiketi.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="230" column="1" selection-start-line="230" selection-start-column="1" selection-end-line="230" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/saveCompetition.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <marker date="1455875863970" expanded="true" signature="1327:1448" placeholder="INSERT INTO conn_competition... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PregledTiketaTEst.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019517796">
-          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -719,31 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.019517796">
           <caret line="119" column="41" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PregledTiketaNovo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019517796">
-          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-          <folding>
-            <marker date="1456502240957" expanded="true" signature="1458:1495" placeholder="..." />
-            <marker date="1456502240957" expanded="true" signature="1675:1703" placeholder="..." />
-            <marker date="1456502240957" expanded="true" signature="2212:2235" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/query/SourceOdds.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019517796">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <marker date="1456405440199" expanded="true" signature="86:551" placeholder="SELECT co.te... src_odds" />
-            <marker date="1456405440199" expanded="true" signature="564:620" placeholder="select *from... init_current_odds" />
-            <marker date="1456405440199" expanded="true" signature="633:689" placeholder="select *from... init_current_odds" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,6 +679,83 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/included/nas_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09110396">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/included/Match.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/included/nas_helpmenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.036441587">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/SourceOdds.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/tiketi.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="325" column="0" selection-start-line="325" selection-start-column="0" selection-end-line="328" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/osnova.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Osnova.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65380496">
+          <caret line="235" column="36" selection-start-line="235" selection-start-column="36" selection-end-line="235" selection-end-column="36" />
+          <folding>
+            <marker date="1456619024720" expanded="true" signature="1314:1351" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PregledTiketaNovo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4533762">
+          <caret line="272" column="8" selection-start-line="272" selection-start-column="8" selection-end-line="272" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PregledTiketaTEst.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.018220793">
+          <caret line="142" column="59" selection-start-line="142" selection-start-column="32" selection-end-line="142" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PregledTiketa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.018220793">
+          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="76" selection-end-column="32" />
           <folding />
         </state>
       </provider>

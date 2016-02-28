@@ -1,5 +1,5 @@
-﻿insert into conn_match (init_match_id, src_match_id)
-select im.event_id, sm.id
+﻿insert into conn_match (init_match_id, src_match_id, home_visitor )
+select im.event_id, sm.id, 0
 from init_match im, conn_team ct, conn_team ct1, src_match sm, conn_competition cc
 where im.home_team_id = ct.init_team_id
 and im.visitor_team_id = ct1.init_team_id
@@ -11,6 +11,10 @@ and (im.event_id, sm.id) not in (select cm1.init_match_id, cm1.src_match_id from
 on DUPLICATE KEY update init_match_id= init_match_id
 ;
 
+
+select * from conn_match where home_visitor is null;
+
+update conn_match set home_visitor = 0 where home_visitor is null
 
 
 

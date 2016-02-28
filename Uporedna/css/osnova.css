@@ -1,0 +1,173 @@
+html, body {
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+table {
+    border-spacing: 0;
+}
+
+p {
+    margin-left: 10%;
+    font-size: 14px;
+    text-align: left;
+}
+
+/*Velicine tabela i divova*/
+
+.size50 {
+    width: 50%;
+}
+
+.size60 {
+    width: 60%;
+}
+
+.size80 {
+    width: 80%;
+}
+
+.size90 {
+    width: 90%;
+}
+
+.fontsize14 {
+    font-size: 14px;
+}
+
+.fontsize16 {
+    font-size: 16px;
+}
+
+.fontsize18 {
+    font-size: 18px;
+}
+
+.fontsize22 {
+    font-size: 22px;
+}
+
+#helpmenu {
+    display: block;
+    height: 80px;
+    background-color: #0E1C42;
+    border-bottom: 1px solid #fdb813;
+}
+
+#helpmenu img {
+    padding: 17px 0 0 15px;
+    float: left;
+}
+
+#helpmenu h1 {
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 20px 20px 20px 0;
+    font-size: 2.2em;
+    margin-right: 177px;
+}
+
+/*Naslov sa menijem za izbor odgovarajuíh stvari.*/
+.title {
+    /*background-color: #1E2128;*/
+    text-align: center;
+    margin: 10px auto auto;
+}
+
+.title table {
+    width: 100%;
+    height: 30px;
+
+}
+
+.title tr {
+    display: table-row;
+    vertical-align: inherit;
+}
+
+.title input {
+    width: 50%;
+    margin: 10px auto 10px auto;
+    background-color: #0E1C42;
+}
+
+.title input[type="text"] {
+    height: 20px;
+    font-size: 14px;
+    padding-left: 5px;
+    color: #ccc;
+    font-style: italic;
+}
+
+.title input[type="submit"] {
+    min-width: 25%;
+    height: 30px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+/*Podaci za stranu*/
+
+.page_data {
+    margin: 0 1% 0 1%;
+    text-align: center;
+
+}
+
+.page_data td, tr {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+/*deo sa komentarom*/
+
+.comment {
+    margin: 10px auto 10px auto;
+}
+
+.comment textarea {
+    width: 100%;
+    background-color: #ccc;
+    height: 100px;
+    resize: none;
+}
+
+/*Različito farbanje redova u zavisnosti od želja*/
+
+.row0 {
+    background-color: #0B1320;
+}
+
+.row1 {
+    background-color: #0E1A2F;
+}
+
+.row {
+    background-color: white;
+    color: black;
+}
+
+.row0 div {
+    margin: auto;
+    font-size: 14px;
+    display: inline;
+    margin: auto;
+}
+
+.row1 div {
+    margin: auto;
+    font-size: 14px;
+    display: inline;
+    margin: auto;
+}
+
+.row div {
+    margin: auto;
+    font-size: 14px;
+    display: inline;
+    margin: auto;
+}

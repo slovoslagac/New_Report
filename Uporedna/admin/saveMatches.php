@@ -137,7 +137,7 @@ $conn = null;
 		<table id="exportTable" class="size60">
 			<thead>
 
-			<tr class="naslov">
+			<tr class="title">
 				<td>Mozzart</td>
 				<td><?php echo $bookie ?></td>
 				<td>Obrnuto domaćinstvo</td>

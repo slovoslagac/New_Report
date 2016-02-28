@@ -1,4 +1,4 @@
-<tr class="naslov">
+<tr class="title">
 	<th>Takmičenje</th>
 	<th>Pozicija</th>
 	<th>Nova pozicija</th>

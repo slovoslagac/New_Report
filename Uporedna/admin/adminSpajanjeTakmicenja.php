@@ -47,7 +47,7 @@ $Data3 = $resultSources;
     <div id="function_data">
         <table id="exportTable" class="size60">
             <thead>
-            <tr class="naslov">
+            <tr class="title">
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
                     <td>
                         <select name="bookie_id">
@@ -110,7 +110,7 @@ $Data3 = $resultSources;
 
                 <?php } ?>
 
-                <tr class="naslov">
+                <tr class="title">
                     <td colspan="2"><input accesskey="x" type="submit" value="Sačuvaj"/></td>
                 </tr>
 

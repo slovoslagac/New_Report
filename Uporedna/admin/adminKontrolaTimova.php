@@ -74,7 +74,7 @@ if (isset($_GET['delete'])) {
     include(join(DIRECTORY_SEPARATOR, array('included', 'adm_menu.php'))); ?>
     <div id="function_data">
         <table id="exportTable" class="size60">
-            <tr class="naslov">
+            <tr class="title">
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
                     <td>
                         <select name="bookie_id">
@@ -105,7 +105,7 @@ if (isset($_GET['delete'])) {
                 <col width="10%">
             </colgroup>
             <thead>
-            <tr class="naslov">
+            <tr class="title">
                 <td>Kladionica</td>
                 <td>Mozzart tim</td>
                 <td>Tim</td>
@@ -130,7 +130,7 @@ if (isset($_GET['delete'])) {
 
                 <?php } ?>
 
-                <tr class="naslov">
+                <tr class="title">
                     <td colspan="4"><input accesskey="x" type="submit" name="delete" value="Obriši"/></td>
                 </tr>
 

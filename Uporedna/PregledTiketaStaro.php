@@ -45,7 +45,7 @@ $SourceOdds;
     <?php include(join(DIRECTORY_SEPARATOR, array('included', 'nas_helpmenu.php'))); ?>
     <div id="function_data">
         <table id="exportTable">
-            <tr class="naslov">
+            <tr class="title">
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
                     <td class="placeholder">
                         <input type="text" placeholder="šifra tiketa (1155-7502829-1371)" name="sifra">
@@ -77,7 +77,7 @@ $SourceOdds;
 
             ?>
             <thead>
-            <tr class="naslov">
+            <tr class="title">
                 <td>Šifra</td>
                 <td>Domaćin</td>
                 <td>Gost</td>

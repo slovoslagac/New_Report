@@ -93,7 +93,7 @@ $conn = null;
         <table id="exportTable" class="size60">
             <thead>
 
-            <tr class="naslov">
+            <tr class="title">
                 <td><?php echo $bookie ?></td>
                 <td>Mozzart</td>
             </tr>
