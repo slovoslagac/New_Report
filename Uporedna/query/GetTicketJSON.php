@@ -6,6 +6,8 @@
  * Time: 13:29
  */
 
+$sifraTiketa;
+
 if ($sifraTiketa != "") {
 
     $url = "https://api.mozzartbet.com/MozzartWS/external.json/ticket-status?ticketId=$sifraTiketa&languageId=1";
@@ -65,6 +67,9 @@ if ($sifraTiketa != "") {
     } else {
         $brutoBonus = 0;
     }
+
+    $numCombination = $ticket_data->combinationNumber;
+    $ticketTime = $ticket_data->time;
 } else {}
 
 

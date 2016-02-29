@@ -12,9 +12,13 @@ table {
 }
 
 p {
-    margin-left: 10%;
+    margin-left: 5%;
     font-size: 14px;
     text-align: left;
+}
+
+input[type="checkbox"] {
+    margin: 0px;
 }
 
 /*Velicine tabela i divova*/
@@ -50,6 +54,11 @@ p {
 .fontsize22 {
     font-size: 22px;
 }
+
+.italic {
+    font-style: italic;
+}
+
 
 #helpmenu {
     display: block;
@@ -113,7 +122,7 @@ p {
 /*Podaci za stranu*/
 
 .page_data {
-    margin: 0 1% 0 1%;
+    margin: 0px auto 0 auto;
     text-align: center;
 
 }
@@ -121,6 +130,11 @@ p {
 .page_data td, tr {
     border-collapse: collapse;
     border: 1px solid #ccc;
+}
+
+.page_data table {
+    width: 100%;
+    margin:0;
 }
 
 /*deo sa komentarom*/
@@ -132,8 +146,61 @@ p {
 .comment textarea {
     width: 100%;
     background-color: #ccc;
-    height: 100px;
+    height: 50px;
     resize: none;
+}
+
+.comment select, input {
+    background-color: #0E1C42;
+    color: #ccc;
+    height: 25px;
+
+}
+
+.comment select  {
+    width: 20%;
+    margin-bottom: 7px;
+}
+
+.comment input[type="submit"] {
+    margin: 7px 40% 7px 40%;
+    width: 20%;
+}
+
+.comment div {
+    padding-bottom: 4px;
+}
+
+/*stari komentari...........*/
+
+.old_comments {
+    margin: 10px 20% 10px 20%;
+    display: inline-block;
+}
+
+.old_comments.italic {
+    color: #0000FF;
+}
+
+.old_comments p {
+    float: left;
+    margin: 0;
+    height: 25px;
+
+}
+
+.old_comments input[type="checkbox"] {
+    float: left;
+    height: 15px;
+    padding-top: 15px;
+    width: 15px;
+    margin: 0px 5px 0px 0px;
+
+}
+.old_comments div {
+    float: left;
+    width: 100% ;
+    text-align:  left;
 }
 
 /*Različito farbanje redova u zavisnosti od želja*/

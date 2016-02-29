@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <?php
 /**
  * Created by PhpStorm.
@@ -11,6 +11,7 @@ $css = 'css/osnova.css';
 $naslov = "Uporedni pregled tiketa po šifri";
 $naslov_short = "Pregled tiketa";
 $sifraTiketa = '';
+$curr_comment = '';
 $i = 1;
 $conn;
 $tmp_games = array();
@@ -20,19 +21,60 @@ $SourceOdds = array();
 $SourcesArray = array(5, 2, 4);
 $SourceSumArray = array(1, 1, 1);
 
+
 if (isset($_GET["sifra"]) != "") {
     $sifraTiketa = $_GET["sifra"];
     $sifraTiketaParts = explode("-", $sifraTiketa);
     $uplatnoMesto = $sifraTiketaParts[0];
     $sifraTiketaShort = $sifraTiketaParts[1];
     $roundId = $sifraTiketaParts[2];
+
+}
+
+
+if (isset($_GET["comment"]) != "") {
+    $curr_comment = $_GET["comment"];
+    $curr_person = $_GET["comment_added_by"];
+    $sifraTiketa = $_GET["curr_ticket_id"];
+    $sifraTiketaParts = explode("-", $sifraTiketa);
+    $uplatnoMesto = $sifraTiketaParts[0];
+    $sifraTiketaShort = $sifraTiketaParts[1];
+    $roundId = $sifraTiketaParts[2];
+
+}
+
+
+if ($curr_comment != "") {
+
+    $sql_comment = "insert into ticket_comment (bookie_shop, round, ticket_id, comment, commented_by, show_comment)
+values ( $uplatnoMesto,$roundId, $sifraTiketaShort, '$curr_comment', $curr_person, 1)";
+
+    echo $sql_comment;
+    include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlNewPDO.php')));
+
+    $insertComment = $conn->prepare($sql_comment);
+
+    $insertComment->execute();
+
+
+    $conn = null;
+
+
 }
 
 
 include(join(DIRECTORY_SEPARATOR, array('included', 'nas_header.php')));
 include(join(DIRECTORY_SEPARATOR, array('query', 'GetTicketJSON.php')));
+include(join(DIRECTORY_SEPARATOR, array('query', 'comments_info.php')));
+
+
+//echo $ticketTime;
+//echo microtime();
+//echo date('d.m.Y H:i', $ticketTime / 1000);
+
 
 ?>
+
 
 <body>
 <div id="container">
@@ -52,12 +94,14 @@ include(join(DIRECTORY_SEPARATOR, array('query', 'GetTicketJSON.php')));
             </tr>
         </table>
     </div>
-    <div class="page_data">
+    <div class="page_data size90">
         <?php
         if ($sifraTiketa != '') {
         include(join(DIRECTORY_SEPARATOR, array('query', 'SourceOdds.php')));
 
+
         ?>
+
         <table>
             <colgroup>
                 <col width="3%">
@@ -228,19 +272,54 @@ include(join(DIRECTORY_SEPARATOR, array('query', 'GetTicketJSON.php')));
                 <?php
                 for ($k = 0; $k < 3; $k++) { ?>
                     <td><?php echo ($realPaymentValue > 0) ? number_format($realAmountValue * $SourceSumArray[$k], 2, ',', '.') : $realPaymentValue ?></td>
-                    <?php } ?>
+                <?php } ?>
             </tr>
 
             </tbody>
         </table>
+
+    </div>
+    <div>
         <p>* kvote u desnim kolonama predstavljaju respektivno vrednost favorita i 3+</p>
 
     </div>
     <div class="comment size60">
-        <textarea>
+        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
+            <input type="hidden" name="curr_ticket_id" value="<?php echo $sifraTiketa ?>">
+            <div>
+                <select required name="comment_added_by">
+                    <option value="">-</option>
+                    <?php foreach ($oddsterList as $OL) { ?>
+                        <option
+                            value="<?php echo $OL['id'] ?>"><?php echo $OL['Name'] . " " . $OL['LastName'] ?></option>
 
-        </textarea>
+                    <?php } ?>
+                </select>
+            </div>
+            <textarea name="comment"></textarea>
+            <div>
+                <input type="submit" value="Sačuvaj">
+
+        </form>
     </div>
+</div>
+<div class="old_comments size60">
+    <h4>Prethodni komentari :</h4>
+    <?php foreach ($SourceComments as $sc) { ?>
+    <div class="block">
+        <div class="italic fontsize14">
+            <p><input type="checkbox" value="<?php echo $sc['comment_id'] ?>"/></p>
+            <p><?php echo $sc['Name'] . " " . $sc['LastName'] . ", " . $sc['time'] ?></p>
+        </div>
+        <br>
+        <div class="fontsize18"><?php echo $sc['comment'] ?>
+        </div>
+
+    </div>
+        <br><br><br><br>
+
+<?php } ?>
+</div>
 <?php } ?>
 </div>
 

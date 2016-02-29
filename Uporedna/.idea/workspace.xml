@@ -8,30 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be601e26-0991-4c96-82a8-f7b0c1b2b1bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Osnova.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/osnova.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/included/Match.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/query/comments_info.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb" afterPath="$PROJECT_DIR$/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb.bak" afterPath="$PROJECT_DIR$/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb.bak" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dodatak/Upiti/Spajanje meceva na osnovu timova..sql" afterPath="$PROJECT_DIR$/Dodatak/Upiti/Spajanje meceva na osnovu timova..sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dodatak/Upiti/razno.sql" afterPath="$PROJECT_DIR$/Dodatak/Upiti/razno.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PregledTiketa.php" afterPath="$PROJECT_DIR$/PregledTiketa.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PregledTiketa1.php" afterPath="$PROJECT_DIR$/PregledTiketa1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PregledTiketaNovo.php" afterPath="$PROJECT_DIR$/PregledTiketaNovo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PregledTiketaOLD.php" afterPath="$PROJECT_DIR$/PregledTiketaOLD.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PregledTiketaStaro.php" afterPath="$PROJECT_DIR$/PregledTiketaStaro.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PregledTiketaTEst.php" afterPath="$PROJECT_DIR$/PregledTiketaTEst.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminKontrolaMeceva.php" afterPath="$PROJECT_DIR$/admin/adminKontrolaMeceva.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminKontrolaTakmicenja.php" afterPath="$PROJECT_DIR$/admin/adminKontrolaTakmicenja.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminKontrolaTimova.php" afterPath="$PROJECT_DIR$/admin/adminKontrolaTimova.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminSpajanjeMeceva.php" afterPath="$PROJECT_DIR$/admin/adminSpajanjeMeceva.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php" afterPath="$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/admin.css" afterPath="$PROJECT_DIR$/admin/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/included/red_Table_Header.php" afterPath="$PROJECT_DIR$/admin/included/red_Table_Header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/saveCompetition.php" afterPath="$PROJECT_DIR$/admin/saveCompetition.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/saveMatches.php" afterPath="$PROJECT_DIR$/admin/saveMatches.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/tiketi.css" afterPath="$PROJECT_DIR$/css/tiketi.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Osnova.php" afterPath="$PROJECT_DIR$/Osnova.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/osnova.css" afterPath="$PROJECT_DIR$/css/osnova.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query/GetTicketJSON.php" afterPath="$PROJECT_DIR$/query/GetTicketJSON.php" />
     </list>
     <ignored path="Uporedna.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +35,7 @@
     <favorites_list name="Uporedna" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,7 +90,6 @@
         <option value="$PROJECT_DIR$/admin/conn/mysqlAdminPDOold.php" />
         <option value="$PROJECT_DIR$/admin/PregledTiketaStaro.php" />
         <option value="$PROJECT_DIR$/PregledTiketaStaro.php" />
-        <option value="$PROJECT_DIR$/query/GetTicketJSON.php" />
         <option value="$PROJECT_DIR$/query/CreateFullOddOfferJSON.php" />
         <option value="$PROJECT_DIR$/admin/db/MozzartMatches.php" />
         <option value="$PROJECT_DIR$/query/SourceOdds.php" />
@@ -115,6 +97,8 @@
         <option value="$PROJECT_DIR$/PregledTiketaNovo.php" />
         <option value="$PROJECT_DIR$/PregledTiketa.php" />
         <option value="$PROJECT_DIR$/css/tiketi.css" />
+        <option value="$PROJECT_DIR$/query/GetTicketJSON.php" />
+        <option value="$PROJECT_DIR$/query/comments_info.php" />
         <option value="$PROJECT_DIR$/css/osnova.css" />
         <option value="$PROJECT_DIR$/Osnova.php" />
       </list>
@@ -130,10 +114,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1432" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1034" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -178,62 +162,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Uporedna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Uporedna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Uporedna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Uporedna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="included" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Uporedna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Uporedna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Uporedna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Uporedna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -265,16 +193,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\AppServ\www\New_Report\Uporedna" />
-      <recent name="C:\AppServ\www\New_Report\Uporedna\admin" />
-      <recent name="C:\AppServ\www\New_Report\Uporedna\query" />
-      <recent name="C:\AppServ\www\New_Report\Uporedna\admin\conn" />
-      <recent name="C:\AppServ\www\New_Report\Uporedna\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\AppServ\www\New_Report\Uporedna" />
       <recent name="C:\AppServ\www\New_Report\Uporedna\admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\AppServ\www\New_Report\Uporedna\query" />
+      <recent name="C:\AppServ\www\New_Report\Uporedna" />
+      <recent name="C:\AppServ\www\New_Report\Uporedna\admin" />
+      <recent name="C:\AppServ\www\New_Report\Uporedna\admin\conn" />
+      <recent name="C:\AppServ\www\New_Report\Uporedna\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -346,13 +274,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1432" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1034" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1671875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.113513514" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -361,10 +291,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21081081" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -394,13 +322,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4489093">
-          <caret line="23" column="172" selection-start-line="23" selection-start-column="172" selection-end-line="23" selection-end-column="172" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/included/adm_footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923">
@@ -447,13 +368,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.058553386">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/adminRedosled.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19977038">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -541,13 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/adminKontrolaTimova.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.346153">
-          <caret line="98" column="46" selection-start-line="98" selection-start-column="46" selection-end-line="98" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537">
@@ -612,13 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/query/GetTicketJSON.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conn/mysqlNewPDO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.807693">
@@ -651,13 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.423077">
           <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/adminKontrolaMeceva.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3226177">
-          <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -703,36 +596,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/query/SourceOdds.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/tiketi.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="325" column="0" selection-start-line="325" selection-start-column="0" selection-end-line="328" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/osnova.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Osnova.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65380496">
-          <caret line="235" column="36" selection-start-line="235" selection-start-column="36" selection-end-line="235" selection-end-column="36" />
-          <folding>
-            <marker date="1456619024720" expanded="true" signature="1314:1351" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -756,6 +624,89 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.018220793">
           <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="76" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/SourceOdds.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1456405440199" expanded="true" signature="86:551" placeholder="SELECT co.te... src_current_odds" />
+            <marker date="1456405440199" expanded="true" signature="564:620" placeholder="select *from... init_current_odds" />
+            <marker date="1456405440199" expanded="true" signature="633:689" placeholder="select *from... init_current_odds" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/adminRedosled.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5029586">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/adminKontrolaMeceva.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.3461537">
+          <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
+          <folding>
+            <marker date="1456734546551" expanded="true" signature="919:941" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/adminKontrolaTimova.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.346153">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="62" selection-end-column="17" />
+          <folding>
+            <marker date="1456734546554" expanded="true" signature="917:938" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/comments_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="14" column="117" selection-start-line="14" selection-start-column="117" selection-end-line="14" selection-end-column="117" />
+          <folding>
+            <marker date="1456763371108" expanded="true" signature="85:124" placeholder="Select id, N... Oddsters" />
+            <marker date="1456763371108" expanded="true" signature="306:514" placeholder="select o.Nam... ticket_comment" />
+            <marker date="1456763371108" expanded="true" signature="306:515" placeholder="select o.Nam... ticket_comment" />
+            <marker date="1456763371108" expanded="true" signature="306:609" placeholder="select o.Nam... ticket_comment" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Osnova.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46947083">
+          <caret line="309" column="37" selection-start-line="309" selection-start-column="37" selection-end-line="309" selection-end-column="37" />
+          <folding>
+            <marker date="1456766022288" expanded="true" signature="1117:1298" placeholder="insert into ticket_comment... " />
+            <marker date="1456766022288" expanded="true" signature="10916:10955" placeholder="..." />
+            <marker date="1456766022288" expanded="true" signature="11378:11407" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/GetTicketJSON.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22193211">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/osnova.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5796345">
+          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
           <folding />
         </state>
       </provider>
