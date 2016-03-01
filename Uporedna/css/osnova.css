@@ -203,6 +203,11 @@ input[type="checkbox"] {
     text-align:  left;
 }
 
+.old_comments input[type="submit"] {
+    margin: 7px 40% 7px 40%;
+    width: 20%;
+}
+
 /*Različito farbanje redova u zavisnosti od želja*/
 
 .row0 {
