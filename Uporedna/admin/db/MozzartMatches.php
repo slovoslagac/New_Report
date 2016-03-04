@@ -28,6 +28,8 @@ order by 2,3
 
 // echo $sql;
 
+//and im.event_id not in (select init_match_id from conn_match cm, src_match sm where cm.src_match_id = sm.id and sm.source_id = $source_id)
+
 
 $MozzMatch = $conn->prepare($sql);
 $MozzMatch->execute();

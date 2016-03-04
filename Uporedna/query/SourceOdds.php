@@ -8,6 +8,7 @@ WHERE so.src_match_id = cm.src_match_id
 AND cm.init_match_id = co.event_id
 AND so.src_subgame_id = cs.src_subgame_id
 AND cs.subgame_id = ins.id
+and cm.home_visitor = 0
 AND co.list_type_id = 4
 AND co.telebet_current_id IN ';
 $sql1 = 'select *from init_current_odds

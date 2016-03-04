@@ -8,6 +8,7 @@ WHERE sm.src_competition_id = cc.src_competition_id
 AND cc.init_competition_id = ic.id
 AND sm.id NOT IN (SELECT src_match_id FROM conn_match)
 AND sm.src_home_team_id = st.id
+and ic.position = 1
 AND sm.src_visitor_team_id = st1.id
 AND sm.source_id= ' . $source_id . '
 order by sm.source_id, ic.name, st.name

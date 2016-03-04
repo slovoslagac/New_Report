@@ -14,7 +14,10 @@ on DUPLICATE KEY update init_match_id= init_match_id
 
 select * from conn_match where home_visitor is null;
 
-update conn_match set home_visitor = 0 where home_visitor is null
+update conn_match set home_visitor = 0 where home_visitor is null;
+
+
+
 
 
 
