@@ -1,7 +1,9 @@
 <?php
 include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlAdminPDO.php')));
 
-$MozCmp = $conn -> prepare("SELECT DISTINCT
+
+if ($cmp == 0) {
+    $sql = "SELECT DISTINCT
   ic.id AS competition_id,
   ic.name AS competition_name
 FROM
@@ -18,7 +20,28 @@ SELECT DISTINCT
 FROM
 init_competition ic1
 where id = 9999999
-ORDER BY 2");
+ORDER BY 2";
+} else {
+    $sql = "SELECT DISTINCT
+  ic.id AS competition_id,
+  ic.name AS competition_name
+FROM
+init_competition AS ic
+WHERE ic.id IN (SELECT DISTINCT competition_id FROM init_match WHERE start_time > now() - INTERVAL '4' DAY AND start_time < now() + INTERVAL '8' DAY)
+union ALL
+SELECT DISTINCT
+  ic1.id AS competition_id,
+  ic1.name AS competition_name
+FROM
+init_competition ic1
+where id = 9999999
+ORDER BY 2";
+}
+
+
+
+
+$MozCmp = $conn -> prepare($sql);
 $MozCmp -> execute();
 $resultMZCMP = $MozCmp -> fetchAll ( PDO::FETCH_ASSOC);
 

@@ -12,14 +12,19 @@ $naslov = "Uporedni pregled tiketa po šifri";
 $naslov_short = "Pregled tiketa";
 $sifraTiketa = '';
 $curr_comment = '';
+$ticketTime ='';
 $i = 1;
 $conn;
 $tmp_games = array();
 $tmp_subgames = array();
 $tmp_matches = array();
 $SourceOdds = array();
+//Raspored kladionica je
 $SourcesArray = array(5, 2, 4);
 $SourceSumArray = array(1, 1, 1);
+$SourceBonusArray = array(0,0,0);
+$days = array('Mon'=>'pon','Tue'=>'uto','Wed'=>'sre','Thu'=>'čet','Fri'=>'pet','Sat'=>'sub','Sun'=>'ned');
+$ticket_hour="";
 
 
 if (isset($_GET["sifra"]) != "") {
@@ -91,11 +96,18 @@ include(join(DIRECTORY_SEPARATOR, array('included', 'nas_header.php')));
 include(join(DIRECTORY_SEPARATOR, array('query', 'GetTicketJSON.php')));
 include(join(DIRECTORY_SEPARATOR, array('query', 'comments_info.php')));
 
+include(join(DIRECTORY_SEPARATOR, array('functions','bonuses.php')));
+
 
 //echo $ticketTime;
 //echo microtime();
 //echo date('d.m.Y H:i', $ticketTime / 1000);
 
+
+//echo ObracunBonusa(2, 8, 9);
+
+$ticket_hour = date('G', $ticketTime / 1000);
+//echo $ticket_hour;
 
 ?>
 
@@ -122,7 +134,7 @@ include(join(DIRECTORY_SEPARATOR, array('query', 'comments_info.php')));
         </table>
     </div>
     <div id="dvData">
-        <div class="page_data size90">
+        <div class="page_data size95">
             <?php
             if ($sifraTiketa != '') {
             include(join(DIRECTORY_SEPARATOR, array('query', 'SourceOdds.php')));
@@ -133,9 +145,10 @@ include(join(DIRECTORY_SEPARATOR, array('query', 'comments_info.php')));
             <table>
                 <colgroup>
                     <col width="3%">
-                    <col width="10%">
-                    <col width="10%">
-                    <col width="7%">
+                    <col width="5%">
+                    <col width="8%">
+                    <col width="8%">
+                    <col width="6%">
                     <col width="7%">
                     <col width="7%">
                     <col width="7%">
@@ -151,6 +164,7 @@ include(join(DIRECTORY_SEPARATOR, array('query', 'comments_info.php')));
                 <thead>
                 <tr class="title fontsize18">
                     <td>Šifra</td>
+                    <td>Vreme</td>
                     <td>Domaćin</td>
                     <td>Gost</td>
                     <td>Rezultat</td>
@@ -173,21 +187,27 @@ include(join(DIRECTORY_SEPARATOR, array('query', 'comments_info.php')));
                 $soccer_sum_odds = 1;
                 $pwin_sum_odds = 1;
                 $pinn_sum_odds = 1;
+                $num_of_rows= 0;
+                $num_of_winner_rows=0;
                 foreach ($match_data as $md) {
-
+                    $num_of_rows++;
                     $tmp = $md->odds;
                     $code = $md->match->id;
 
                     ?>
+
                     <tr class="row">
                         <!--Podaci koji se ispisuju direktno sa tiketa-->
                         <td value="<?php echo $code ?>"><?php echo $md->match->matchNumber ?></td>
+                        <?php  $match_time = date('H:i',$md->match->startTime/1000); $match_date = date('D',$md->match->startTime/1000); ?>
+
+                        <td><?php echo ($days[$match_date] != "")? "$days[$match_date] $match_time":"$match_date $match_time";;?></td>
                         <td><?php echo $md->match->home ?></td>
                         <td><?php echo $md->match->visitor ?></td>
                         <td><?php echo $md->match->result ?></td>
                         <?php foreach ($md->odds as $tmpOdds) { ?>
                         <td><?php echo $tmpOdds->game->shortName . " " . $tmpOdds->subGame->name;
-                            $game_id = $tmpOdds->subGame->gameId;
+                            $game_id = $tmpOdds->subGame->gameId; ($tmpOdds->status == "WINNER")? $num_of_winner_rows ++ : "";
                             $subgame_id = $tmpOdds->subGame->id; ?></td>
                         <td><?php $mozz_odd_value = number_format($tmpOdds->odd, 2, ',', '.');
                             echo $mozz_odd_value;
@@ -262,12 +282,15 @@ include(join(DIRECTORY_SEPARATOR, array('query', 'comments_info.php')));
                             </td>
 
 
+
+
+
                         <?php } ?>
                     </tr>
                 <?php } ?>
                 <!--Sumarne kolone-->
                 <tr>
-                    <td colspan="5">Kvota</td>
+                    <td colspan="6">Kvota</td>
                     <td><?php echo number_format($mozzart_sum_odds, 2, ',', '.') ?></td>
                     <td><?php echo number_format($mozzart_start_sum_odds, 2, ',', '.') ?></td>
                     <?php
@@ -279,28 +302,43 @@ include(join(DIRECTORY_SEPARATOR, array('query', 'comments_info.php')));
                     <?php } ?>
                 </tr>
                 <tr>
-                    <td colspan="5">Ulog (<?php echo $currency ?>)</td>
+                    <td colspan="6">Ulog (<?php echo $currency ?>)</td>
                     <?php
                     for ($k = 0; $k < 5; $k++) { ?>
                         <td><?php echo $realAmountValue ?></td>
                     <?php } ?>
                 </tr>
                 <tr>
-                    <td colspan="5">Bonus</td>
-                    <td><?php echo ($brutoBonus > 0) ? $brutoBonus . "%" : "-" ?></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="6">Bonus</td>
+                    <td><?php echo ($brutoBonus > 0) ? $brutoBonus . "%" : "0" ?></td>
+                    <td><?php echo ($brutoBonus > 0) ? $brutoBonus . "%" : "0" ?></td>
+                    <?php
+                    for ($k = 0; $k < 3; $k++) {
+                        $SourceBonusArray[$k] = ObracunBonusa($SourcesArray[$k],$num_of_rows,$ticket_hour);?>
+                        <td><?php echo $SourceBonusArray[$k]."%";?></td>
+                        <?php
+                    }
+
+                    ?>
+<!--                    <td>--><?php //echo ObracunBonusa(5,$num_of_rows,$ticket_hour); ?><!--</td>-->
+<!--                    <td>--><?php //echo ObracunBonusa(2,$num_of_rows,$ticket_hour); ?><!--</td>-->
+<!--                    <td>--><?php //echo ObracunBonusa(4,$num_of_rows,$ticket_hour); ?><!--</td>-->
                 </tr>
                 <tr>
-                    <td colspan="5">Dobitak (<?php echo $currency ?>)</td>
+                    <td colspan="6">Dobitak (<?php echo $currency ?>)</td>
                     <td><?php echo number_format($realPaymentValue, 2, ',', '.') ?></td>
+                    <?php if ($num_of_winner_rows == $num_of_rows) { ?>
                     <td><?php echo ($realPaymentValue > 0) ? number_format($realAmountValue * $mozzart_start_sum_odds * (1 + $brutoBonus / 100), 2, ',', '.') : $realPaymentValue ?></td>
                     <?php
                     for ($k = 0; $k < 3; $k++) { ?>
-                        <td><?php echo ($realPaymentValue > 0) ? number_format($realAmountValue * $SourceSumArray[$k], 2, ',', '.') : $realPaymentValue ?></td>
-                    <?php } ?>
+                        <td><?php echo ($realPaymentValue > 0) ? number_format(($realAmountValue * $SourceSumArray[$k]*(1+$SourceBonusArray[$k]/100)), 2, ',', '.') : $realPaymentValue ?></td>
+                    <?php } } else { ?>
+                    <td><?php echo number_format($realPaymentValue, 2, ',', '.') ?></td>
+                    <?php    for ($k = 0; $k < 3; $k++) { ?>
+                            <td>0</td>
+                    <?php
+                    } }
+                    ?>
                 </tr>
 
                 </tbody>

@@ -17,6 +17,7 @@ include(join(DIRECTORY_SEPARATOR, array('included', 'adm_header.php')));
 $source_id = '';
 $i = 1;
 
+
 if (isset ($_GET ["bookie_id"]) != "") {
     $source_all = explode("__", $_GET['bookie_id']);
     if($source_all[0] != 0 ) {
@@ -99,10 +100,10 @@ if (isset($_GET['delete'])) {
         <table id="exportTable"  class="size60">
 
             <colgroup>
-                <col width="20%">
-                <col width="30%">
-                <col width="50%">
-                <col width="10%">
+                <col width="15%">
+                <col width="40%">
+                <col width="40%">
+                <col width="5%">
             </colgroup>
             <thead>
             <tr class="title">

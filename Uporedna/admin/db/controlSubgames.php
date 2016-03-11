@@ -3,29 +3,29 @@ include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlAdminPDO.php')));
 // $kladionica_name='balkanbet';
 
 if ($source_id > 0 ) {
-    $sql = 'SELECT s.name AS source_name, sc.name competition,c.name mozzart_competition, cc.id conn_id, s.id source_id
-FROM init_competition c, src_competition sc, conn_competition cc, import_source s
-WHERE c.id = cc.init_competition_id
-AND sc.id = cc.src_competition_id
-AND sc.source_id = s.id
-and sc.source_id = '.$source_id.'
-ORDER BY 1,2';
+    $sql = "select cs.id as id, concat(isg.game_name,' ', isg.subgame_name) as mozz_subgame, case when ss.game <> ''  then concat(ss.game,' ',ss.subgame) else ss.subgame end as src_subgame, s.name AS source_name
+from conn_subgame cs, src_subgames ss, init_subgame isg, import_source s
+where cs.src_subgame_id = ss.id
+and cs.subgame_id = isg.id
+AND ss.source_id = s.id
+and ss.source_id = $source_id
+order by ss.source_id, isg.mozzart_game_id, isg.mozzart_subgame_id";
 
 } else {
 
-    $sql = 'SELECT s.name AS source_name, sc.name competition,c.name mozzart_competition, cc.id conn_id, s.id source_id
-FROM init_competition c, src_competition sc, conn_competition cc, import_source s
-WHERE c.id = cc.init_competition_id
-AND sc.id = cc.src_competition_id
-AND sc.source_id = s.id
-ORDER BY 1,2
-
+    $sql = 'select cs.id as id, concat(isg.game_name,\' \', isg.subgame_name) as mozz_subgame, case when ss.game <> \'\'  then concat(ss.game,\' \',ss.subgame) else ss.subgame end as src_subgame, s.name AS source_name
+from conn_subgame cs, src_subgames ss, init_subgame isg, import_source s
+where cs.src_subgame_id = ss.id
+and cs.subgame_id = isg.id
+AND ss.source_id = s.id
+order by ss.source_id, isg.mozzart_game_id, isg.mozzart_subgame_id
 ';
 };
-$AllConnCmp = $conn -> prepare($sql);
 
-$AllConnCmp -> execute();
-$resultACC = $AllConnCmp -> fetchAll ( PDO::FETCH_ASSOC);
+$AllConnSubg = $conn -> prepare($sql);
+
+$AllConnSubg-> execute();
+$resultSBG = $AllConnSubg -> fetchAll ( PDO::FETCH_ASSOC);
 
 
 

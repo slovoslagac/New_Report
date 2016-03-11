@@ -34,7 +34,9 @@ if (isset($_GET["sifra"]) != "") {
 include(join(DIRECTORY_SEPARATOR, array('included', 'nas_header.php')));
 include(join(DIRECTORY_SEPARATOR, array('query', 'GetTicketJSON.php')));
 
-
+//echo $ticketTime;
+//echo microtime();
+//echo date('d.m.Y H:i', $ticketTime / 1000);
 
 
 

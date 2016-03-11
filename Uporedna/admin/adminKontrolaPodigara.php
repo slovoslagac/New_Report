@@ -26,10 +26,10 @@ if (isset ($_GET ["bookie_id"]) != "") {
     }
 }
 
-include(join(DIRECTORY_SEPARATOR, array('db', 'controlCompetitions.php')));
+include(join(DIRECTORY_SEPARATOR, array('db', 'controlSubgames.php')));
 include(join(DIRECTORY_SEPARATOR, array('db', 'availableSources.php')));
 
-$Data1 = $resultACC;
+$Data1 = $resultSBG;
 $Data3 = $resultSources;
 
 
@@ -41,7 +41,7 @@ if (isset($_GET['delete'])) {
 
     $j = 0;
 
-    $sql = "DELETE FROM conn_competition ";
+    $sql = "DELETE FROM conn_subgame ";
 
     foreach ($multiple as $item_id) {
         $j++;
@@ -81,9 +81,9 @@ if (isset($_GET['delete'])) {
                             <option value="0">Sve kladionice</option>
                             <?php foreach ($Data3 as $D3) { ?>
                                 <option
-                                    value="<?php echo $D3['id'] . "__" . $D3['name'] ?>" <?php if ($D3['id'] == $source_id) {
-                                    echo 'selected="selected"';
-                                } ?>><?php echo $D3['name'] ?>
+                                    value="<?php echo $D3['id'] . "__" . $D3['name'] ?>" <?php echo ($D3['id'] == $source_id)? 'selected="selected"' : '';
+
+                                ?>><?php echo $D3['name'] ?>
                                 </option>
 
                             <?php } ?>
@@ -121,10 +121,10 @@ if (isset($_GET['delete'])) {
 
                     <tr class="row<?php echo($i++ & 1) ?>">
                         <td><?php echo $srSource['source_name'] ?></td>
-                        <td><?php echo $srSource['mozzart_competition'] ?></td>
-                        <td><?php echo $srSource['competition'] ?></td>
+                        <td><?php echo $srSource['mozz_subgame'] ?></td>
+                        <td><?php echo $srSource['src_subgame'] ?></td>
                         <td>
-                            <input type="checkbox" name="delete_selection[]" value="<?php echo $srSource['conn_id'] ?>">
+                            <input type="checkbox" name="delete_selection[]" value="<?php echo $srSource['id'] ?>">
                         </td>
                     </tr>
 

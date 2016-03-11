@@ -7,6 +7,8 @@ $btn4 = 'adminSpajanjeMeceva.php';
 $btn5 = 'adminKontrolaTakmicenja.php';
 $btn6 = 'adminKontrolaMeceva.php';
 $btn7 = 'adminKontrolaTimova.php';
+$btn8 = 'adminSpajanjePodigara.php';
+$btn9 = 'adminKontrolaPodigara.php';
 
 ?>
 <div id="helpmenu">
@@ -37,6 +39,11 @@ $btn7 = 'adminKontrolaTimova.php';
                 </a>
             </li>
             <li>
+                <a href="<?php echo $btn8 ?>" accesskey="4">
+                    <button>Spajanje podigara</button>
+                </a>
+            </li>
+            <li>
                 <a href="<?php echo $btn5 ?>" accesskey="5">
                     <button>Kontrola spojenih takmičenja</button>
                 </a>
@@ -49,6 +56,11 @@ $btn7 = 'adminKontrolaTimova.php';
             <li>
                 <a href="<?php echo $btn7 ?>" accesskey="7">
                     <button>Kontrola spojenih timova</button>
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $btn9 ?>" accesskey="7">
+                    <button>Kontrola spojenih podigara</button>
                 </a>
             </li>
         </ul>

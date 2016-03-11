@@ -20,9 +20,9 @@ $bookie = $_POST['source'];
 // echo $bookie;
 // fetch data
 $_post = $_POST;
-if (!empty($_post['src_comp'])) {
-    foreach ($_post['src_comp'] as $index => $inv) {
-        if ($_post['mozz_comp'][$index] == 0) {
+if (!empty($_post['src_sbg'])) {
+    foreach ($_post['src_sbg'] as $index => $inv) {
+        if ($_post['mozz_sbg'][$index] == 0) {
             continue;
         }
 
@@ -37,15 +37,15 @@ foreach ($indexes as $index) {
     // temporary data
     $tmp = array();
 
-    $bookie_cmp_base = explode("__", $_post['src_comp'][$index]);
+    $bookie_sbg_base = explode("__", $_post['src_sbg'][$index]);
 
-    $tmp['src_comp'] = $bookie_cmp_base[0];
-    $tmp['src_name'] = $bookie_cmp_base[1];
+    $tmp['src_comp'] = $bookie_sbg_base[0];
+    $tmp['src_name'] = $bookie_sbg_base[1];
 
 
-    $mozz_cmp_base = explode("__", $_post['mozz_comp'][$index]);
-    $tmp['mozz_comp'] = $mozz_cmp_base[0];
-    $tmp['mozz_name'] = $mozz_cmp_base[1];
+    $mozz_sbg_base = explode("__", $_post['mozz_sbg'][$index]);
+    $tmp['mozz_comp'] = $mozz_sbg_base[0];
+    $tmp['mozz_name'] = $mozz_sbg_base[1];
 
     $data[] = $tmp;
 }
@@ -57,20 +57,20 @@ include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlAdminPDO.php')));
 
 foreach ($data as $d) {
 
-    $competitionId = $d['mozz_comp'];
-    $srcCompetitionId = $d['src_comp'];
+    $mozzGame = $d['mozz_comp'];
+    $srcGame = $d['src_comp'];
 
 
     $query = '
 INSERT INTO
-conn_competition (init_competition_id, src_competition_id)
+conn_subgame (subgame_id, src_subgame_id)
 VALUES
-(:init_competition_id, :src_competition_id)
+(:init_subgame_id, :src_subgame_id)
 ';
 
     $params = array(
-        'init_competition_id' => $competitionId,
-        'src_competition_id' => $srcCompetitionId
+        'init_subgame_id' => $mozzGame,
+        'src_subgame_id' => $srcGame
     );
 
     $prepare = $conn->prepare($query);

@@ -15,14 +15,19 @@ $Data1 = array();
 $Data2 = array();
 $source_id = 2;
 $bookie = 'Soccer';
-
+$cmp = 0;
 
 if (isset ($_GET ["bookie_id"]) != "") {
     $source_all = explode("__", $_GET['bookie_id']);
 
     $source_id = $source_all[0];
     $bookie = $source_all[1];
-//    $bookie = $_GET ["source1"];
+
+    if (isset($_GET['sve'])) {
+        $cmp = 1;
+    } else {
+        $cmp =0;
+    }
 }
 // echo $bookie;
 
@@ -38,14 +43,10 @@ $Data3 = $resultSources;
 ?>
 <body>
 <div id="container">
-    <?php $btn1 = 'admin.php';
-    $btn2 = 'adminRedosled.php';
-    $btn3 = 'adminSpajanjeTakmicenja.php';
-    $btn4 = 'adminSpajanjeMeceva.php';
-    $btn5 = 'adminKontrolaTakmicenja.php';
+    <?php
     include(join(DIRECTORY_SEPARATOR, array('included', 'adm_menu.php'))); ?>
     <div id="function_data">
-        <table id="exportTable" class="size60">
+        <table id="exportTable"  class="size60">
             <thead>
             <tr class="title">
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
@@ -63,7 +64,7 @@ $Data3 = $resultSources;
                         </select>
                     </td>
                     <td>
-                        <input type="Submit" accesskey="w" value="Osveži"/>
+                        <input type="Submit" accesskey="w" value="Osveži"/><input name="sve" type="checkbox" <?php echo ($cmp==1)?"checked" : ""?>>
                     </td>
                 </form>
             </tr>
@@ -78,13 +79,13 @@ $Data3 = $resultSources;
                 <?php
                 foreach ($Data1 as $srSource) {
 
-                    if ($bookie != $srSource['src_name']) {
-                        $source = $srSource['src_name'];
-                        $source_id = $srSource['src_id'];
-                        echo $source ?>
-
-
-                    <?php }
+//                    if ($bookie != $srSource['src_name']) {
+//                        $source = $srSource['src_name'];
+//                        $source_id = $srSource['src_id'];
+//                        echo $source ?>
+<!---->
+<!---->
+<!--                    --><?php //}
                     $liga = $srSource['cmp_name'];
                     $liga_id = $srSource['cmp_id'] ?>
 
