@@ -19,6 +19,12 @@ $sql2 = 'select *from init_current_odds
 where level = 0
 and id IN';
 
+$sql3 = 'select telebet_current_id as code, special_type as value
+from init_current_offer
+where list_type_id = 4
+and telebet_current_id IN
+';
+
 $tm = join(',', $tmp_matches);
 $tg = join(',', $tmp_games);
 $tsg = join(',', $tmp_subgames);
@@ -34,6 +40,9 @@ $sql2 .= ' and subgame_id in (' . $tsg . ')';
 $sql2 .= ' order by 1,2, 3';
 
 
+$sql3 .= '(' . $tm . ') ';
+
+
 
 $sql1 .= '(' . $tm . ') ';
 //echo $sql;
@@ -42,6 +51,7 @@ $sql1 .= '(' . $tm . ') ';
 $Odds = $conn->prepare($sql);
 $FavOdds = $conn->prepare($sql1);
 $StartOdds = $conn->prepare($sql2);
+$tmpOdds = $conn->prepare($sql3);
 
 $Odds->execute();
 $SourceOdds = $Odds->fetchAll(PDO::FETCH_ASSOC);
@@ -52,11 +62,21 @@ $FavoriteOdds = $FavOdds->fetchAll(PDO::FETCH_ASSOC);
 
 $StartOdds->execute();
 $StartingOdds = $StartOdds->fetchAll(PDO::FETCH_ASSOC);
-$conn = null;
-// print_r($SourceOdds);
 
-// foreach ($ShowMatches as $d) {
+$tmpOdds->execute();
+$oddtype = array();
+while($row = $tmpOdds->fetch(PDO::FETCH_ASSOC)){
+    $oddtype[$row['code']] = $row['value'];
+}
+
+
+
+$conn = null;
+//print_r($oddtype);
+
+// foreach ($oddtype as $d) {
 // 	print_r($d)."<br>";
+//     echo($d)."<br>";
 // }
 
 ?>

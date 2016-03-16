@@ -11,7 +11,7 @@ insert into src_current_odds (src_match_id, src_subgame_id, value, handicap, sou
 select distinct src_match_id, src_subgame_id, value, handicap, i.source_id
 from src_odds so, import i
 where so.import_id = i.id
-and so.import_id = (select max(id) from import where source_id=(select max(source) from ulaz_odds))
+and so.import_id = (select max(id)-1 from import where source_id=(select max(source) from ulaz_odds))
 on DUPLICATE KEY update src_match_id=so.src_match_id
 ;
 
@@ -19,7 +19,7 @@ insert into src_current_odds (src_match_id, src_subgame_id, value, handicap, sou
 select distinct src_match_id, src_subgame_id, value, handicap, i.source_id
 from src_odds so, import i
 where so.import_id = i.id
-and so.import_id = 130
+and so.import_id = 212
 on DUPLICATE KEY update src_match_id=so.src_match_id
 ;
 
@@ -51,7 +51,7 @@ select source_id, count(*) from src_current_odds group by source_id
 ;
 select * from src_odds where import_id = 95;
 
-select count(*) from src_odds where import_id = 141;
+select count(*) from src_odds where import_id = 255;
 
 select count(*) from ulaz_odds;
 

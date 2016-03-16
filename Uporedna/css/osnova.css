@@ -4,11 +4,14 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: Calibri;
 
 }
 
 table {
     border-spacing: 0;
+    font-size: 14px;
+    text-align:  center;
 }
 
 p {
@@ -22,6 +25,60 @@ input[type="checkbox"] {
 }
 
 /*Velicine tabela i divova*/
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.cyan {
+    color: cyan;
+}
+
+.blue {
+    color: blue;
+}
+
+.greenb {
+    background-color: #00B050;
+}
+
+.darkgrayb {
+    background-color: #404040;
+    color: white;
+}
+
+.midgrayb {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.grayb {
+    background-color: #BFBFBF;
+    color: black;
+}
+
+.yellowb {
+    background-color: yellow;
+}
+
+.bonusb {
+    background-color: #D9E1F2;
+    color: black;
+}
+
+.mozzb {
+    background-color: #9BC2E6;
+}
+
+
+
+.bold {
+    font-weight:  bold;
+}
 
 .size50 {
     width: 50%;
@@ -132,12 +189,13 @@ input[type="checkbox"] {
 
 .page_data td, tr {
     border-collapse: collapse;
-    border: 1px solid #ccc;
+    border: 1px solid black;
 }
 
 .page_data table {
     width: 100%;
     margin:0;
+    border: 3px solid black;
 }
 
 /*deo sa komentarom*/
@@ -224,6 +282,7 @@ input[type="checkbox"] {
 .row {
     background-color: white;
     color: black;
+
 }
 
 .row0 div {
@@ -231,6 +290,7 @@ input[type="checkbox"] {
     font-size: 14px;
     display: inline;
     margin: auto;
+
 }
 
 .row1 div {

@@ -63,10 +63,14 @@ if ($sifraTiketa != "") {
     $brutoPaymentWithoutBonusTmp = explode(" ", $brutoPaymentWithoutBonus);
     $brutoPaymentWithoutBonusValues = $brutoPaymentWithoutBonusTmp[0];
     if ($brutoPaymentWithoutBonusValues > 0) {
-        $brutoBonus = intval(($brutoPaymentValue - $brutoPaymentWithoutBonusValues) / $brutoPaymentWithoutBonusValues * 100);
+        $brutoBonus = round(($brutoPaymentValue - $brutoPaymentWithoutBonusValues) / $brutoPaymentWithoutBonusValues * 100);
     } else {
         $brutoBonus = 0;
     }
+
+    $bonusValue = $ticket_data->bonus;
+    $bonusValueTmp = explode(" ", $bonusValue);
+    $bonusRealValue = $bonusValueTmp[0];
 
     $numCombination = $ticket_data->combinationNumber;
     $ticketTime = $ticket_data->time;

@@ -12,19 +12,20 @@ $naslov = "Uporedni pregled tiketa po šifri";
 $naslov_short = "Pregled tiketa";
 $sifraTiketa = '';
 $curr_comment = '';
-$ticketTime ='';
+$ticketTime = '';
 $i = 1;
 $conn;
 $tmp_games = array();
 $tmp_subgames = array();
 $tmp_matches = array();
+
 $SourceOdds = array();
 //Raspored kladionica je
 $SourcesArray = array(5, 2, 4);
 $SourceSumArray = array(1, 1, 1);
-$SourceBonusArray = array(0,0,0);
-$days = array('Mon'=>'pon','Tue'=>'uto','Wed'=>'sre','Thu'=>'čet','Fri'=>'pet','Sat'=>'sub','Sun'=>'ned');
-$ticket_hour="";
+$SourceBonusArray = array(0, 0, 0);
+$days = array('Mon' => 'pon', 'Tue' => 'uto', 'Wed' => 'sre', 'Thu' => 'čet', 'Fri' => 'pet', 'Sat' => 'sub', 'Sun' => 'ned');
+$ticket_hour = "";
 
 
 if (isset($_GET["sifra"]) != "") {
@@ -96,7 +97,7 @@ include(join(DIRECTORY_SEPARATOR, array('included', 'nas_header.php')));
 include(join(DIRECTORY_SEPARATOR, array('query', 'GetTicketJSON.php')));
 include(join(DIRECTORY_SEPARATOR, array('query', 'comments_info.php')));
 
-include(join(DIRECTORY_SEPARATOR, array('functions','bonuses.php')));
+include(join(DIRECTORY_SEPARATOR, array('functions', 'bonuses.php')));
 
 
 //echo $ticketTime;
@@ -126,9 +127,9 @@ $ticket_hour = date('G', $ticketTime / 1000);
                     <td>
                         <input type="Submit" accesskey="w" value="Osveži"/>
                     </td>
-<!--                    <td>-->
-<!--                        <input type="button" id="btnExport" value=" Export Table data into Excel " />-->
-<!--                    </td>-->
+                    <!--                    <td>-->
+                    <!--                        <input type="button" id="btnExport" value=" Export Table data into Excel " />-->
+                    <!--                    </td>-->
                 </form>
             </tr>
         </table>
@@ -162,22 +163,28 @@ $ticket_hour = date('G', $ticketTime / 1000);
 
                 </colgroup>
                 <thead>
-                <tr class="title fontsize18">
+                <tr class="title fontsize14 row bold">
+                    <td colspan="6"><?php echo $sifraTiketa?></td>
+                    <td rowspan="2" class="mozzb">Kvota na tiketu</td>
+                    <td colspan="4" class="grayb">Kvota kladionice na početku kola</td>
+                    <td colspan="4" class="darkgrayb">Početak kola (ki, 3+)</td>
+
+                </tr>
+                <tr class="title fontsize14 row bold">
                     <td>Šifra</td>
                     <td>Vreme</td>
                     <td>Domaćin</td>
                     <td>Gost</td>
                     <td>Rezultat</td>
                     <td>Podigra</td>
-                    <td>Tiket</td>
-                    <td>Početak kola</td>
-                    <td>Pwin</td>
-                    <td>Soccer</td>
-                    <td>Pinnbet</td>
-                    <td>Početak kola</td>
-                    <td>Pwin</td>
-                    <td>Soccer</td>
-                    <td>Pinnbet</td>
+                    <td class="mozzb">Mozzart</td>
+                    <td class="yellowb">Pwin</td>
+                    <td class="greenb">Soccer</td>
+                    <td class="grayb">Pinnbet</td>
+                    <td class="mozzb">Mozzart</td>
+                    <td class="yellowb">Pwin</td>
+                    <td class="greenb">Soccer</td>
+                    <td class="grayb">Pinnbet</td>
                 </tr>
                 </thead>
                 <tbody>
@@ -187,62 +194,93 @@ $ticket_hour = date('G', $ticketTime / 1000);
                 $soccer_sum_odds = 1;
                 $pwin_sum_odds = 1;
                 $pinn_sum_odds = 1;
-                $num_of_rows= 0;
-                $num_of_winner_rows=0;
+                $num_of_rows = 0;
+                $num_of_winner_rows = 0;
+
                 foreach ($match_data as $md) {
                     $num_of_rows++;
                     $tmp = $md->odds;
                     $code = $md->match->id;
+                    $tmp_odds = array();
 
                     ?>
 
                     <tr class="row">
                         <!--Podaci koji se ispisuju direktno sa tiketa-->
-                        <td value="<?php echo $code ?>"><?php echo $md->match->matchNumber ?></td>
-                        <?php  $match_time = date('H:i',$md->match->startTime/1000); $match_date = date('D',$md->match->startTime/1000); ?>
+                        <?php $match_code = $md->match->matchNumber; ?>
 
-                        <td><?php echo ($days[$match_date] != "")? "$days[$match_date] $match_time":"$match_date $match_time";;?></td>
+                        <td value="<?php echo $code ?>" class="<?php echo ($oddtype[$code]==64)? "red":""?>"><?php echo $match_code ?></td>
+                        <?php $match_time = date('H:i', $md->match->startTime / 1000);
+                        $match_date = date('D', $md->match->startTime / 1000); ?>
+
+                        <td><?php echo ($days[$match_date] != "") ? "$days[$match_date] $match_time" : "$match_date $match_time";; ?></td>
                         <td><?php echo $md->match->home ?></td>
                         <td><?php echo $md->match->visitor ?></td>
                         <td><?php echo $md->match->result ?></td>
                         <?php foreach ($md->odds as $tmpOdds) { ?>
-                        <td><?php echo $tmpOdds->game->shortName . " " . $tmpOdds->subGame->name;
-                            $game_id = $tmpOdds->subGame->gameId; ($tmpOdds->status == "WINNER")? $num_of_winner_rows ++ : "";
-                            $subgame_id = $tmpOdds->subGame->id; ?></td>
-                        <td><?php $mozz_odd_value = number_format($tmpOdds->odd, 2, ',', '.');
-                            echo $mozz_odd_value;
+                            <td><?php echo $tmpOdds->game->shortName . " " . $tmpOdds->subGame->name;
+                                $game_id = $tmpOdds->subGame->gameId;
+                                ($tmpOdds->status == "WINNER") ? $num_of_winner_rows++ : "";
+                                $subgame_id = $tmpOdds->subGame->id; ?></td>
+                            <?php $mozz_odd_value = number_format($tmpOdds->odd, 2, ',', '.');
+
+                            $tmp_odds[1] = $mozz_odd_value;
+
                             ($tmpOdds->odd > 0) ? $mozzart_sum_odds *= $tmpOdds->odd : "";
-                            ?>
-                        </td>
-                    <!--Kvote Mozzart na početku kola-->
-                        <td>
-                            <?php }
-                            foreach ($StartingOdds as $so) {
-                                if ($so['id'] == $code && $so['game_id'] == $game_id && $so['subgame_id'] == $subgame_id) {
 
-                                    echo str_replace(".", ",", $so['value']);
-                                    ($so['value'] > 0) ? $mozzart_start_sum_odds *= $so['value'] : "";
+                        }
+                        //                      Kvote Mozzart na početku kola
+                        foreach ($StartingOdds as $so) {
+                            if ($so['id'] == $code && $so['game_id'] == $game_id && $so['subgame_id'] == $subgame_id) {
+                                $tmp_odds[0] = str_replace(".", ",", $so['value']);
+//                                    echo str_replace(".", ",", $so['value']);
+                                ($so['value'] > 0) ? $mozzart_start_sum_odds *= $so['value'] : "";
 
 
-                                }
-                            } ?>
-                        </td>
+                            }
+                        } ?>
 
                         <!--Odgovarajuce kvote respektivno po kladionicama-->
                         <?php for ($k = 0; $k < 3; $k++) {
                             $curr_source = $SourcesArray[$k] ?>
-                            <td>
-                                <?php
-                                foreach ($SourceOdds as $so) {
-                                    if ($so['id'] == $code && $so['game_id'] == $game_id && $so['subgame_id'] == $subgame_id && $so['source'] == $curr_source) {
-                                        echo str_replace(".", ",", $so['odd']);
-                                        ($so['odd'] > 0) ? $SourceSumArray[$k] *= $so['odd'] : "";
-                                    }
-                                }
-                                ?>
-                            </td>
 
-                        <?php } ?>
+                            <?php
+                            foreach ($SourceOdds as $so) {
+                                if ($so['id'] == $code && $so['game_id'] == $game_id && $so['subgame_id'] == $subgame_id && $so['source'] == $curr_source) {
+                                    $tmp_odds[$curr_source] = str_replace(".", ",", $so['odd']);
+                                    ($so['odd'] > 0) ? $SourceSumArray[$k] *= $so['odd'] : "";
+                                }
+                            }
+                            ?>
+
+
+                        <?php }
+
+                        $min_odd = min($tmp_odds);
+                        $max_odd = max($tmp_odds);
+                        if ($min_odd == $max_odd) {
+                            $max_odd = 1;
+                            $min_odd = 1;
+                        }
+
+                        ?>
+
+                        <td class="bold <?php $odd = $tmp_odds[1]; if ($odd == $max_odd) { echo "red";} elseif ($odd == $min_odd) {echo "green";} ?>">
+                            <?php echo $odd; ?>
+                        </td>
+                        <td class="bold <?php $odd = $tmp_odds[0]; if ($odd == $max_odd) { echo "red"; } elseif ($odd == $min_odd) {  echo "green"; } ?>">
+                            <?php echo $odd; ?>
+                        </td>
+                        <?php for ($k = 0; $k < 3; $k++) { $curr_source = $SourcesArray[$k];
+
+                            if(array_key_exists($curr_source,$tmp_odds)) { ?>
+                                 <td class="bold <?php $odd = $tmp_odds[$curr_source];  if ($odd == $max_odd) {  echo "red"; } elseif ($odd == $min_odd) { echo "green"; } ?>">
+                                    <?php echo $odd; ?> </td>
+                        <?php }  else { ?>
+                                <td class="bold blue"><?php echo $tmp_odds[1];?></td>
+
+                            <?php }  }  ?>
+
                         <!--Kvote favorit i 3+ Mozzart na početku kola-->
                         <td>
                             <?php
@@ -282,14 +320,20 @@ $ticket_hour = date('G', $ticketTime / 1000);
                             </td>
 
 
-
-
-
                         <?php } ?>
                     </tr>
                 <?php } ?>
                 <!--Sumarne kolone-->
-                <tr>
+                <tr class="midgrayb bold">
+                    <td colspan="6">Ulog (<?php echo $currency ?>)</td>
+                    <?php
+                    for ($k = 0; $k < 5; $k++) { ?>
+                        <td><?php echo number_format($realAmountValue, 2, ',', '.') ?></td>
+                    <?php } ?>
+                    <td colspan="4"></td>
+                </tr>
+
+                <tr class="row">
                     <td colspan="6">Kvota</td>
                     <td><?php echo number_format($mozzart_sum_odds, 2, ',', '.') ?></td>
                     <td><?php echo number_format($mozzart_start_sum_odds, 2, ',', '.') ?></td>
@@ -300,46 +344,86 @@ $ticket_hour = date('G', $ticketTime / 1000);
                         </td>
 
                     <?php } ?>
+                    <td colspan="4"></td>
                 </tr>
-                <tr>
-                    <td colspan="6">Ulog (<?php echo $currency ?>)</td>
-                    <?php
-                    for ($k = 0; $k < 5; $k++) { ?>
-                        <td><?php echo $realAmountValue ?></td>
-                    <?php } ?>
+                <tr class="row">
+                    <td colspan="6">Dobitak (<?php echo $currency ?>)</td>
+
+                    <td><?php echo number_format($brutoPaymentWithoutBonusValues, 2, ',', '.') ?></td>
+                    <?php if ($num_of_winner_rows == $num_of_rows) { ?>
+                        <td><?php echo ($realPaymentValue > 0) ? number_format($realAmountValue * $mozzart_start_sum_odds, 2, ',', '.') : $realPaymentValue ?></td>
+                        <?php
+                        for ($k = 0; $k < 3; $k++) { ?>
+                            <td><?php echo ($realPaymentValue > 0) ? number_format(($realAmountValue * $SourceSumArray[$k]) , 2, ',', '.') : $realPaymentValue ?></td>
+                        <?php }
+                    } else { ?>
+                        <td><?php echo number_format($realPaymentValue, 2, ',', '.') ?></td>
+                        <?php for ($k = 0; $k < 3; $k++) { ?>
+                            <td>0</td>
+                            <?php
+                        }
+                    }
+                    ?>
+                    <td colspan="4"></td>
                 </tr>
-                <tr>
+
+                <tr class="bonusb">
                     <td colspan="6">Bonus</td>
-                    <td><?php echo ($brutoBonus > 0) ? $brutoBonus . "%" : "0" ?></td>
-                    <td><?php echo ($brutoBonus > 0) ? $brutoBonus . "%" : "0" ?></td>
+                    <td><?php echo ($brutoBonus > 0) ? $brutoBonus . "%" : "0%" ?></td>
+                    <td><?php echo ($brutoBonus > 0) ? $brutoBonus . "%" : "0%" ?></td>
                     <?php
                     for ($k = 0; $k < 3; $k++) {
-                        $SourceBonusArray[$k] = ObracunBonusa($SourcesArray[$k],$num_of_rows,$ticket_hour);?>
-                        <td><?php echo $SourceBonusArray[$k]."%";?></td>
+                        $SourceBonusArray[$k] = ObracunBonusa($SourcesArray[$k], $num_of_rows, $ticket_hour); ?>
+                        <td><?php echo $SourceBonusArray[$k] . "%"; ?></td>
                         <?php
                     }
 
                     ?>
-<!--                    <td>--><?php //echo ObracunBonusa(5,$num_of_rows,$ticket_hour); ?><!--</td>-->
-<!--                    <td>--><?php //echo ObracunBonusa(2,$num_of_rows,$ticket_hour); ?><!--</td>-->
-<!--                    <td>--><?php //echo ObracunBonusa(4,$num_of_rows,$ticket_hour); ?><!--</td>-->
+                    <td colspan="4"></td>
                 </tr>
-                <tr>
-                    <td colspan="6">Dobitak (<?php echo $currency ?>)</td>
+                <tr class="bonusb">
+                    <td colspan="6">Iznos bonusa</td>
+
+                    <td><?php echo number_format($bonusRealValue, 2, ',', '.') ?></td>
+                    <?php if ($num_of_winner_rows == $num_of_rows) { ?>
+                        <td><?php echo ($realPaymentValue > 0) ? number_format($realAmountValue * $mozzart_start_sum_odds * $brutoBonus / 100, 2, ',', '.') : $realPaymentValue ?></td>
+                        <?php
+                        for ($k = 0; $k < 3; $k++) { ?>
+                            <td><?php echo ($realPaymentValue > 0) ? number_format(($realAmountValue * $SourceSumArray[$k] * $SourceBonusArray[$k] / 100), 2, ',', '.') : $realPaymentValue ?></td>
+                        <?php }
+                    } else { ?>
+                        <td><?php echo number_format($realPaymentValue, 2, ',', '.') ?></td>
+                        <?php for ($k = 0; $k < 3; $k++) { ?>
+                            <td>0</td>
+                            <?php
+                        }
+                    }
+                    ?>
+                    <td colspan="4"></td>
+                </tr>
+                <tr class="grayb bold">
+                    <td colspan="6">Za isplatu (<?php echo $currency ?>)</td>
                     <td><?php echo number_format($realPaymentValue, 2, ',', '.') ?></td>
                     <?php if ($num_of_winner_rows == $num_of_rows) { ?>
-                    <td><?php echo ($realPaymentValue > 0) ? number_format($realAmountValue * $mozzart_start_sum_odds * (1 + $brutoBonus / 100), 2, ',', '.') : $realPaymentValue ?></td>
-                    <?php
-                    for ($k = 0; $k < 3; $k++) { ?>
-                        <td><?php echo ($realPaymentValue > 0) ? number_format(($realAmountValue * $SourceSumArray[$k]*(1+$SourceBonusArray[$k]/100)), 2, ',', '.') : $realPaymentValue ?></td>
-                    <?php } } else { ?>
-                    <td><?php echo number_format($realPaymentValue, 2, ',', '.') ?></td>
-                    <?php    for ($k = 0; $k < 3; $k++) { ?>
+                        <td><?php echo ($realPaymentValue > 0) ? number_format($realAmountValue * $mozzart_start_sum_odds * (1 + $brutoBonus / 100), 2, ',', '.') : $realPaymentValue ?></td>
+                        <?php
+                        for ($k = 0; $k < 3; $k++) { ?>
+                            <td><?php echo ($realPaymentValue > 0) ? number_format(($realAmountValue * $SourceSumArray[$k] * (1 + $SourceBonusArray[$k] / 100)), 2, ',', '.') : $realPaymentValue ?></td>
+                        <?php }
+                    } else { ?>
+                        <td><?php echo number_format($realPaymentValue, 2, ',', '.') ?></td>
+                        <?php for ($k = 0; $k < 3; $k++) { ?>
                             <td>0</td>
-                    <?php
-                    } }
+                            <?php
+                        }
+                    }
                     ?>
+                    <td colspan="4"> </td>
                 </tr>
+                <tr>
+                    <td colspan="15"></td>
+                </tr>
+
 
                 </tbody>
             </table>
@@ -405,9 +489,9 @@ $ticket_hour = date('G', $ticketTime / 1000);
 </html>
 
 <script>
-//    $("#btnExport").click(function (e) {
-//        window.open('data:application/vnd.ms-excel,' + $('#dvData').html());
-//        e.preventDefault();
-//    });
+    //    $("#btnExport").click(function (e) {
+    //        window.open('data:application/vnd.ms-excel,' + $('#dvData').html());
+    //        e.preventDefault();
+    //    });
 
 </script>
