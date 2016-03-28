@@ -11,7 +11,6 @@ $css = 'css/tiketi.css';
 $naslov = "Uporedni pregled tiketa po šifri";
 $naslov_short = "Pregled tiketa";
 $sifraTiketa = '';
-$conn;
 $i = 1;
 $tmp_games = array();
 $tmp_subgames = array();

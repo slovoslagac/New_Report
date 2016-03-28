@@ -2,7 +2,8 @@
 include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlAdminPDO.php')));
 // $kladionica_name='balkanbet';
 
-$NonMatchCmp = $conn -> prepare('select
+if ($cmp == 0) {
+    $sql = "select
   c.id as cmp_id,
   c.name as cmp_name,
   s.id as src_id,
@@ -13,11 +14,25 @@ inner join
   import_source as s
 on
   c.source_id=s.id
-where s.id = '.$source_id.'
+where s.id = $source_id
 and c.id not in (select src_competition_id from conn_competition)
-order by src_name, cmp_name asc
-
-');
+order by src_name, cmp_name asc";
+} else {
+    $sql ="select
+  c.id as cmp_id,
+  c.name as cmp_name,
+  s.id as src_id,
+  s.name as src_name
+from
+  src_competition as c
+inner join
+  import_source as s
+on
+  c.source_id=s.id
+where s.id = $source_id
+order by src_name, cmp_name asc";
+}
+$NonMatchCmp = $conn -> prepare($sql);
 
 $NonMatchCmp -> execute();
 $resultNMCMP = $NonMatchCmp -> fetchAll ( PDO::FETCH_ASSOC);

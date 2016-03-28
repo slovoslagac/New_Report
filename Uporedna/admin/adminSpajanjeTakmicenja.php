@@ -46,7 +46,7 @@ $Data3 = $resultSources;
     <?php
     include(join(DIRECTORY_SEPARATOR, array('included', 'adm_menu.php'))); ?>
     <div id="function_data">
-        <table id="exportTable"  class="size60">
+        <table id="exportTable"  class="size80">
             <thead>
             <tr class="title">
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">

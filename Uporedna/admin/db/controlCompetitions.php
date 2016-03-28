@@ -9,7 +9,7 @@ WHERE c.id = cc.init_competition_id
 AND sc.id = cc.src_competition_id
 AND sc.source_id = s.id
 and sc.source_id = '.$source_id.'
-ORDER BY 1,2';
+ORDER BY 1,3,2';
 
 } else {
 

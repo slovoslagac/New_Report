@@ -15,7 +15,7 @@ and im.competition_id = ic.id
 and sm.src_home_team_id = st.id
 and sm.src_visitor_team_id = st1.id
 and ims.id = '.$source_id.'
-and im.start_time > now() - interval "4" day
+and im.start_time > now() - interval "7" day
 and im.start_time < now() + interval "7" day
 order by ims.name, ic.name, it.name
 
@@ -33,7 +33,7 @@ and sm.source_id = ims.id
 and im.competition_id = ic.id
 and sm.src_home_team_id = st.id
 and sm.src_visitor_team_id = st1.id
-and im.start_time > now() - interval "4" day
+and im.start_time > now() - interval "7" day
 and im.start_time < now() + interval "7" day
 order by ims.name, ic.name, it.name
 

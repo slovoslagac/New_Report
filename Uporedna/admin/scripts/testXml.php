@@ -31,9 +31,21 @@ foreach ($data->SportVMs as $sports) {
     }
 }
 
-print_r($competitions);
+//print_r($competitions);
 
 
-//foreach($competitions as $c) {
-//    echo $c->cmp_id." ". $c->cmp_name."<br>";
-//}
+include 'xmltest.php';
+
+foreach($competitions as $c) {
+    $curr_cmp_id = $c['cmp_id'];
+    $curr_cmp_name =  $c['cmp_name'];
+    $curr_url = "https://www.soccerbet.rs/api/Match/GetFilteredScheduledMatches?ItemsPerPage=50&CurrentPage=1&SortOrderFilterId=1&TimeFilterId=7&CompetitionIds=$curr_cmp_id";
+    get_matches($curr_url);
+//    $xmlMatchData = file_get_contents($curr_url);
+//    $curr_data = json_decode($xmlMatchData);
+//
+//    echo $curr_url."<br>";
+//
+}
+
+

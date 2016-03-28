@@ -11,6 +11,7 @@ AND cs.subgame_id = ins.id
 and cm.home_visitor = 0
 AND co.list_type_id = 4
 AND co.telebet_current_id IN ';
+
 $sql1 = 'select *from init_current_odds
 where level = 1
 and id IN';
@@ -24,6 +25,10 @@ from init_current_offer
 where list_type_id = 4
 and telebet_current_id IN
 ';
+
+$selectBusinessUnites = "select id, name from init_business_units";
+
+if($currency_id <> "") {$selectCurrencies = "select mid_value from init_currencies where currency_id = $currency_id and date_format(date(validity_date),'%d.%m.%Y') = '$currency_date'";}
 
 $tm = join(',', $tmp_matches);
 $tg = join(',', $tmp_games);
@@ -48,10 +53,13 @@ $sql1 .= '(' . $tm . ') ';
 //echo $sql;
 
 
+
 $Odds = $conn->prepare($sql);
 $FavOdds = $conn->prepare($sql1);
 $StartOdds = $conn->prepare($sql2);
 $tmpOdds = $conn->prepare($sql3);
+$tmpBU = $conn->prepare($selectBusinessUnites);
+$tmpCu = $conn->prepare($selectCurrencies);
 
 $Odds->execute();
 $SourceOdds = $Odds->fetchAll(PDO::FETCH_ASSOC);
@@ -68,6 +76,15 @@ $oddtype = array();
 while($row = $tmpOdds->fetch(PDO::FETCH_ASSOC)){
     $oddtype[$row['code']] = $row['value'];
 }
+
+$tmpBU->execute();
+$businessUnits = array();
+while($row = $tmpBU ->fetch(PDO::FETCH_ASSOC)){
+    $businessUnits[$row['id']] = $row['name'];
+}
+
+$tmpCu ->execute();
+$currencyValue = $tmpCu->fetchColumn();
 
 
 

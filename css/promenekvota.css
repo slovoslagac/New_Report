@@ -1,0 +1,142 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color: #000000;
+	color: white;
+	margin:0;
+	min-width: 350px;
+}
+
+#helpmenu {
+	min-width: 350px;
+	height: 80px;
+	background-color: #0E1C42;
+	border-bottom: 1px solid #fdb813;
+}
+
+#helpmenu img {
+	padding: 17px 0 0 15px;
+	float: left;
+}
+
+#helpmenu h1 {
+	text-align: center;
+	margin: 0 auto 0 auto;
+	padding: 20px 20px 20px 0 ;
+	font-size: 2.2em;
+	margin-right: 177px;
+
+}
+#header {
+	width: 80%;
+	min-height: 50px;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+}
+
+#header input {
+	margin: 10px 5% 10px 5%;
+	min-height: 30px;
+	width: 23%;
+	background-color: #1E2128;
+	color: #CCD8DC;
+	border: 2px solid #fdb813;
+	float:left;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#menu {
+	background-color: #1E2128;
+	color: #CCD8DC;
+	min-height:50px;
+	width:100%;
+	margin: auto;
+}
+
+.selectdata {
+	margin: auto;
+	width: 50%;
+
+	
+}
+
+.selectdata ul {
+	padding: 0;
+	float:left;
+	width: 100%;
+	margin: 10px auto 10px auto;
+}
+
+.selectdata span {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-top: 20px;
+	
+}
+
+.selectdata li {
+	float:left;
+	list-style: none;
+	padding: 0 1% 0 1%;
+	text-align: center;
+}
+
+.selectdata option, select {
+	background-color: #040C19;
+	color: white;
+	height: 30px;
+	max-width: 250px;
+	min-width: 200px;
+	padding-left: 1%;
+	float: right;
+}
+
+.selectdata img {
+	height: 30px;
+}
+
+.selectdata input {
+	height: 30px;
+	min-width: 25%;
+	background-color: #1E2128;
+	color: #CCD8DC;
+	border: 1px solid #fdb813;
+	float:left;
+}
+
+#match_data {
+	width: 80%;
+	margin : auto;
+}
+
+#match_data table {
+	width: 100%;
+}
+
+.table_header {
+	background-color: #003d79;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	margin : auto;
+}
+
+.table_header th, td {
+	padding: 5px 10px 5px 10px;
+	text-align: center;;
+
+}
+
+.table_header tr {
+
+}
+
+.row0 {
+	background-color: #0B1320;
+}
+
+.row1 {
+	background-color: #0E1A2F;
+}
