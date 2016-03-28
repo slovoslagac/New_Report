@@ -50,7 +50,7 @@ $sql3 .= '(' . $tm . ') ';
 
 
 $sql1 .= '(' . $tm . ') ';
-//echo $sql;
+echo $sql;
 
 
 
@@ -89,6 +89,10 @@ $currencyValue = $tmpCu->fetchColumn();
 
 
 $conn = null;
+
+
+
+
 //print_r($oddtype);
 
 // foreach ($oddtype as $d) {
