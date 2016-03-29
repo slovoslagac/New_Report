@@ -189,13 +189,13 @@ input[type="checkbox"] {
 
 .page_data td, tr {
     border-collapse: collapse;
-    border: 1px solid black;
+    border: 1px dotted black;
 }
 
 .page_data table {
     width: 100%;
     margin:0;
-    border: 3px solid black;
+    border: 3px dotted black;
 }
 
 /*deo sa komentarom*/

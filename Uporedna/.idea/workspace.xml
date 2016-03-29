@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be601e26-0991-4c96-82a8-f7b0c1b2b1bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/query/Odds.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Osnova_new.php" afterPath="$PROJECT_DIR$/Osnova_old1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Osnova.php" afterPath="$PROJECT_DIR$/Osnova.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/db/connectingCompetitions.php" afterPath="$PROJECT_DIR$/admin/db/connectingCompetitions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/osnova.css" afterPath="$PROJECT_DIR$/css/osnova.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query/SourceOdds.php" afterPath="$PROJECT_DIR$/query/SourceOdds.php" />
     </list>
     <ignored path="Uporedna.iws" />
@@ -28,35 +31,7 @@
     <favorites_list name="Uporedna" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SourceOdds.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/query/SourceOdds.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.884615">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-              <folding>
-                <marker date="1459189244359" expanded="true" signature="86:575" placeholder="SELECT co.te... src_current_odds" />
-                <marker date="1459189244359" expanded="true" signature="589:645" placeholder="select *from... init_current_odds" />
-                <marker date="1459189244359" expanded="true" signature="658:714" placeholder="select *from... init_current_odds" />
-                <marker date="1459189244359" expanded="true" signature="727:856" placeholder="select teleb... init_current_offer" />
-                <marker date="1459189244359" expanded="true" signature="886:926" placeholder="select id, n... init_business_units" />
-                <marker date="1459189244359" expanded="true" signature="975:1112" placeholder="select mid_v... init_currencies" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Odds.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/query/Odds.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34442836">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,7 +47,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/saveMatches.php" />
         <option value="$PROJECT_DIR$/query/Source_odds.php" />
         <option value="$PROJECT_DIR$/conn/OracleProske.php" />
         <option value="$PROJECT_DIR$/admin/conn/mysqlAdminPDOodl.php" />
@@ -104,7 +78,6 @@
         <option value="$PROJECT_DIR$/admin/db/mozzartSubgames.php" />
         <option value="$PROJECT_DIR$/bla.xml" />
         <option value="$PROJECT_DIR$/admin/admin.php" />
-        <option value="$PROJECT_DIR$/css/osnova.css" />
         <option value="$PROJECT_DIR$/admin/db/controlMatches.php" />
         <option value="$PROJECT_DIR$/admin/db/connectingMatches.php" />
         <option value="$PROJECT_DIR$/admin/db/controlCompetitions.php" />
@@ -116,13 +89,15 @@
         <option value="$PROJECT_DIR$/admin/scripts/xmltest.php" />
         <option value="$PROJECT_DIR$/admin/scripts/wwintest.php" />
         <option value="$PROJECT_DIR$/functions/bonuses.php" />
-        <option value="$PROJECT_DIR$/admin/db/connectingCompetitions.php" />
         <option value="$PROJECT_DIR$/PregledTiketa.php" />
         <option value="$PROJECT_DIR$/query/GetTicketJSON.php" />
-        <option value="$PROJECT_DIR$/Osnova.php" />
-        <option value="$PROJECT_DIR$/Osnova_new.php" />
         <option value="$PROJECT_DIR$/query/Odds.php" />
+        <option value="$PROJECT_DIR$/admin/db/connectingCompetitions.php" />
         <option value="$PROJECT_DIR$/query/SourceOdds.php" />
+        <option value="$PROJECT_DIR$/Osnova_new.php" />
+        <option value="$PROJECT_DIR$/css/osnova.css" />
+        <option value="$PROJECT_DIR$/Osnova.php" />
+        <option value="$PROJECT_DIR$/Osnova_old.php" />
       </list>
     </option>
   </component>
@@ -138,8 +113,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="854" />
+    <option name="width" value="1936" />
+    <option name="height" value="1034" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -166,6 +141,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -212,10 +189,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uporedna" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uporedna" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,13 +316,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="854" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1034" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24305555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24270834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2345946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23675676" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -342,10 +333,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36778525" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -564,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/osnova.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7307692">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/db/availableSources.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29276693">
@@ -610,20 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3616533">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/db/connectingMatches.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25373134">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/db/connectingCompetitions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11710677">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -697,48 +665,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Osnova_new.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.9454546">
-          <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Osnova.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
-          <caret line="414" column="41" selection-start-line="414" selection-start-column="41" selection-end-line="414" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/query/GetTicketJSON.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2301013">
           <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/query/SourceOdds.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.884615">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <marker date="1459189244359" expanded="true" signature="86:575" placeholder="SELECT co.te... src_current_odds" />
-            <marker date="1459189244359" expanded="true" signature="589:645" placeholder="select *from... init_current_odds" />
-            <marker date="1459189244359" expanded="true" signature="658:714" placeholder="select *from... init_current_odds" />
-            <marker date="1459189244359" expanded="true" signature="727:856" placeholder="select teleb... init_current_offer" />
-            <marker date="1459189244359" expanded="true" signature="886:926" placeholder="select id, n... init_business_units" />
-            <marker date="1459189244359" expanded="true" signature="975:1112" placeholder="select mid_v... init_currencies" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/query/Odds.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34442836">
+        <state vertical-scroll-proportion="0.27324915">
           <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/db/connectingCompetitions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6245695">
+          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+          <folding>
+            <marker date="1459244002766" expanded="true" signature="141:430" placeholder="select c.id src_competition" />
+            <marker date="1459244002766" expanded="true" signature="350:397" placeholder="select src_c... conn_competition" />
+            <marker date="1459244002766" expanded="true" signature="453:742" placeholder="select c.id src_competition" />
+            <marker date="1459244002766" expanded="true" signature="662:709" placeholder="select src_c... conn_competition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/db/connectingMatches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25373134">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding>
+            <marker date="1457020462993" expanded="true" signature="88:636" placeholder="SELECT disti... src_match" />
+            <marker date="1457020462993" expanded="true" signature="435:470" placeholder="SELECT src_m... conn_match" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/SourceOdds.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7416762">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <marker date="1459248496078" expanded="true" signature="86:575" placeholder="SELECT co.te... src_current_odds" />
+            <marker date="1459248496078" expanded="true" signature="589:645" placeholder="select *from... init_current_odds" />
+            <marker date="1459248496078" expanded="true" signature="658:714" placeholder="select *from... init_current_odds" />
+            <marker date="1459248496078" expanded="true" signature="727:856" placeholder="select teleb... init_current_offer" />
+            <marker date="1459248496078" expanded="true" signature="886:926" placeholder="select id, n... init_business_units" />
+            <marker date="1459248496078" expanded="true" signature="975:1112" placeholder="select mid_v... init_currencies" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/osnova.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5232">
+          <caret line="197" column="22" selection-start-line="197" selection-start-column="22" selection-end-line="197" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Osnova_old1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37269938">
+          <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
+          <folding>
+            <marker date="1459258421599" expanded="true" signature="1381:1562" placeholder="insert into ticket_comment... " />
+            <marker date="1459258421599" expanded="true" signature="1911:1953" placeholder="UPDATE ticke... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Osnova.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32055214">
+          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="93" selection-end-column="48" />
+          <folding>
+            <marker date="1459258305293" expanded="true" signature="1399:1580" placeholder="insert into ticket_comment... " />
+            <marker date="1459258305293" expanded="true" signature="1929:1971" placeholder="UPDATE ticke... " />
+          </folding>
         </state>
       </provider>
     </entry>

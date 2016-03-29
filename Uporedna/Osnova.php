@@ -24,8 +24,8 @@ $tmp_matches = array();
 $SourceOdds = array();
 //Raspored kladionica je
 $SourcesArray = array(5, 2, 4);
-$SourceSumArray = array(1, 1, 1);
-$SourceBonusArray = array(0, 0, 0);
+$SourceSumArray = array(5=>1, 2=>1, 4=>1);
+$SourceBonusArray = array(5=>0, 2=>0, 4=>0);
 $days = array('Mon' => 'pon', 'Tue' => 'uto', 'Wed' => 'sre', 'Thu' => 'čet', 'Fri' => 'pet', 'Sat' => 'sub', 'Sun' => 'ned');
 $ticket_hour = "";
 
@@ -90,10 +90,12 @@ if (isset($_GET['delete'])) {
     $deleteData->execute();
 
     $conn = null;
+    $url = $_SERVER['PHP_SELF'];
+    header("Location: $url?sifra=$sifraTiketa");
 
-    header("Location: Osnova.php?sifra=$sifraTiketa");
 
 }
+
 
 include(join(DIRECTORY_SEPARATOR, array('included', 'nas_header.php')));
 include(join(DIRECTORY_SEPARATOR, array('query', 'GetTicketJSON.php')));
@@ -137,6 +139,7 @@ switch($currency){
         break;
     default:
         $currency_id = 1;
+        $currency_value = 1;
         $curr_currency = $currency;
 }
 
@@ -262,7 +265,7 @@ switch($currency){
                             ($tmpOdds->odd > 0) ? $mozzart_sum_odds *= $tmpOdds->odd : "";
 
                         }
-                        //                      Kvote Mozzart na početku kola
+                        // Kvote Mozzart na početku kola
                         foreach ($StartingOdds as $so) {
                             if ($so['id'] == $code && $so['game_id'] == $game_id && $so['subgame_id'] == $subgame_id) {
                                 $tmp_odds[0] = str_replace(".", ",", $so['value']);
@@ -271,24 +274,29 @@ switch($currency){
 
 
                             }
+
                         } ?>
 
                         <!--Odgovarajuce kvote respektivno po kladionicama-->
                         <?php for ($k = 0; $k < 3; $k++) {
-                            $curr_source = $SourcesArray[$k] ?>
+                            $curr_source = $SourcesArray[$k] ;
 
-                            <?php
                             foreach ($SourceOdds as $so) {
                                 if ($so['id'] == $code && $so['game_id'] == $game_id && $so['subgame_id'] == $subgame_id && $so['source'] == $curr_source) {
                                     $tmp_odds[$curr_source] = str_replace(".", ",", $so['odd']);
-                                    ($so['odd'] > 0) ? $SourceSumArray[$k] *= $so['odd'] : "";
+                                    ($so['odd'] > 0) ? $SourceSumArray[$curr_source] *= $so['odd'] : "";
+
                                 }
                             }
-                            ?>
+                            if(array_key_exists($curr_source,$tmp_odds)) {} else {$SourceSumArray[$curr_source] *= str_replace(",", ".", $tmp_odds[1]); };
 
+                             }
 
-                        <?php }
-
+//                        foreach ($SourcesArray as $so) { echo $so.":".$tmp_odds[1]."-".$SourceSumArray[$so]."; ------";
+//                            if(array_key_exists($so,$tmp_odds)) {} else {$SourceSumArray[$so] *= $tmp_odds[1]; echo $so.":".$tmp_odds[1]."-".$SourceSumArray[$so]."____________";}
+//                        }
+//                        print_r($SourceSumArray)."<br>";
+//                          echo "<br>";
                         $min_odd = min($tmp_odds);
                         $max_odd = max($tmp_odds);
                         if ($min_odd == $max_odd) {
@@ -305,12 +313,17 @@ switch($currency){
                             <?php echo $odd; ?>
                         </td>
                         <?php for ($k = 0; $k < 3; $k++) { $curr_source = $SourcesArray[$k];
-
-                            if(array_key_exists($curr_source,$tmp_odds)) { ?>
+                            if(array_key_exists($curr_source,$tmp_odds))
+                            { ?>
                                  <td class="bold <?php $odd = $tmp_odds[$curr_source];  if ($odd == $max_odd) {  echo "red"; } elseif ($odd == $min_odd) { echo "green"; } ?>">
-                                    <?php echo $odd; ?> </td>
-                        <?php }  else { ?>
-                                <td class="bold blue"><?php echo $tmp_odds[1];?></td>
+                                    <?php echo $odd; ?>
+                                 </td>
+                            <?php
+                            }  else {
+                                ?>
+                                <td class="bold blue">
+                                    <?php  echo $tmp_odds[1];?>
+                                </td>
 
                             <?php }  }  ?>
 
@@ -371,7 +384,7 @@ switch($currency){
                     <td><?php echo number_format($mozzart_sum_odds, 2, ',', '.') ?></td>
                     <td><?php echo number_format($mozzart_start_sum_odds, 2, ',', '.') ?></td>
                     <?php
-                    for ($k = 0; $k < 3; $k++) { ?>
+                    foreach ($SourcesArray as $k) { ?>
                         <td>
                             <?php echo number_format($SourceSumArray[$k], 2, ',', '.') ?>
                         </td>
@@ -382,11 +395,11 @@ switch($currency){
                 <tr class="row">
                     <td colspan="6">Dobitak (<?php echo $curr_currency ?>)</td>
 
-                    <td><?php echo number_format($brutoPaymentWithoutBonusValues* $currencyValue, 2, ',', '.') ?></td>
+                    <td><?php echo number_format($brutoPaymentWithoutBonusValues * $currencyValue, 2, ',', '.') ?></td>
                     <?php if ($num_of_winner_rows == $num_of_rows) { ?>
                         <td><?php echo ($realPaymentValue > 0) ? number_format($currAmount * $mozzart_start_sum_odds, 2, ',', '.') : $realPaymentValue ?></td>
                         <?php
-                        for ($k = 0; $k < 3; $k++) { ?>
+                        foreach ($SourcesArray as $k) { ?>
                             <td><?php echo ($realPaymentValue > 0) ? number_format(($currAmount * $SourceSumArray[$k]) , 2, ',', '.') : $realPaymentValue ?></td>
                         <?php }
                     } else { ?>
@@ -405,8 +418,8 @@ switch($currency){
                     <td><?php echo ($brutoBonus > 0) ? $brutoBonus . "%" : "0%" ?></td>
                     <td><?php echo ($brutoBonus > 0) ? $brutoBonus . "%" : "0%" ?></td>
                     <?php
-                    for ($k = 0; $k < 3; $k++) {
-                        $SourceBonusArray[$k] = ObracunBonusa($SourcesArray[$k], $num_of_rows, $ticket_hour, $ticket_day); ?>
+                    foreach ($SourcesArray as $k) {
+                        $SourceBonusArray[$k] = ObracunBonusa($k, $num_of_rows, $ticket_hour, $ticket_day); ?>
                         <td><?php echo $SourceBonusArray[$k] . "%"; ?></td>
                         <?php
                     }
@@ -421,7 +434,7 @@ switch($currency){
                     <?php if ($num_of_winner_rows == $num_of_rows) { ?>
                         <td><?php echo ($realPaymentValue > 0) ? number_format($currAmount * $mozzart_start_sum_odds * $brutoBonus / 100, 2, ',', '.') : $realPaymentValue ?></td>
                         <?php
-                        for ($k = 0; $k < 3; $k++) { ?>
+                        foreach ($SourcesArray as $k) { ?>
                             <td><?php echo ($realPaymentValue > 0) ? number_format(($currAmount * $SourceSumArray[$k] * $SourceBonusArray[$k] / 100), 2, ',', '.') : $realPaymentValue ?></td>
                         <?php }
                     } else { ?>
@@ -434,23 +447,45 @@ switch($currency){
                     ?>
                     <td colspan="4"></td>
                 </tr>
+
+
+                <?php
+                $tmp_sums = array();
+                $max_sum;
+                $min_sum;
+
+                $tmp_sums [1] = number_format($realPaymentValue * $currencyValue, 2, ',', '.') ;
+                if ($num_of_winner_rows == $num_of_rows)
+                    {
+                        ($realPaymentValue > 0) ? $tmp_sums [0] = number_format($currAmount * $mozzart_start_sum_odds * (1 + $brutoBonus / 100), 2, ',', '.') : $realPaymentValue ;
+                        foreach ($SourcesArray as $k)
+                        {
+                            ($realPaymentValue > 0) ? $tmp_sums [$k] = number_format(($currAmount * $SourceSumArray[$k] * (1 + $SourceBonusArray[$k] / 100)), 2, ',', '.') : $realPaymentValue;
+                        }
+                    }  else  {
+
+                        $tmp_sums [0] = number_format($realPaymentValue * $currencyValue, 2, ',', '.');
+                        foreach ($SourcesArray as $k) {  $tmp_sums [$k] = 0; }
+
+                    }
+
+                $min_sum = min($tmp_sums);
+                $max_sum = max($tmp_sums);
+                if ($min_sum == $max_sum) {
+                    $max_sum = 1;
+                    $min_sum = 1;
+                }
+//                echo $min_sum." ".$max_sum."<br>";
+
+                ?>
+
                 <tr class="grayb bold">
                     <td colspan="6">Za isplatu (<?php echo $curr_currency ?>)</td>
-                    <td><?php echo number_format($realPaymentValue* $currencyValue, 2, ',', '.') ?></td>
-                    <?php if ($num_of_winner_rows == $num_of_rows) { ?>
-                        <td><?php echo ($realPaymentValue > 0) ? number_format($currAmount * $mozzart_start_sum_odds * (1 + $brutoBonus / 100), 2, ',', '.') : $realPaymentValue ?></td>
-                        <?php
-                        for ($k = 0; $k < 3; $k++) { ?>
-                            <td><?php echo ($realPaymentValue > 0) ? number_format(($currAmount * $SourceSumArray[$k] * (1 + $SourceBonusArray[$k] / 100)), 2, ',', '.') : $realPaymentValue ?></td>
-                        <?php }
-                    } else { ?>
-                        <td><?php echo number_format($realPaymentValue, 2, ',', '.') ?></td>
-                        <?php for ($k = 0; $k < 3; $k++) { ?>
-                            <td>0</td>
-                            <?php
-                        }
-                    }
-                    ?>
+                    <td class="<?php $odd = $tmp_sums[1]; if ($odd == $max_sum) { echo "red";} elseif ($odd == $min_sum) {echo "green";}?>"><?php echo $tmp_sums [1]?></td>
+                    <td class="<?php $odd = $tmp_sums[0]; if ($odd == $max_sum) { echo "red";} elseif ($odd == $min_sum) {echo "green";}?>"><?php echo $tmp_sums [0]?></td>
+                    <?php foreach ($SourcesArray as $k) { ?>
+                    <td class="<?php $odd = $tmp_sums[$k]; if ($odd == $max_sum) { echo "red";} elseif ($odd == $min_sum) {echo "green";}?>"><?php echo $tmp_sums [$k]?></td>
+                    <?php   }   ?>
                     <td colspan="4"> </td>
                 </tr>
                 <tr>

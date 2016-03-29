@@ -50,7 +50,7 @@ $sql3 .= '(' . $tm . ') ';
 
 
 $sql1 .= '(' . $tm . ') ';
-echo $sql;
+//echo $sql;
 
 
 
