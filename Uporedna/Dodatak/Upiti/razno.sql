@@ -19,7 +19,7 @@ insert into src_current_odds (src_match_id, src_subgame_id, value, handicap, sou
 select distinct src_match_id, src_subgame_id, value, handicap, i.source_id
 from src_odds so, import i
 where so.import_id = i.id
-and so.import_id = 387
+and so.import_id = 449
 on DUPLICATE KEY update src_match_id=so.src_match_id
 ;
 
@@ -40,10 +40,12 @@ call src_current_odds();
 
 call conn_matches_on_teams();
 
-select * from import order by id desc;
+select * from import where source_id = 7  order by id desc ;
 
 ;
+select * from import order by id desc ;
 
+;
 
 select min(import_id) from src_odds 
 
@@ -58,9 +60,13 @@ select source_id, count(*) from src_current_odds group by source_id
 ;
 select * from src_odds where import_id = 95;
 
-select count(*) from src_odds where import_id = 381;
+select count(*) from src_odds where import_id = 675;
+
+
 
 select count(*) from ulaz_odds;
+
+select max(source) from ulaz_new;
 
 select distinct source, `timestamp` from ulaz_odds;
 
@@ -68,7 +74,7 @@ select distinct source, `timestamp`  from ulaz_new;
 
 select max(utk_id), min(id) from ulaz_odds ;
 
-ALTER TABLE init_current_odds ENGINE = InnoDB;
+ALTER TABLE src_odds ENGINE = InnoDB;
 
 
 
@@ -84,15 +90,22 @@ from src_team where name like '%:';
 
 insert into src_odds_old (src_match_id, src_subgame_id, value, handicap, import_id)
 select src_match_id, src_subgame_id, value, handicap, import_id
-from src_odds
+from src_odds 
 
+;
+
+truncate src_current_odds 
+
+;
+
+select max(import_id) from src_odds_old
 ;
 
 select count(*) from src_odds_old where import_id > 222
 ;
 
-select count(*) from src_odds where import_id < 292
+select count(*) from src_odds where import_id >= 458
 
 ;
 
-select * from src_current_odds
+select * from src_odds

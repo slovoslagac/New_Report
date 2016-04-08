@@ -120,11 +120,11 @@ $currency_day = date('N', $ticketTime / 1000);
 
 
 if($currency_day == 6) {
-    $currency_date = date('j.m.Y', $ticketTime / 1000 - (24 * 60 * 60));
+    $currency_date = date('d.m.Y', $ticketTime / 1000 - (24 * 60 * 60));
 } elseif ($currency_day == 7) {
-    $currency_date = date('j.m.Y', $ticketTime / 1000 - (48 * 60 * 60));
+    $currency_date = date('d.m.Y', $ticketTime / 1000 - (48 * 60 * 60));
 } else {
-    $currency_date = date('j.m.Y', $ticketTime / 1000 );
+    $currency_date = date('d.m.Y', $ticketTime / 1000 );
 }
 
 switch($currency){
@@ -137,9 +137,11 @@ switch($currency){
     case("RON"):
         $currency_id = 8;
         break;
+    case("EUR"):
+        $currency_id = 2;
+        break;
     default:
         $currency_id = 1;
-        $currency_value = 1;
         $curr_currency = $currency;
 }
 

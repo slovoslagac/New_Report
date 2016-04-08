@@ -16,6 +16,7 @@ $Data2 = array();
 $source_id = 2;
 $bookie = 'Soccer';
 $cmp = 0;
+$cmp_src = 0;
 
 if (isset ($_GET ["bookie_id"]) != "") {
     $source_all = explode("__", $_GET['bookie_id']);
@@ -27,6 +28,11 @@ if (isset ($_GET ["bookie_id"]) != "") {
         $cmp = 1;
     } else {
         $cmp =0;
+    }
+    if (isset($_GET['sve_src'])) {
+        $cmp_src = 1;
+    } else {
+        $cmp_src =0;
     }
 }
 // echo $bookie;
@@ -61,7 +67,7 @@ $Data3 = $resultSources;
 
                             <?php } ?>
 
-                        </select>
+                        </select><input name="sve_src" type="checkbox" <?php echo ($cmp_src==1)?"checked" : ""?>>
                     </td>
                     <td>
                         <input type="Submit" accesskey="w" value="Osveži"/><input name="sve" type="checkbox" <?php echo ($cmp==1)?"checked" : ""?>>

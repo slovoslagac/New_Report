@@ -86,7 +86,7 @@ while($row = $tmpBU ->fetch(PDO::FETCH_ASSOC)){
 $tmpCu ->execute();
 $currencyValue = $tmpCu->fetchColumn();
 
-
+//echo $currencyValue;
 
 $conn = null;
 

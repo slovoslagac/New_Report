@@ -99,13 +99,15 @@ if (isset($_GET['delete'])) {
         <table id="exportTable"  class="size60">
 
             <colgroup>
-                <col width="20%">
+                <col width="5%">
+                <col width="17%">
                 <col width="30%">
                 <col width="50%">
-                <col width="10%">
+                <col width="8%">
             </colgroup>
             <thead>
             <tr class="title">
+                <td>R.B.</td>
                 <td>Kladionica</td>
                 <td>Mozzart takmičenje</td>
                 <td>Takmičenje</td>
@@ -115,11 +117,12 @@ if (isset($_GET['delete'])) {
             </thead>
             <tbody>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
-                <?php
+                <?php $j =1;
                 foreach ($Data1 as $srSource) { ?>
 
 
                     <tr class="row<?php echo($i++ & 1) ?>">
+                        <td><?php echo $j?></td>
                         <td><?php echo $srSource['source_name'] ?></td>
                         <td><?php echo $srSource['mozz_subgame'] ?></td>
                         <td><?php echo $srSource['src_subgame'] ?></td>
@@ -128,7 +131,7 @@ if (isset($_GET['delete'])) {
                         </td>
                     </tr>
 
-                <?php } ?>
+                <?php $j++;} ?>
 
                 <tr class="title">
                     <td colspan="4"><input accesskey="x" type="submit" name="delete" value="Obriši"/></td>

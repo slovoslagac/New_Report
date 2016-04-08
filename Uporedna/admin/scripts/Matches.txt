@@ -1,0 +1,296 @@
+2016-04-09T02:15:00;77;Argentina 1;11119;Godoy Cruz - San Lorenzo;godoy_cruz;Godoy Cruz;san_lorenzo;San Lorenzo;10
+2016-04-09T02:15:00;77;Argentina 1;11120;Colon - Patronato;colon;Colon;patronato;Patronato;10
+2016-04-09T20:30:00;77;Argentina 1;11121;Huracan - San Martin SJ;huracan;Huracan;san_martin_sj;San Martin SJ;10
+2016-04-09T22:45:00;77;Argentina 1;11122;River Plate - Sarmiento;river_plate;River Plate;sarmiento;Sarmiento;10
+2016-04-09T22:45:00;77;Argentina 1;11123;Defensa y Just. - Temperley;defensa_y_just;Defensa y Just.;temperley;Temperley;10
+2016-04-10T01:00:00;77;Argentina 1;11124;Independiente - Olimpo;independiente;Independiente;olimpo;Olimpo;10
+2016-04-10T20:30:00;77;Argentina 1;11125;Banfield - Lanus;banfield;Banfield;lanus;Lanus;10
+2016-04-10T22:45:00;77;Argentina 1;11126;Aldosivi - Racing Club;aldosivi;Aldosivi;racing_club;Racing Club;10
+2016-04-10T22:45:00;77;Argentina 1;11127;Argentinos Jrs. - Newells Old B.;argentinos_jrs;Argentinos Jrs.;newells_old_b;Newells Old B.;10
+2016-04-10T23:00:00;77;Argentina 1;11128;Rosario Central - Velez;rosario_central;Rosario Central;velez;Velez;10
+2016-04-11T01:00:00;77;Argentina 1;11129;CA Tigre - Boca Juniors;ca_tigre;CA Tigre;boca_juniors;Boca Juniors;10
+2016-04-11T01:10:00;77;Argentina 1;11130;Belgrano - Gimnasia LP;belgrano;Belgrano;gimnasia_lp;Gimnasia LP;10
+2016-04-12T00:00:00;77;Argentina 1;11131;Atl. Rafaela - Union Santa Fe;atl_rafaela;Atl. Rafaela;union_santa_fe;Union Santa Fe;10
+2016-04-12T00:00:00;77;Argentina 1;11132;Quilmes - Arsenal S.;quilmes;Quilmes;arsenal_s;Arsenal S.;10
+2016-04-12T02:15:00;77;Argentina 1;11133;Estudiantes - Atl. Tucuman;estudiantes;Estudiantes;atl_tucuman;Atl. Tucuman;10
+2016-04-08T11:40:00;168;Australija;11310;Melbourne City - Adelaide Utd.;melbourne_city;Melbourne City;adelaide_utd;Adelaide Utd.;10
+2016-04-09T09:15:00;168;Australija;11311;Central Coast M - Newcastle Jets;central_coast_m;Central Coast M;newcastle_jets;Newcastle Jets;10
+2016-04-09T11:30:00;168;Australija;11312;Melbourne V. - Brisbane Roar;melbourne_v;Melbourne V.;brisbane_roar;Brisbane Roar;10
+2016-04-10T07:00:00;168;Australija;11313;Wellington Ph. - Western Sydney;wellington_ph;Wellington Ph.;western_sydney;Western Sydney;10
+2016-04-10T09:00:00;168;Australija;11314;Sydney - Perth Glory;sydney;Sydney;perth_glory;Perth Glory;10
+2016-04-09T16:00:00;148;Austrija 1;11134;Sturm - Altach;sturm;Sturm;altach;Altach;10
+2016-04-09T18:30:00;148;Austrija 1;11135;Austria Wien - SV Grodig;austria_wien;Austria Wien;sv_grodig;SV Grodig;10
+2016-04-09T18:30:00;148;Austrija 1;11136;Wolfsberger AC - Rapid Wien;wolfsberger_ac;Wolfsberger AC;rapid_wien;Rapid Wien;10
+2016-04-09T18:30:00;148;Austrija 1;11137;Ried - Mattersburg;ried;Ried;mattersburg;Mattersburg;10
+2016-04-10T16:30:00;148;Austrija 1;11138;Salzburg - Admira;salzburg;Salzburg;admira;Admira;10
+2016-04-08T18:30:00;25;Austrija 2;11139;Wacker - A. Klagenfurt;wacker;Wacker;a_klagenfurt;A. Klagenfurt;10
+2016-04-08T18:30:00;25;Austrija 2;11140;SV Kapfenberg - LASK;sv_kapfenberg;SV Kapfenberg;lask;LASK;10
+2016-04-08T18:30:00;25;Austrija 2;11141;A. Lustenau - A. Salzburg;a_lustenau;A. Lustenau;a_salzburg;A. Salzburg;10
+2016-04-08T18:30:00;25;Austrija 2;11142;Liefering - Team Wien;liefering;Liefering;team_wien;Team Wien;10
+2016-04-08T20:30:00;25;Austrija 2;11143;St. Polten - W. Neustadt;st_polten;St. Polten;w_neustadt;W. Neustadt;10
+2016-04-09T20:00:00;333;Belgija 1 Play off Liga Evrope;11326;KV Mechelen - Lokeren;kv_mechelen;KV Mechelen;lokeren;Lokeren;10
+2016-04-09T20:00:00;333;Belgija 1 Play off Liga Evrope;11327;Mouscron-Peruw. - Waasland;mouscron-peruw;Mouscron-Peruw.;waasland;Waasland;10
+2016-04-09T20:30:00;333;Belgija 1 Play off Liga Evrope;11328;Charleroi - St. Truiden;charleroi;Charleroi;st_truiden;St. Truiden;10
+2016-04-10T20:00:00;333;Belgija 1 Play off Liga Evrope;11329;Standard - Kortrijk;standard;Standard;kortrijk;Kortrijk;10
+2016-04-08T20:30:00;332;Belgija 1 Play off za prvaka;11323;Genk - Oostende;genk;Genk;oostende;Oostende;10
+2016-04-09T18:00:00;332;Belgija 1 Play off za prvaka;11324;Club Brugge - Gent;club_brugge;Club Brugge;gent;Gent;10
+2016-04-10T18:00:00;332;Belgija 1 Play off za prvaka;11325;Zulte Waregem - Anderlecht;zulte_waregem;Zulte Waregem;anderlecht;Anderlecht;10
+2016-04-08T00:30:00;138;Brazil Kup;11445;Nautico - Vitoria da Con.;nautico;Nautico;vitoria_da_con;Vitoria da Con.;10
+2016-04-08T00:30:00;138;Brazil Kup;11446;Atletico GO - Ypiranga;atletico_go;Atletico GO;ypiranga;Ypiranga;10
+2016-04-08T02:30:00;138;Brazil Kup;11447;River-PI - Goias;river-pi;River-PI;goias;Goias;10
+2016-04-08T02:30:00;138;Brazil Kup;11448;Caldense - Ponte Preta;caldense;Caldense;ponte_preta;Ponte Preta;10
+2016-04-08T20:15:00;149;Ceska 1;11347;Brno - Bohemians 1905;brno;Brno;bohemians_1905;Bohemians 1905;10
+2016-04-09T17:00:00;149;Ceska 1;11144;Liberec - Sigma O.;liberec;Liberec;sigma_o;Sigma O.;10
+2016-04-09T17:00:00;149;Ceska 1;11145;Banik O. - Slovacko;banik_o;Banik O.;slovacko;Slovacko;10
+2016-04-09T17:00:00;149;Ceska 1;11146;V.Jihlava - Teplice;vjihlava;V.Jihlava;teplice;Teplice;10
+2016-04-09T17:00:00;149;Ceska 1;11147;Slavia P. - Jablonec;slavia_p;Slavia P.;jablonec;Jablonec;10
+2016-04-09T18:00:00;149;Ceska 1;11148;Ml. Boleslav - Dukla Praha;ml_boleslav;Ml. Boleslav;dukla_praha;Dukla Praha;10
+2016-04-09T20:15:00;149;Ceska 1;11113;Zlin - Plzen;zlin;Zlin;plzen;Plzen;10
+2016-04-10T19:30:00;149;Ceska 1;11149;Sparta P. - Pribram;sparta_p;Sparta P.;pribram;Pribram;10
+2016-04-08T18:00:00;150;Danska 1;11150;Viborg - Midtjylland;viborg;Viborg;midtjylland;Midtjylland;10
+2016-04-09T16:00:00;150;Danska 1;11151;Sonderjyske - Aarhus;sonderjyske;Sonderjyske;aarhus;Aarhus;10
+2016-04-10T13:00:00;150;Danska 1;11152;Hobro - Aalborg;hobro;Hobro;aalborg;Aalborg;10
+2016-04-10T16:00:00;150;Danska 1;11153;Randers FC - FC Copenhagen;randers_fc;Randers FC;fc_copenhagen;FC Copenhagen;10
+2016-04-10T18:00:00;150;Danska 1;11110;Brondby - Odense;brondby;Brondby;odense;Odense;10
+2016-04-11T19:00:00;150;Danska 1;11154;Nordsjaelland - Esbjerg;nordsjaelland;Nordsjaelland;esbjerg;Esbjerg;10
+2016-04-09T13:45:00;9;Engleska 1;10253;West Ham - Arsenal;west_ham;West Ham;arsenal;Arsenal;10
+2016-04-09T16:00:00;9;Engleska 1;10254;Aston Villa - Bournemouth;aston_villa;Aston Villa;bournemouth;Bournemouth;10
+2016-04-09T16:00:00;9;Engleska 1;10255;Crystal Palace - Norwich;crystal_palace;Crystal Palace;norwich;Norwich;10
+2016-04-09T16:00:00;9;Engleska 1;10256;Southampton - Newcastle;southampton;Southampton;newcastle;Newcastle;10
+2016-04-09T16:00:00;9;Engleska 1;10257;Swansea - Chelsea;swansea;Swansea;chelsea;Chelsea;10
+2016-04-09T16:00:00;9;Engleska 1;10258;Watford - Everton;watford;Watford;everton;Everton;10
+2016-04-09T18:30:00;9;Engleska 1;10259;Man. City - West Bromwich;man_city;Man. City;west_bromwich;West Bromwich;10
+2016-04-10T14:30:00;9;Engleska 1;10260;Sunderland - Leicester;sunderland;Sunderland;leicester;Leicester;10
+2016-04-10T17:00:00;9;Engleska 1;10261;Liverpool - Stoke;liverpool;Liverpool;stoke;Stoke;10
+2016-04-10T17:00:00;9;Engleska 1;10262;Tottenham - Man. Utd.;tottenham;Tottenham;man_utd;Man. Utd.;10
+2016-04-09T13:30:00;10;Engleska 2;11155;Burnley - Leeds;burnley;Burnley;leeds;Leeds;10
+2016-04-09T16:00:00;10;Engleska 2;11156;Ipswich - Brentford;ipswich;Ipswich;brentford;Brentford;10
+2016-04-09T16:00:00;10;Engleska 2;11157;Bristol City - Sheffield Wed.;bristol_city;Bristol City;sheffield_wed;Sheffield Wed.;10
+2016-04-09T16:00:00;10;Engleska 2;11158;Fulham - Cardiff;fulham;Fulham;cardiff;Cardiff;10
+2016-04-09T16:00:00;10;Engleska 2;11159;M.K. Dons - Rotherham;mk_dons;M.K. Dons;rotherham;Rotherham;10
+2016-04-09T16:00:00;10;Engleska 2;11160;QPR - Charlton;qpr;QPR;charlton;Charlton;10
+2016-04-09T16:00:00;10;Engleska 2;11161;Huddersfield - Hull;huddersfield;Huddersfield;hull;Hull;10
+2016-04-09T16:00:00;10;Engleska 2;11162;Middlesbrough - Preston;middlesbrough;Middlesbrough;preston;Preston;10
+2016-04-09T16:00:00;10;Engleska 2;11163;Derby - Bolton;derby;Derby;bolton;Bolton;10
+2016-04-09T16:00:00;10;Engleska 2;11111;Wolverhampton - Blackburn;wolverhampton;Wolverhampton;blackburn;Blackburn;10
+2016-04-09T16:00:00;10;Engleska 2;11114;Reading - Birmingham;reading;Reading;birmingham;Birmingham;10
+2016-04-11T20:45:00;10;Engleska 2;11164;Nottingham For. - Brighton;nottingham_for;Nottingham For.;brighton;Brighton;10
+2016-04-07T20:30:00;378;(Z) Kval. za EP 2016 U19;11459;R. Ireland WU19 - Azerbaijan WU19;r_ireland_wu19;R. Ireland WU19;azerbaijan_wu19;Azerbaijan WU19;10
+2016-04-07T20:00:00;382;(Z) Kval. za EP 2017;11461;Poland W - Denmark W;poland_w;Poland W;denmark_w;Denmark W;10
+2016-04-07T21:05:00;6;Liga Evrope;9450;Dortmund - Liverpool;dortmund;Dortmund;liverpool;Liverpool;10
+2016-04-07T21:05:00;6;Liga Evrope;9451;Villarreal - Sparta P.;villarreal;Villarreal;sparta_p;Sparta P.;10
+2016-04-07T21:05:00;6;Liga Evrope;9452;Ath. Bilbao - Sevilla;ath_bilbao;Ath. Bilbao;sevilla;Sevilla;10
+2016-04-07T21:05:00;6;Liga Evrope;9453;Braga - Shakhtar;braga;Braga;shakhtar;Shakhtar;10
+2016-04-08T17:30:00;343;Finska 1;11165;Helsinki HJK - VPS;helsinki_hjk;Helsinki HJK;vps;VPS;10
+2016-04-09T15:00:00;343;Finska 1;11166;Mariehamn - RoPS;mariehamn;Mariehamn;rops;RoPS;10
+2016-04-09T15:00:00;343;Finska 1;11167;PK-35 Vantaa - HIFK;pk-35_vantaa;PK-35 Vantaa;hifk;HIFK;10
+2016-04-09T15:00:00;343;Finska 1;11168;PS Kemi - SJK;ps_kemi;PS Kemi;sjk;SJK;10
+2016-04-09T15:00:00;343;Finska 1;11169;KuPS - Ilves;kups;KuPS;ilves;Ilves;10
+2016-04-09T15:00:00;343;Finska 1;11116;Inter Turku - Lahti;inter_turku;Inter Turku;lahti;Lahti;10
+2016-04-08T20:30:00;35;Francuska 1;10361;Montpellier - Lyon;montpellier;Montpellier;lyon;Lyon;10
+2016-04-09T17:00:00;35;Francuska 1;10362;Guingamp - PSG;guingamp;Guingamp;psg;PSG;10
+2016-04-09T20:00:00;35;Francuska 1;10363;Angers - GFC Ajaccio;angers;Angers;gfc_ajaccio;GFC Ajaccio;10
+2016-04-09T20:00:00;35;Francuska 1;10364;Caen - Lorient;caen;Caen;lorient;Lorient;10
+2016-04-09T20:00:00;35;Francuska 1;10365;Reims - Nantes;reims;Reims;nantes;Nantes;10
+2016-04-09T20:00:00;35;Francuska 1;10366;St. Etienne - Troyes;st_etienne;St. Etienne;troyes;Troyes;10
+2016-04-09T20:00:00;35;Francuska 1;10367;Toulouse - Bastia;toulouse;Toulouse;bastia;Bastia;10
+2016-04-10T14:00:00;35;Francuska 1;10368;Lille - Monaco;lille;Lille;monaco;Monaco;10
+2016-04-10T17:00:00;35;Francuska 1;10369;Nice - Rennes;nice;Nice;rennes;Rennes;10
+2016-04-10T21:00:00;35;Francuska 1;10370;Marseille - Bordeaux;marseille;Marseille;bordeaux;Bordeaux;10
+2016-04-08T20:00:00;151;Francuska 2;11170;Nimes - Valenciennes;nimes;Nimes;valenciennes;Valenciennes;10
+2016-04-08T20:00:00;151;Francuska 2;11171;Auxerre - Metz;auxerre;Auxerre;metz;Metz;10
+2016-04-08T20:00:00;151;Francuska 2;11172;Laval - Sochaux;laval;Laval;sochaux;Sochaux;10
+2016-04-08T20:00:00;151;Francuska 2;11173;Paris FC - Bourg Peronnas;paris_fc;Paris FC;bourg_peronnas;Bourg Peronnas;10
+2016-04-08T20:00:00;151;Francuska 2;11174;AC Ajaccio - Red Star 93;ac_ajaccio;AC Ajaccio;red_star_93;Red Star 93;10
+2016-04-08T20:00:00;151;Francuska 2;11175;Brest - Le Havre;brest;Brest;le_havre;Le Havre;10
+2016-04-08T20:00:00;151;Francuska 2;11176;Niort - Lens;niort;Niort;lens;Lens;10
+2016-04-08T20:00:00;151;Francuska 2;11340;Evian TG - Tours;evian_tg;Evian TG;tours;Tours;10
+2016-04-09T14:00:00;151;Francuska 2;11177;Clermont - Dijon;clermont;Clermont;dijon;Dijon;10
+2016-04-11T20:30:00;151;Francuska 2;11178;Nancy - Creteil;nancy;Nancy;creteil;Creteil;10
+2016-04-10T18:00:00;152;Grcka 1;11179;PAOK - Levadiakos;paok;PAOK;levadiakos;Levadiakos;10
+2016-04-10T18:00:00;152;Grcka 1;11180;AEK - Panionios;aek;AEK;panionios;Panionios;10
+2016-04-10T18:00:00;152;Grcka 1;11181;Asteras T. - Panathinaikos;asteras_t;Asteras T.;panathinaikos;Panathinaikos;10
+2016-04-10T18:00:00;152;Grcka 1;11182;Panthrakikos - Iraklis;panthrakikos;Panthrakikos;iraklis;Iraklis;10
+2016-04-10T18:00:00;152;Grcka 1;11183;AEL Kallonis - Atromitos;ael_kallonis;AEL Kallonis;atromitos;Atromitos;10
+2016-04-10T18:00:00;152;Grcka 1;11184;Giannina - Platanias;giannina;Giannina;platanias;Platanias;10
+2016-04-10T18:00:00;152;Grcka 1;11247;Panaitolikos - Olympiakos;panaitolikos;Panaitolikos;olympiakos;Olympiakos;10
+2016-04-10T18:00:00;152;Grcka 1;11338;Veria - Xanthi;veria;Veria;xanthi;Xanthi;10
+2016-04-08T20:00:00;153;Holandija 1;11185;Zwolle - Roda;zwolle;Zwolle;roda;Roda;10
+2016-04-09T18:30:00;153;Holandija 1;11186;Excelsior - Heracles;excelsior;Excelsior;heracles;Heracles;10
+2016-04-09T19:45:00;153;Holandija 1;11187;Vitesse - Den Haag;vitesse;Vitesse;den_haag;Den Haag;10
+2016-04-09T19:45:00;153;Holandija 1;11188;Cambuur - Ajax;cambuur;Cambuur;ajax;Ajax;10
+2016-04-09T20:45:00;153;Holandija 1;11341;PSV - Willem II;psv;PSV;willem_ii;Willem II;10
+2016-04-10T12:30:00;153;Holandija 1;11189;Heerenveen - AZ Alkmaar;heerenveen;Heerenveen;az_alkmaar;AZ Alkmaar;10
+2016-04-10T14:30:00;153;Holandija 1;11190;Utrecht - NEC;utrecht;Utrecht;nec;NEC;10
+2016-04-10T14:30:00;153;Holandija 1;11191;Groningen - De Graafschap;groningen;Groningen;de_graafschap;De Graafschap;10
+2016-04-10T16:45:00;153;Holandija 1;11192;Twente - Feyenoord;twente;Twente;feyenoord;Feyenoord;10
+2016-04-08T18:00:00;154;Hrvatska 1;11193;Osijek - Split;osijek;Osijek;split;Split;10
+2016-04-09T15:00:00;154;Hrvatska 1;11343;Lokomotiva Z. - Slaven;lokomotiva_z;Lokomotiva Z.;slaven;Slaven;10
+2016-04-09T19:00:00;154;Hrvatska 1;11194;Rijeka - Zagreb;rijeka;Rijeka;zagreb;Zagreb;10
+2016-04-10T15:00:00;154;Hrvatska 1;11195;Inter Zapresic - Dinamo Zagreb;inter_zapresic;Inter Zapresic;dinamo_zagreb;Dinamo Zagreb;10
+2016-04-10T19:00:00;154;Hrvatska 1;11196;Hajduk S. - Istra;hajduk_s;Hajduk S.;istra;Istra;10
+2016-04-08T20:45:00;155;Irska 1;11197;St. Patricks - Sligo;st_patricks;St. Patricks;sligo;Sligo;10
+2016-04-08T20:45:00;155;Irska 1;11198;Derry City - Shamrock;derry_city;Derry City;shamrock;Shamrock;10
+2016-04-08T20:45:00;155;Irska 1;11199;Cork City - Wexford;cork_city;Cork City;wexford;Wexford;10
+2016-04-08T20:45:00;155;Irska 1;11346;Galway - Finn Harps;galway;Galway;finn_harps;Finn Harps;10
+2016-04-09T20:30:00;155;Irska 1;11200;Bray - Bohemians;bray;Bray;bohemians;Bohemians;10
+2016-04-09T20:30:00;155;Irska 1;11201;Longford - Dundalk;longford;Longford;dundalk;Dundalk;10
+2016-04-08T20:45:00;180;Irska 2;11109;Athlone Town - Waterford;athlone_town;Athlone Town;waterford;Waterford;10
+2016-04-08T20:45:00;180;Irska 2;11202;Cabinteely - Cobh Ramblers;cabinteely;Cabinteely;cobh_ramblers;Cobh Ramblers;10
+2016-04-08T20:45:00;180;Irska 2;11203;Drogheda - Limerick;drogheda;Drogheda;limerick;Limerick;10
+2016-04-08T20:45:00;180;Irska 2;11204;Shelbourne - UCD;shelbourne;Shelbourne;ucd;UCD;10
+2016-04-07T20:00:00;175;Island Liga Kup;11462;Vikingur R. - Leiknir R.;vikingur_r;Vikingur R.;leiknir_r;Leiknir R.;10
+2016-04-09T15:00:00;34;Italija 1;10351;Frosinone - Inter M.;frosinone;Frosinone;inter_m;Inter M.;10
+2016-04-09T18:00:00;34;Italija 1;10352;Chievo - Carpi;chievo;Chievo;carpi;Carpi;10
+2016-04-09T18:00:00;34;Italija 1;10353;Sassuolo - Genoa;sassuolo;Sassuolo;genoa;Genoa;10
+2016-04-09T20:45:00;34;Italija 1;10354;Milan - Juventus;milan;Milan;juventus;Juventus;10
+2016-04-10T12:30:00;34;Italija 1;10355;Empoli - Fiorentina;empoli;Empoli;fiorentina;Fiorentina;10
+2016-04-10T15:00:00;34;Italija 1;10356;Napoli - Verona;napoli;Napoli;verona;Verona;10
+2016-04-10T15:00:00;34;Italija 1;10357;Sampdoria - Udinese;sampdoria;Sampdoria;udinese;Udinese;10
+2016-04-10T15:00:00;34;Italija 1;10358;Torino - Atalanta;torino;Torino;atalanta;Atalanta;10
+2016-04-10T20:45:00;34;Italija 1;10359;Palermo - Lazio;palermo;Palermo;lazio;Lazio;10
+2016-04-11T20:45:00;34;Italija 1;10360;Roma - Bologna;roma;Roma;bologna;Bologna;10
+2016-04-08T20:30:00;156;Italija 2;11205;Avellino - Pescara;avellino;Avellino;pescara;Pescara;10
+2016-04-09T15:00:00;156;Italija 2;11206;Salernitana - Latina;salernitana;Salernitana;latina;Latina;10
+2016-04-09T15:00:00;156;Italija 2;11207;Lanciano - Entella;lanciano;Lanciano;entella;Entella;10
+2016-04-09T15:00:00;156;Italija 2;11208;Livorno - Bari;livorno;Livorno;bari;Bari;10
+2016-04-09T15:00:00;156;Italija 2;11209;Ascoli - Cagliari;ascoli;Ascoli;cagliari;Cagliari;10
+2016-04-09T15:00:00;156;Italija 2;11210;Cesena - Vicenza;cesena;Cesena;vicenza;Vicenza;10
+2016-04-09T15:00:00;156;Italija 2;11211;Modena - Trapani;modena;Modena;trapani;Trapani;10
+2016-04-09T15:00:00;156;Italija 2;11212;Ternana - Crotone;ternana;Ternana;crotone;Crotone;10
+2016-04-09T15:00:00;156;Italija 2;11244;Spezia - Novara;spezia;Spezia;novara;Novara;10
+2016-04-10T17:30:00;156;Italija 2;11213;Como - Pro Vercelli;como;Como;pro_vercelli;Pro Vercelli;10
+2016-04-11T20:30:00;156;Italija 2;11117;Brescia - Perugia;brescia;Brescia;perugia;Perugia;10
+2016-04-10T06:00:00;157;Japan 1;11214;Nagoya - Omiya Ardija;nagoya;Nagoya;omiya_ardija;Omiya Ardija;10
+2016-04-10T06:00:00;157;Japan 1;11215;Vissel Kobe - Fukuoka;vissel_kobe;Vissel Kobe;fukuoka;Fukuoka;10
+2016-04-10T06:00:00;157;Japan 1;11216;Yokohama M. - Urawa;yokohama_m;Yokohama M.;urawa;Urawa;10
+2016-04-10T07:00:00;157;Japan 1;11217;Sendai - Gamba;sendai;Sendai;gamba;Gamba;10
+2016-04-10T07:00:00;157;Japan 1;11218;Kofu - Shonan;kofu;Kofu;shonan;Shonan;10
+2016-04-10T08:00:00;157;Japan 1;11112;Kawasaki - Tosu;kawasaki;Kawasaki;tosu;Tosu;10
+2016-04-10T09:00:00;157;Japan 1;11219;A. Niigata - Jubilo Iwata;a_niigata;A. Niigata;jubilo_iwata;Jubilo Iwata;10
+2016-04-10T09:00:00;157;Japan 1;11220;Kashima - Hiroshima;kashima;Kashima;hiroshima;Hiroshima;10
+2016-04-10T12:00:00;157;Japan 1;11221;Kashiwa - FC Tokyo;kashiwa;Kashiwa;fc_tokyo;FC Tokyo;10
+2016-04-08T00:30:00;41;Libertadores Kup;10393;Boca Juniors - Bolivar;boca_juniors;Boca Juniors;bolivar;Bolivar;10
+2016-04-08T00:30:00;41;Libertadores Kup;10394;CA River Plate - Nacional de F.;ca_river_plate;CA River Plate;nacional_de_f;Nacional de F.;10
+2016-04-08T02:45:00;41;Libertadores Kup;10395;FBC Melgar - Colo Colo;fbc_melgar;FBC Melgar;colo_colo;Colo Colo;10
+2016-04-08T02:45:00;41;Libertadores Kup;10396;Racing Club - Dep. Cali;racing_club;Racing Club;dep_cali;Dep. Cali;10
+2016-04-08T13:35:00;38;Kina;11315;Guangzhou RF - Yanbian;guangzhou_rf;Guangzhou RF;yanbian;Yanbian;10
+2016-04-09T09:30:00;38;Kina;11316;Shijiazhuang - Chongqing Lifan;shijiazhuang;Shijiazhuang;chongqing_lifan;Chongqing Lifan;10
+2016-04-09T13:35:00;38;Kina;11317;Henan Jianye - Jiangsu Suning;henan_jianye;Henan Jianye;jiangsu_suning;Jiangsu Suning;10
+2016-04-09T13:35:00;38;Kina;11318;Beijing Guoan - Guangzhou;beijing_guoan;Beijing Guoan;guangzhou;Guangzhou;10
+2016-04-10T09:30:00;38;Kina;11319;Changchun Yatai - Hebei Zhongji;changchun_yatai;Changchun Yatai;hebei_zhongji;Hebei Zhongji;10
+2016-04-10T09:30:00;38;Kina;11320;Tianjin Teda - Hangzhou;tianjin_teda;Tianjin Teda;hangzhou;Hangzhou;10
+2016-04-10T09:30:00;38;Kina;11321;Shanghai EA - Liaoning H.;shanghai_ea;Shanghai EA;liaoning_h;Liaoning H.;10
+2016-04-10T13:35:00;38;Kina;11322;Shanghai Shenhu - Shandong Luneng;shanghai_shenhu;Shanghai Shenhu;shandong_luneng;Shandong Luneng;10
+2016-04-09T02:30:00;166;Meksiko 1;11302;Queretaro - Toluca;queretaro;Queretaro;toluca;Toluca;10
+2016-04-09T04:30:00;166;Meksiko 1;11303;Santos Laguna - Veracruz;santos_laguna;Santos Laguna;veracruz;Veracruz;10
+2016-04-10T00:00:00;166;Meksiko 1;11304;America - Tijuana;america;America;tijuana;Tijuana;10
+2016-04-10T02:00:00;166;Meksiko 1;11339;Monterrey - Jaguares;monterrey;Monterrey;jaguares;Jaguares;10
+2016-04-10T03:06:00;166;Meksiko 1;11305;Pachuca - Tigres UANL;pachuca;Pachuca;tigres_uanl;Tigres UANL;10
+2016-04-10T03:30:00;166;Meksiko 1;11306;Atlas - Monarcas M.;atlas;Atlas;monarcas_m;Monarcas M.;10
+2016-04-10T04:00:00;166;Meksiko 1;11307;Dorados de Sin. - Cruz Azul;dorados_de_sin;Dorados de Sin.;cruz_azul;Cruz Azul;10
+2016-04-10T19:00:00;166;Meksiko 1;11308;UNAM Pumas - Leon;unam_pumas;UNAM Pumas;leon;Leon;10
+2016-04-11T00:00:00;166;Meksiko 1;11309;Puebla - Guadalajara;puebla;Puebla;guadalajara;Guadalajara;10
+2016-04-08T20:30:00;8;Nemacka 1;10279;Hertha - Hannover;hertha;Hertha;hannover;Hannover;10
+2016-04-09T15:30:00;8;Nemacka 1;10280;Frankfurt - Hoffenheim;frankfurt;Frankfurt;hoffenheim;Hoffenheim;10
+2016-04-09T15:30:00;8;Nemacka 1;10281;Hamburg - Darmstadt;hamburg;Hamburg;darmstadt;Darmstadt;10
+2016-04-09T15:30:00;8;Nemacka 1;10282;Ingolstadt - Borussia M.;ingolstadt;Ingolstadt;borussia_m;Borussia M.;10
+2016-04-09T15:30:00;8;Nemacka 1;10283;Stuttgart - Bayern M.;stuttgart;Stuttgart;bayern_m;Bayern M.;10
+2016-04-09T15:30:00;8;Nemacka 1;10284;Werder B. - Augsburg;werder_b;Werder B.;augsburg;Augsburg;10
+2016-04-09T18:30:00;8;Nemacka 1;10285;Wolfsburg - Mainz;wolfsburg;Wolfsburg;mainz;Mainz;10
+2016-04-10T15:30:00;8;Nemacka 1;10286;Schalke 04 - Dortmund;schalke_04;Schalke 04;dortmund;Dortmund;10
+2016-04-10T17:30:00;8;Nemacka 1;10287;FC Koln - Leverkusen;fc_koln;FC Koln;leverkusen;Leverkusen;10
+2016-04-08T18:30:00;158;Nemacka 2;11115;Heidenheim - Braunschweig;heidenheim;Heidenheim;braunschweig;Braunschweig;10
+2016-04-08T18:30:00;158;Nemacka 2;11222;Munchen 1860 - Greuther Furth;munchen_1860;Munchen 1860;greuther_furth;Greuther Furth;10
+2016-04-08T18:30:00;158;Nemacka 2;11223;Paderborn - Union Berlin;paderborn;Paderborn;union_berlin;Union Berlin;10
+2016-04-09T13:00:00;158;Nemacka 2;11224;Sandhausen - Bielefeld;sandhausen;Sandhausen;bielefeld;Bielefeld;10
+2016-04-09T13:00:00;158;Nemacka 2;11225;Bochum - FSV Frankfurt;bochum;Bochum;fsv_frankfurt;FSV Frankfurt;10
+2016-04-10T13:30:00;158;Nemacka 2;11226;Freiburg - St. Pauli;freiburg;Freiburg;st_pauli;St. Pauli;10
+2016-04-10T13:30:00;158;Nemacka 2;11227;Kaiserslautern - Karlsruher;kaiserslautern;Kaiserslautern;karlsruher;Karlsruher;10
+2016-04-10T13:30:00;158;Nemacka 2;11228;Nurnberg - Duisburg;nurnberg;Nurnberg;duisburg;Duisburg;10
+2016-04-11T20:15:00;158;Nemacka 2;11229;Fortuna D. - Leipzig;fortuna_d;Fortuna D.;leipzig;Leipzig;10
+2016-04-08T19:00:00;159;Norveska 1;11230;Sogndal - Haugesund;sogndal;Sogndal;haugesund;Haugesund;10
+2016-04-09T15:30:00;159;Norveska 1;11231;Lillestrom - Sarpsborg 08;lillestrom;Lillestrom;sarpsborg_08;Sarpsborg 08;10
+2016-04-09T18:00:00;159;Norveska 1;11232;Stabaek - Valerenga;stabaek;Stabaek;valerenga;Valerenga;10
+2016-04-10T15:30:00;159;Norveska 1;11233;Brann - Bodo/Glymt;brann;Brann;bodo/glymt;Bodo/Glymt;10
+2016-04-10T18:00:00;159;Norveska 1;11234;Tromso - Stromsgodset;tromso;Tromso;stromsgodset;Stromsgodset;10
+2016-04-10T18:00:00;159;Norveska 1;11235;Start - Molde;start;Start;molde;Molde;10
+2016-04-10T18:00:00;159;Norveska 1;11236;Rosenborg - Aalesund;rosenborg;Rosenborg;aalesund;Aalesund;10
+2016-04-10T20:00:00;159;Norveska 1;11237;Viking - Odd BK;viking;Viking;odd_bk;Odd BK;10
+2016-04-09T18:00:00;160;Poljska 1;11118;Lechia Gdansk - Ruch Chorzow;lechia_gdansk;Lechia Gdansk;ruch_chorzow;Ruch Chorzow;10
+2016-04-09T18:00:00;160;Poljska 1;11238;Podbeskidzie - Termalica BB;podbeskidzie;Podbeskidzie;termalica_bb;Termalica BB;10
+2016-04-09T18:00:00;160;Poljska 1;11239;Slask - Cracovia;slask;Slask;cracovia;Cracovia;10
+2016-04-09T18:00:00;160;Poljska 1;11240;Piast Gliwice - Jagiellonia;piast_gliwice;Piast Gliwice;jagiellonia;Jagiellonia;10
+2016-04-09T18:00:00;160;Poljska 1;11241;Korona - Gornik Z.;korona;Korona;gornik_z;Gornik Z.;10
+2016-04-09T18:00:00;160;Poljska 1;11242;Pogon Szczecin - Legia;pogon_szczecin;Pogon Szczecin;legia;Legia;10
+2016-04-09T18:00:00;160;Poljska 1;11243;Wisla Krakow - Zaglebie L.;wisla_krakow;Wisla Krakow;zaglebie_l;Zaglebie L.;10
+2016-04-09T18:00:00;160;Poljska 1;11245;Gornik Leczna - Lech Poznan;gornik_leczna;Gornik Leczna;lech_poznan;Lech Poznan;10
+2016-04-08T21:30:00;161;Portugal 1;11246;Boavista - Arouca;boavista;Boavista;arouca;Arouca;10
+2016-04-09T19:30:00;161;Portugal 1;11337;Academica - Benfica;academica;Academica;benfica;Benfica;10
+2016-04-09T21:45:00;161;Portugal 1;11248;Sporting - Maritimo;sporting;Sporting;maritimo;Maritimo;10
+2016-04-10T17:00:00;161;Portugal 1;11249;Nacional - Estoril;nacional;Nacional;estoril;Estoril;10
+2016-04-10T17:00:00;161;Portugal 1;11250;Tondela - Uniao Madeira;tondela;Tondela;uniao_madeira;Uniao Madeira;10
+2016-04-10T17:00:00;161;Portugal 1;11251;Setubal - Belenenses;setubal;Setubal;belenenses;Belenenses;10
+2016-04-10T19:15:00;161;Portugal 1;11252;Ferreira - Porto;ferreira;Ferreira;porto;Porto;10
+2016-04-10T21:30:00;161;Portugal 1;11336;Braga - Moreirense;braga;Braga;moreirense;Moreirense;10
+2016-04-11T21:00:00;161;Portugal 1;11253;Rio Ave - Guimaraes;rio_ave;Rio Ave;guimaraes;Guimaraes;10
+2016-04-08T18:00:00;162;Rusija 1;11254;Anzhi - FC Rostov;anzhi;Anzhi;fc_rostov;FC Rostov;10
+2016-04-09T12:30:00;162;Rusija 1;11255;CSKA M. - Mordovia S.;cska_m;CSKA M.;mordovia_s;Mordovia S.;10
+2016-04-09T13:30:00;162;Rusija 1;11256;Amkar - Zenit;amkar;Amkar;zenit;Zenit;10
+2016-04-09T18:30:00;162;Rusija 1;11257;Rubin - Dynamo M.;rubin;Rubin;dynamo_m;Dynamo M.;10
+2016-04-10T13:30:00;162;Rusija 1;11258;Ufa - Terek;ufa;Ufa;terek;Terek;10
+2016-04-10T16:00:00;162;Rusija 1;11259;Krasnodar - Ural;krasnodar;Krasnodar;ural;Ural;10
+2016-04-10T18:30:00;162;Rusija 1;11260;Spartak M. - Kuban;spartak_m;Spartak M.;kuban;Kuban;10
+2016-04-11T17:00:00;162;Rusija 1;11261;Kryliya Sovetov - Lokomotiv M.;kryliya_sovetov;Kryliya Sovetov;lokomotiv_m;Lokomotiv M.;10
+2016-04-07T20:00:00;353;Saudijska Arabija;11449;Al Wehda - Al Raed;al_wehda;Al Wehda;al_raed;Al Raed;10
+2016-04-08T20:45:00;18;Skotska 1;11262;Hearts - Aberdeen;hearts;Hearts;aberdeen;Aberdeen;10
+2016-04-09T13:30:00;18;Skotska 1;11263;Motherwell - Celtic;motherwell;Motherwell;celtic;Celtic;10
+2016-04-09T16:00:00;18;Skotska 1;11264;Ross County - Partick;ross_county;Ross County;partick;Partick;10
+2016-04-09T16:00:00;18;Skotska 1;11265;Hamilton - Dundee;hamilton;Hamilton;dundee;Dundee;10
+2016-04-09T16:00:00;18;Skotska 1;11266;Kilmarnock - St. Johnstone;kilmarnock;Kilmarnock;st_johnstone;St. Johnstone;10
+2016-04-09T16:00:00;18;Skotska 1;11267;Dundee Utd - Inv. Caledonian;dundee_utd;Dundee Utd;inv_caledonian;Inv. Caledonian;10
+2016-04-08T20:30:00;36;Spanija 1;10371;Granada - Malaga;granada;Granada;malaga;Malaga;10
+2016-04-09T16:00:00;36;Spanija 1;10372;Real Madrid - Eibar;real_madrid;Real Madrid;eibar;Eibar;10
+2016-04-09T18:15:00;36;Spanija 1;10373;Espanyol - Atl. Madrid;espanyol;Espanyol;atl_madrid;Atl. Madrid;10
+2016-04-09T20:30:00;36;Spanija 1;10374;Real Sociedad - Barcelona;real_sociedad;Real Sociedad;barcelona;Barcelona;10
+2016-04-09T22:05:00;36;Spanija 1;10375;Betis - Levante;betis;Betis;levante;Levante;10
+2016-04-10T12:00:00;36;Spanija 1;10376;Gijon - Celta;gijon;Gijon;celta;Celta;10
+2016-04-10T16:00:00;36;Spanija 1;10377;Valencia - Sevilla;valencia;Valencia;sevilla;Sevilla;10
+2016-04-10T18:15:00;36;Spanija 1;10378;Villarreal - Getafe;villarreal;Villarreal;getafe;Getafe;10
+2016-04-10T20:30:00;36;Spanija 1;10379;Ath. Bilbao - Rayo Vallecano;ath_bilbao;Ath. Bilbao;rayo_vallecano;Rayo Vallecano;10
+2016-04-11T20:30:00;36;Spanija 1;10380;Dep. La Coruna - Las Palmas;dep_la_coruna;Dep. La Coruna;las_palmas;Las Palmas;10
+2016-04-09T18:00:00;88;Spanija 2;11268;Mirandes - Ponferradina;mirandes;Mirandes;ponferradina;Ponferradina;10
+2016-04-09T18:00:00;88;Spanija 2;11269;Lugo - Girona;lugo;Lugo;girona;Girona;10
+2016-04-09T18:00:00;88;Spanija 2;11270;Almeria - Alcorcon;almeria;Almeria;alcorcon;Alcorcon;10
+2016-04-09T18:00:00;88;Spanija 2;11281;Llagostera - Ath. Bilbao B;llagostera;Llagostera;ath_bilbao_b;Ath. Bilbao B;10
+2016-04-09T20:15:00;88;Spanija 2;11271;Leganes - Valladolid;leganes;Leganes;valladolid;Valladolid;10
+2016-04-10T12:00:00;88;Spanija 2;11272;Zaragoza - Mallorca;zaragoza;Zaragoza;mallorca;Mallorca;10
+2016-04-10T17:00:00;88;Spanija 2;11273;Huesca - Gimnastic;huesca;Huesca;gimnastic;Gimnastic;10
+2016-04-10T17:00:00;88;Spanija 2;11274;Cordoba - Albacete;cordoba;Cordoba;albacete;Albacete;10
+2016-04-10T17:00:00;88;Spanija 2;11275;Alaves - Tenerife;alaves;Alaves;tenerife;Tenerife;10
+2016-04-10T17:00:00;88;Spanija 2;11276;Real Oviedo - Numancia;real_oviedo;Real Oviedo;numancia;Numancia;10
+2016-04-10T19:15:00;88;Spanija 2;11277;Osasuna - Elche;osasuna;Osasuna;elche;Elche;10
+2016-04-09T17:45:00;164;Svajcarska 1;11278;Young Boys - Lugano;young_boys;Young Boys;lugano;Lugano;10
+2016-04-09T20:00:00;164;Svajcarska 1;11279;Grasshopers - Luzern;grasshopers;Grasshopers;luzern;Luzern;10
+2016-04-10T13:45:00;164;Svajcarska 1;11280;Basel - Zurich;basel;Basel;zurich;Zurich;10
+2016-04-10T13:45:00;164;Svajcarska 1;11335;Sion - Thun;sion;Sion;thun;Thun;10
+2016-04-10T16:00:00;164;Svajcarska 1;11282;Vaduz - St. Gallen;vaduz;Vaduz;st_gallen;St. Gallen;10
+2016-04-08T19:00:00;37;Turska 1;11283;Gaziantep - Sivas;gaziantep;Gaziantep;sivas;Sivas;10
+2016-04-09T12:00:00;37;Turska 1;11284;Osmanli - Eskisehir;osmanli;Osmanli;eskisehir;Eskisehir;10
+2016-04-09T16:00:00;37;Turska 1;11285;Galatasaray - Rize;galatasaray;Galatasaray;rize;Rize;10
+2016-04-09T19:00:00;37;Turska 1;11286;Konya - Fenerbahce;konya;Konya;fenerbahce;Fenerbahce;10
+2016-04-10T12:30:00;37;Turska 1;11287;Mersin IY - Genclerbirligi;mersin_iy;Mersin IY;genclerbirligi;Genclerbirligi;10
+2016-04-10T15:00:00;37;Turska 1;11288;Kayseri - Antalya;kayseri;Kayseri;antalya;Antalya;10
+2016-04-10T18:00:00;37;Turska 1;11289;Trabzon - Istanbul B.;trabzon;Trabzon;istanbul_b;Istanbul B.;10
+2016-04-11T18:00:00;37;Turska 1;11290;Akhisar Bld. - Kasimpasa;akhisar_bld;Akhisar Bld.;kasimpasa;Kasimpasa;10
+2016-04-11T19:00:00;37;Turska 1;11291;Besiktas - Bursa;besiktas;Besiktas;bursa;Bursa;10
+2016-04-09T01:00:00;165;USA MLS;11292;Philadelphia - Orlando City;philadelphia;Philadelphia;orlando_city;Orlando City;10
+2016-04-09T22:00:00;165;USA MLS;11293;New England - Toronto;new_england;New England;toronto;Toronto;10
+2016-04-09T22:00:00;165;USA MLS;11294;Montreal Impact - Columbus;montreal_impact;Montreal Impact;columbus;Columbus;10
+2016-04-09T23:30:00;165;USA MLS;11295;Washington - Vancouver;washington;Washington;vancouver;Vancouver;10
+2016-04-10T01:00:00;165;USA MLS;11296;New York RB - Kansas City;new_york_rb;New York RB;kansas_city;Kansas City;10
+2016-04-10T03:00:00;165;USA MLS;11297;Dallas - San Jose E.;dallas;Dallas;san_jose_e;San Jose E.;10
+2016-04-10T03:30:00;165;USA MLS;11298;Salt Lake - Colorado;salt_lake;Salt Lake;colorado;Colorado;10
+2016-04-10T22:00:00;165;USA MLS;11299;Houston - Seattle;houston;Houston;seattle;Seattle;10
+2016-04-11T01:00:00;165;USA MLS;11300;New York City - Chicago;new_york_city;New York City;chicago;Chicago;10
+2016-04-11T03:30:00;165;USA MLS;11301;Los Angeles - Portland;los_angeles;Los Angeles;portland;Portland;10

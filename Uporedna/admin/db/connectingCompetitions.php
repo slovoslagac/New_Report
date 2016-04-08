@@ -2,7 +2,7 @@
 include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlAdminPDO.php')));
 // $kladionica_name='balkanbet';
 
-if ($cmp == 0) {
+if ($cmp_src == 0) {
     $sql = "select
   c.id as cmp_id,
   c.name as cmp_name,
@@ -30,7 +30,6 @@ inner join
 on
   c.source_id=s.id
 where s.id = $source_id
-and c.id not in (select src_competition_id from conn_competition)
 order by src_name, cmp_name asc";
 }
 $NonMatchCmp = $conn -> prepare($sql);
