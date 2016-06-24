@@ -15,6 +15,7 @@ $curr_comment = '';
 $ticketTime = '';
 $curr_currency = "RSD";
 $currency ='' ;
+$listType = 4;
 $i = 1;
 $conn;
 $tmp_games = array();
@@ -130,18 +131,27 @@ if($currency_day == 6) {
 switch($currency){
     case("BAM"):
         $currency_id = 7;
+        $listType = 4;
         break;
     case("MKD"):
         $currency_id = 6;
+        $listType = 4;
         break;
     case("RON"):
         $currency_id = 8;
+        $listType = 4;
         break;
     case("EUR"):
         $currency_id = 2;
+        $listType = 4;
+        break;
+    case("HRK"):
+        $currency_id = 10;
+        $listType = 1;
         break;
     default:
         $currency_id = 1;
+        $listType = 4;
         $curr_currency = $currency;
 }
 

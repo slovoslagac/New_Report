@@ -14,7 +14,7 @@ include(join(DIRECTORY_SEPARATOR, array('included', 'adm_header.php')));
 
 //$source_id = 2;
 //$bookie = 'Soccer';
-$source_id = '';
+$source_id = 2;
 $i = 1;
 
 if (isset ($_GET ["bookie_id"]) != "") {
@@ -78,7 +78,7 @@ if (isset($_GET['delete'])) {
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
                     <td>
                         <select name="bookie_id">
-                            <option value="0">Sve kladionice</option>
+<!--                            <option value="0">Sve kladionice</option>-->
                             <?php foreach ($Data3 as $D3) { ?>
                                 <option
                                     value="<?php echo $D3['id'] . "__" . $D3['name'] ?>" <?php if ($D3['id'] == $source_id) {

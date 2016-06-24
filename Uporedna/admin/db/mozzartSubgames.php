@@ -8,6 +8,8 @@ where id not in (select cs.subgame_id from conn_subgame cs, src_subgames ss wher
 order by game_name, subgame_name"
     ;
 
+//
+
 $MozSubgame = $conn -> prepare($sql);
 
 

@@ -22,6 +22,10 @@ $tmp_games = array();
 $tmp_subgames = array();
 $tmp_matches = array();
 
+$tmp_matches = array(5110);
+$tmp_games = array(1);
+$tmp_subgames = array(1);
+
 $SourceOdds = array();
 //Raspored kladionica je
 $SourcesArray = array(5, 2, 4);
@@ -99,7 +103,7 @@ if (isset($_GET['delete'])) {
 
 
 include(join(DIRECTORY_SEPARATOR, array('included', 'nas_header.php')));
-include(join(DIRECTORY_SEPARATOR, array('query', 'GetTicketJSON.php')));
+//include(join(DIRECTORY_SEPARATOR, array('query', 'GetTicketJSON.php')));
 include(join(DIRECTORY_SEPARATOR, array('query', 'comments_info.php')));
 
 include(join(DIRECTORY_SEPARATOR, array('functions', 'bonuses.php')));
@@ -245,38 +249,23 @@ switch($currency){
                 $num_of_rows = 0;
                 $num_of_winner_rows = 0;
 
+                $match_data = array(array(5110,1,1));
+
                 foreach ($match_data as $md) {
+                    print_r( $md);
                     $num_of_rows++;
                     $tmp = $md->odds;
-                    $code = $md->match->id;
+                    $code = $md[0];
                     $tmp_odds = array();
+                    $game_id = $md[1];
+                    $subgame_id= $md[2];
 
                     ?>
 
                     <tr class="row">
                         <!--Podaci koji se ispisuju direktno sa tiketa-->
-                        <?php $match_code = $md->match->matchNumber; ?>
 
-                        <td value="<?php echo $code ?>" class="<?php echo ($oddtype[$code]==64)? "red":""?>"><?php echo $match_code ?></td>
-                        <?php $match_time = date('H:i', $md->match->startTime / 1000);
-                        $match_date = date('D', $md->match->startTime / 1000); ?>
-
-                        <td><?php echo ($days[$match_date] != "") ? "$days[$match_date] $match_time" : "$match_date $match_time";; ?></td>
-                        <td><?php echo $md->match->home ?></td>
-                        <td><?php echo $md->match->visitor ?></td>
-                        <td><?php echo $md->match->result ?></td>
-                        <?php foreach ($md->odds as $tmpOdds) { ?>
-                            <td><?php echo $tmpOdds->game->shortName . " " . $tmpOdds->subGame->name;
-                                $game_id = $tmpOdds->subGame->gameId;
-                                ($tmpOdds->status == "WINNER") ? $num_of_winner_rows++ : "";
-                                $subgame_id = $tmpOdds->subGame->id; ?></td>
-                            <?php $mozz_odd_value = number_format($tmpOdds->odd, 2, ',', '.');
-
-                            $tmp_odds[1] = $mozz_odd_value;
-
-                            ($tmpOdds->odd > 0) ? $mozzart_sum_odds *= $tmpOdds->odd : "";
-
-                        }
+                        <?php
                         // Kvote Mozzart na početku kola
                         foreach ($StartingOdds as $so) {
                             if ($so['id'] == $code && $so['game_id'] == $game_id && $so['subgame_id'] == $subgame_id) {

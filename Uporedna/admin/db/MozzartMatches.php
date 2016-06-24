@@ -20,7 +20,7 @@ inner join
 on
   (im.visitor_team_id = itv.id)
 where im.start_time > now() - interval '4' day
-and im.start_time < now() + interval '7' day
+and im.start_time < now() + interval '60' day
 and im.event_id not in (select init_match_id from conn_match cm, src_match sm where cm.src_match_id = sm.id and sm.source_id = $source_id)
 and im.competition_id in (select init_competition_id from conn_competition c)
 order by 2,3
