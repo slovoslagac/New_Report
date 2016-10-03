@@ -29,10 +29,18 @@ function get_all_teams_from_competition($cmpID, $seaspnId) {
     return $allTeamsByCompetition ;
 }
 
-function returnObjectById($id, $array){
+function getObjectById($id, $array){
     foreach ($array as $ar){
-        if ($ar->id == $id){
-            echo "$ar->object <br/>";
+        if ($ar->teamId == $id){
+            return true;
+        } else {
+            return false;
         }
     }
+}
+
+function build_sorter($key) {
+    return function ($a, $b) use ($key) {
+        return strnatcmp($a[$key], $b[$key]);
+    };
 }

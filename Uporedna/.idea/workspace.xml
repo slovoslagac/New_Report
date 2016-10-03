@@ -5,32 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be601e26-0991-4c96-82a8-f7b0c1b2b1bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/includes/sortObj.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminKontrolaPodigara.php" afterPath="$PROJECT_DIR$/admin/adminKontrolaPodigara.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminPripremaPonude.php" afterPath="$PROJECT_DIR$/admin/adminPripremaPonude.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminPripremaRezultata.php" afterPath="$PROJECT_DIR$/admin/adminPripremaRezultata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminSpajanjeMeceva.php" afterPath="$PROJECT_DIR$/admin/adminSpajanjeMeceva.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminSpajanjeTimova.php" afterPath="$PROJECT_DIR$/admin/adminSpajanjeTimova.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/admin.css" afterPath="$PROJECT_DIR$/admin/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/db/LeaguePreparation.php" afterPath="$PROJECT_DIR$/admin/db/LeaguePreparation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/db/connectingTeams.php" afterPath="$PROJECT_DIR$/admin/db/connectingTeams.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/db/mozzartCompetitions.php" afterPath="$PROJECT_DIR$/admin/db/mozzartCompetitions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/db/mozzartTeams.php" afterPath="$PROJECT_DIR$/admin/db/mozzartTeams.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/included/adm_menu.php" afterPath="$PROJECT_DIR$/admin/included/adm_menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/included/config.php" afterPath="$PROJECT_DIR$/admin/included/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/included/db.php" afterPath="$PROJECT_DIR$/admin/included/db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/included/functions.php" afterPath="$PROJECT_DIR$/admin/included/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/included/init.php" afterPath="$PROJECT_DIR$/admin/included/init.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/saveTeams.php" afterPath="$PROJECT_DIR$/admin/saveTeams.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/scripts/Supersport.php" afterPath="$PROJECT_DIR$/admin/scripts/Supersport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/file_upload.php" afterPath="$PROJECT_DIR$/public/admin/file_upload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/includes/MatchTeamResults.php" afterPath="$PROJECT_DIR$/public/includes/MatchTeamResults.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/includes/db.php" afterPath="$PROJECT_DIR$/public/includes/db.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/includes/functions.php" afterPath="$PROJECT_DIR$/public/includes/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/includes/init.php" afterPath="$PROJECT_DIR$/public/includes/init.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/includes/teamTmpData.php" afterPath="$PROJECT_DIR$/public/includes/teamTmpData.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/teamCompetitionStats.php" afterPath="$PROJECT_DIR$/public/teamCompetitionStats.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../query/Players9-19.php" afterPath="$PROJECT_DIR$/../query/Players9-19.php" />
     </list>
     <ignored path="Uporedna.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,8 +50,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/db/connectingCompetitions.php" />
-        <option value="$PROJECT_DIR$/admin/scripts/testXml.php" />
         <option value="$PROJECT_DIR$/admin/scripts/xmltest.php" />
         <option value="$PROJECT_DIR$/admin/conn/mysqlAdminPDO.php" />
         <option value="$PROJECT_DIR$/admin/scripts/OddsTest.php" />
@@ -114,11 +94,13 @@
         <option value="$PROJECT_DIR$/admin/classes/MatchTeamResults.php" />
         <option value="$PROJECT_DIR$/public/file_upload.php" />
         <option value="$PROJECT_DIR$/public/admin/file_upload.php" />
+        <option value="$PROJECT_DIR$/public/includes/db.php" />
         <option value="$PROJECT_DIR$/public/includes/MatchTeamResults.php" />
-        <option value="$PROJECT_DIR$/public/includes/init.php" />
-        <option value="$PROJECT_DIR$/public/includes/teamTmpData.php" />
-        <option value="$PROJECT_DIR$/public/teamCompetitionStats.php" />
         <option value="$PROJECT_DIR$/public/includes/functions.php" />
+        <option value="$PROJECT_DIR$/public/includes/sortObj.php" />
+        <option value="$PROJECT_DIR$/public/includes/init.php" />
+        <option value="$PROJECT_DIR$/public/teamCompetitionStats.php" />
+        <option value="$PROJECT_DIR$/public/includes/teamTmpData.php" />
       </list>
     </option>
   </component>
@@ -162,6 +144,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -233,7 +216,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,7 +331,7 @@
     <frame x="-8" y="-8" width="1456" height="854" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2534722" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21597221" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -394,13 +376,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/db/connectingSubgames.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13662457">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/db/controlMatches.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.019517796">
@@ -695,48 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/includes/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/includes/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07798165">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/includes/MatchTeamResults.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.769231">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="35" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/includes/init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/includes/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0811404">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/teamCompetitionStats.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76096493">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/admin/file_upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0745614">
@@ -744,10 +677,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/includes/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22141823">
+          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/includes/sortObj.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6642547">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/includes/teamTmpData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48464912">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.13892908">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/includes/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41823444">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/includes/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/includes/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9015919">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+          <folding>
+            <marker date="1475529416366" expanded="true" signature="156:176" placeholder="delete from " />
+            <marker date="1475529416366" expanded="true" signature="305:326" placeholder="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/includes/MatchTeamResults.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9392185">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding>
+            <marker date="1475526091715" expanded="true" signature="410:958" placeholder="SELECT m.sta... init_match" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/teamCompetitionStats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77858174">
+          <caret line="142" column="50" selection-start-line="142" selection-start-column="50" selection-end-line="142" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>

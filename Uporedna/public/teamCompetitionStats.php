@@ -13,26 +13,157 @@ $allUsersResults = new MatchTeamResults();
 $allStats = $allUsersResults->getAllCompetitionResults();
 
 
-//var_dump($allStats);
-
-$alldata[] = '';
+//echo "<br>";
+$alldata = array();
 $team = '';
+
+$i = 0;
 foreach ($allStats as $as) {
+    $i++;
     $sum = $as->valueFor + $as->valueOposite;
-    echo "$as->teamName ($as->homeVisitor) : $sum ($as->valueFor:$as->valueOposite)<br/>";
-    if($as->teamId != $team){
+    if ($as->teamId != $team) {
+        $tps = 1;
         $team = $as->teamId;
-        if($sum >=3) {
-            if(returnObjectById($team,$alldata) == true) {
+        $alldata[$as->teamId] = new teamTmpData($as->teamId, $as->teamName);
+    }
 
-            } else {
-                $alldata[] = new teamTmpData($team,$as->teamName,$sum);
-            }
+    $alldata[$as->teamId]->numMatch = $alldata[$as->teamId]->numMatch + 1;
 
+//    Proveravamo golove 0-2 i 3+
+    if ($sum >= 3) {
+        $alldata[$as->teamId]->threePlus = $alldata[$as->teamId]->threePlus + 1;
+        if($tps==1){$alldata[$as->teamId]->threePlusSeria = $alldata[$as->teamId]->threePlusSeria + 1;}
+    } else {
+        $alldata[$as->teamId]->zeroTwo = $alldata[$as->teamId]->zeroTwo + 1;
+        $tps = 2;
+    }
+
+//    Trazimo GG i GG3+
+    if ($as->valueFor > 0 && $as->valueOposite > 0) {
+        $alldata[$as->teamId]->gg = $alldata[$as->teamId]->gg + 1;
+        if ($sum >= 3) {
+            $alldata[$as->teamId]->ggThreePlus = $alldata[$as->teamId]->ggThreePlus + 1;
         }
     }
+
 }
 
 echo "<br/>";
 
-var_dump($alldata);
+
+//    echo "$al->teamName 3+:$al->threePlus ($al->numMatch) 0-2: $al->zeroTwo ($al->numMatch) <br/>";
+
+
+//var_dump($alldata);
+
+?>
+
+<html>
+<head>
+    <style>
+        table, td, tr {
+            border: solid 1px black;
+        }
+
+
+    </style>
+</head>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Team</td>
+        <td>Br.Mec</td>
+        <td>0-2</td>
+        <td>3+</td>
+        <td>3+ Seria</td>
+        <td>gg</td>
+        <td>gg3+</td>
+    </tr>
+    <?php
+    foreach ($alldata as $al) {
+        ?>
+        <tr>
+            <td><?php echo $al->teamName ?></td>
+            <td><?php echo $al->numMatch ?></td>
+            <td><?php echo $al->zeroTwo ?></td>
+            <td><?php echo $al->threePlus ?></td>
+            <td><?php echo $al->threePlusSeria ?></td>
+            <td><?php echo $al->gg ?></td>
+            <td><?php echo $al->ggThreePlus ?></td>
+        </tr>
+
+        <?php
+    }
+    ?>
+</table>
+<br/>
+
+<table>
+    <tr>
+        <td>Team</td>
+        <td>Br.Mec</td>
+        <td>0-2</td>
+        <td>3+</td>
+        <td>3+ Seria</td>
+        <td>gg</td>
+        <td>gg3+</td>
+    </tr>
+    <?php
+    usort($alldata, array("teamTmpData", "sortByTPS"));
+    foreach ($alldata as $al) {
+        ?>
+        <tr>
+            <td><?php echo $al->teamName ?></td>
+            <td><?php echo $al->numMatch ?></td>
+            <td><?php echo $al->zeroTwo ?></td>
+            <td><?php echo $al->threePlus ?></td>
+            <td><?php echo $al->threePlusSeria ?></td>
+            <td><?php echo $al->gg ?></td>
+            <td><?php echo $al->ggThreePlus ?></td>
+        </tr>
+
+        <?php
+    }
+    ?>
+</table>
+<br/>
+
+<table>
+    <tr>
+        <td>Team</td>
+        <td>Br.Mec</td>
+        <td>0-2</td>
+        <td>3+</td>
+        <td>3+ Seria</td>
+        <td>gg</td>
+        <td>gg3+</td>
+    </tr>
+    <?php
+    usort($alldata, array("teamTmpData", "sortByND"));
+    foreach ($alldata as $al) {
+        ?>
+        <tr>
+            <td><?php echo $al->teamName ?></td>
+            <td><?php echo $al->numMatch ?></td>
+            <td><?php echo $al->zeroTwo ?></td>
+            <td><?php echo $al->threePlus ?></td>
+            <td><?php echo $al->threePlusSeria ?></td>
+            <td><?php echo $al->gg ?></td>
+            <td><?php echo $al->ggThreePlus ?></td>
+        </tr>
+
+        <?php
+    }
+    ?>
+</table>
+</body>
+</html>
+<?php
+echo "<br>";
+foreach ($allStats as $as) {
+
+    echo "($i) $as->teamName ($as->homeVisitor) : $sum ($as->valueFor:$as->valueOposite)<br/>";
+
+}
+?>
