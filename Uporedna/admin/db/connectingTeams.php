@@ -1,45 +1,29 @@
 <?php
 include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlAdminPDO.php')));
 
-$source_array = array(2,3,4,5,6,7,9);
 
-if(in_array($source_id, $source_array)) {
-$sql = 'SELECT DISTINCT ic.name competition_name, st.name home_name, st1.name visitor_name, sm.id match_id, ic.id competition_id, st.id home_id, st1.id visitor_id
-FROM src_match sm, conn_competition cc, init_competition ic, src_team st, src_team st1
-WHERE sm.src_competition_id = cc.src_competition_id
-AND cc.init_competition_id = ic.id
-AND sm.id NOT IN (SELECT src_match_id FROM conn_match)
-AND sm.src_home_team_id = st.id
-AND ic.position = 1
-AND sm.src_visitor_team_id = st1.id
-AND sm.source_id= ' . $source_id . '
-AND sm.start_time > now() - INTERVAL "4" DAY
-AND sm.start_time < now() + INTERVAL "8" DAY
-ORDER BY sm.source_id, ic.name, st.name
+$sql = 'select distinct icn.country competition_name, sm.src_home_team_id team_id, st.name team_name, icn.id competition_id
+from src_match sm, conn_competition cc, init_competition ic, init_country icn, src_team st
+where sm.src_home_team_id not in (select src_team_id from conn_team)
+and sm.source_id = ' . $source_id . '
+and icn.id = ic.country_id
+and st.id = sm.src_home_team_id
+and st.source_id = ' . $source_id . '
+and sm.src_competition_id = cc.src_competition_id
+and cc.init_competition_id = ic.id
+order by 1,3
 ';
-}
-else {
-    $sql = 'SELECT DISTINCT ic.name competition_name, st.name home_name, st1.name visitor_name, sm.id match_id, ic.id competition_id, st.id home_id, st1.id visitor_id
-FROM src_match sm, conn_competition cc, init_competition ic, src_team st, src_team st1
-WHERE sm.src_competition_id = cc.src_competition_id
-AND cc.init_competition_id = ic.id
-AND sm.id NOT IN (SELECT src_match_id FROM conn_match)
-AND sm.src_home_team_id = st.id
-AND ic.position = 1
-AND sm.src_visitor_team_id = st1.id
-AND sm.source_id= ' . $source_id . '
-ORDER BY sm.source_id, ic.name, st.name
-';
-}
+
+
 //AND sm.start_time > now() - INTERVAL "4" DAY
 //AND sm.start_time < now() + INTERVAL "8" DAY
 
 // echo $sql;
 
 
-$FindMatch = $conn->prepare($sql);
-$FindMatch->execute();
-$ShowMatch = $FindMatch->fetchAll(PDO::FETCH_ASSOC);
+$FindTeam = $conn->prepare($sql);
+$FindTeam->execute();
+$ShowTeam = $FindTeam->fetchAll(PDO::FETCH_ASSOC);
 
 
 $conn = null;

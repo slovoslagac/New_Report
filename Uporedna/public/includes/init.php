@@ -11,19 +11,15 @@
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
 defined('SITE_ROOT') ? null : define('SITE_ROOT', 'C:' . DS . 'AppServ' . DS . 'www' . DS . 'New_Report' . DS . 'Uporedna');
-defined('ADMIN_PATH') ? null : define('ADMIN_PATH', SITE_ROOT . DS . 'admin' . DS . 'included');
-defined('CLASS_PATH') ? null : define('CLASS_PATH', SITE_ROOT . DS . 'admin' . DS . 'classes');
+defined('ADMIN_PATH') ? null : define('ADMIN_PATH', SITE_ROOT . DS . 'public' . DS . 'includes');
 
-
-/*echo SITE_ROOT;
-echo "<br/>";
-
-echo LIB_PATH;*/
 
 
 require ADMIN_PATH . DS . 'config.php';
 require ADMIN_PATH . DS . 'db.php';
 require ADMIN_PATH . DS . 'functions.php';
-require CLASS_PATH . DS. 'Match.php';
+require ADMIN_PATH . DS . 'Match.php';
+require ADMIN_PATH . DS . 'MatchTeamResults.php';
+require ADMIN_PATH . DS . 'teamTmpData.php';
 
 

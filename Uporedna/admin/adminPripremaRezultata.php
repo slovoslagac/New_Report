@@ -5,7 +5,7 @@
 require_once(join(DIRECTORY_SEPARATOR, array('..', 'init.php')));;
 $css = 'css/admin.css';
 $naslov_short = "Admin";
-$naslov = "Spajanje takmičenja za odabranu kladionicu";
+$naslov = "Priprema ponude";
 $kladionica_name = '';
 
 include(join(DIRECTORY_SEPARATOR, array('included', 'adm_header.php')));
@@ -18,8 +18,10 @@ include(join(DIRECTORY_SEPARATOR, array('included', 'adm_header.php')));
 $source_id = 11;
 
 $competition_id = 0;
-$season_id = 6;
+$season_id = array();
 $i = 1;
+
+$result_type = array(1=>"prvo poluvreme", 2=>"konacan ishod");
 
 
 //if (isset ($_GET ["bookie_id"]) != "") {
@@ -42,10 +44,11 @@ if (isset($_GET ["season_id"]) != "") {
 
 //echo $season_id,"\t", $competition_id;
 
-include(join(DIRECTORY_SEPARATOR, array('db', 'LEaguePreparation.php')));
+include(join(DIRECTORY_SEPARATOR, array('db', 'LeaguePreparation.php')));
 include(join(DIRECTORY_SEPARATOR, array('db', 'availableSources.php')));
 
-$Data1 = $resultLSM;
+$Data1 = $resultLMR;
+$Data2 = $resultS;
 $Data3 = $resultL;
 
 
@@ -73,11 +76,10 @@ $Data3 = $resultL;
                         </select>
                     </td>
                     <td>
-                        <select name="season_id">
-                            <option value="6"<?php echo ($season_id == 6) ? 'selected="selected"' : ''; ?>>2015/2016
-                            </option>
-                            <option value="48"<?php echo ($season_id == 48) ? 'selected="selected"' : ''; ?>>2016/2017
-                            </option>
+                        <select multiple name="season_id[]">
+                            <?php foreach ($Data2 as $D2) { ?>}
+                                <option value="<?php echo $D2['id'] ?>"<?php echo in_array($D2['id'],$season_id ) ? 'selected="selected"' : ''; ?>><?php echo $D2['name']?></option>
+                            <?php } ?>
                         </select>
                     </td>
                     <td>
@@ -89,14 +91,12 @@ $Data3 = $resultL;
         <table id="exportTable" class="size80">
             <colgroup>
                 <col width="10%">
-                <col width="5%">
-                <col width="15%">
-                <col width="15%">
-                <col width="5%">
+                <col width="6%">
+                <col width="20%">
+                <col width="20%">
                 <col width="22%">
                 <col width="10%">
-                <col width="10%">
-                <col width="2%">
+                <col width="6%">
                 <col width="6%">
             </colgroup>
             <thead>
@@ -105,12 +105,10 @@ $Data3 = $resultL;
                 <td>Vreme</td>
                 <td>Domaćin</td>
                 <td>Gost</td>
-                <td>Kolo</td>
-                <td>Liga</td>
-                <td>Sezona</td>
-                <td>Sport</td>
+                <td>Tip rezultata</td>
+                <td>Rezultat</td>
                 <td></td>
-                <td>Faza</td>
+                <td>Sport</td>
             </tr>
 
             </thead>
@@ -124,12 +122,10 @@ $Data3 = $resultL;
                         <td><?php echo $srSource['time'] ?></td>
                         <td><?php echo $srSource['hometeam'] ?></td>
                         <td><?php echo $srSource['awayteam'] ?></td>
-                        <td><?php echo $srSource['round'] ?></td>
-                        <td><?php echo $srSource['competition'] ?></td>
-                        <td><?php echo str_replace('-', '/', $srSource['season']) ?></td>
-                        <td>FUDBAL</td>
+                        <td><?php echo $result_type[$srSource['resulttype']] ?></td>
+                        <td><?php echo str_replace('-', ':', $srSource['result']) ?></td>
                         <td></td>
-                        <td>LIGA</td>
+                        <td>FUDBAL</td>
                     </tr>
 
                 <?php } ?>

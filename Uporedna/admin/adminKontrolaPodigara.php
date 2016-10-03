@@ -4,7 +4,7 @@
 require_once(join(DIRECTORY_SEPARATOR, array('..', 'init.php')));;
 $css = 'css/admin.css';
 $naslov_short = "Admin";
-$naslov = "Spajanje takmičenja za odabranu kladionicu";
+$naslov = "Kontrola spojenih podigara";
 $kladionica_name = '';
 
 include(join(DIRECTORY_SEPARATOR, array('included', 'adm_header.php')));

@@ -13,8 +13,8 @@ $i = 0;
 
 $data = array();
 
-$source_id = 2;
-$bookie = 'Soccer';
+$source_id = 11;
+$bookie = 'Xscores';
 
 
 if (isset ($_GET ["bookie_id"]) != "") {
@@ -26,12 +26,12 @@ if (isset ($_GET ["bookie_id"]) != "") {
 }
 // echo $bookie;
 
-include(join(DIRECTORY_SEPARATOR, array('db', 'connectingMatches.php')));
-include(join(DIRECTORY_SEPARATOR, array('db', 'mozzartMatches.php')));
+include(join(DIRECTORY_SEPARATOR, array('db', 'connectingTeams.php')));
+include(join(DIRECTORY_SEPARATOR, array('db', 'mozzartTeams.php')));
 include(join(DIRECTORY_SEPARATOR, array('db', 'availableSources.php')));
 
-$Data1 = $ShowMatch;
-$Data2 = $ShowMozzMatch;
+$Data1 = $ShowTeam ;
+$Data2 = $ShowMozTeam;
 $Data3 = $resultSources;
 
 $j = 1;
@@ -68,12 +68,11 @@ $j = 1;
                     <td>
                         <input type="Submit" accesskey="w" value="Osveži"/>
                     </td>
-                    <td>Obrnuto domaćinstvo</td>
                 </form>
             </tr>
             </thead>
             <tbody>
-            <form action="saveMatches.php" method="post">
+            <form action="saveTeams.php" method="post">
                 <input type="hidden" name="source" value="<?php echo $bookie ?>">
 
                 <?php
@@ -87,19 +86,19 @@ $j = 1;
                         $current_league_id = $d['competition_id'] ?>
 
                         <tr class="podnaslov">
-                            <td colspan="3"> <?php echo $current_league ?></td>
+                            <td colspan="2"> <?php echo $current_league ?></td>
                         </tr>
                     <?php } ?>
                     <tr class="row<?php echo($i++ & 1) ?>">
-                        <td><input type="hidden" name="source_data[]" value="<?php echo $d['match_id'] . "__" . $d['home_id'] . "__" . $d['visitor_id']. "__" .$d['home_name'] . "__" .$d['visitor_name']  ?>">
-                            <?php echo $d['home_name'] . " - " . $d['visitor_name'] ?></td>
+                        <td><input type="hidden" name="source_team[]" value="<?php echo $d['team_id']. "__" . $d['team_name']?>">
+                            <?php echo $d['team_name']?></td>
                         <td>
-                            <select name="mozz_match[]">
+                            <select name="mozz_team[]">
                                 <option value="0">Treba povezati</option>
 
                                 <?php foreach ($Data2 as $d2) {
-                                    if ($d2['mozz_cmp_id'] == $current_league_id) { ?>
-                                        <option value="<?php echo  $d2['mozz_match_id'] . "__" . $d2['mozz_home_team_id'] . "__" . $d2['mozz_visitor_team_id']. "__" . $d2['mozz_home_team_name']. "__" .$d2['mozz_visitor_team_name'] ?>"><?php echo $d2['mozz_home_team_name'] . " - " . $d2['mozz_visitor_team_name'] ?></option>
+                                    if ($d2['competition_id'] == $current_league_id) { ?>
+                                        <option value="<?php echo  $d2['team_id']. "__" . $d2['team_name'] ?>"><?php echo $d2['team_name']?></option>
 
                                         <?php
                                     }
@@ -107,14 +106,13 @@ $j = 1;
                                 ?>
                             </select>
                         </td>
-                        <td><input type="checkbox" name="change_visitor[]" value="<?php echo $d['match_id'] ?>"></td>
                     </tr>
 
                     <?php
                 } ?>
 
                 <tr class="title">
-                    <td colspan="3"><input type="submit" value="Sačuvaj" accesskey="x"/></td>
+                    <td colspan="2"><input type="submit" value="Sačuvaj" accesskey="x"/></td>
                 </tr>
 
             </tbody>

@@ -19,3 +19,20 @@ function clear_odds_insert_table (){
     $stmt = $conn->prepare($sql);
     $stmt->execute();
 }
+
+
+function get_all_teams_from_competition($cmpID, $seaspnId) {
+    global $conn;
+    $sql = $conn->query("");
+    $sql->execute();
+    $allTeamsByCompetition = $sql->fetchAll(PDO::FETCH_OBJ);
+    return $allTeamsByCompetition ;
+}
+
+function returnObjectById($id, $array){
+    foreach ($array as $ar){
+        if ($ar->id == $id){
+            echo "$ar->object <br/>";
+        }
+    }
+}

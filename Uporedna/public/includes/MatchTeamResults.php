@@ -29,7 +29,7 @@ AND r.participant_id <> r1.participant_id
 AND r.participant_id = t.id
 AND m.season_id = 24
 AND m.competition_id = 1
-AND r.participant_id IN (32,23)
+AND r.participant_id IN (32)
 ORDER BY r.participant_id, m.start_time  DESC");
         $sql->execute();
         $allCompetitionResults = $sql->fetchAll(PDO::FETCH_OBJ);

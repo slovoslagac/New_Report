@@ -8,5 +8,16 @@
  */
 class teamTmpData
 {
+    public $teamId;
+    public $teamName;
+    public $threePlus;
+
+    public function __construct($id,$name,$tp)
+    {
+        $this->teamId=$id;
+        $this->teamName =$name;
+        $this->threePlus = $tp;
+    }
 
 }
+

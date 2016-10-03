@@ -21,7 +21,7 @@ FROM
 init_competition ic1
 where id = 9999999
 ORDER BY 2";
-} else if ($source_id = 11) {
+} else if ($source_id == 11) {
     $sql = "SELECT DISTINCT
   ic.id AS competition_id,
   ic.name AS competition_name

@@ -11,17 +11,25 @@
  * Time: 10:26
  */
 
-$url = 'https://www.supersport.hr/tecajna/v1/380901_1466757802.json';
+$url = 'http://localhost/test.json';
 $source = 10;
 $curr_match_data = array();
 $curr_match_odds = array();
 $sql;
 
 
-    $curr_url = $url;
-    $xmlMatchData = file_get_contents($curr_url);
-    $curr_data = json_decode($xmlMatchData);
-    print $curr_data->;
+$json = file_get_contents($url);
+$json_data = json_decode($json);
+
+foreach ($json_data as $dat) {
+
+    print $dat;
+
+
+}
+
+
+
 
 ?>
 

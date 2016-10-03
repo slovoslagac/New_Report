@@ -5,7 +5,7 @@
  * Date: 23.9.2016
  * Time: 13:40
  */
-require (join(DIRECTORY_SEPARATOR, array('includes', 'init.php')));
+require (join(DIRECTORY_SEPARATOR, array('..','includes', 'init.php')));
 $sourceId = 12;
 
 
