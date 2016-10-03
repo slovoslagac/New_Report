@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+<?php
+require_once(join(DIRECTORY_SEPARATOR, array('..', 'init.php')));;
+$css = 'css/admin.css';
+$naslov_short = "Admin";
+$naslov = "Spajanje takmičenja za odabranu kladionicu";
+$kladionica_name = '';
+
+include(join(DIRECTORY_SEPARATOR, array('included', 'adm_header.php')));
+
+
+// echo $bookie;
+
+//$source_id = 2;
+//$bookie = 'Soccer';
+$source_id = 11;
+
+$competition_id = 0;
+$season_id = 6;
+$i = 1;
+
+
+//if (isset ($_GET ["bookie_id"]) != "") {
+//    $source_all = explode("__", $_GET['bookie_id']);
+//    if($source_all[0] != 0 ) {
+//        $source_id = $source_all[0];
+//        $bookie = $source_all[1];
+////    $bookie = $_GET ["source1"];
+//    }
+//}
+
+
+if (isset($_GET ["competition_id"]) != "") {
+    $competition_id = $_GET['competition_id'];
+}
+
+if (isset($_GET ["season_id"]) != "") {
+    $season_id = $_GET['season_id'];
+}
+
+//echo $season_id,"\t", $competition_id;
+
+include(join(DIRECTORY_SEPARATOR, array('db', 'LEaguePreparation.php')));
+include(join(DIRECTORY_SEPARATOR, array('db', 'availableSources.php')));
+
+$Data1 = $resultLSM;
+$Data3 = $resultL;
+
+
+?>
+<body>
+<div id="container">
+    <?php
+    include(join(DIRECTORY_SEPARATOR, array('included', 'adm_menu.php'))); ?>
+    <div id="function_data">
+        <table id="exportTable" class="size80">
+            <tr class="title">
+                <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
+                    <td>
+                        <select name="competition_id">
+                            <option value="0">Izaberi ligu</option>
+                            <?php foreach ($Data3 as $D3) { ?>
+                                <option
+                                    value="<?php echo $D3['id'] ?>" <?php if ($D3['id'] == $competition_id) {
+                                    echo 'selected="selected"';
+                                } ?>><?php echo $D3['mozzart'] ?>
+                                </option>
+
+                            <?php } ?>
+
+                        </select>
+                    </td>
+                    <td>
+                        <select name="season_id">
+                            <option value="6"<?php echo ($season_id == 6) ? 'selected="selected"' : ''; ?>>2015/2016
+                            </option>
+                            <option value="48"<?php echo ($season_id == 48) ? 'selected="selected"' : ''; ?>>2016/2017
+                            </option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="Submit" accesskey="w" value="Osveži"/>
+                    </td>
+                </form>
+            </tr>
+        </table>
+        <table id="exportTable" class="size80">
+            <colgroup>
+                <col width="10%">
+                <col width="5%">
+                <col width="15%">
+                <col width="15%">
+                <col width="5%">
+                <col width="22%">
+                <col width="10%">
+                <col width="10%">
+                <col width="2%">
+                <col width="6%">
+            </colgroup>
+            <thead>
+            <tr class="title">
+                <td>Datum</td>
+                <td>Vreme</td>
+                <td>Domaćin</td>
+                <td>Gost</td>
+                <td>Kolo</td>
+                <td>Liga</td>
+                <td>Sezona</td>
+                <td>Sport</td>
+                <td></td>
+                <td>Faza</td>
+            </tr>
+
+            </thead>
+            <tbody>
+            <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
+                <?php
+                foreach ($Data1 as $srSource) {
+                    ?>
+                    <tr class="row<?php echo($i++ & 1) ?>">
+                        <td><?php echo $srSource['date'] ?></td>
+                        <td><?php echo $srSource['time'] ?></td>
+                        <td><?php echo $srSource['hometeam'] ?></td>
+                        <td><?php echo $srSource['awayteam'] ?></td>
+                        <td><?php echo $srSource['round'] ?></td>
+                        <td><?php echo $srSource['competition'] ?></td>
+                        <td><?php echo str_replace('-', '/', $srSource['season']) ?></td>
+                        <td>FUDBAL</td>
+                        <td></td>
+                        <td>LIGA</td>
+                    </tr>
+
+                <?php } ?>
+
+
+            </form>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<?php include(join(DIRECTORY_SEPARATOR, array('included', 'adm_footer.php'))); ?>
+</div>
+
+
+</body>
+</html>
