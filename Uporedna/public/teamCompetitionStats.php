@@ -9,6 +9,7 @@ require(join(DIRECTORY_SEPARATOR, array('includes', 'init.php')));
 
 $leagueId = 1;
 $leagueName = 'Engleska 1';
+$tmpSeason = array(23=>'2016',24=>'2016/2017');
 
 
 $allCompetition = getAllCompetitions();
@@ -175,7 +176,8 @@ echo "<br/>";
 </head>
 <body>
 
-<h1>Serije <?php echo $leagueName ?> za sezonu 2016/2017</h1>
+
+<h1>Serije <?php $thisSeason =$allStats[0]->seasonId; $curSeason = $tmpSeason[$thisSeason]; echo "$leagueName  za sezonu $curSeason" ?></h1>
 <form action="teamCompetitionStats.php" method="post">
     <p>Odaberi ligu :
         <select name="countryId">

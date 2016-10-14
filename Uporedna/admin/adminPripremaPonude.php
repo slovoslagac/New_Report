@@ -22,14 +22,14 @@ $season_id = array();
 $i = 1;
 
 
-//if (isset ($_GET ["bookie_id"]) != "") {
-//    $source_all = explode("__", $_GET['bookie_id']);
-//    if($source_all[0] != 0 ) {
-//        $source_id = $source_all[0];
-//        $bookie = $source_all[1];
-////    $bookie = $_GET ["source1"];
-//    }
-//}
+if (isset ($_GET ["bookie_id"]) != "") {
+    $source_all = explode("__", $_GET['bookie_id']);
+    if($source_all[0] != 0 ) {
+        $source_id = $source_all[0];
+        $bookie = $source_all[1];
+//    $bookie = $_GET ["source1"];
+    }
+}
 
 
 if (isset($_GET ["competition_id"]) != "") {
@@ -50,6 +50,7 @@ include(join(DIRECTORY_SEPARATOR, array('db', 'availableSources.php')));
 $Data1 = $resultLSM;
 $Data2 = $resultS;
 $Data3 = $resultL;
+$Data4 = $resultSources;
 
 
 ?>
@@ -61,6 +62,17 @@ $Data3 = $resultL;
         <table id="exportTable" class="size80">
             <tr class="title">
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
+                    <td>
+                        <select name="bookie_id">
+
+                            <?php foreach ($Data4 as $D4) { ?>
+                                <option value="<?php echo $D4['id']. "__" .$D4['name'] ?>" <?php if ($D4['id'] == $source_id) {
+                                    echo 'selected="selected"';
+                                } ?>><?php echo $D4['name'] ?>
+                                </option>
+
+                            <?php } ?>
+                    </td>
                     <td>
                         <select name="competition_id">
                             <option value="0">Izaberi ligu</option>

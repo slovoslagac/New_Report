@@ -7,7 +7,8 @@ if ($cmp_src == 0) {
   c.id as cmp_id,
   c.name as cmp_name,
   s.id as src_id,
-  s.name as src_name
+  s.name as src_name,
+  c.sport_id as sport_id
 from
   src_competition as c
 inner join
@@ -16,13 +17,14 @@ on
   c.source_id=s.id
 where s.id = $source_id
 and c.id not in (select src_competition_id from conn_competition)
-order by src_name, cmp_name asc";
+order by sport_id, src_name, cmp_name asc";
 } else {
     $sql ="select
   c.id as cmp_id,
   c.name as cmp_name,
   s.id as src_id,
-  s.name as src_name
+  s.name as src_name,
+  c.sport_id as sport_id
 from
   src_competition as c
 inner join
@@ -30,7 +32,7 @@ inner join
 on
   c.source_id=s.id
 where s.id = $source_id
-order by src_name, cmp_name asc";
+order by sport_id, src_name, cmp_name asc";
 }
 $NonMatchCmp = $conn -> prepare($sql);
 

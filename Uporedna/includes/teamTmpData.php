@@ -27,15 +27,13 @@ class teamTmpData
     public $dpp;
     public $dppSeria;
     public $numMatch;
-    public $sortVal = 'threePlusSeria';
+
 
     public function __construct($id,$name)
     {
         $this->teamId=$id;
         $this->teamName =$name;
-
     }
-
 
 
     static function sortByTPS($a, $b)

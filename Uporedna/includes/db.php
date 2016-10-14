@@ -20,3 +20,18 @@ try {
 }
 
 
+//try{
+//    $conn_oracle = new PDO("oci:dbname=".$tns_oracle,$db_username_oracle,$db_password_oracle);
+//}catch(PDOException $e){
+//    echo ($e->getMessage());
+//}
+
+$conn_oracle = oci_connect($db_username_oracle, $db_password_oracle, $db_host_oracle);
+if (!$conn) {
+    $e = oci_error();
+    trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+}
+
+
+
+

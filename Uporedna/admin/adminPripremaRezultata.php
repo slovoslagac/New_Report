@@ -5,7 +5,7 @@
 require_once(join(DIRECTORY_SEPARATOR, array('..', 'init.php')));;
 $css = 'css/admin.css';
 $naslov_short = "Admin";
-$naslov = "Priprema ponude";
+$naslov = "Priprema rezultata";
 $kladionica_name = '';
 
 include(join(DIRECTORY_SEPARATOR, array('included', 'adm_header.php')));
@@ -21,17 +21,18 @@ $competition_id = 0;
 $season_id = array();
 $i = 1;
 
-$result_type = array(1=>"prvo poluvreme", 2=>"konacan ishod");
+$result_type = array(1=>"prvo poluvreme", 2=>"konacan ishod",10=>"prvo poluvreme", 11=>"konacan ishod",12=> 'cetvrtina',13=> 'cetvrtina',14=> 'cetvrtina',15=> 'cetvrtina');
+$period = array(1=>'',2=>'',10=>'',11=>'',12=> 1,13=>2,14=>3,15=>4);
+$sportSource = array(1=>'Fudbal', 58=>'Američki Fudbal');
 
-
-//if (isset ($_GET ["bookie_id"]) != "") {
-//    $source_all = explode("__", $_GET['bookie_id']);
-//    if($source_all[0] != 0 ) {
-//        $source_id = $source_all[0];
-//        $bookie = $source_all[1];
-////    $bookie = $_GET ["source1"];
-//    }
-//}
+if (isset ($_GET ["bookie_id"]) != "") {
+    $source_all = explode("__", $_GET['bookie_id']);
+    if($source_all[0] != 0 ) {
+        $source_id = $source_all[0];
+        $bookie = $source_all[1];
+//    $bookie = $_GET ["source1"];
+    }
+}
 
 
 if (isset($_GET ["competition_id"]) != "") {
@@ -50,6 +51,8 @@ include(join(DIRECTORY_SEPARATOR, array('db', 'availableSources.php')));
 $Data1 = $resultLMR;
 $Data2 = $resultS;
 $Data3 = $resultL;
+$Data4 = $resultSources;
+
 
 
 ?>
@@ -61,6 +64,17 @@ $Data3 = $resultL;
         <table id="exportTable" class="size80">
             <tr class="title">
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
+                    <td>
+                        <select name="bookie_id">
+
+                            <?php foreach ($Data4 as $D4) { ?>
+                                <option value="<?php echo $D4['id']. "__" .$D4['name'] ?>" <?php if ($D4['id'] == $source_id) {
+                                    echo 'selected="selected"';
+                                } ?>><?php echo $D4['name'] ?>
+                                </option>
+
+                            <?php } ?>
+                    </td>
                     <td>
                         <select name="competition_id">
                             <option value="0">Izaberi ligu</option>
@@ -94,10 +108,10 @@ $Data3 = $resultL;
                 <col width="6%">
                 <col width="20%">
                 <col width="20%">
-                <col width="22%">
-                <col width="10%">
+                <col width="15%">
+                <col width="8%">
                 <col width="6%">
-                <col width="6%">
+                <col width="15%">
             </colgroup>
             <thead>
             <tr class="title">
@@ -107,7 +121,7 @@ $Data3 = $resultL;
                 <td>Gost</td>
                 <td>Tip rezultata</td>
                 <td>Rezultat</td>
-                <td></td>
+                <td>Period</td>
                 <td>Sport</td>
             </tr>
 
@@ -115,7 +129,7 @@ $Data3 = $resultL;
             <tbody>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
                 <?php
-                foreach ($Data1 as $srSource) {
+                foreach ($Data1 as $srSource)  { $sport = $srSource['sport_id'];
                     ?>
                     <tr class="row<?php echo($i++ & 1) ?>">
                         <td><?php echo $srSource['date'] ?></td>
@@ -124,8 +138,8 @@ $Data3 = $resultL;
                         <td><?php echo $srSource['awayteam'] ?></td>
                         <td><?php echo $result_type[$srSource['resulttype']] ?></td>
                         <td><?php echo str_replace('-', ':', $srSource['result']) ?></td>
-                        <td></td>
-                        <td>FUDBAL</td>
+                        <td><?php echo $period[$srSource['resulttype']] ?></td>
+                        <td><?php echo $sportSource[$sport]?></td>
                     </tr>
 
                 <?php } ?>

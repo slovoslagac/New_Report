@@ -5,12 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be601e26-0991-4c96-82a8-f7b0c1b2b1bc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/includes/MatchTeamResults.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/includes/sortObj.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/functions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/testEvent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/admin/adminSpajanjeTakmicenjaNew.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/testOracleData.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/includes/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/includes/functions.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/includes/Match.php" afterPath="$PROJECT_DIR$/includes/Match.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/includes/db.php" afterPath="$PROJECT_DIR$/includes/db.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/includes/init.php" afterPath="$PROJECT_DIR$/includes/init.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/includes/teamTmpData.php" afterPath="$PROJECT_DIR$/includes/teamTmpData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb" afterPath="$PROJECT_DIR$/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb.bak" afterPath="$PROJECT_DIR$/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb.bak" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/includes/functions.php" afterPath="$PROJECT_DIR$/public/includes/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/includes/init.php" afterPath="$PROJECT_DIR$/public/includes/init.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/includes/teamTmpData.php" afterPath="$PROJECT_DIR$/public/includes/teamTmpData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminPripremaPonude.php" afterPath="$PROJECT_DIR$/admin/adminPripremaPonude.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminPripremaRezultata.php" afterPath="$PROJECT_DIR$/admin/adminPripremaRezultata.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php" afterPath="$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/adminSpajanjeTimova.php" afterPath="$PROJECT_DIR$/admin/adminSpajanjeTimova.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/db/LeaguePreparation.php" afterPath="$PROJECT_DIR$/admin/db/LeaguePreparation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/db/connectingCompetitions.php" afterPath="$PROJECT_DIR$/admin/db/connectingCompetitions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/db/connectingMatches.php" afterPath="$PROJECT_DIR$/admin/db/connectingMatches.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/db/connectingTeams.php" afterPath="$PROJECT_DIR$/admin/db/connectingTeams.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/db/mozzartCompetitions.php" afterPath="$PROJECT_DIR$/admin/db/mozzartCompetitions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/db/mozzartTeams.php" afterPath="$PROJECT_DIR$/admin/db/mozzartTeams.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/file_upload.php" afterPath="$PROJECT_DIR$/public/admin/file_upload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/teamCompetitionStats.php" afterPath="$PROJECT_DIR$/public/teamCompetitionStats.php" />
     </list>
     <ignored path="Uporedna.iws" />
@@ -32,7 +51,7 @@
     <favorites_list name="Uporedna" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -49,11 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/scripts/xmltest.php" />
-        <option value="$PROJECT_DIR$/admin/conn/mysqlAdminPDO.php" />
-        <option value="$PROJECT_DIR$/admin/scripts/OddsTest.php" />
-        <option value="$PROJECT_DIR$/admin/scripts/SoccerXMLtest.php" />
-        <option value="$PROJECT_DIR$/admin/scripts/SoccerXML.php" />
         <option value="$PROJECT_DIR$/admin/scripts/Odds.txt" />
         <option value="$PROJECT_DIR$/Osnova.php" />
         <option value="$PROJECT_DIR$/admin/db/connectingSubgames.php" />
@@ -63,24 +77,15 @@
         <option value="$PROJECT_DIR$/admin/adminKontrolaTakmicenja.php" />
         <option value="$PROJECT_DIR$/admin/adminKontrolaMeceva.php" />
         <option value="$PROJECT_DIR$/admin/adminKontrolaTimova.php" />
-        <option value="$PROJECT_DIR$/admin/db/connectingMatches.php" />
         <option value="$PROJECT_DIR$/query/SourceOdds.php" />
         <option value="$PROJECT_DIR$/OsnovaTiketKolina.php" />
         <option value="$PROJECT_DIR$/admin/db/MozzartMatches.php" />
         <option value="$PROJECT_DIR$/admin/saveTeams.php" />
-        <option value="$PROJECT_DIR$/admin/adminSpajanjeTimova.php" />
         <option value="$PROJECT_DIR$/admin/adminSpajanjeMeceva.php" />
         <option value="$PROJECT_DIR$/admin/js/tabs.js" />
-        <option value="$PROJECT_DIR$/admin/db/mozzartCompetitions.php" />
-        <option value="$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php" />
         <option value="$PROJECT_DIR$/admin/included/adm_menu.php" />
         <option value="$PROJECT_DIR$/admin/adminKontrolaPodigara.php" />
-        <option value="$PROJECT_DIR$/admin/db/LeaguePreparation.php" />
-        <option value="$PROJECT_DIR$/admin/adminPripremaPonude.php" />
-        <option value="$PROJECT_DIR$/admin/adminPripremaRezultata.php" />
         <option value="$PROJECT_DIR$/admin/css/admin.css" />
-        <option value="$PROJECT_DIR$/admin/db/connectingTeams.php" />
-        <option value="$PROJECT_DIR$/admin/db/mozzartTeams.php" />
         <option value="$PROJECT_DIR$/admin/scripts/Supersport.php" />
         <option value="$PROJECT_DIR$/admin/scripts/maxbet_new.php" />
         <option value="$PROJECT_DIR$/admin/classes/matchOdds.php" />
@@ -92,14 +97,28 @@
         <option value="$PROJECT_DIR$/admin/file_upload.php" />
         <option value="$PROJECT_DIR$/admin/classes/MatchTeamResults.php" />
         <option value="$PROJECT_DIR$/public/file_upload.php" />
-        <option value="$PROJECT_DIR$/public/admin/file_upload.php" />
         <option value="$PROJECT_DIR$/public/includes/sortObj.php" />
-        <option value="$PROJECT_DIR$/public/includes/teamTmpData.php" />
         <option value="$PROJECT_DIR$/public/includes/MatchTeamResults.php" />
+        <option value="$PROJECT_DIR$/admin/adminPripremaPonude.php" />
+        <option value="$PROJECT_DIR$/admin/db/connectingMatches.php" />
         <option value="$PROJECT_DIR$/public/includes/init.php" />
+        <option value="$PROJECT_DIR$/public/includes/config.php" />
         <option value="$PROJECT_DIR$/public/includes/db.php" />
+        <option value="$PROJECT_DIR$/public/includes/testEvent.php" />
+        <option value="$PROJECT_DIR$/public/testOracleData.php" />
+        <option value="$PROJECT_DIR$/admin/db/mozzartCompetitions.php" />
+        <option value="$PROJECT_DIR$/admin/db/mozzartTeams.php" />
+        <option value="$PROJECT_DIR$/admin/db/connectingTeams.php" />
+        <option value="$PROJECT_DIR$/admin/db/LeaguePreparation.php" />
+        <option value="$PROJECT_DIR$/admin/db/connectingCompetitions.php" />
+        <option value="$PROJECT_DIR$/admin/adminSpajanjeTimova.php" />
+        <option value="$PROJECT_DIR$/admin/adminPripremaRezultata.php" />
+        <option value="$PROJECT_DIR$/public/includes/teamTmpData.php" />
         <option value="$PROJECT_DIR$/public/includes/functions.php" />
         <option value="$PROJECT_DIR$/public/teamCompetitionStats.php" />
+        <option value="$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php" />
+        <option value="$PROJECT_DIR$/public/admin/file_upload.php" />
+        <option value="$PROJECT_DIR$/includes/init.php" />
       </list>
     </option>
   </component>
@@ -115,8 +134,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="854" />
+    <option name="width" value="1936" />
+    <option name="height" value="1034" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -143,7 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -190,7 +208,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -204,16 +222,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -243,19 +258,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\AppServ\www\New_Report\Uporedna\public\includes" />
-      <recent name="C:\AppServ\www\New_Report\Uporedna\admin" />
-      <recent name="C:\AppServ\www\New_Report\Uporedna\admin\db" />
-      <recent name="C:\AppServ\www\New_Report\Uporedna" />
-      <recent name="C:\AppServ\www\New_Report\Uporedna\admin\scripts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\AppServ\www\New_Report\Uporedna" />
       <recent name="C:\AppServ\www\New_Report\Uporedna\public\admin" />
       <recent name="C:\AppServ\www\New_Report\Uporedna\public" />
       <recent name="C:\AppServ\www\New_Report\Uporedna\public\includes" />
       <recent name="C:\XAMPP\htdocs\New_Report\Uporedna\JSON" />
-      <recent name="C:\XAMPP\htdocs\New_Report\Uporedna\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\AppServ\www\New_Report\Uporedna\admin" />
+      <recent name="C:\AppServ\www\New_Report\Uporedna\public\includes" />
+      <recent name="C:\AppServ\www\New_Report\Uporedna\admin\db" />
+      <recent name="C:\AppServ\www\New_Report\Uporedna" />
+      <recent name="C:\AppServ\www\New_Report\Uporedna\admin\scripts" />
     </key>
   </component>
   <component name="RunManager">
@@ -327,10 +342,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="854" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1034" extended-state="7" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -375,55 +390,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/db/controlMatches.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019517796">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/adminKontrolaTimova.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019517796">
-          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OsnovaTiketKolina.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.510907">
-          <caret line="316" column="62" selection-start-line="316" selection-start-column="62" selection-end-line="316" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/query/SourceOdds.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/osnova.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.1790864">
-          <caret line="197" column="21" selection-start-line="197" selection-start-column="21" selection-end-line="197" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/naslovna.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21915285">
-          <caret line="82" column="21" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/included/nas_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Osnova.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31228474">
@@ -435,20 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.019517796">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/db/connectingMatches.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/db/availableSources.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -466,24 +418,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeMeceva.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3432304">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/saveTeams.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7416762">
           <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeTimova.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24913892">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -508,38 +446,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/db/connectingCompetitions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3903559">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/db/mozzartCompetitions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4305396">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23421355">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/adminKontrolaPodigara.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4293915">
           <caret line="73" column="75" selection-start-line="73" selection-start-column="75" selection-end-line="73" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/db/LeaguePreparation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4293915">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -554,34 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.019517796">
           <caret line="238" column="12" selection-start-line="238" selection-start-column="12" selection-end-line="238" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/adminPripremaRezultata.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9609644">
-          <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/adminPripremaPonude.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019517796">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/db/connectingTeams.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13662457">
-          <caret line="7" column="3" selection-start-line="6" selection-start-column="6" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/db/mozzartTeams.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019517796">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -648,13 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/included/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54587156">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07798165">
@@ -662,21 +537,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/includes/Match.php">
+    <entry file="file://$PROJECT_DIR$/admin/db/controlMatches.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9847095">
-          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.078071184">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <marker date="1458303283519" expanded="true" signature="148:912" placeholder="select ims.n... conn_match" />
+            <marker date="1458303283519" expanded="true" signature="940:1676" placeholder="select ims.n... conn_match" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/admin/file_upload.php">
+    <entry file="file://$PROJECT_DIR$/admin/db/connectingMatches.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0745614">
-          <caret line="7" column="70" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.19517796">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding>
+            <marker date="1475847569303" expanded="true" signature="174:812" placeholder="SELECT DISTI... src_match" />
+            <marker date="1475847569303" expanded="true" signature="521:556" placeholder="SELECT src_m... conn_match" />
+            <marker date="1475847569303" expanded="true" signature="837:1385" placeholder="SELECT DISTI... src_match" />
+            <marker date="1475847569303" expanded="true" signature="1184:1219" placeholder="SELECT src_m... conn_match" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/includes/config.php">
+    <entry file="file://$PROJECT_DIR$/admin/adminKontrolaTimova.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0734788">
+          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+          <folding>
+            <marker date="1461241750177" expanded="true" signature="916:937" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/included/Match.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/db/availableSources.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.078071184">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="11" />
+          <folding>
+            <marker date="1455232584372" expanded="true" signature="112:171" placeholder="select id, n... import_source" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/db/spajanje.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -684,137 +596,239 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/includes/db.php">
+    <entry file="file://$PROJECT_DIR$/admin/included/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.31228474">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conn/OracleProske.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/db/mozzartCompetitions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.423077">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeMeceva.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11710677">
+          <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="100" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/db/connectingTeams.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5464983">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <marker date="1476276371356" expanded="true" signature="88:1208" placeholder="select disti... country" />
+            <marker date="1476276371356" expanded="true" signature="181:678" placeholder="select disti... src_match" />
+            <marker date="1476276371356" expanded="true" signature="181:1208" placeholder="select disti... " />
+            <marker date="1476276371356" expanded="true" signature="184:678" placeholder="select disti... src_match" />
+            <marker date="1476276371356" expanded="true" signature="424:457" placeholder="select src_t... conn_team" />
+            <marker date="1476276371356" expanded="true" signature="689:1189" placeholder="select disti... src_match" />
+            <marker date="1476276371356" expanded="true" signature="932:965" placeholder="select src_t... conn_team" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/adminPripremaPonude.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.576923">
+          <caret line="67" column="62" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/db/connectingCompetitions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6486797">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding>
+            <marker date="1476352343505" expanded="true" signature="145:470" placeholder="select c.id src_competition" />
+            <marker date="1476352343505" expanded="true" signature="380:427" placeholder="select src_c... conn_competition" />
+            <marker date="1476352343505" expanded="true" signature="493:752" placeholder="select c.id src_competition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/db/LeaguePreparation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2537314">
+          <caret line="65" column="2" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
+          <folding>
+            <marker date="1476280284321" expanded="true" signature="164:383" placeholder="select disti... src_competition" />
+            <marker date="1476280284321" expanded="true" signature="513:593" placeholder="select id, n... src_seasons" />
+            <marker date="1476280284321" expanded="true" signature="828:1517" placeholder="select DATE_... src_match" />
+            <marker date="1476280284321" expanded="true" signature="828:1527" placeholder="select DATE_... src_match" />
+            <marker date="1476280284321" expanded="true" signature="828:1528" placeholder="select DATE_... src_match" />
+            <marker date="1476280284321" expanded="true" signature="2250:2943" placeholder="select DATE_... src_match" />
+            <marker date="1476280284321" expanded="true" signature="2250:2953" placeholder="select DATE_... src_match" />
+            <marker date="1476280284321" expanded="true" signature="2250:2954" placeholder="select DATE_... src_match" />
+            <marker date="1476280284321" expanded="true" signature="2250:2979" placeholder="select DATE_... src_match" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/adminPripremaRezultata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35591274">
+          <caret line="131" column="79" selection-start-line="131" selection-start-column="79" selection-end-line="131" selection-end-column="79" />
+          <folding>
+            <marker date="1476353460732" expanded="true" signature="4444:4494" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/teamCompetitionStats.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0390738">
-          <caret line="539" column="6" selection-start-line="539" selection-start-column="6" selection-end-line="539" selection-end-column="6" />
-          <folding>
-            <element signature="e#12361#14232#0#PHP" expanded="false" />
-            <element signature="e#12694#13463#0#PHP" expanded="false" />
-            <marker date="1475581949489" expanded="true" signature="3557:3583" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="3557:14283" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="3564:3583" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="3603:4243" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="3618:3676" placeholder="{...}" />
-            <marker date="1475581949489" expanded="true" signature="3692:3761" placeholder="{...}" />
-            <marker date="1475581949489" expanded="true" signature="3792:3919" placeholder="{...}" />
-            <marker date="1475581949489" expanded="true" signature="3932:3978" placeholder="{...}" />
-            <marker date="1475581949489" expanded="true" signature="3992:4062" placeholder="{...}" />
-            <marker date="1475581949489" expanded="true" signature="4086:4129" placeholder="{...}" />
-            <marker date="1475581949489" expanded="true" signature="4258:4335" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="4258:14275" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="4376:4780" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="4384:4420" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="4384:4771" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="4432:4716" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="4798:5786" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="4811:5779" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="4830:4854" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="4830:5000" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="5016:5185" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="5029:5168" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="5201:5246" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="5201:5766" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="5343:5673" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="5343:5709" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="5583:5673" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="5805:6722" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="5817:5860" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="5817:6715" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="5836:5860" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="6019:6160" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="6302:6626" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="6302:6662" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="6538:6626" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="6741:7641" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="6753:6796" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="6753:7634" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="6772:6796" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="6955:7094" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="7076:7094" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="7236:7545" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="7236:7581" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="7462:7545" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="7659:7714" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="7659:8571" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="7671:7714" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="7690:7714" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="7873:8016" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="8160:8475" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="8160:8511" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="8390:8475" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="8590:8645" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="8590:9498" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="8602:8645" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="8621:8645" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="8804:8947" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="9090:9402" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="9090:9438" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="9318:9402" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="9516:9571" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="9516:10424" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="9528:9571" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="9547:9571" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="9730:9873" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="10016:10328" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="10016:10364" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="10244:10328" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="10442:10497" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="10442:11344" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="10454:10497" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="10473:10497" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="10656:10797" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="10939:11248" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="10939:11284" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="11165:11248" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="11362:11417" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="11362:12268" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="11374:11417" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="11393:11417" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="11576:11717" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="11860:12172" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="11860:12208" placeholder="..." />
-            <marker date="1475581949489" expanded="true" signature="12088:12172" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/includes/teamTmpData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0260491">
-          <caret line="123" column="36" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="36" />
+        <state vertical-scroll-proportion="-25.0">
+          <caret line="532" column="88" selection-start-line="532" selection-start-column="88" selection-end-line="532" selection-end-column="88" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/includes/init.php">
+    <entry file="file://$PROJECT_DIR$/public/testOracleData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14761215">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/includes/functions.php">
+    <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeTimova.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8422576">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        <state vertical-scroll-proportion="-71.92308">
+          <caret line="110" column="71" selection-start-line="110" selection-start-column="71" selection-end-line="110" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/db/mozzartTeams.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09758898">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
           <folding>
-            <marker date="1475581432712" expanded="true" signature="156:176" placeholder="delete from " />
-            <marker date="1475581432712" expanded="true" signature="305:326" placeholder="delete from " />
-            <marker date="1475581432712" expanded="true" signature="693:886" placeholder="select disti... init_match" />
-            <marker date="1475581432712" expanded="true" signature="826:874" placeholder="select disti... init_event_results" />
-            <marker date="1475581432712" expanded="true" signature="1290:2169" placeholder="SELECT m.sta... init_match" />
-            <marker date="1475581432712" expanded="true" signature="2392:3288" placeholder="SELECT m.sta... init_match" />
+            <marker date="1476276155630" expanded="true" signature="108:383" placeholder="SELECT DISTI... init_team" />
+            <marker date="1476276155630" expanded="true" signature="407:521" placeholder="SELECT DISTI... init_team" />
+            <marker date="1476276155630" expanded="true" signature="805:1078" placeholder="SELECT DISTI... init_team" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/adminSpajanjeTakmicenja.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.1664753">
+          <caret line="111" column="45" selection-start-line="111" selection-start-column="45" selection-end-line="111" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19517796">
+          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/file_upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13662457">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/teamTmpData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.019517796">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/testEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66360503">
+          <caret line="34" column="44" selection-start-line="31" selection-start-column="39" selection-end-line="34" selection-end-column="44" />
+          <folding>
+            <element signature="e#7#87#0#PHP" expanded="true" />
+            <marker date="1475940197120" expanded="true" signature="220:350" placeholder="select * fro... SP_EVENT" />
+            <marker date="1475940197120" expanded="true" signature="601:725" placeholder="select * fro... SP_EVENT" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.99081516">
+          <caret line="112" column="44" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
+          <folding>
+            <marker date="1476359307477" expanded="true" signature="156:176" placeholder="delete from " />
+            <marker date="1476359307477" expanded="true" signature="305:326" placeholder="delete from " />
+            <marker date="1476359307477" expanded="true" signature="693:886" placeholder="select disti... init_match" />
+            <marker date="1476359307477" expanded="true" signature="826:874" placeholder="select disti... init_event_results" />
+            <marker date="1476359307477" expanded="true" signature="1298:2209" placeholder="SELECT m.sta... init_match" />
+            <marker date="1476359307477" expanded="true" signature="2433:3465" placeholder="SELECT m.sta... init_match" />
+            <marker date="1476359307477" expanded="true" signature="2609:3171" placeholder="SELECT m.sta... init_match" />
+            <marker date="1476359307477" expanded="true" signature="2609:3180" placeholder="SELECT m.sta... init_match" />
+            <marker date="1476359307477" expanded="true" signature="3688:4802" placeholder="SELECT m.sta... init_match" />
+            <marker date="1476359307477" expanded="true" signature="3858:4512" placeholder="select m.rou... init_match" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15614237">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/Match.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61882895">
+          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+          <folding>
+            <marker date="1474979329104" expanded="true" signature="1545:1788" placeholder="insert into ulaz_new... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4489093">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/adminSpajanjeTakmicenjaNew.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29276693">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,7 +1,7 @@
 <?php
 include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlAdminPDO.php')));
 
-$source_array = array(2,3,4,5,6,7,9);
+$source_array = array(2,3,4,5,6,7,9,11,13);
 
 if(in_array($source_id, $source_array)) {
 $sql = 'SELECT DISTINCT ic.name competition_name, st.name home_name, st1.name visitor_name, sm.id match_id, ic.id competition_id, st.id home_id, st1.id visitor_id
