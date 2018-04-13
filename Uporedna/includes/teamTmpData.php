@@ -36,90 +36,109 @@ class teamTmpData
     }
 
 
+    static function sortByTest($a, $b, $c, $d)
+    {
+        $t1 = $b->
+        $al = strtolower($a->$c);
+        $bl = strtolower($b->$c);
+        if ($al == $bl) {
+            $al = strtolower($a->$d);
+            $bl = strtolower($b->$d);
+        }
+        return ($al > $bl) ? -1 : +1;
+    }
     static function sortByTPS($a, $b)
     {
-        $al = strtolower($a->threePlusSeria);
-        $bl = strtolower($b->threePlusSeria);
+        $al = strtolower($a->threePlus);
+        $bl = strtolower($b->threePlus);
         if ($al == $bl) {
-            $al = strtolower($a->threePlus);
-            $bl = strtolower($b->threePlus);
+            $al = strtolower($a->teamName);
+            $bl = strtolower($b->teamName);
+            return ($al < $bl) ? -1 : +1;
         }
         return ($al > $bl) ? -1 : +1;
     }
 
     static function sortByNDS($a, $b)
     {
-        $al = strtolower($a->zeroTwoSeria);
-        $bl = strtolower($b->zeroTwoSeria);
+        $al = strtolower($a->zeroTwo);
+        $bl = strtolower($b->zeroTwo);
         if ($al == $bl) {
-            $al = strtolower($a->zeroTwo);
-            $bl = strtolower($b->zeroTwo);
+            $al = strtolower($a->teamName);
+            $bl = strtolower($b->teamName);
+            return ($al < $bl) ? -1 : +1;
         }
         return ($al > $bl) ? -1 : +1;
     }
 
     static function sortByGGS($a, $b)
     {
-        $al = strtolower($a->ggSeria);
-        $bl = strtolower($b->ggSeria);
+        $al = strtolower($a->gg);
+        $bl = strtolower($b->gg);
         if ($al == $bl) {
-            $al = strtolower($a->gg);
-            $bl = strtolower($b->gg);
+            $al = strtolower($a->teamName);
+            $bl = strtolower($b->teamName);
+            return ($al < $bl) ? -1 : +1;
         }
         return ($al > $bl) ? -1 : +1;
     }
 
     static function sortByGGTPS($a, $b)
     {
-        $al = strtolower($a->ggtpSeria);
-        $bl = strtolower($b->ggtpSeria);
+        $al = strtolower($a->ggtp);
+        $bl = strtolower($b->ggtp);
         if ($al == $bl) {
-            $al = strtolower($a->ggtp);
-            $bl = strtolower($b->ggtp);
+            $al = strtolower($a->teamName);
+            $bl = strtolower($b->teamName);
+            return ($al < $bl) ? -1 : +1;
         }
         return ($al > $bl) ? -1 : +1;
     }
 
     static function sortByKTPS($a, $b)
     {
-        $al = strtolower($a->ktpSeria);
-        $bl = strtolower($b->ktpSeria);
+        $al = strtolower($a->ktp);
+        $bl = strtolower($b->ktp);
         if ($al == $bl) {
-            $al = strtolower($a->ktp);
-            $bl = strtolower($b->ktp);
+            $al = strtolower($a->teamName);
+            $bl = strtolower($b->teamName);
+            return ($al < $bl) ? -1 : +1;
         }
         return ($al > $bl) ? -1 : +1;
     }
 
     static function sortByDTPS($a, $b)
     {
-        $al = strtolower($a->dtpSeria);
-        $bl = strtolower($b->dtpSeria);
+        $al = strtolower($a->dtp);
+        $bl = strtolower($b->dtp);
         if ($al == $bl) {
-            $al = strtolower($a->dtp);
-            $bl = strtolower($b->dtp);
+            $al = strtolower($a->teamName);
+            $bl = strtolower($b->teamName);
+            return ($al < $bl) ? -1 : +1;
         }
         return ($al > $bl) ? -1 : +1;
     }
 
     static function sortByKKS($a, $b)
     {
-        $al = strtolower($a->kkSeria);
-        $bl = strtolower($b->kkSeria);
+        $al = strtolower($a->kk);
+        $bl = strtolower($b->kk);
         if ($al == $bl) {
-            $al = strtolower($a->kk);
-            $bl = strtolower($b->kk);
+            $al = strtolower($a->teamName);
+            $bl = strtolower($b->teamName);
+            return ($al < $bl) ? -1 : +1;
         }
         return ($al > $bl) ? -1 : +1;
     }
 
     static function sortByDPPS($a, $b)
     {
-        $al = strtolower($a->dppSeria);
-        $bl = strtolower($b->dppSeria);
+        $al = strtolower($a->dpp);
+        $bl = strtolower($b->dpp);
         if ($al == $bl) {
-            $al = strtolower($a->dpp);
-            $bl = strtolower($b->dpp);
+            $al = strtolower($a->teamName);
+            $bl = strtolower($b->teamName);
+            return ($al < $bl) ? -1 : +1;
         }
         return ($al > $bl) ? -1 : +1;
     }

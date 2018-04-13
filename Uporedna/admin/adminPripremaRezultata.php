@@ -21,9 +21,9 @@ $competition_id = 0;
 $season_id = array();
 $i = 1;
 
-$result_type = array(1=>"prvo poluvreme", 2=>"konacan ishod",10=>"prvo poluvreme", 11=>"konacan ishod",12=> 'cetvrtina',13=> 'cetvrtina',14=> 'cetvrtina',15=> 'cetvrtina');
-$period = array(1=>'',2=>'',10=>'',11=>'',12=> 1,13=>2,14=>3,15=>4);
-$sportSource = array(1=>'Fudbal', 58=>'Američki Fudbal');
+$result_type = array(1=>"prvo poluvreme", 2=>"konacan ishod",10=>"prvo poluvreme", 11=>"konacan ishod",12=> 'cetvrtina',13=> 'cetvrtina',14=> 'cetvrtina',15=> 'cetvrtina', 37=>"konacan ishod", 45=>"prvo poluvreme", 38=>"prvo poluvreme");
+$period = array(1=>'',2=>'',10=>'',11=>'',12=> 1,13=>2,14=>3,15=>4, 37=>'',45=>'', 38=>'');
+$sportSource = array(1=>'Fudbal', 58=>'Američki Fudbal', 7=>'Rukomet');
 
 if (isset ($_GET ["bookie_id"]) != "") {
     $source_all = explode("__", $_GET['bookie_id']);
@@ -130,6 +130,8 @@ $Data4 = $resultSources;
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
                 <?php
                 foreach ($Data1 as $srSource)  { $sport = $srSource['sport_id'];
+                    if ($srSource['resulttype'] != 46 and $srSource['resulttype'] != 39) {
+
                     ?>
                     <tr class="row<?php echo($i++ & 1) ?>">
                         <td><?php echo $srSource['date'] ?></td>
@@ -142,7 +144,7 @@ $Data4 = $resultSources;
                         <td><?php echo $sportSource[$sport]?></td>
                     </tr>
 
-                <?php } ?>
+                <?php } }?>
 
 
             </form>

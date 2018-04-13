@@ -20,10 +20,13 @@ echo "<br/>";
 
 echo LIB_PATH;*/
 
+//echo CLASS_PATH;
+
 
 require ADMIN_PATH . DS . 'config.php';
 require ADMIN_PATH . DS . 'db.php';
 require ADMIN_PATH . DS . 'functions.php';
-require CLASS_PATH . DS. 'Match.php';
+//require CLASS_PATH . DS. 'Match.php';
+require CLASS_PATH . DS . 'betradar.php';
 
 

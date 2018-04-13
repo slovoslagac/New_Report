@@ -4,7 +4,7 @@ include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlAdminPDO.php')));
 
 $sql = 'call spajanje_'.$kladionica_name;
 
-// echo $sql;
+ echo $sql;
 
 
 $SelMatc = $conn -> prepare($sql);

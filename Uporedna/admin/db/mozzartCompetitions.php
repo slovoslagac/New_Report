@@ -22,7 +22,7 @@ SELECT DISTINCT
 FROM
 init_competition ic1
 where id = 9999999
-ORDER BY 2";
+ORDER BY 3,2";
 } else if ($source_id == 11 or $source_id == 13) {
     $sql = "SELECT DISTINCT
   ic.id AS competition_id,
@@ -38,7 +38,7 @@ SELECT DISTINCT
 FROM
 init_competition ic1
 where id = 9999999
-ORDER BY 2";
+ORDER BY 3,2";
 }
 else {
     $sql = "SELECT DISTINCT
@@ -56,7 +56,7 @@ SELECT DISTINCT
 FROM
 init_competition ic1
 where id = 9999999
-ORDER BY 2";
+ORDER BY 3,2";
 }
 
 

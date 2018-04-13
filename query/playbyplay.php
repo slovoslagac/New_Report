@@ -20,11 +20,11 @@ foreach ($data as $d){
     $match=$d['description'];  $val=explode('<',$matchval=substr($match, strpos($match, ":") + 1)); $matchval= str_replace(" v "," - ", $val[0]) ;
     $tmp['match']=$matchval;
 
-	$matchdata[]=$tmp;
+    $matchdata[]=$tmp;
 	
 	
 }
 
-//print_r($matchdata);
+//print_r($matchdatapremium);
 
 ?>

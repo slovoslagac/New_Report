@@ -2,23 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f175486c-cf50-46f8-a631-cf8a816d1bf6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/adminPripremaPonude.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/adminPripremaRezultata.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/adminSpajanjeTimova.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/db/LeaguePreparation.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/db/connectingTeams.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/db/mozzartTeams.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/js/tabs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/saveTeams.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/adminSpajanjeTakmicenja1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/scripts/BalkanBetNew.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/scripts/BalkanBetNewKomplet.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/scripts/test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/scripts/testBalkanBet.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/scripts/testBalkanBet1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/admin/scripts/testfile.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/includes/Odds.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/includes/Sport.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/includes/teamTmpDataOld.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/parseri/Betexplorer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/parseri/betexplorerParser.pl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/public/MatchDataCacheFile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/public/teamStatstest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/public/testData.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uporedna/public/testData.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb" afterPath="$PROJECT_DIR$/Uporedna/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb.bak" afterPath="$PROJECT_DIR$/Uporedna/Dodatak/Modelovanje/osnovni model 22.9.2015.mwb.bak" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Teletext/bez_rezultata.php" afterPath="$PROJECT_DIR$/Teletext/bez_rezultata.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Teletext/kontrola_rezultata.php" afterPath="$PROJECT_DIR$/Teletext/kontrola_rezultata.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Uporedna/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/adminKontrolaPodigara.php" afterPath="$PROJECT_DIR$/Uporedna/admin/adminKontrolaPodigara.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/admin.php" afterPath="$PROJECT_DIR$/Uporedna/admin/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/adminPripremaRezultata.php" afterPath="$PROJECT_DIR$/Uporedna/admin/adminPripremaRezultata.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/adminSpajanjeMeceva.php" afterPath="$PROJECT_DIR$/Uporedna/admin/adminSpajanjeMeceva.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/adminSpajanjeTakmicenja.php" afterPath="$PROJECT_DIR$/Uporedna/admin/adminSpajanjeTakmicenja.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/adminSpajanjeTimova.php" afterPath="$PROJECT_DIR$/Uporedna/admin/adminSpajanjeTimova.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/css/admin.css" afterPath="$PROJECT_DIR$/Uporedna/admin/css/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/db/LeaguePreparation.php" afterPath="$PROJECT_DIR$/Uporedna/admin/db/LeaguePreparation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/db/MozzartMatches.php" afterPath="$PROJECT_DIR$/Uporedna/admin/db/MozzartMatches.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/db/connectingMatches.php" afterPath="$PROJECT_DIR$/Uporedna/admin/db/connectingMatches.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/db/mozzartCompetitions.php" afterPath="$PROJECT_DIR$/Uporedna/admin/db/mozzartCompetitions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/included/adm_menu.php" afterPath="$PROJECT_DIR$/Uporedna/admin/included/adm_menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/scripts/Supersport.php" afterPath="$PROJECT_DIR$/Uporedna/admin/scripts/Supersport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query/Players9-19.php" afterPath="$PROJECT_DIR$/query/Players9-19.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/db/mozzartTeams.php" afterPath="$PROJECT_DIR$/Uporedna/admin/db/mozzartTeams.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/db/spajanje.php" afterPath="$PROJECT_DIR$/Uporedna/admin/db/spajanje.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/included/config.php" afterPath="$PROJECT_DIR$/Uporedna/admin/included/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/included/db.php" afterPath="$PROJECT_DIR$/Uporedna/admin/included/db.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/included/init.php" afterPath="$PROJECT_DIR$/Uporedna/admin/included/init.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/admin/scripts/maxbet.php" afterPath="$PROJECT_DIR$/Uporedna/admin/scripts/maxbet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/includes/Match.php" afterPath="$PROJECT_DIR$/Uporedna/includes/Match.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/includes/config.php" afterPath="$PROJECT_DIR$/Uporedna/includes/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/includes/db.php" afterPath="$PROJECT_DIR$/Uporedna/includes/db.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/includes/functions.php" afterPath="$PROJECT_DIR$/Uporedna/includes/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/includes/teamTmpData.php" afterPath="$PROJECT_DIR$/Uporedna/includes/teamTmpData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/public/teamCompetitionStats.php" afterPath="$PROJECT_DIR$/Uporedna/public/teamCompetitionStats.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Uporedna/query/SourceOdds.php" afterPath="$PROJECT_DIR$/Uporedna/query/SourceOdds.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Verif/LiveBet.php" afterPath="$PROJECT_DIR$/Verif/LiveBet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Verif/dule.php" afterPath="$PROJECT_DIR$/Verif/dule.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Verif/index.php" afterPath="$PROJECT_DIR$/Verif/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conn/OracleProske.php" afterPath="$PROJECT_DIR$/conn/OracleProske.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query/CompleteVerification.php" afterPath="$PROJECT_DIR$/query/CompleteVerification.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query/NoResults.php" afterPath="$PROJECT_DIR$/query/NoResults.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query/playbyplay.php" afterPath="$PROJECT_DIR$/query/playbyplay.php" />
     </list>
     <ignored path="New_Report.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,37 +76,138 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Players9-19.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/query/Players9-19.php">
+      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Uporedna/admin/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state vertical-scroll-proportion="-24.653847">
+              <caret line="87" column="52" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kontrola_termina.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Teletext/kontrola_termina.php">
+      <file leaf-file-name="LiveBet.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Verif/LiveBet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-26.153847">
+              <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="livebet.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/query/livebet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.08018868">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="41" selection-end-column="21" />
+              <folding>
+                <marker date="1436341942949" expanded="true" signature="121:1683" placeholder="select d.dan... replace" />
+                <marker date="1436341942949" expanded="true" signature="279:1614" placeholder="select repla... id" />
+                <marker date="1436341942949" expanded="true" signature="431:1447" placeholder="select lm.id... livebet_matches" />
+                <marker date="1436341942949" expanded="true" signature="596:848" placeholder="select BMT.B... BETRADAR_MOZZART_TEAM" />
+                <marker date="1436341942949" expanded="true" signature="857:1109" placeholder="select BMT.B... BETRADAR_MOZZART_TEAM" />
+                <marker date="1436341942949" expanded="true" signature="1363:1416" placeholder="select match... livebet_tracking_matches" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="teamCompetitionStats.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Uporedna/public/teamCompetitionStats.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="214" column="51" selection-start-line="214" selection-start-column="46" selection-end-line="214" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DateTimeControl.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/query/DateTimeControl.php">
+      <file leaf-file-name="teamTmpData.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Uporedna/includes/teamTmpData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09758898">
-              <caret line="5" column="140" selection-start-line="5" selection-start-column="115" selection-end-line="5" selection-end-column="140" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bez_rezultata.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teletext/bez_rezultata.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoResults.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/query/NoResults.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+              <folding>
+                <marker date="1522331775484" expanded="true" signature="123:170" placeholder="select max(r... match" />
+                <marker date="1522331775484" expanded="true" signature="304:2168" placeholder="select k2.ko... matchid" />
+                <marker date="1522331775484" expanded="true" signature="466:1045" placeholder="select disti... MATCHODD" />
+                <marker date="1522331775484" expanded="true" signature="616:760" placeholder="select RT.ID... RESULTTYPES" />
+                <marker date="1522331775484" expanded="true" signature="1052:2003" placeholder="select M.ROU... match" />
+                <marker date="1522331775484" expanded="true" signature="2052:2136" placeholder="select resul... result" />
+                <marker date="1522331775484" expanded="true" signature="2315:2694" placeholder="select disti... BET_LOTO_EVENTS" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminKontrolaTakmicenja.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Uporedna/admin/adminKontrolaTakmicenja.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
+              <folding>
+                <marker date="1461241723443" expanded="true" signature="924:952" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompleteVerification.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/query/CompleteVerification.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+              <folding>
+                <marker date="1522245027878" expanded="true" signature="123:170" placeholder="select max(r... match" />
+                <marker date="1522245027878" expanded="true" signature="358:1978" placeholder="select M.ROU... match" />
+                <marker date="1522245027878" expanded="true" signature="1649:1910" placeholder="select rezul... RESULT_TYPE_ID" />
+                <marker date="1522245027878" expanded="true" signature="1671:1880" placeholder="select J.RES... MATCHODD" />
+                <marker date="1522245027878" expanded="true" signature="2124:2588" placeholder="select S.DES... SP_EVENT" />
+                <marker date="1522245027878" expanded="true" signature="2473:2537" placeholder="select event... BET_match" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dule.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Verif/dule.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,6 +217,44 @@
       <list>
         <option value="$PROJECT_DIR$/Verif/promeneKvota.php" />
         <option value="$PROJECT_DIR$/query/Players9-19.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/scripts/BalkanBetNewKomplet.php" />
+        <option value="$PROJECT_DIR$/Uporedna/includes/db.php" />
+        <option value="$PROJECT_DIR$/Uporedna/public/test.php" />
+        <option value="$PROJECT_DIR$/Uporedna/public/teamCompetitionStats.php" />
+        <option value="$PROJECT_DIR$/Uporedna/public/teamStats.php" />
+        <option value="$PROJECT_DIR$/Uporedna/css/seria.css" />
+        <option value="$PROJECT_DIR$/Uporedna/includes/functions.php" />
+        <option value="$PROJECT_DIR$/Uporedna/public/teamStats1.php" />
+        <option value="$PROJECT_DIR$/Verif/index.php" />
+        <option value="$PROJECT_DIR$/Uporedna/public/testSes.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/adminSpajanjeTakmicenja.php" />
+        <option value="$PROJECT_DIR$/conn/OracleProske.php" />
+        <option value="$PROJECT_DIR$/Teletext/testLoto.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/included/config.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/included/db.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/included/betradar.php" />
+        <option value="$PROJECT_DIR$/Uporedna/init.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/included/init.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/css/admin.css" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/classes/betradar.php" />
+        <option value="$PROJECT_DIR$/query/playbyplay.php" />
+        <option value="$PROJECT_DIR$/query/playbyplaynew.php" />
+        <option value="$PROJECT_DIR$/Verif/LiveBet.php" />
+        <option value="$PROJECT_DIR$/Uporedna/classes/match.php" />
+        <option value="$PROJECT_DIR$/Uporedna/parseri/Soccer.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/db/spajanje.php" />
+        <option value="$PROJECT_DIR$/Uporedna/query/SourceOdds.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/scripts/stenleybet.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/scripts/stanleybet.php" />
+        <option value="$PROJECT_DIR$/Teletext/kontrola_rezultata.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/classes/ks.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/scripts/BalkanBetNew.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/admin.php" />
+        <option value="$PROJECT_DIR$/Uporedna/admin/getks.php" />
+        <option value="$PROJECT_DIR$/query/CompleteVerification.php" />
+        <option value="$PROJECT_DIR$/Verif/dule.php" />
+        <option value="$PROJECT_DIR$/query/NoResults.php" />
+        <option value="$PROJECT_DIR$/Teletext/bez_rezultata.php" />
       </list>
     </option>
   </component>
@@ -124,6 +299,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -152,47 +328,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Uporedna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="New_Report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="New_Report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Uporedna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="New_Report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="New_Report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Uporedna" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conn" />
+              <option name="myItemId" value="Verif" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -210,16 +346,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="New_Report" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="New_Report" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Raspored" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../material-design" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\AppServ\www\New_Report\Uporedna\admin\classes" />
+      <recent name="C:\AppServ\www\New_Report\Uporedna\classes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\AppServ\www\New_Report\query" />
+      <recent name="C:\AppServ\www\New_Report\Uporedna\admin" />
+      <recent name="C:\AppServ\www\New_Report\Uporedna\public" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -235,12 +427,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1034" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1034" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.253125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17697228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -249,10 +441,10 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977852" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -269,148 +461,425 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Uporedna/includes/functions.php</url>
+          <line>101</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/query/Players9-19.php">
+    <entry file="file://$PROJECT_DIR$/Uporedna/includes/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/query/basic_ponuda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/naslovna.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/included/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/included/adm_menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/included/adm_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18021202">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="28" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dataTables.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/livebet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24028268">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/playbyplaynew.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/playbyplay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/parseri/Betexplorer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/parseri/betexplorerParser.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/included/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2606132">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/parseri/Soccer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Podrska/NewSeasons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Podrska/TeamsLeague.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/query/GetTicketJSON.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18042453">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/Osnova.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02004717">
+          <caret line="187" column="35" selection-start-line="187" selection-start-column="26" selection-end-line="187" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/query/SourceOdds.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02004717">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/conn/mysqlPDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12028302">
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/includes/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4817432">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <marker date="1502113162115" expanded="true" signature="156:176" placeholder="delete from " />
+            <marker date="1502113162115" expanded="true" signature="305:326" placeholder="delete from " />
+            <marker date="1502113162115" expanded="true" signature="693:903" placeholder="select disti... init_match" />
+            <marker date="1502113162115" expanded="true" signature="843:891" placeholder="select disti... init_event_results" />
+            <marker date="1502113162115" expanded="true" signature="2450:3530" placeholder="select a.sta... start_time" />
+            <marker date="1502113162115" expanded="true" signature="2626:3236" placeholder="SELECT m.sta... init_match" />
+            <marker date="1502113162115" expanded="true" signature="3753:5004" placeholder="select a.mat... round" />
+            <marker date="1502113162115" expanded="true" signature="3928:4709" placeholder="select m.rou... init_match" />
+            <marker date="1502113162115" expanded="true" signature="5221:5975" placeholder="select a.sta... start_time" />
+            <marker date="1502113162115" expanded="true" signature="5351:5935" placeholder="SELECT m.sta... init_match" />
+            <marker date="1502113162115" expanded="true" signature="6152:7191" placeholder="select a.sta... start_time" />
+            <marker date="1502113162115" expanded="true" signature="6328:6912" placeholder="SELECT m.sta... init_match" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/classes/match.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7408716">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5229682">
+          <caret line="550" column="9" selection-start-line="550" selection-start-column="9" selection-end-line="550" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Teletext/kontrola_termina.php">
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/scripts/stanleybet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.020023556">
+          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/query/DateTimeControl.php">
+    <entry file="file://$PROJECT_DIR$/Uporedna/classes/teamSort.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.12014134">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/query/Players9-19.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Verif/promeneKvota.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/query/promKvota.php">
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/scripts/maxbet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Verif/KS.php">
+    <entry file="file://$PROJECT_DIR$/query/NoResultsOld.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/query/ksdata.php">
+    <entry file="file://$PROJECT_DIR$/Teletext/kontrola_rezultata.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Verif/KS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/query/ksdata.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/query/ksdata.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29276693">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Verif/KS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/query/promKvota.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8978186">
-          <caret line="46" column="108" selection-start-line="46" selection-start-column="108" selection-end-line="46" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Verif/promeneKvota.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019517796">
-          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Podrska/Igraci.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47851852">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/query/Players9-19.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Teletext/kontrola_termina.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Uporedna/admin/conn/mysqlAdminPDO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13662457">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/conn/mysqlAdminPDOold.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/classes/ks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index_new.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3431604">
+          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02004717">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/included/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36084905">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/scripts/BalkanBetNew.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/classes/betradar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/db/spajanje.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3207547">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/getks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/public/teamStats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/query/DateTimeControl.php">
+    <entry file="file://$PROJECT_DIR$/Uporedna/public/teamCompetitionStats.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09758898">
-          <caret line="5" column="140" selection-start-line="5" selection-start-column="115" selection-end-line="5" selection-end-column="140" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="214" column="51" selection-start-line="214" selection-start-column="46" selection-end-line="214" selection-end-column="55" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/includes/teamTmpData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/CompleteVerification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <folding>
+            <marker date="1522245027878" expanded="true" signature="123:170" placeholder="select max(r... match" />
+            <marker date="1522245027878" expanded="true" signature="358:1978" placeholder="select M.ROU... match" />
+            <marker date="1522245027878" expanded="true" signature="1649:1910" placeholder="select rezul... RESULT_TYPE_ID" />
+            <marker date="1522245027878" expanded="true" signature="1671:1880" placeholder="select J.RES... MATCHODD" />
+            <marker date="1522245027878" expanded="true" signature="2124:2588" placeholder="select S.DES... SP_EVENT" />
+            <marker date="1522245027878" expanded="true" signature="2473:2537" placeholder="select event... BET_match" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Verif/dule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Teletext/bez_rezultata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/NoResults.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <folding>
+            <marker date="1522331775484" expanded="true" signature="123:170" placeholder="select max(r... match" />
+            <marker date="1522331775484" expanded="true" signature="304:2168" placeholder="select k2.ko... matchid" />
+            <marker date="1522331775484" expanded="true" signature="466:1045" placeholder="select disti... MATCHODD" />
+            <marker date="1522331775484" expanded="true" signature="616:760" placeholder="select RT.ID... RESULTTYPES" />
+            <marker date="1522331775484" expanded="true" signature="1052:2003" placeholder="select M.ROU... match" />
+            <marker date="1522331775484" expanded="true" signature="2052:2136" placeholder="select resul... result" />
+            <marker date="1522331775484" expanded="true" signature="2315:2694" placeholder="select disti... BET_LOTO_EVENTS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/adminKontrolaTakmicenja.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
+          <folding>
+            <marker date="1461241723443" expanded="true" signature="924:952" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uporedna/admin/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.653847">
+          <caret line="87" column="52" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Verif/LiveBet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.153847">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/livebet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08018868">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="41" selection-end-column="21" />
+          <folding>
+            <marker date="1436341942949" expanded="true" signature="121:1683" placeholder="select d.dan... replace" />
+            <marker date="1436341942949" expanded="true" signature="279:1614" placeholder="select repla... id" />
+            <marker date="1436341942949" expanded="true" signature="431:1447" placeholder="select lm.id... livebet_matches" />
+            <marker date="1436341942949" expanded="true" signature="596:848" placeholder="select BMT.B... BETRADAR_MOZZART_TEAM" />
+            <marker date="1436341942949" expanded="true" signature="857:1109" placeholder="select BMT.B... BETRADAR_MOZZART_TEAM" />
+            <marker date="1436341942949" expanded="true" signature="1363:1416" placeholder="select match... livebet_tracking_matches" />
+          </folding>
         </state>
       </provider>
     </entry>

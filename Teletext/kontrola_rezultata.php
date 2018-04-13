@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta http-equiv="refresh" content="60">
+	<meta http-equiv="refresh" content="180">
 	<title>Kontrola rezultata</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../css/default.css">

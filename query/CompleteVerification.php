@@ -10,6 +10,8 @@ oci_execute($sql0);
 oci_fetch($sql0);
 
 $round3=$round-3;
+$round2=$round-2;
+$round1=$round-1;
 //echo $round;
 
 
@@ -47,7 +49,7 @@ $sql= oci_parse( $conn, '
 		and R.MATCHID=M.ID
 		and R.VERIFIED=2
 		and m.status = (case when m.sportid=1 and m.status=2 then 2 else case when m.sportid=1 and m.status=4 then 4 else 4 end end)
-		and R.RESULTTYPEID in (select rezultat from (select J.RESULT_TYPE_ID rezultat, mo.matchid from TELEBET.MATCHODD mo, jovicasabic.GAME_RESULT_TYPES j where mo.roundid>=(select max(roundid)-3 from telebet.match) and MO.BETTINGGAMEID =J.BETTING_GAME_ID ) a where a.matchid=r.matchid)
+		and R.RESULTTYPEID in (select rezultat from (select J.RESULT_TYPE_ID rezultat, mo.matchid from TELEBET.MATCHODD mo, proske.GAME_RESULT_TYPES j where mo.roundid in ('.$round.', '.$round1.', '.$round2.', '.$round3.') and MO.BETTINGGAMEID =J.BETTING_GAME_ID ) a where a.matchid=r.matchid)
 		and r.resulttypeid not in (3,37)
 		order by 8 desc, 1, 4, 5, 2,3 ');
 

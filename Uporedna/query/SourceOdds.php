@@ -3,7 +3,7 @@ include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlNewPDO.php')));
 
 
 $sql = "SELECT co.telebet_current_id AS id, so.value AS odd, so.handicap AS handicap, so.source_id AS source, ins.mozzart_game_id AS game_id, ins.mozzart_subgame_id AS subgame_id
-FROM src_current_odds_1392 so, conn_match cm, init_current_offer co, conn_subgame cs, init_subgame ins
+FROM src_current_odds_1562 so, conn_match cm, init_current_offer co, conn_subgame cs, init_subgame ins
 WHERE so.src_match_id = cm.src_match_id
 AND cm.init_match_id = co.event_id
 AND so.src_subgame_id = cs.src_subgame_id
@@ -18,7 +18,7 @@ where level = 1
 and list_type = $listType
 and id IN ";
 
-$sql2 = "select *from init_current_odds
+$sql2 = "select * from init_current_odds
 where level = 0
 and list_type = $listType
 and id IN " ;

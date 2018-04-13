@@ -20,8 +20,9 @@ class Match
     public $start_time;
     public $season;
     public $round;
+    public $sport;
 
-    public function __construct($league, $leagueid, $hteam, $hteamid, $vteam, $vteamid, $match, $match_id, $source_id, $start_time = '', $season = '', $round = '')
+    public function __construct($league, $leagueid, $hteam, $hteamid, $vteam, $vteamid, $match, $match_id, $source_id, $sport, $start_time = '', $season = '', $round = '')
     {
         $this->league = $league;
         $this->league_id = $leagueid;
@@ -35,6 +36,7 @@ class Match
         $this->start_time = $start_time;
         $this->season = $season;
         $this->round = $round;
+        $this->sport = $sport;
     }
 
     public function insert_new_match() {
@@ -57,8 +59,9 @@ class Match
         $se = $this->season;
         $st = $this->start_time;
         $ro = $this->round;
-        $insert_new_match = $conn->prepare("insert into ulaz_new (starttime ,liga_id ,liga ,utk_id ,utakmica ,dom_id ,dom ,gost_id ,gost ,source ,season ,round)
-                                            values(:st, :leId, :le, :maId, :ma, :hoTeId, :hoTe, :viTeId, :viTe, :so, :se, :ro)");
+        $sp = $this->sport;
+        $insert_new_match = $conn->prepare("insert into ulaz_new (starttime ,liga_id ,liga ,utk_id ,utakmica ,dom_id ,dom ,gost_id ,gost ,source ,season ,round, sport_id)
+                                            values(:st, :leId, :le, :maId, :ma, :hoTeId, :hoTe, :viTeId, :viTe, :so, :se, :ro, :sp)");
         $insert_new_match->bindParam(':st', $st);
         $insert_new_match->bindParam(':leId', $leId);
         $insert_new_match->bindParam(':le', $le);
@@ -71,7 +74,12 @@ class Match
         $insert_new_match->bindParam(':so', $so);
         $insert_new_match->bindParam(':se', $se);
         $insert_new_match->bindParam(':ro', $ro);
+        $insert_new_match->bindParam(':sp', $sp);
         $insert_new_match->execute();
+
+    }
+
+    public function getAllMatches() {
 
     }
 }

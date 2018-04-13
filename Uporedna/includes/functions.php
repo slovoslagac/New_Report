@@ -32,7 +32,7 @@ function get_all_teams_from_competition($cmpID, $seaspnId) {
 function getAllCompetitions()
 {
     global $conn;
-    $sql = $conn->query("select distinct competition_id , ic.name
+    $sql = $conn->query("select distinct alternative_id as competition_id, ic.name
 FROM init_match im, init_competition ic
 where im.competition_id = ic.id
 and im.event_id in (select distinct event_id from init_event_results)
@@ -85,15 +85,16 @@ function getAllCompetitionResults($leagueId)
 from
 (
 SELECT m.start_time startTime, m.event_id matchId, r.participant_id teamId, t.name teamName, r.EVENT_RESULT_TYPE_ID resultTypeId, r.home_visitor homeVisitor, r.VALUE valueFor, r1.VALUE valueOposite, m.season_id as seasonId
-FROM init_match m, init_team t, init_event_results r, init_event_results r1
+FROM init_match m, init_team t, init_event_results r, init_event_results r1, init_competition c
 WHERE m.event_id = r.event_id
+and m.competition_id = c.id
 AND m.event_id = r1.event_id
 AND r.EVENT_RESULT_TYPE_ID = r1.EVENT_RESULT_TYPE_ID
 AND r.participant_id <> r1.participant_id
 and r.EVENT_RESULT_TYPE_ID = 1
 AND r.participant_id = t.id
-AND m.season_id in (23,24)
-AND m.competition_id = $leagueId) a
+AND m.season_id in (23,25)
+AND c.alternative_id = $leagueId) a
 left join init_event_results r2 on r2.event_id = a.matchId and a.teamId = r2.participant_id and r2.EVENT_RESULT_TYPE_ID=2
 left join init_event_results r3 on a.matchId = r3.event_id and a.teamId <> r3.participant_id and r3.EVENT_RESULT_TYPE_ID=2
 ORDER BY a.teamId, a.startTime  DESC");
@@ -106,13 +107,14 @@ ORDER BY a.teamId, a.startTime  DESC");
 function getAllCompetitionResultsByRound($leagueId)
 {
     global $conn;
-    $sql = $conn->query("select a.matchRound, a.matchTime, a.homeTeam, a.awayTeam, a.homeTeamScore, a.awayTeamScore, hr1.VALUE as homeTeamHalfTimeScore, ar1.VALUE as awayTeamHalfTimeScore
+    $sql = $conn->query("select a.matchRound, a.matchTime, a.homeTeam, a.awayTeam, a.homeTeamScore, a.awayTeamScore, hr1.VALUE as homeTeamHalfTimeScore, ar1.VALUE as awayTeamHalfTimeScore, cmp
 from
 (
-select m.round as matchRound,m.start_time as matchTime, t.name as homeTeam, t1.name as awayTeam, hr.VALUE as homeTeamScore, ar.value as awayTeamScore, m.event_id as event_id, m.home_team_id as home_team_id, m.visitor_team_id as visitor_team_id
-from init_match m, init_team t, init_team t1, init_event_results hr, init_event_results ar
-where m.competition_id = $leagueId
-and m.season_id in (23,24)
+select m.round as matchRound,m.start_time as matchTime, t.name as homeTeam, t1.name as awayTeam, hr.VALUE as homeTeamScore, ar.value as awayTeamScore, m.event_id as event_id, m.home_team_id as home_team_id, m.visitor_team_id as visitor_team_id, case when c.id = c.alternative_id then c.id else c.alternative_id + 1 end cmp
+from init_match m, init_team t, init_team t1, init_event_results hr, init_event_results ar, init_competition c
+where c.alternative_id = $leagueId
+and m.competition_id = c.id
+and m.season_id in (23,25)
 and m.home_team_id =t.id
 and m.visitor_team_id = t1.id
 and hr.event_id = m.event_id
@@ -123,9 +125,57 @@ and ar.participant_id = m.visitor_team_id
 and ar.EVENT_RESULT_TYPE_ID = 1 ) a
 left join init_event_results hr1 on hr1.event_id = a.event_id and hr1.participant_id = a.home_team_id and hr1.EVENT_RESULT_TYPE_ID = 2
 left join init_event_results ar1 on ar1.event_id = a.event_id and ar1.participant_id = a.visitor_team_id and ar1.EVENT_RESULT_TYPE_ID = 2
-order by 1,2");
+order by cmp, 1,2");
     $sql->execute();
     $allCompetitionResultsByRound = $sql->fetchAll(PDO::FETCH_OBJ );
     return $allCompetitionResultsByRound;
 }
 
+function getAllMatchResultsFT(){
+    global $conn;
+    $sql = $conn->prepare("select a.startTime, a.matchId, a.teamId, a.teamName, a.resultTypeId, a.homeVisitor, a.valueFor, a.valueOposite, a.seasonId
+from
+(
+SELECT m.start_time startTime, m.event_id matchId, r.participant_id teamId, t.name teamName, r.EVENT_RESULT_TYPE_ID resultTypeId, r.home_visitor homeVisitor, r.VALUE valueFor, r1.VALUE valueOposite, m.season_id as seasonId
+FROM init_match m, init_team t, init_event_results r, init_event_results r1
+WHERE m.event_id = r.event_id
+AND m.event_id = r1.event_id
+AND r.EVENT_RESULT_TYPE_ID = r1.EVENT_RESULT_TYPE_ID
+AND r.participant_id <> r1.participant_id
+and r.EVENT_RESULT_TYPE_ID = 1
+AND r.participant_id = t.id
+and m.init_sport_id = 1
+and m.phase in (1,79)
+AND m.season_id in (22,25)) a
+ORDER BY a.teamId, a.startTime  DESC
+;");
+    $sql->execute();
+    $result = $sql->fetchAll(PDO::FETCH_OBJ);
+    return $result;
+}
+
+
+function getAllMatchResultsFull(){
+    global $conn;
+    $sql = $conn->prepare("select a.startTime, a.matchId, a.teamId, a.teamName, a.resultTypeId, a.homeVisitor, a.valueFor, a.valueOposite, r2.VALUE valueHtFor, r3.VALUE valueHtOposite, a.seasonId
+from
+(
+SELECT m.start_time startTime, m.event_id matchId, r.participant_id teamId, t.name teamName, r.EVENT_RESULT_TYPE_ID resultTypeId, r.home_visitor homeVisitor, r.VALUE valueFor, r1.VALUE valueOposite, m.season_id as seasonId
+FROM init_match m, init_team t, init_event_results r, init_event_results r1
+WHERE m.event_id = r.event_id
+AND m.event_id = r1.event_id
+AND r.EVENT_RESULT_TYPE_ID = r1.EVENT_RESULT_TYPE_ID
+AND r.participant_id <> r1.participant_id
+and r.EVENT_RESULT_TYPE_ID = 1
+AND r.participant_id = t.id
+and m.init_sport_id = 1
+and m.phase in (1,79)
+AND m.season_id in (22,25)) a
+left join init_event_results r2 on r2.event_id = a.matchId and a.teamId = r2.participant_id and r2.EVENT_RESULT_TYPE_ID=2
+left join init_event_results r3 on a.matchId = r3.event_id and a.teamId <> r3.participant_id and r3.EVENT_RESULT_TYPE_ID=2
+ORDER BY a.teamId, a.startTime
+;");
+    $sql->execute();
+    $result = $sql->fetchAll(PDO::FETCH_OBJ);
+    return $result;
+}

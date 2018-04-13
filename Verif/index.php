@@ -23,7 +23,8 @@
 			<div class="small_buttons"><a target="blank" href="LiveBet.php">LiveBet</a></div>
 			<div class="small_buttons"><a target="blank" href="KS.php">TEST Izveštaj o KS-u</a></div>
 			<div class="small_buttons"><a target="blank" href="promeneKvota.php">Promene kvota</a></div>
-  		
+			<div class="small_buttons"><a target="blank" href="../Uporedna/public/teamCompetitionStats.php">Serije po takmicenju</a></div>
+			<div class="small_buttons"><a target="blank" href="../Uporedna/public/teamStats.php">Serije po timu</a></div>
 		</div>
 	</body>
 </html>

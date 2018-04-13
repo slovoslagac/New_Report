@@ -43,7 +43,7 @@ and sm.season_id = ss.id
 and ic.id = $competition_id
 and sm.source_id = $source_id
 and sm.season_id in ($season_array)
-order by 1
+order by start_time
 ";
 
 //    $sql = "select DATE_FORMAT(sm.start_time, '%m/%d/%Y') date, DATE_FORMAT(sm.start_time, '%H.%i') time,ith.mozzart hometeam, ita.mozzart awayteam, sm.round_id as round, ic.mozzart competition, ss.name as season from src_match sm, init_competition ic, conn_competition cc, init_team ith, conn_team cth, init_team ita, conn_team cta, src_seasons ss where sm.src_competition_id = cc.src_competition_id and cc.init_competition_id = ic.id and sm.src_home_team_id = cth.src_team_id and cth.init_team_id = ith.id and sm.src_visitor_team_id = cta.src_team_id and cta.init_team_id = ita.id and sm.season_id = ss.id and ic.id = 275 and sm.source_id = 11 and sm.season_id in (6,13) "

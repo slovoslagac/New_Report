@@ -5,11 +5,11 @@
  * Date: 29.9.2016
  * Time: 14:14
  */
-require(join(DIRECTORY_SEPARATOR, array('includes', 'init.php')));
+require(join(DIRECTORY_SEPARATOR, array('..','includes', 'init.php')));
 
-$leagueId = 1;
-$leagueName = 'Engleska 1';
-$tmpSeason = array(23=>'2016',24=>'2016/2017');
+$leagueId = 14;
+$leagueName = 'Srbija 1';
+$tmpSeason = array(23=>'2016',24=>'2016/2017', 25=>'2017/2018');
 
 
 $allCompetition = getAllCompetitions();
@@ -484,7 +484,7 @@ if ($currentRound == $asr->matchRound)  { ?>
 
 <?php } elseif ($currentRound == 0) { ?>
 <div class="w18">
-    <h3><?php $currentRound = $asr->matchRound;
+    <h3 id="<?php echo $asr->cmp?>"><?php $currentRound = $asr->matchRound;
         echo "$currentRound. kolo" ?></h3>
     <table>
         <colgroup>
@@ -511,7 +511,7 @@ if ($currentRound == $asr->matchRound)  { ?>
 </div>
 
 <div class="w18">
-    <h3><?php $currentRound = $asr->matchRound;
+    <h3 id="<?php echo $asr->cmp?>"><?php $currentRound = $asr->matchRound;
         echo "$currentRound. kolo" ?></h3>
     <table>
         <colgroup>

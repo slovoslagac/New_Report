@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    text-align: center;
+}
+
+
+.scroll {
+    /*width: 25%;*/
+    height: 800px !important;
+    overflow: scroll;
+}
+
+.w18 {
+    width: 18%;
+}
+
+input {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    display: block;
+    min-width: 100%;
+}

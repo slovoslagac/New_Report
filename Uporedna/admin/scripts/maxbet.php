@@ -116,7 +116,7 @@ foreach ($data as $d) {
     $ug3p = $d['ug3p'];
     $gg = $d['GG'];
 
-
+	if ($league != 'Maxbet bonus tip Fudbal') {
     $query = '
 		INSERT INTO
 		maxbet3 (domacin, gost, liga, ki_1, ki_x, ki_2, ug02, ug3p, gg)
@@ -137,7 +137,7 @@ foreach ($data as $d) {
 
     $prepare = $conn->prepare($query);
     $prepare->execute($params);
-
+}
 
 }
 

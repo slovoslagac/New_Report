@@ -17,7 +17,7 @@ $tns_oracle = "
 (DESCRIPTION =
       (ADDRESS =
         (PROTOCOL = TCP)
-        (HOST = 192.168.0.160)
+        (HOST = 192.168.0.170)
         (PORT = 1521)
       )
       (CONNECT_DATA =
@@ -27,9 +27,11 @@ $tns_oracle = "
  )
        ";
 
+//$db_username_oracle = 'proske';
+//$db_password_oracle = 'proske21';
+//$db_host_oracle='192.168.0.160/sscsdb';
+
 $db_username_oracle = 'proske';
 $db_password_oracle = 'proske21';
-$db_host_oracle='192.168.0.160/sscsdb';
-
-
+$db_host_oracle='192.168.0.170/csdb';
 ?>

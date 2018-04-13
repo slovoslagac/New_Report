@@ -53,7 +53,7 @@ table {
 
 .region {
 	float: left;
-	width: 22%;
+	width: 20%;
 	text-align: center;
 	margin: auto;
 }
@@ -64,9 +64,9 @@ table {
 }
 
 .region button {
-	width: 40%;
+	width: 50%;
 	height: 30px;
-	margin: 10px 30% 10px 30%;
+	margin: 10px 25% 10px 25%;
 	background-color: #0E1C42;
 	font-size: 16px;
 	font-weight: bold;
