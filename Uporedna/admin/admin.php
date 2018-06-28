@@ -32,6 +32,9 @@ if (isset ($_POST["parser"]) != "") {
         case('stanley'):
             include(join(DIRECTORY_SEPARATOR, array('scripts', 'stanleybet.php')));
             break;
+        case('superbet'):
+            include(join(DIRECTORY_SEPARATOR, array('scripts', 'superbet.php')));
+            break;
         default:
 
     }
@@ -112,6 +115,7 @@ if(isset($_POST["ks"]) !=""){
             <hr>
             <h3>Skidanje kvota</h3>
             <button type="submit" name="parser" value="stanley">StanleyBet</button>
+            <button type="submit" name="parser" value="superbet">Superbet</button>
             <h2>KS</h2>
             <hr>
             <button type="submit" name="ks" value="refreshallks">Osveži sve vrednosti</button>

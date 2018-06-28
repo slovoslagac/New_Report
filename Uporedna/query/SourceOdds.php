@@ -3,7 +3,7 @@ include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlNewPDO.php')));
 
 
 $sql = "SELECT co.telebet_current_id AS id, so.value AS odd, so.handicap AS handicap, so.source_id AS source, ins.mozzart_game_id AS game_id, ins.mozzart_subgame_id AS subgame_id
-FROM src_current_odds_1562 so, conn_match cm, init_current_offer co, conn_subgame cs, init_subgame ins
+FROM src_current_odds so, conn_match cm, init_current_offer co, conn_subgame cs, init_subgame ins
 WHERE so.src_match_id = cm.src_match_id
 AND cm.init_match_id = co.event_id
 AND so.src_subgame_id = cs.src_subgame_id
@@ -31,7 +31,7 @@ and telebet_current_id IN
 
 $selectBusinessUnites = "select id, name from init_business_units";
 
-if($currency_id <> "") {$selectCurrencies = "select mid_value from init_currencies where currency_id = $currency_id and date_format(date(validity_date),'%d.%m.%Y') = '$currency_date'";}
+if($currency_id <> "") {$selectCurrencies = "select mid_value from init_currencies where currency_id = $currency_id and validity_date <=  STR_TO_DATE('01.05.2018','%d.%m.%Y')  order by validity_date desc limit 1";}
 
 $tm = join(',', $tmp_matches);
 $tg = join(',', $tmp_games);
@@ -94,7 +94,7 @@ $currencyValue = $tmpCu->fetchColumn();
 $conn = null;
 
 
-
+//echo $currency_date;
 
 //print_r($oddtype);
 

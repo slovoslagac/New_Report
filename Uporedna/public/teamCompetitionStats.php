@@ -9,7 +9,7 @@ require(join(DIRECTORY_SEPARATOR, array('..','includes', 'init.php')));
 
 $leagueId = 14;
 $leagueName = 'Srbija 1';
-$tmpSeason = array(23=>'2016',24=>'2016/2017', 25=>'2017/2018');
+$tmpSeason = array(23=>'2016',24=>'2016/2017', 25=>'2017/2018', 27=> '2018', 28=>'2018/2019');
 
 
 $allCompetition = getAllCompetitions();

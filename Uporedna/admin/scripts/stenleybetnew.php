@@ -6,7 +6,7 @@
  * Time: 15:11
  */
 
-$url = 'https://api.aws.kambicdn.com/offering/api/v3/sbro/listView/football.json?lang=en_US&market=RO&client_id=2&channel_id=1&categoryGroup=COMBINED&displayDefault=true&category=match';
+$url = 'https://api.aws.kambicdn.com/offering/api/v2/sbro/event/live/open.json?lang=en_GB&market=RO&client_id=2&channel_id=1&ncid=1529667471631';
 //$url = 'https://api.aws.kambicdn.com/offering/api/v3/sbro/listView/football.json?lang=en_US&market=RO&client_id=2&channel_id=1&categoryGroup=COMBINED&displayDefault=true&category=match';
 $data = json_decode(file_get_contents($url));
 $allmatches = array();
@@ -38,32 +38,32 @@ foreach ($data->events as $item) {
                 }
             }
 
-        }
+            }
 //        if($ki1 != "") {
 //            echo $ki1, ' ', $kix, ' ', $ki2, ' ', $nd, ' ', $tp, ' ', "$item->RegionName $item->CompetitionName", ' ', $item->Competitor1, '-', $item->Competitor1, ' ', $item->EventName, '<br>';
-        $matches["id"] = $matchdata->id;
-        $matches["home_team"] = $hometeam;
-        $matches["away_team"] = $awayteam;
-        $matches["date"] = $matchdata->prematchEnd;
-        $matches["competition_name"] = $competition ;
-        $matches["ki1"] = $ki1;
-        $matches["kiX"] = $kix;
-        $matches["ki2"] = $ki2;
+            $matches["id"] = $matchdata->id;
+            $matches["home_team"] = $hometeam;
+            $matches["away_team"] = $awayteam;
+            $matches["date"] = $matchdata->prematchEnd;
+            $matches["competition_name"] = $competition ;
+            $matches["ki1"] = $ki1;
+            $matches["kiX"] = $kix;
+            $matches["ki2"] = $ki2;
 
 
-        array_push($allmatches, $matches);
+            array_push($allmatches, $matches);
 //        }
 
 
 
-    }
+        }
 //        echo "$hometeam - $awayteam $ki1 $kix $ki2 <br>";
 
 
 
 }
 
-include 'conn/mysqlAdminPDOold.php';
+include '../conn/mysqlAdminPDOold.php';
 //echo "Brisem tabelu <br>";
 
 $del = 'DELETE FROM stenlybetro3';

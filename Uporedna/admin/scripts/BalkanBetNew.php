@@ -17,7 +17,7 @@ function getName ($id,$array,$categoryName){
 $date = new DateTime();
 $start_new = $date->format("Y-m-d");
 $end_date = new DateTime();
-$end_date->modify('+7 day');
+$end_date->modify('+ 14 day');
 $end_new = $end_date->format("Y-m-d");
 
 //echo "$startDate - $end_date<br>";

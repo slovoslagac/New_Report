@@ -13,7 +13,7 @@ AND sm.src_home_team_id = st.id
 AND ic.position = 1
 AND sm.src_visitor_team_id = st1.id
 AND sm.source_id= ' . $source_id . '
-AND sm.start_time > now() - INTERVAL "0" DAY
+AND sm.start_time > now() - INTERVAL "3" DAY
 AND sm.start_time < now() + INTERVAL "7" DAY
 ORDER BY sm.source_id, ic.name, st.name
 ';

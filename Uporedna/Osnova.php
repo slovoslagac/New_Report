@@ -186,8 +186,8 @@ switch($currency){
             if ($sifraTiketa != '') {
             include(join(DIRECTORY_SEPARATOR, array('query', 'SourceOdds.php')));
             $currAmount = $realAmountValue * $currencyValue;
-//            echo $currencyValue."<br>";
-//            echo $realAmountValue."<br>";
+//           echo $currencyValue."<br>";
+//           echo $realAmountValue."<br>";
 
             ?>
 
