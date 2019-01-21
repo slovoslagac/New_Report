@@ -38,7 +38,7 @@ my $sifra_id;
 
 print strftime('%H:%M:%s',localtime),"\t Skidam ponudu :\n";
 
-my $sport = get ('http://www.pinnbet.com/ActualRatios1.aspx?kljucevi=&ListeId=429&IgraId=1&Danas=0&KladId=1') or die 'umre';
+my $sport = get ('http://www.pinnbet.com/old/ActualRatios1.aspx?kljucevi=&ListeId=429&IgraId=1&Danas=0&KladId=1') or die 'umre';
 while ($sport=~m{<td class='lblNaslov'>(.+?)</td>(.+?)</a></td></tr></table><br></td></tr></table>}gs)
 {
 	my $liga = $1; 
@@ -61,7 +61,7 @@ while ($sport=~m{<td class='lblNaslov'>(.+?)</td>(.+?)</a></td></tr></table><br>
 		$visitor_team_id = $visitor_team;$visitor_team_id=~s/\s+/_/g;
 
 		
-		my $match = get ('http://www.pinnbet.com/'.$link) or die 'umre';
+		my $match = get ('http://www.pinnbet.com/old/'.$link) or die 'umre';
 		while ($match=~m{onclick="linkAddBet\('(.+?)\|.+?\|.+?\|.+?\|(.+?)\|(.+?)\|(.+?)\|.+?fudbal}gs)
 		{
 			
@@ -112,13 +112,8 @@ my $konekcija = DBI->connect($dsn, $user,$pass) or die "ne moze da se poveze na 
 
 for (my $w=0;$w<scalar @matches;$w++)
 {
-#	print $matches[$w][0],"\t",$matches[$w][1],"\t",$matches[$w][4],"\t",$matches[$w][2],"\t",$matches[$w][3],"\n";
-	
-	
 
-	
 	my $query=$konekcija->do("insert into ulaz_new (starttime,liga_id,liga, utk_id, utakmica,dom_id, dom,gost_id, gost,source) values ('$matches[$w][2]','$matches[$w][0]','$matches[$w][1]','$matches[$w][3]','$matches[$w][4]','$matches[$w][6]','$matches[$w][5]','$matches[$w][8]','$matches[$w][7]',$source_id)");
-	
 
 }
 

@@ -6,7 +6,7 @@
  * Time: 15:11
  */
 
-$url = 'https://api.aws.kambicdn.com/offering/api/v3/sbro/listView/football.json?lang=en_US&market=RO&client_id=2&channel_id=1&categoryGroup=COMBINED&displayDefault=true&category=match';
+$url = 'https://api.aws.kambicdn.com/offering/api/v3/sbro/listView/football.json?lang=en_GB&market=RO&client_id=2&channel_id=1&ncid=1534495457832&categoryGroup=ALL&displayDefault=true&category=match';
 //$url = 'https://api.aws.kambicdn.com/offering/api/v3/sbro/listView/football.json?lang=en_US&market=RO&client_id=2&channel_id=1&categoryGroup=COMBINED&displayDefault=true&category=match';
 $data = json_decode(file_get_contents($url));
 $allmatches = array();

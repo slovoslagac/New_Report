@@ -1,10 +1,10 @@
 <?php
-include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlAdminPDO.php')));
+include(join(DIRECTORY_SEPARATOR, array('conn', 'mysqlAdminPDOold.php')));
 // $kladionica_name='balkanbet';
 
-$sql = 'call spajanje_'.$kladionica_name;
+$sql = "call spajanje_$kladionica_name";
 
- echo $sql;
+// echo $sql;
 
 
 $SelMatc = $conn -> prepare($sql);

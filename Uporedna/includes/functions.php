@@ -93,7 +93,7 @@ AND r.EVENT_RESULT_TYPE_ID = r1.EVENT_RESULT_TYPE_ID
 AND r.participant_id <> r1.participant_id
 and r.EVENT_RESULT_TYPE_ID = 1
 AND r.participant_id = t.id
-AND m.season_id in (27,25)
+AND m.season_id in (28,27)
 AND c.alternative_id = $leagueId) a
 left join init_event_results r2 on r2.event_id = a.matchId and a.teamId = r2.participant_id and r2.EVENT_RESULT_TYPE_ID=2
 left join init_event_results r3 on a.matchId = r3.event_id and a.teamId <> r3.participant_id and r3.EVENT_RESULT_TYPE_ID=2
@@ -114,7 +114,7 @@ select m.round as matchRound,m.start_time as matchTime, t.name as homeTeam, t1.n
 from init_match m, init_team t, init_team t1, init_event_results hr, init_event_results ar, init_competition c
 where c.alternative_id = $leagueId
 and m.competition_id = c.id
-and m.season_id in (27,25)
+and m.season_id in (28,27)
 and m.home_team_id =t.id
 and m.visitor_team_id = t1.id
 and hr.event_id = m.event_id
@@ -146,7 +146,7 @@ and r.EVENT_RESULT_TYPE_ID = 1
 AND r.participant_id = t.id
 and m.init_sport_id = 1
 and m.phase in (1,79)
-AND m.season_id in (22,25)) a
+AND m.season_id in (28,27)) a
 ORDER BY a.teamId, a.startTime  DESC
 ;");
     $sql->execute();
@@ -170,7 +170,7 @@ and r.EVENT_RESULT_TYPE_ID = 1
 AND r.participant_id = t.id
 and m.init_sport_id = 1
 and m.phase in (1,79)
-AND m.season_id in (22,25)) a
+AND m.season_id in (27,28)) a
 left join init_event_results r2 on r2.event_id = a.matchId and a.teamId = r2.participant_id and r2.EVENT_RESULT_TYPE_ID=2
 left join init_event_results r3 on a.matchId = r3.event_id and a.teamId <> r3.participant_id and r3.EVENT_RESULT_TYPE_ID=2
 ORDER BY a.teamId, a.startTime

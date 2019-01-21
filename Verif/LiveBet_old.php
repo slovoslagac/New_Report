@@ -27,22 +27,25 @@ $data=$livebetData;
 //$data1=$matchdata;
 //$data2=$matchdatapremium;
 //array_multisort($data1,$data1[3],SORT_ASC,$data1[4],SORT_ASC);
-$date = new DateTime();
 
 ?>
 <body>
 <div class="bs-example">
     <ul class="nav nav-tabs">
-    	<li class="active"><a data-toggle="tab" href="#fudbal">Fudbal</a></li>
+    	<li><a data-toggle="tab" href="#fudbal">Fudbal</a></li>
         <li><a data-toggle="tab" href="#kosarka">Košarka</a></li>
         <li><a data-toggle="tab" href="#hokej">Hokej</a></li>
         <li><a data-toggle="tab" href="#tenis">Tenis</a></li>
         <li><a data-toggle="tab" href="#odbojka">Odbojka</a></li>
         <li><a data-toggle="tab" href="#rukomet">Rukomet</a></li>
-        <li class="navbar-right">podaci osveženi : <?php echo $date->format('d.m.Y H:i');?></li>
+        <li><a data-toggle="tab" href=""></a></li>
+        <li><a data-toggle="tab" href=""></a></li>
+        <li><a data-toggle="tab" href=""></a></li>
+        <li><a data-toggle="tab" href="#livebet">PlayByPlay</a></li>
+		<li class="active"><a data-toggle="tab" href="#livebetpremium" style="color: red"><strong>Vicentije Premium</strong></a></li>
     </ul>
     <div class="tab-content">
-        <div id="fudbal" class="tab-pane fade in active">
+        <div id="fudbal" class="tab-pane fade">
         	<table class="table table-striped">
         		<thead>
         			<tr>
@@ -178,8 +181,58 @@ $date = new DateTime();
         	<?php }?>		
         	</table>    
         </div>
+        <div id="livebet" class="tab-pane fade">
+        	<table class="table table-striped">
+        		<thead>
+        			<tr>
+        				<th>Sport</th>
+        				<th>Liga</th>
+        				<th>datum</th>
+        				<th>Vreme</th>
+        				<th>Meč</th>
+        			</tr>
+        		</thead>
+        		<tbody>
+        	<?php foreach($data1 as $dat){?>
+        			<tr>
+        				<td><?php echo $dat['sport']?></td>
+        				<td><?php echo $dat['league']?></td>
+        				<td><?php echo $dat['date']?></td>
+        				<td><?php echo $dat['time']?></td>
+        				<td><?php echo $dat['match']?></td>
+        			</tr>
+        	<?php }?>	
+        		</tbody>	
+        	</table>    
+        </div>
+		<div id="livebetpremium" class="tab-pane fade in active">
+			<table class="table table-striped">
+				<thead>
+				<tr>
+					<th>Sport</th>
+					<th>datum</th>
+					<th>Vreme</th>
+					<th>Meč</th>
+					<th>Tip</th>
+				</tr>
+				</thead>
+				<tbody>
+				<?php foreach($data2 as $dat){ $date = new DateTime($dat['datetime']);
+					if ($dat['vistype'] == 'premium') {
+					?>
+						<tr>
+							<td><?php print_r($dat['sport'])?></td>
+							<td><?php echo date_format($date, 'd.m.Y')?></td>
+							<td><?php echo date_format($date, 'H:i')?></td>
+							<td><?php echo $dat['match']?></td>
+							<td><?php echo $dat['vistype']?></td>
 
+						</tr>
 
+				<?php } }?>
+				</tbody>
+			</table>
+		</div>
     </div>
 </div>
 </body>

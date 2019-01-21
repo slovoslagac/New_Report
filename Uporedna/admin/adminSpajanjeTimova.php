@@ -17,7 +17,7 @@ $source_id = 11;
 $bookie = 'Xscores';
 $koef = 1;
 $sport ='';
-$sportArray = array(1=>'Fudbal', 58=>'Američki fudbal', 7=>'Rukomet', 8=>'Bejzbol');
+$sportArray = array(1=>'Fudbal', 4=>'Hokej', 58=>'Američki fudbal', 7=>'Rukomet', 8=>'Bejzbol');
 
 if (isset ($_GET ["bookie_id"]) != "") {
     $source_all = explode("__", $_GET['bookie_id']);

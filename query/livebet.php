@@ -20,11 +20,11 @@ select lm.id, match_date, bmtd.tim domacin, bmtg.tim gost, BMTG.sport,
   row_number () over ( order by BMTG.sport, match_date) red
 from livebet.livebet_matches lm, (select BMT.BETRADAR_SUPER_ID  br_id, BMT.BETRADAR_TEAM_NAME be_name , SPP.MOZZART_NAME tim, SPP.SPORT_ID sport
 from TELEBET.BETRADAR_MOZZART_TEAM bmt, TELEBET.SP_PARTICIPANT spp
-where BMT.MOZZART_TEAM_NAME=SPP.MOZZART_NAME
+where lower(BMT.MOZZART_TEAM_NAME)=lower(SPP.MOZZART_NAME)
 and BMT.SPORT_ID=SPP.SPORT_ID) bmtd,
 (select BMT.BETRADAR_SUPER_ID  br_id, BMT.BETRADAR_TEAM_NAME be_name , SPP.MOZZART_NAME tim, SPP.SPORT_ID sport
 from TELEBET.BETRADAR_MOZZART_TEAM bmt, TELEBET.SP_PARTICIPANT spp
-where BMT.MOZZART_TEAM_NAME=SPP.MOZZART_NAME
+where lower(BMT.MOZZART_TEAM_NAME)=lower(SPP.MOZZART_NAME)
 and BMT.SPORT_ID=SPP.SPORT_ID) bmtg
 where LM.HOME_TEAM_ID=bmtd.br_id
 and LM.away_TEAM_ID=bmtg.br_id

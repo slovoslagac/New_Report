@@ -11,9 +11,11 @@ $css = 'css/admin.css';
 include(join(DIRECTORY_SEPARATOR, array('included', 'adm_header.php')));
 //include (join(DIRECTORY_SEPARATOR, array('conn','mysqlAdminPDOold.php')));
 
-if (isset ($_GET["kladionica"]) != "") {
-    $kladionica_name = $_GET["kladionica"];
+if (isset ($_POST["kladionica"]) != "") {
+    $kladionica_name = $_POST["kladionica"];
     include(join(DIRECTORY_SEPARATOR, array('db', 'spajanje.php')));
+
+    echo "<meta http-equiv='refresh' content='0'>";
 
 };
 
@@ -26,11 +28,17 @@ if (isset ($_POST["parser"]) != "") {
         case('balkanbet'):
             include(join(DIRECTORY_SEPARATOR, array('scripts', 'BalkanBetNew.php')));
             break;
+        case('meridian'):
+            include(join(DIRECTORY_SEPARATOR, array('scripts', 'meridian.php')));
+            break;
+        case('pinbet'):
+            include(join(DIRECTORY_SEPARATOR, array('scripts', 'pinnbet.php')));
+            break;
         case('soccer'):
             include(join(DIRECTORY_SEPARATOR, array('..', 'parseri', 'Soccer.php')));
             break;
         case('stanley'):
-            include(join(DIRECTORY_SEPARATOR, array('scripts', 'stanleybet.php')));
+            include(join(DIRECTORY_SEPARATOR, array('scripts', 'stenleybetnew.php')));
             break;
         case('superbet'):
             include(join(DIRECTORY_SEPARATOR, array('scripts', 'superbet.php')));
@@ -56,7 +64,7 @@ if (isset($_POST["betradarCurrent"]) != "") {
 }
 
 
-if(isset($_POST["ks"]) !=""){
+if (isset($_POST["ks"]) != "") {
     include('getks.php');
 }
 
@@ -78,9 +86,11 @@ if(isset($_POST["ks"]) !=""){
                 <button type="submit" name="parser" value="maxbet">Maxbet</button>
                 <button type="submit" name="parser" value="balkanbet">Balkanbet</button>
                 <button type="submit" name="parser" value="soccer">Soccer</button>
+                <button type="submit" name="parser" value="meridian">Meridian</button>
+                <button type="submit" name="parser" value="pinbet">Pinbet</button>
         </form>
         <hr>
-        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
+        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
             <h3>Povezivanje utakmica</h3>
 
             <button type="submit" name="kladionica" value="balkanbet">Balkanbet</button>
@@ -97,7 +107,8 @@ if(isset($_POST["ks"]) !=""){
         <h3>Brisanje prethodnih importa</h3>
         <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
             <?php foreach ($allBtr as $item) { ?>
-                <button type="submit" name="betradar" value="<?php echo $item->id ?>"><?php echo $item->date_time ?></button>
+                <button type="submit" name="betradar"
+                        value="<?php echo $item->id ?>"><?php echo $item->date_time ?></button>
 
             <?php } ?>
 
@@ -116,21 +127,33 @@ if(isset($_POST["ks"]) !=""){
             <h3>Skidanje kvota</h3>
             <button type="submit" name="parser" value="stanley">StanleyBet</button>
             <button type="submit" name="parser" value="superbet">Superbet</button>
-            <h2>KS</h2>
-            <hr>
-            <button type="submit" name="ks" value="refreshallks">Osveži sve vrednosti</button>
-        </div>
     </form>
-    <div class="region">
-        <h2>Bosna</h2>
+    <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
         <hr>
-    </div>
-    <div class="region">
-        <h2>Hrvatska</h2>
+        <h3>Povezivanje utakmica</h3>
+        <button type="submit" name="kladionica" value="stenlybetro">StanleyBet</button>
+        <button type="submit" name="kladionica" value="superbetro">Superbet</button>
+        <button type="submit" name="kladionica" value="publicbetro">Fortuna</button>
+    </form>
+    <form method="post">
         <hr>
-        <button type="submit" name="kladionica" value="germanija">Germanija</button>
-        <button type="submit" name="kladionica" value="supersport">Supersport</button>
-    </div>
+        <h3>KS</h3>
+
+
+
+        <button type="submit" name="ks" value="refreshallks">Osveži sve vrednosti</button>
+</div>
+</form>
+<div class="region">
+    <h2>Bosna</h2>
+    <hr>
+</div>
+<div class="region">
+    <h2>Hrvatska</h2>
+    <hr>
+    <button type="submit" name="kladionica" value="germanija">Germanija</button>
+    <button type="submit" name="kladionica" value="supersport">Supersport</button>
+</div>
 
 </div>
 <?php include(join(DIRECTORY_SEPARATOR, array('included', 'adm_footer.php'))); ?>

@@ -31,7 +31,7 @@ $end_new = $end_date->format("Y-m-d");
 
 //echo "$startDate - $end_date<br>";
 
-$startDate = "$start_new+00:00:00";
+$startDate = "$start_new ";
 $endDate = "$end_new+23:59:59";
 //$endDate = 'invalid+date';
 

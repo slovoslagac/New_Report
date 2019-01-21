@@ -3,118 +3,84 @@
  * Created by PhpStorm.
  * User: petar
  * Date: 15.6.2018.
- * Time: 15:11
+ * Time: 11:56
  */
+require_once('/conn/mysqlAdminPDOold.php');
+require_once('/classes/stenleymatch.php');
 
-$url = 'https://api.aws.kambicdn.com/offering/api/v2/sbro/event/live/open.json?lang=en_GB&market=RO&client_id=2&channel_id=1&ncid=1529667471631';
-//$url = 'https://api.aws.kambicdn.com/offering/api/v3/sbro/listView/football.json?lang=en_US&market=RO&client_id=2&channel_id=1&categoryGroup=COMBINED&displayDefault=true&category=match';
-$data = json_decode(file_get_contents($url));
+$url = 'https://api.aws.kambicdn.com/offering/api/v2/sbro/group.json?lang=en_GB&market=RO&client_id=2';
+$data = json_decode(file_get_contents($url))->group->groups;
 $allmatches = array();
+$allleagues;
+$alllinks = array();
 
-foreach ($data->events as $item) {
-    $matchdata = $item->event;
-    $matchodds = $item->betOffers;
-    $matches = array();
-
-    if ($matchdata->type == "ET_MATCH") {
-        $hometeam = $matchdata->homeName;
-        $awayteam = $matchdata->awayName;
-        $competition = $matchdata->group;
-        foreach ($matchodds as $itemodd) {
-            $currentmatchodds = $itemodd->outcomes;
-
-            foreach ($currentmatchodds as $newitem) {
-                $ki1 ;$kix;$ki2;
-                switch ($newitem->type) {
-                    case "OT_ONE":
-                        $ki1 = $newitem->odds/1000;
-                        break;
-                    case "OT_CROSS":
-                        $kix = $newitem->odds/1000;
-                        break;
-                    case "OT_TWO":
-                        $ki2 = $newitem->odds/1000;
-                        break;
-                }
-            }
-
-            }
-//        if($ki1 != "") {
-//            echo $ki1, ' ', $kix, ' ', $ki2, ' ', $nd, ' ', $tp, ' ', "$item->RegionName $item->CompetitionName", ' ', $item->Competitor1, '-', $item->Competitor1, ' ', $item->EventName, '<br>';
-            $matches["id"] = $matchdata->id;
-            $matches["home_team"] = $hometeam;
-            $matches["away_team"] = $awayteam;
-            $matches["date"] = $matchdata->prematchEnd;
-            $matches["competition_name"] = $competition ;
-            $matches["ki1"] = $ki1;
-            $matches["kiX"] = $kix;
-            $matches["ki2"] = $ki2;
-
-
-            array_push($allmatches, $matches);
-//        }
-
-
-
-        }
-//        echo "$hometeam - $awayteam $ki1 $kix $ki2 <br>";
-
-
-
+foreach ($data as $items) {
+    if ($items->name == "Football") {
+        $allleagues = $items->groups;
+        break;
+    }
 }
-
-include '../conn/mysqlAdminPDOold.php';
-//echo "Brisem tabelu <br>";
-
+foreach ($allleagues as $item) {
+    $string = '';
+    if (array_key_exists('groups', $item)) {
+        $tmpname = $item->termKey;
+        $tmpleagues = $item->groups;
+        foreach ($tmpleagues as $tmpi) {
+            $string = $tmpname . '/' . $tmpi->termKey;
+            array_push($alllinks, $string);
+        }
+    } else {
+        $string = $item->termKey;
+        array_push($alllinks, $string);
+    }
+}
 $del = 'DELETE FROM stenlybetro3';
-
 $prep = $conn->prepare($del);
 $prep->execute();
 
+foreach ($alllinks as $link) {
+    sleep(1);
+    $url = "https://api.aws.kambicdn.com/offering/api/v3/sbro/listView/football/$link.json?lang=en_GB&market=RO&client_id=2&channel_id=1&categoryGroup=COMBINED&displayDefault=true";
+    $data = json_decode(file_get_contents($url))->events;
+    $allmatches = array();
+    foreach ($data as $item) {
+        $details = $item->event;
+        $oddsdetails = $item->betOffers;
+        if ($oddsdetails != null && property_exists($details, 'awayName')) {
+            $tmpMatch = new stanleymatch();
+            $tmpMatch->setAttr('hometeam', $details->homeName);
+            $tmpMatch->setAttr('awayteam', $details->awayName);
+            foreach ($oddsdetails as $oddsitem) {
+                $oddsvalues = $oddsitem->outcomes;
+                foreach ($oddsvalues as $valueitem) {
+                    if ($valueitem->type == "OT_OVER" or $valueitem->type == "OT_UNDER") {
+                        if($valueitem->line == '2500') {
+                            $tmpMatch->setAttr($valueitem->type, $valueitem->odds / 1000);
+                        }
+                    } else {
+                        $tmpMatch->setAttr($valueitem->type, $valueitem->odds / 1000);
+                    }
+                }
+            }
+            array_push($allmatches, $tmpMatch);
+            unset($tmpMatch);
+        }
+    }
 //echo "Upisujem meceve <br>";
-
-foreach ($allmatches as $d) {
-
-    $home_team = $d['home_team'];
-    $away_team = $d['away_team'];
-    $league = $d['competition_name'];
-    $ki1 = $d['ki1'];
-    $kix = $d['kiX'];
-    $ki2 = $d['ki2'];
-
-
-
-
-
-    $query = 'INSERT INTO
-		stenlybetro3 (domacin, gost, liga, ki_1, ki_x, ki_2)
-		VALUES
-		(:home_team, :visitor_team, :league, :ki1, :kix, :ki2)';
-
-    $params = array(
-        'home_team' => $home_team,
-        'visitor_team' => $away_team,
-        'league' => $league,
-        'ki1' => $ki1,
-        'kix' => $kix,
-        'ki2' => $ki2,
-    );
-
-    $prepare = $conn->prepare($query);
-    $prepare->execute($params);
-
-
+    foreach ($allmatches as $item) {
+        $match = new stanleymatch();
+        $match = $item;
+        if ($match->OT_ONE > 0) {
+            $match->insertMatch();
+        }
+    };
 }
 
-//echo "Pozvezujem utakmice <br>";
-
+echo "Pozvezujem utakmice <br>";
 $con_game_ig = 'call spajanje_stenlybetro';
-
 $prep = $conn->prepare($con_game_ig);
 $prep->execute();
-
 $conn = null;
 
 //var_dump($allmatches);
-
 echo "Zavrsio sam caoo!!!";
