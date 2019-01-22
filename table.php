@@ -16,10 +16,29 @@
 </head>
 <?php
 include_once('tableData.php');
+$cmpid = 1;
+$seasonid = 25;
 
-$data = getNormalTable(1, 25);
+$data = getNormalTable($cmpid, $seasonid);
+$htdata = getHTTable($cmpid,$seasonid);
+$htdatadetails = array();
 
-$translate = array("WIN" => "+", "DRAW" => "x", "LOSE" => "-")
+$translate = array("WIN" => "+", "DRAW" => "x", "LOSE" => "-");
+
+foreach ($htdata as $tmp){
+    $htdatadetails[$tmp->participant->id][0] = $tmp->overall->wins;
+    $htdatadetails[$tmp->participant->id][1] = $tmp->overall->draws;
+    $htdatadetails[$tmp->participant->id][2] = $tmp->overall->losses;
+    $htdatadetails[$tmp->participant->id][3] = $tmp->homePlayed->wins;
+    $htdatadetails[$tmp->participant->id][4] = $tmp->homePlayed->draws;
+    $htdatadetails[$tmp->participant->id][5] = $tmp->homePlayed->losses;
+    $htdatadetails[$tmp->participant->id][6] = $tmp->visitorPlayed->wins;
+    $htdatadetails[$tmp->participant->id][7] = $tmp->visitorPlayed->draws;
+    $htdatadetails[$tmp->participant->id][8] = $tmp->visitorPlayed->losses;
+}
+
+
+
 ?>
 <section id="tabs" class="project-tab">
     <div class="container-fluid">
@@ -114,16 +133,19 @@ $translate = array("WIN" => "+", "DRAW" => "x", "LOSE" => "-")
                             <tr>
                                 <th rowspan="3">Poz</th>
                                 <th rowspan="3">Name</th>
-                                <th colspan="12" class="text-center">Ukupno</th>
-                                <th colspan="3" class="text-center">Kuci</th>
-                                <th colspan="3" class="text-center">U gostima</th>
+                                <th colspan="15" class="text-center">Ukupno</th>
+                                <th colspan="6" class="text-center">Kuci</th>
+                                <th colspan="6" class="text-center">U gostima</th>
 
                             </tr>
                             <tr>
                                 <td colspan="9"></td>
                                 <td colspan="3" class="text-center">Prosek golova</td>
+                                <td colspan="3" class="text-center">1. poluvreme</td>
                                 <td colspan="3" class="text-center">Prosek golova</td>
+                                <td colspan="3" class="text-center">1. poluvreme</td>
                                 <td colspan="3" class="text-center">Prosek golova</td>
+                                <td colspan="3" class="text-center">1. poluvreme</td>
                             </tr>
                             <tr>
                                 <td>1/1</td>
@@ -138,18 +160,28 @@ $translate = array("WIN" => "+", "DRAW" => "x", "LOSE" => "-")
                                 <td>Uk</td>
                                 <td>Dao</td>
                                 <td>Primio</td>
+                                <th>p</th>
+                                <th>i</th>
+                                <th>n</th>
                                 <td>Uk</td>
                                 <td>Dao</td>
                                 <td>Primio</td>
+                                <th>p</th>
+                                <th>i</th>
+                                <th>n</th>
                                 <td>Uk</td>
                                 <td>Dao</td>
                                 <td>Primio</td>
+                                <th>p</th>
+                                <th>i</th>
+                                <th>n</th>
 
                             </tr>
                             </thead>
                             <?php
                             foreach ($data as $item) {
                                 $team = $item->participant->name;
+                                $participantid = $item->participant->id;
                                 $fulltableitem = $item->overall;
                                 $fulltableL5 = $fulltableitem->lastFiveMatches;
                                 $fulltableHF = $fulltableitem->halfTimeFullTime;
@@ -175,12 +207,21 @@ $translate = array("WIN" => "+", "DRAW" => "x", "LOSE" => "-")
                                     <td><?php echo number_format(($fulltableitem->scored + $fulltableitem->received) / $fulltableitem->matchesPlayed, 2)?></td>
                                     <td><?php echo number_format($fulltableitem->scored  / $fulltableitem->matchesPlayed, 2)?></td>
                                     <td><?php echo number_format($fulltableitem->received / $fulltableitem->matchesPlayed, 2)?></td>
+                                    <td><?php echo $htdatadetails[$participantid][0]?></td>
+                                    <td><?php echo $htdatadetails[$participantid][1]?></td>
+                                    <td><?php echo $htdatadetails[$participantid][2]?></td>
                                     <td><?php echo number_format(($hometableitem->scored + $hometableitem->received) / $hometableitem->matchesPlayed, 2)?></td>
                                     <td><?php echo number_format($hometableitem->scored  / $hometableitem->matchesPlayed, 2)?></td>
                                     <td><?php echo number_format($hometableitem->received / $hometableitem->matchesPlayed, 2)?></td>
+                                    <td><?php echo $htdatadetails[$participantid][3]?></td>
+                                    <td><?php echo $htdatadetails[$participantid][4]?></td>
+                                    <td><?php echo $htdatadetails[$participantid][5]?></td>
                                     <td><?php echo number_format(($visitortableitem->scored + $visitortableitem->received) / $visitortableitem->matchesPlayed, 2)?></td>
                                     <td><?php echo number_format($visitortableitem->scored  / $visitortableitem->matchesPlayed, 2)?></td>
                                     <td><?php echo number_format($visitortableitem->received / $visitortableitem->matchesPlayed, 2)?></td>
+                                    <td><?php echo $htdatadetails[$participantid][6]?></td>
+                                    <td><?php echo $htdatadetails[$participantid][7]?></td>
+                                    <td><?php echo $htdatadetails[$participantid][8]?></td>
 
                                 </tr>
                             <?php } ?>

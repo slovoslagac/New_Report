@@ -56,3 +56,21 @@ function getNormalTable($cmpid, $seasonid)
     ksort($tableArray);
     return $tableArray;
 }
+
+function getHTTable($cmpid, $seasonid)
+{
+    $data = getTableContent($cmpid, $seasonid);
+
+    foreach ($data as $item) {
+        if ($item->periodType == "PERIOD_1") {
+            $tableDetails = $item->participantStats;
+        }
+    }
+
+    foreach ($tableDetails as $tableItem) {
+        $tableArray[$tableItem->overall->position] = $tableItem;
+    }
+
+    ksort($tableArray);
+    return $tableArray;
+}
